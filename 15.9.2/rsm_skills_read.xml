@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/niku/xog/src/webroot/WEB-INF/xog/xsd/nikuxog_read.xsd">
+  <Header version="7.5.1" action="read" objectType="skill" externalSource="NIKU">
+  </Header> 
+  <Query>
+    <!-- The filter will work in the following way:
+            top level matching skills, then from these skills recursively get their matching child skills 
+
+            e.g. full list in the system:
+                      skill1  active  parent: none
+                      skill11  inactive  parent: skill1
+                      skill111  active  parent: skill11
+                      UI active  parent: none
+                  1) if filter is isActive=true          
+                  then only skill1 will be returned although skill111 is also active
+                  2) if filter is skillName=UI
+                  then UI will be returned
+                  3) if UI has a parent like "UI active  parent: skill1" in the system
+                  and filter skillName=UI
+                  then no skills will be returned.
+    -->
+    <!--Filter name="skillName" criteria="EQUALS">UI</Filter-->
+    <Filter name="isActive" criteria="EQUALS">true</Filter>
+  </Query>
+</NikuDataBus>

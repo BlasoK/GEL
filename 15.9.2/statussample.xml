@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XOGOutput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/status.xsd">
+	<Object type="resource"/>
+	<Status state="SUCCESS"/>
+	<Statistics updatedRecords="0" insertedRecords="3" failureRecords="0" totalNumberOfRecords="3"/>
+	<Records>
+		<Record>
+			<KeyInformation>
+				<column name="resourceId">XOGJan</column>
+				<column name="lastName">XOG123</column>
+				<column name="externalSource">ORACLE-FINANCIAL</column>
+				<column name="externalId">2323AAA</column>
+			</KeyInformation>
+			<ErrorInformation>
+				<Severity>WARNING</Severity>
+				<Description>Company uniquecompany is invalid.Hence this column data has been inserted as null. The vendor code specified:  is not valid, null will be inserted. </Description>
+			</ErrorInformation>
+		</Record>
+		<Record>
+			<KeyInformation>
+				<column name="resourceId">XOGJohn</column>
+				<column name="lastName">XOG456</column>
+				<column name="externalSource">ORACLE-FINANCIAL</column>
+				<column name="externalId">2323BBB</column>
+			</KeyInformation>
+			<ErrorInformation>
+				<Severity>WARNING</Severity>
+				<Description>Manager User Name Kevin is invalid.Hence this column data has been inserted as null. Company uniquecompany is invalid.Hence this column data has been inserted as null. The vendor code specified:  is not valid, null will be inserted. </Description>
+			</ErrorInformation>
+		</Record>
+		<Record>
+			<KeyInformation>
+				<column name="resourceId">XOGRhonda</column>
+				<column name="lastName">XOG456</column>
+				<column name="externalSource">ORACLE-FINANCIAL</column>
+				<column name="externalId">2323BBB</column>
+			</KeyInformation>
+			<ErrorInformation>
+				<Severity>WARNING</Severity>
+				<Description>Manager User Name Kevin is invalid.Hence this column data has been inserted as null. Company uniquecompany is invalid.Hence this column data has been inserted as null. The vendor code specified:  is not valid, null will be inserted. </Description>
+			</ErrorInformation>
+		</Record>
+	</Records>
+</XOGOutput>

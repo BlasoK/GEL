@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_notification.xsd">
+	<Header version="12.0" action="read" objectType="transactionclass" externalSource="NIKU"/>
+	<Query>
+		<Filter name="transclass" criteria="EQUALS">tclass</Filter>
+		<!--<Filter name="transtype" criteria="EQUALS">L</Filter>
+		<Filter name="description" criteria="EQUALS">tclass desc</Filter>
+		<Filter name="shortdesc" criteria="EQUALS">short desc</Filter>-->
+        </Query>
+</NikuDataBus>

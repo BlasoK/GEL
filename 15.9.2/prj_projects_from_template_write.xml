@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+  <Header version="7.5" action="write" objectType="project" externalSource="NIKU"/>
+  <Projects>
+
+    <!-- Create a template we will use later -->
+
+    <Project
+      name              = "aaaTemplate2"
+      projectID         = "aaaTemplate2"
+      description       = "aaaTemplate2"
+      managerResourceID = "kdinsmore"
+      start             = "2004-01-01T00:00:00"
+      finish            = "2005-01-01T00:00:00"
+      priority          = "15"
+      progress          = "1"
+      format            = "11"
+      template          = "true"
+      >
+
+      <Tasks>
+        <Task name="t1" taskID="t1" outlineLevel="1"/>
+        <Task name="t2" taskID="t2" outlineLevel="1"/>
+      </Tasks>
+
+    </Project>
+
+    <!-- create a new project from above template -->
+
+    <Project
+      fromTemplate      = "aaaTemplate2"
+      name              = "aaaFrom2"
+      projectID         = "aaaFrom2"
+      description       = "aaaFrom2"
+      managerResourceID = "kdinsmore"
+      start             = "2004-01-01T00:00:00"
+      finish            = "2005-01-01T00:00:00"
+      stageCode         = "PRJ_NPD_IDEA"
+      processCode       = "PRJ_NPD"
+      goalCode          = "AVOID_COST"
+      priority          = "18"
+      progress          = "1"
+      format            = "11"
+      >
+    </Project>
+
+  </Projects>
+</NikuDataBus>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="7.5" action="read" objectType="role" externalSource="NIKU">
+    <!--
+    <args name="include_financial" value="true"/>
+    -->
+  </Header>
+  <Query>
+    <!--Filter name="active" criteria="EQUALS">false</Filter-->
+    <Filter name="resourceId" criteria="EQUALS">xog manager</Filter>
+    <!--
+    <Filter name="resourceId" criteria="EQUALS">expenserole1</Filter>
+    <Filter name="resourceId" criteria="EQUALS">materialrolel</Filter>
+    -->
+  </Query>
+</NikuDataBus>

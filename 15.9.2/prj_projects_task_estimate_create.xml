@@ -1,0 +1,102 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+    <Header action="write" externalSource="NIKU" objectType="project" version="7.5.0"/>
+    <Projects>
+      <Project active="true" approved="true"
+          budgetBreakEven="2005-01-01T00:00:00"
+          budgetCostFinish="2004-12-02T00:00:00"
+          budgetCostStart="2004-11-01T00:00:00"
+          budgetCostOperatingTotal="250000" budgetNPV="200000.000001"
+          budgetROI="0.8" budgetRevFinish="2005-01-16T00:00:00"
+          budgetRevStart="2004-11-12T00:00:00" budgetRevTotal="450000"
+          calculateFinancialMetrics="true" closed="false"
+          currencyISOcode="USD" finish="2004-12-28T17:00:00"
+          forecastBreakEven="2005-01-01T00:00:00"
+          forecastCostFinish="2004-12-02T00:00:00"
+          forecastCostStart="2004-11-01T00:00:00"
+          forecastCostTotal="250000" setBudgetValuesEqualToPlannedValues="true"
+          forecastNPV="200000.000001" forecastROI="0.8"
+          forecastRevFinish="2005-01-16T00:00:00"
+          forecastRevStart="2004-11-12T00:00:00"
+          forecastRevTotal="450000" lastUpdatedBy="coverage"
+          lastUpdatedDate="2004-11-05T21:59:57"
+          managerResourceID="sbutler" name="PRJ_COVRG_ESTIMATE"
+          openForTimeEntry="true"
+          pageLayoutCode="projmgr.projectPageFrame" program="false"
+          progress="0" projectID="PRJ_COVRG_ESTIMATE"
+          requiredForScenarios="true" start="2004-10-28T08:00:00" trackMode="2">
+          <Tasks>
+              <Task finish="2004-12-28T17:00:00"
+                  internalTaskID="5017641" key="true"
+                  lastUpdatedBy="coverage"
+                  lastUpdatedDate="2004-11-05T21:59:57"
+                  milestone="false" name="T1" orderID="1"
+                  outlineLevel="1" percComp="0"
+                  start="2004-10-28T08:00:00" status="0"
+                  summary="false" taskID="t1">
+                <estimateRules>
+                    <rule isDefault="true">
+                        <expression><![CDATA[5000]]></expression>
+                    </rule>
+                    <rule isDefault="false">
+                        <expression><![CDATA[estimate("t2") + 50000]]></expression>
+                        <condition><![CDATA[task.prpriority < 10]]></condition>
+                    </rule>
+                    <rule isDefault="false">
+                        <expression><![CDATA[estimate("t2") * 3 + project.etc]]></expression>
+                        <condition><![CDATA[task.prpriority > 10]]></condition>
+                    </rule>
+                </estimateRules>
+              </Task>
+              <Task finish="2004-12-28T17:00:00"
+                  internalTaskID="5017642" key="true"
+                  lastUpdatedBy="coverage"
+                  lastUpdatedDate="2004-11-05T21:59:57"
+                  milestone="false" name="T2" nextSiblingOf="t1"
+                  orderID="2" outlineLevel="1" percComp="0"
+                  start="2004-10-28T08:00:00" status="0"
+                  summary="false" taskID="t2">
+                <estimateRules>
+                    <rule isDefault="false">
+                        <expression><![CDATA[project.etc - 40]]></expression>
+                        <condition><![CDATA[task.prpriority > 10]]></condition>
+                    </rule>
+                </estimateRules>
+              </Task>
+              <Task finish="2004-12-28T17:00:00"
+                  internalTaskID="5017672" key="false"
+                  lastUpdatedBy="coverage"
+                  lastUpdatedDate="2004-11-05T21:59:57"
+                  milestone="false" name="Effort" nextSiblingOf="t2"
+                  orderID="3" outlineLevel="1" percComp="0"
+                  start="2004-10-28T08:00:00" status="0"
+                  summary="false" taskID="~rmw">
+                  <estimateRules/>
+              </Task>
+            <Task finish="2004-12-28T17:00:00"
+                internalTaskID="5000089" key="false"
+                lastUpdatedBy="sbutler"
+                lastUpdatedDate="2004-11-30T11:28:09"
+                milestone="false" name="Phase1" nextSiblingOf="~rmw"
+                orderID="4" outlineLevel="1" percComp="0"
+                start="2004-10-28T08:00:00" status="0"
+                summary="true" taskID="Phase1">
+                <estimateRules/>
+            </Task>
+            <Task finish="2004-12-28T17:00:00" firstChildOf="Phase1"
+                internalTaskID="5000090" key="true"
+                lastUpdatedBy="5000185"
+                lastUpdatedDate="2004-11-30T11:28:08"
+                milestone="false" name="T3" orderID="5"
+                outlineLevel="2" parent="Phase1" percComp="0"
+                start="2004-10-28T08:00:00" status="0"
+                summary="false" taskID="t3" topDownPercent="0.25">
+                <estimateRules/>
+            </Task>
+          </Tasks>
+          <scenarioDependencies/>
+          <CustomInformation/>
+          <General addedBy="sbutler" addedDate="2004-10-29"/>
+          <OBSAssocs/>
+      </Project>
+    </Projects>
+</NikuDataBus>

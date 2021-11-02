@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_notification.xsd">
+	<Header version="12.0" action="read" objectType="resourceclass" externalSource="NIKU"/>
+	<Query>
+		<Filter name="resource_class" criteria="EQUALS">rc</Filter>
+		<!--<Filter name="resource_type" criteria="EQUALS">L</Filter>
+		<Filter name="description" criteria="EQUALS">resource desc</Filter>
+		<Filter name="active" criteria="EQUALS">1</Filter>-->
+        </Query>
+</NikuDataBus>

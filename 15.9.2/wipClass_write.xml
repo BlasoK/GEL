@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_wipclass.xsd">
+    <Header action="write" externalSource="NIKU" objectType="wipclass" version="12.0"/>
+    <wipclasses>
+        <wipclass wipclass="wipcls1" description=" Wip Class 1 detail description" shortdesc="Wip Cls 1 desc"/>
+    </wipclasses>
+</NikuDataBus>

@@ -1,0 +1,9 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="../xsd/nikuxog_requirement.xsd">
+    <Header action="write" externalSource="NIKU" objectType="requirement" version="8.1"/>
+    <requirements>
+        <requirement object_id="areq" created_by="admin"
+            created_date="2007-07-23T11:36:55" last_updated_by="admin"
+            last_updated_date="2007-07-25T12:45:10" manager="admin" title="areq"/>
+    </requirements>
+</NikuDataBus>

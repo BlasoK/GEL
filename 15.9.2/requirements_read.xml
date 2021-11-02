@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+	<Header version="12.0" action="read" objectType="requirement" externalSource="NIKU"/>
+	<Query>
+	  <!--<Filter name="managerName" criteria="EQUALS">admin</Filter> 
+	  <Filter name="objectID" criteria="EQUALS">requirment</Filter> 
+	  <Filter name="investmentID" criteria="EQUALS">inv</Filter> 
+	  <Filter name="requirementTitle" criteria="EQUALS">RAM</Filter> 
+	  <Filter name="requirementStatus" criteria="EQUALS">ACTIVE_CANDIDATE</Filter> 
+    <Filter name="requirementType" criteria="EQUALS">Feature</Filter>
+    <Filter name="releaseID" criteria="EQUALS">rel</Filter>-->
+	</Query>
+</NikuDataBus>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+  <Header version="6.0.11" action="write" objectType="project" externalSource="NIKU"/>
+  <Projects>
+    <!-- This project has sample data for all attributes (that can be set through XOG) of Project General and  Management-->
+    <!-- All the fields can't be set through XOG import. For example lastmodifieddate is set by the system. Start, Finish, Remainingwork in assignment can't be set, it is calculated from curve-->
+    <Project name="XXAproject" projectID="80AA" description="XXAProject" managerResourceID="admin" start="1999-01-01T00:00:00" finish="2002-01-01T00:00:00" active="1" openForTimeEntry="true" trackMode="2" format="0" userText1="usertxt1" userText2="usertxt2" userText3="usertxt3" userText4="usertxt4" userText5="usertxt5" userText6="usertxt6" userText7="usertxt7" startImposed="true" finishImposed="true" baseTime="1999-02-28T00:00:00" baseStart="1999-02-28T00:00:00" baseFinish="1999-02-28T00:00:00" priority="36" approved="1" asOf="2001-09-16T09:30:47-05:00" cpmType="1" chargeCodeID="SALES" sponsoredBy="admin" requestedBy="admin" requestedTime="2001-09-18T09:30:47-05:00" guidelines="abc">
+      <Resources>
+        <Resource resourceID="joeTime"/>
+      </Resources>
+	<CustomInformation>
+		<ColumnValue name="PROJECT_BILLABILITY">yes</ColumnValue>
+		<ColumnValue name="FIRST_BILL_DATE">2002-05-16T00:00:00</ColumnValue>
+		<ColumnValue name="PROJECT_RISK">Medium</ColumnValue>
+		<ColumnValue name="CONTRACT_NUMBER">11</ColumnValue>
+		<ColumnValue name="CONTRACT_AMOUNT">20000</ColumnValue>
+		<ColumnValue name="PROFITABLE_PROJECT">1</ColumnValue>
+		<ColumnValue name="OWNER">admin</ColumnValue>
+	</CustomInformation>
+      <General addedBy="admin" addedDate="2003-01-01"/>
+    </Project>
+    <!-- This project has sample data for all attributes (that can be set through XOG) of Project Financial-->
+    <!-- All the fields can't be set through XOG import. For example lastmodifieddate is set by the system. Start, Finish, Remainingwork in assignment can't be set, it is calculated from curve-->
+    <Project name="XXFinProject" projectID="80FF" description="XX Financial Project" projectType="S" projectStage="C" start="1999-01-01T00:00:00" finish="2079-06-02T00:00:00" active="1" format="0" userName="joeTime" clientID="XOGTESTCUST10" financialProjectClass="PCLASS1" financialWipClass="WCLASS1" financialLocation="LOC1" financialDepartment="DEPT1" financialStatus="O" approved="true" documentNumber="125" contractAmount="102" enforceContractAmount="false" contractDate="1999-01-01T00:00:00" laborRateSource="ratemat" laborCostSource="ratemat" laborExchageRateType="AVERAGE" materialRateSource="ratemat" materialCostSource="ratemat" materialExchageRateType="AVERAGE" equipmentRateSource="ratemat" equipmentCostSource="ratemat" equipmentExchageRateType="AVERAGE" expenseRateSource="ratemat" expenseCostSource="ratemat" expenseExchageRateType="AVERAGE" billingCurrencyCode="USD"/>
+    <!-- This project has sample data for all attributes (that can be set through XOG) of task, project Team and assignment-->
+    <!-- All the fields can't be set through XOG import. For example lastmodifieddate is set by the system. Start, Finish, Remainingwork in assignment can't be set, it is calculated from curve-->
+    <Project name="XXCproject" projectID="80CC" format="11" start="2003-01-01T00:00:00" finish="2004-01-01T00:00:00">
+      <Resources>
+        <Resource resourceID="joeTime" availFrom="2003-01-01T00:00:00" availTo="2003-03-01T00:00:00" openForTimeEntry="1" bookingStatus="5" requestStatus="1" capitalPercentage="0.5" defaultAllocation=".7" projectRoleID="manager"/>
+      </Resources>
+      <Tasks>
+        <Task name="Effort" taskID="effortID" outlineLevel="1">
+          <Assignments>
+            <TaskLabor resourceID="joeTime"/>
+          </Assignments>
+        </Task>
+        <!--Task name="Effort" taskID="effortID" outlineLevel="1" delete="true"/-->
+        <Task name="task1" taskID="taskID1" outlineLevel="1" start="2003-01-01T00:00:00" baseStart="2003-01-01T00:00:00" finish="2003-06-01T00:00:00" baseFinish="2003-06-01T00:00:00" milestone="true" summary="true" key="true" category="b2b" status="1" percComp=".1" priority="5" earlyStart="2003-01-01T00:00:00" earlyFinish="2003-06-01T00:00:00" lateStart="2003-02-01T00:00:00" lateFinish="2003-08-01T00:00:00" duration="7" baselineDuration="6" shortName="fisrttask" guidelines="see project plan" fixed="true" baseFixed="true" baseTime="2003-01-01T00:00:00"/>
+        <Task name="task2" taskID="taskID2" outlineLevel="2" start="2003-01-01T00:00:00" baseStart="2003-01-01T00:00:00" finish="2003-06-01T00:00:00" baseFinish="2003-06-01T00:00:00" milestone="false" summary="false" key="false" category="b2b" status="1" percComp=".5" priority="10" earlyStart="2003-01-01T00:00:00" earlyFinish="2003-06-01T00:00:00" lateStart="2003-02-01T00:00:00" lateFinish="2003-08-01T00:00:00" duration="7" baselineDuration="6" shortName="fisrttask" guidelines="see project plan" fixed="false" baseFixed="false" baseTime="2003-01-01T00:00:00"/>
+        <Task name="task3" taskID="taskID3" outlineLevel="1">
+          <Assignments>
+            <TaskLabor resourceID="joeTime" actualThrough="2003-01-01T00:00:00" estPattern="2" basePattern="3" estMax="1" baseMax="2" pendEstSum="6" pendActSum="4" pendStart="2003-02-01T00:00:00" pendFinish="2004-01-01T00:00:00">
+              <Curve>
+                <Segment start="2003-01-01T00:00:00" finish="2003-03-01T00:00:00" sum="5"/>
+                <Segment start="2003-04-01T00:00:00" finish="2003-06-01T00:00:00" sum="4"/>
+              </Curve>
+            </TaskLabor>
+          </Assignments>
+        </Task>
+        <Task name="task4" taskID="taskID4" outlineLevel="1"/>
+        <Task name="task5" taskID="taskID5" outlineLevel="1"/>
+        <Task name="task6" taskID="taskID6" outlineLevel="1"/>
+        <Task name="task7" taskID="taskID7" outlineLevel="1"/>
+      </Tasks>
+      <OBSAssocs>
+        <OBSAssoc id="loc" unitPath="/USA"/>
+      </OBSAssocs>
+    </Project>
+    <!-- Test UNICODE characters-->
+    <Project name="ページ断片オブジェクト タイプ" projectID="80AA" description="XXAProject" managerResourceID="admin" start="1999-01-01T00:00:00" finish="2002-01-01T00:00:00" active="1" openForTimeEntry="true" trackMode="2" format="0" userText1="
+      usertxt1" userText2="usertxt2" userText3="usertxt3" userText4="usertxt4" userText5="usertxt5" userText6="usertxt6"
+      userText7="usertxt7" startImposed="true" finishImposed="true" baseTime="1999-02-28T00:00:00" baseStart="1999-02-28T00:00:00" baseFinish="1999-02-28T00:00:00" priority="36" approved="1" asOf="2001-09-16T09:30:47-05:00" cpmType="1"
+      chargeCodeID="SALES" sponsoredBy="admin" requestedBy="admin" requestedTime="2001-09-18T09:30:47-05:00" guidelines="abc">
+     <General addedBy="admin" addedDate="2003-01-01"/>
+    </Project>
+  </Projects>
+</NikuDataBus>

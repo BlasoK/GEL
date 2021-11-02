@@ -1,0 +1,20 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_skill.xsd">
+  <Header version="7.5.1" action="write" externalSource="NIKU" objectType="skill"/>
+  <skills complete="true">
+        <skill isActive="1" name="UI" skillCode="Code1" description="Experience creating the look and feel of an application">
+            <skill isActive="1" name="Prototype" skillCode="Code2"
+                description="Schematics,wireframes, preliminary screenshots used to guide the developers">
+            </skill>
+            <skill isActive="1" name="Design" skillCode="Code3" description="User interface design">
+                <skill isActive="1" name="HTML" skillCode="Code4"
+                    description="HTML knowladge to build web pages">
+                    <skill isActive="1" name="CSS" skillCode="Code5" description="Cascading Style Sheets">
+                    </skill>
+                </skill>
+            </skill>
+        </skill>
+        <skill isActive="1" name="Software Engineering" skillCode="Code6"
+            description="Technical knowledge">
+        </skill>
+  </skills>
+</NikuDataBus>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_resourceclass.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="resourceclass" version="12.0.0.4342"/>
+    <resourceclasses>
+        <resourceclass active="1" description="resource description"
+            resource_class="rc" resource_type="L"/>
+    </resourceclasses>
+</NikuDataBus>

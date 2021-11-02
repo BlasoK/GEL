@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_resource.xsd">
+  <Header version="6.0.12" action="write" objectType="resource" externalSource="ORACLE-FINANCIAL"/>
+  <Resources>
+    <Resource resourceId="XOGRES1" isActive="true" employmentType="Employee" resourceType="LABOR" hireDate="2000-03-21" terminationDate="2002-09-21" isExternal="false" managerUserName="admin" externalId="2323AAA"  includeInDatamart="true">
+      <PersonalInformation lastName="XOGLast" firstName="XOGFirst" emailAddress="pk@niku.com"/>
+      <ContactInformation companyName="uniquecompany" jobTitle="Systems Analyst" webAddress="http://www.niku.com" address1="350 Chestnut St" address2="broadway" address3="walnut" city="Redwood City" state="CA" country="US" postalCode="94061" workPhone="323324324" homePhone="323324324" mobilePhone="323324324" fax="4324234234" pager="12345"/>
+      <ManagementInformation category="asdf" defaultAllocationPercentage="75" trackMode="PPM" openForTimeEntry="false" primaryRoleId="TEST1" inputTypeCode="OT"/>
+      <CustomInformation>
+        <ColumnValue name="RESOURCE_MENTOR">testuser</ColumnValue>
+        <ColumnValue name="WILLING_TRAVEL">1</ColumnValue>
+        <ColumnValue name="RESOURCE_INDUSTRY">Firmware</ColumnValue>
+        <ColumnValue name="RESOURCE_GRADE">Silver</ColumnValue>
+      </CustomInformation>
+      <FinancialInformation>
+        <SupplementalInformation active="1" location="LOC1" department="DEPT1" resourceClass="RES1" transactionClass="TXN1" vendorCode="XOGVEN1"/>
+        <RatesNCosts targetbillingRate="200" targetPercentageBillable="100"/>
+        <Expenses reimbursementCurrency="EUR"/>
+      </FinancialInformation>
+      <General addedBy="admin" addedDate="2001-09-11"/>
+      <OBSAssocs>
+        <OBSAssoc name="Location" id="loc" unitPath="/USA/California/RWC"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+      <SkillAssocs complete="true">
+        <SkillAssoc interestLevel="1 - Low" proficiencyLevel="4 - Advanced" skillCode="Code4"></SkillAssoc>
+        <SkillAssoc interestLevel="5 - Medium" proficiencyLevel="5 - Advanced" skillCode="Code5"></SkillAssoc>
+        <SkillAssoc skillCode="Code6"></SkillAssoc>
+        <SkillAssoc interestLevel="2 - Low" proficiencyLevel="2 - Beginner" skillCode="Code1"></SkillAssoc>
+        <SkillAssoc interestLevel="1 - Low" proficiencyLevel="2 - Beginner" skillCode="Code2"></SkillAssoc>
+        <SkillAssoc interestLevel="2 - Low" proficiencyLevel="3 - Beginner" skillCode="Code3"></SkillAssoc>
+      </SkillAssocs>      
+    </Resource>
+    <Resource resourceId="XOGRES2" isActive="true" employmentType="Employee" resourceType="LABOR" hireDate="2000-03-21" terminationDate="2002-09-21" isExternal="false" managerUserName="admin" externalId="2323AAA"  includeInDatamart="false">
+      <PersonalInformation lastName="XOGLast2" firstName="XOGFirst2" emailAddress="bogus@niku.com"/>
+      <ManagementInformation category="cat1" defaultAllocationPercentage="65" trackMode="PPM" openForTimeEntry="true"/>
+      <General addedBy="admin" addedDate="2001-09-11"/>
+      <OBSAssocs>
+        <OBSAssoc name="Location" id="loc" unitPath="/USA/California/RWC"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+      <Calendar baseCalendar="Standard" resetCalendar="false">
+          <Days>
+              <Day dayOfWeek="MON" isWorkDay="false"/>
+              <Day dayOfWeek="SAT" isWorkDay="true">
+                  <Shifts>
+                      <Shift finish="12:00:00" start="08:00:00"/>
+                  </Shifts>
+              </Day>
+              <Day isWorkDay="false" start="2004-01-08"/>
+              <Day isWorkDay="true" start="2004-01-19">
+                  <Shifts>
+                      <Shift finish="06:00:00" start="04:00:00"/>
+                      <Shift finish="12:00:00" start="08:00:00"/>
+                      <Shift finish="17:00:00" start="13:00:00"/>
+                      <Shift finish="20:00:00" start="18:00:00"/>
+                  </Shifts>
+              </Day>
+              <Day isWorkDay="false" start="2004-01-21" finish="2004-01-24"/>
+          </Days>
+      </Calendar>
+    </Resource>
+  </Resources>
+</NikuDataBus>

@@ -1,0 +1,10 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_release.xsd">
+    <Header action="write" externalSource="NIKU" objectType="release" version="12.0.0.4300"/>
+    <releases>
+        <release bgt_cap_cost="2500" bgt_effort="50" bgt_op_cost="1500"
+            object_id="release1" created_by="admin"
+            created_date="2007-08-10T08:36:41" highlights="highlights"
+            investment_id="aproduct" last_updated_by="admin"
+            last_updated_date="2007-08-10T08:37:41" manager="admin" name="release1"/>
+    </releases>
+</NikuDataBus>

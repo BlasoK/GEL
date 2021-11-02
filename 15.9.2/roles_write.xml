@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_role.xsd">
+  <Header version="6.0.13" action="write" objectType="role" externalSource="ORACLE-FINANCIAL"/>
+  <Roles>
+    <Role name="manager" resourceId="manager" category="test" availability="8.0" active="true">
+      <General addedBy="admin" addedDate="2002-09-11"/>
+    </Role>
+    <Role resourceType="EXPENSE" name="role22" resourceId="role22" parentRole="manager" category="test" availability="6.0" active="true">
+      <FinancialInformation>
+        <SupplementalInformation active="1" resourceClass="fm_Exp" transactionClass="fm_Exp" vendorCode="fm_Ven"/>
+      </FinancialInformation>
+      <General addedBy="admin" addedDate="2002-09-11"/>
+    </Role>
+  </Roles>
+</NikuDataBus>

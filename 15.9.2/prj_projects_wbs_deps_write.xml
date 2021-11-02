@@ -1,0 +1,221 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+    <Header action="write" externalSource="NIKU" objectType="project" version="7.1.0.3023"/>
+    <Projects>
+        <Project active="true" approved="false"
+            calculateFinancialMetrics="true" closed="false"
+            currencyISOcode="USD" finish="2004-09-07T17:00:00"
+            setBudgetValuesEqualToPlannedValues="true" lastUpdatedBy="sbutler"
+            lastUpdatedDate="2004-09-14T13:12:13"
+            managerResourceID="sbutler" name="WBS_IPD_TASK_XOG"
+            openForTimeEntry="true" priority="10" program="false"
+            progress="0" projectID="WBS_IPD_TASK_XOG"
+            start="2004-09-02T08:00:00" trackMode="0">
+            <Resources/>
+            <Tasks>
+                <Task finish="2004-09-02T17:00:00"
+                    key="false"
+                    lastUpdatedBy="admin"
+                    lastUpdatedDate="2004-09-14T13:07:32"
+                    milestone="false" name="T_IPD" 
+                    outlineLevel="1" percComp="0"
+                    start="2004-09-02T08:00:00" status="0"
+                    summary="false" taskID="T_IPD">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+            </Tasks>
+            <CustomInformation/>
+            <General addedBy="sbutler" addedDate="2004-09-02"/>
+            <OBSAssocs/>
+        </Project>
+        <Project active="true" approved="false"
+            calculateFinancialMetrics="true" closed="false"
+            currencyISOcode="USD" finish="2004-09-07T17:00:00"
+            setBudgetValuesEqualToPlannedValues="true" lastUpdatedBy="sbutler"
+            lastUpdatedDate="2004-09-14T13:12:13"
+            managerResourceID="sbutler" name="WBS_DEPS_XOG"
+            openForTimeEntry="true" priority="10" program="false"
+            progress="0" projectID="WBS_DEPS_XOG"
+            start="2004-09-02T08:00:00" trackMode="0">
+            <Resources/>
+            <Tasks>
+                <Task finish="2004-09-02T17:00:00"
+                    key="false"
+                    lastUpdatedBy="admin"
+                    lastUpdatedDate="2004-09-14T13:07:32"
+                    milestone="false" name="XOGGG_T1" 
+                    outlineLevel="1" percComp="0"
+                    start="2004-09-02T08:00:00" status="0"
+                    summary="false" taskID="XOG_T1">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-07T17:00:00"
+                     key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="Phase1"
+                    nextSiblingOf="XOG_T1" outlineLevel="1"
+                    percComp="0" start="2004-09-02T08:00:00" status="0"
+                    summary="true" taskID="Phase1">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-07T17:00:00" firstChildOf="Phase1"
+                    key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="T1" 
+                    outlineLevel="2" parent="Phase1" percComp="0"
+                    start="2004-09-07T08:00:00" status="0"
+                    summary="false" taskID="T1">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-03T17:00:00"
+                    key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="T1a" nextSiblingOf="T1"
+                    outlineLevel="2" parent="Phase1"
+                    percComp="0" start="2004-09-03T08:00:00" status="0"
+                    summary="false" taskID="T1a">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-02T17:00:00"
+                    key="false"
+                    lastChildOf="Phase1" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="T1b" nextSiblingOf="T1a"
+                    outlineLevel="2" parent="Phase1"
+                    percComp="0" start="2004-09-02T08:00:00" status="0"
+                    summary="false" taskID="T1b">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-06T17:00:00"
+                    key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="Phase1a"
+                    nextSiblingOf="Phase1" outlineLevel="1"
+                    percComp="0" start="2004-09-02T08:00:00" status="0"
+                    summary="true" taskID="Phase 1a">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-06T17:00:00"
+                    firstChildOf="Phase 1a" 
+                    key="false" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="A1a" 
+                    outlineLevel="2" parent="Phase 1a" percComp="0"
+                    start="2004-09-02T08:00:00" status="0"
+                    summary="true" taskID="A1a">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-02T17:00:00" firstChildOf="A1a"
+                    key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="TA1" 
+                    outlineLevel="3" parent="A1a" percComp="0"
+                    start="2004-09-02T08:00:00" status="0"
+                    summary="false" taskID="TA1">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-06T17:00:00"
+                    key="false"
+                    lastChildOf="A1a" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="TA1a" nextSiblingOf="TA1"
+                    outlineLevel="3" parent="A1a"
+                    percComp="0" start="2004-09-05T00:00:00" status="0"
+                    summary="false" taskID="TA1a">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-06T17:00:00"
+                    key="false"
+                    lastChildOf="Phase 1a" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="A1b" nextSiblingOf="A1a"
+                    outlineLevel="2" parent="Phase 1a"
+                    percComp="0" start="2004-09-06T08:00:00" status="0"
+                    summary="true" taskID="A1b">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-06T17:00:00" firstChildOf="A1b"
+                    key="false"
+                    lastChildOf="A1b" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="TA1b" 
+                    outlineLevel="3" parent="A1b" percComp="0"
+                    start="2004-09-06T08:00:00" status="0"
+                    summary="false" taskID="TA1b">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-02T17:00:00"
+                    key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="Phase2"
+                    nextSiblingOf="Phase 1a" 
+                    outlineLevel="1" percComp="0"
+                    start="2004-09-02T08:00:00" status="0"
+                    summary="true" taskID="Phase2">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-02T17:00:00" firstChildOf="Phase2"
+                    key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="T2" 
+                    outlineLevel="2" parent="Phase2" percComp="0"
+                    start="2004-09-02T08:00:00" status="0"
+                    summary="false" taskID="T2">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+                <Task finish="2004-09-06T17:00:00"
+                    key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-14T13:12:12"
+                    milestone="false" name="GotID_No_WBS"
+                    nextSiblingOf="Phase2" outlineLevel="1"
+                    percComp="0" start="2004-09-05T00:00:00" status="0"
+                    summary="false" taskID="GotID_No_WBS">
+                    <Assignments/>
+                    <CustomInformation/>
+                </Task>
+            </Tasks>
+            <Dependencies>
+                <Dependency lag="1" lag-type="days"
+                    predProjectID="WBS_DEPS_XOG" predTaskID="XOG_T1"
+                    succProjectID="WBS_IPD_TASK_XOG" succTaskID="T_IPD" type="finish-start"/>
+                <Dependency lag="20" lag-type="percent"
+                    predProjectID="WBS_DEPS_XOG" predTaskID="T2"
+                    succProjectID="WBS_DEPS_XOG" succTaskID="GotID_No_WBS" type="finish-finish"/>
+                <Dependency lag="2" lag-type="days"
+                    predProjectID="WBS_DEPS_XOG" predTaskID="T1"
+                    succProjectID="WBS_DEPS_XOG" succTaskID="T1a" type="start-finish"/>
+                <Dependency lag="3" lag-type="days"
+                    predProjectID="WBS_DEPS_XOG" predTaskID="T1a"
+                    succProjectID="WBS_DEPS_XOG" succTaskID="T1b" type="start-start"/>
+                <Dependency lag="0" lag-type="days"
+                    predProjectID="WBS_DEPS_XOG" predTaskID="TA1"
+                    succProjectID="WBS_DEPS_XOG" succTaskID="TA1a" type="finish-start"/>
+            </Dependencies>
+            <CustomInformation/>
+            <General addedBy="sbutler" addedDate="2004-09-02"/>
+            <OBSAssocs/>
+        </Project>
+    </Projects>
+</NikuDataBus>
+

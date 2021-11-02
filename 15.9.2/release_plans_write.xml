@@ -1,0 +1,70 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_releaseplan.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="releaseplan" version="12.0.0.4424"/>
+    <releaseplans>
+        <releaseplan created_by="admin"
+            created_date="2008-05-27T15:27:42" last_updated_by="admin" currency_code="USD"
+            last_updated_date="2008-06-16T13:36:23" name="Newsworthy" object_id="nw">
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+            <investments>
+                <investment created_by="admin"
+                    created_date="2008-05-27T15:28:18"
+                    last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:28:18" object_id="clarity"/>
+            </investments>
+            <releases>
+                <release created_by="admin"
+                    created_date="2008-05-27T15:30:29"
+                    isPlanOfRecord="0" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:30:29" object_id="r_81"/>
+                <release created_by="admin"
+                    created_date="2008-05-27T15:30:29"
+                    isPlanOfRecord="0" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:30:29" object_id="r_12"/>
+                <release created_by="admin"
+                    created_date="2008-05-27T15:30:29"
+                    isPlanOfRecord="0" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:30:29" object_id="r_13"/>
+            </releases>
+            <requirements>
+                <requirement created_by="admin"
+                    created_date="2008-05-27T15:29:21"
+                    isPlanOfRecord="1" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:29:21" object_id="EVMS_r1"/>
+                <requirement created_by="admin"
+                    created_date="2008-05-27T15:29:21"
+                    isPlanOfRecord="1" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:29:21" object_id="CA_r1"/>
+                <requirement created_by="admin"
+                    created_date="2008-05-27T15:29:21"
+                    isPlanOfRecord="1" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:29:21" object_id="CE_r1"/>
+                <requirement created_by="admin"
+                    created_date="2008-05-27T15:29:21"
+                    isPlanOfRecord="1" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:29:21" object_id="CW_r1"/>
+                <requirement created_by="admin"
+                    created_date="2008-05-27T15:29:21"
+                    isPlanOfRecord="1" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:29:21" object_id="CP_r1"/>
+                <requirement created_by="admin"
+                    created_date="2008-05-27T15:29:21"
+                    isPlanOfRecord="1" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:29:21" object_id="RAM_r1"/>
+                <requirement created_by="admin"
+                    created_date="2008-05-27T15:30:29"
+                    isPlanOfRecord="1" last_updated_by="admin"
+                    last_updated_date="2008-05-27T15:30:29" object_id="SIB_r1"/>
+            </requirements>
+        </releaseplan>
+    </releaseplans>
+    <XOGOutput>
+        <Object type="releaseplan"/>
+        <Status state="SUCCESS"/>
+        <Statistics failureRecords="0" insertedRecords="0"
+            totalNumberOfRecords="1" updatedRecords="0"/>
+        <Records/>
+    </XOGOutput>
+</NikuDataBus>

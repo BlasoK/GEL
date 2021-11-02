@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="../xsd/nikuxog_notification.xsd">
+    <Header version="13.0" action="read" objectType="vendor" externalSource="NIKU"/>
+       <Query>
+          <Filter name="code" criteria="EQUALS">vendor1</Filter>
+          <!-- 
+          <Filter name="name" criteria="EQUALS">vendor1</Filter>
+          <Filter name="status" criteria="EQUALS">vendor1</Filter>
+           -->
+       </Query>
+</NikuDataBus>

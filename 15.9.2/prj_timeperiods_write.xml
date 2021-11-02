@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_timeperiod.xsd">
+	<Header version="6.0.11" action="write" objectType="timeperiod" externalSource="NIKU"/>
+	<TimePeriods>
+		<TimePeriod finish="2002-06-09T00:00:00" start="2002-06-02T00:00:00">
+			<TimeSheets>
+				<TimeSheet ID="5000081" resourceID="DGORMAN" version="5" action="replace" status="0">
+					<TimeSheetEntries>
+						<TimeSheetEntry projectID="TIMESHTGAMES" assignmentEstimate="360" assignmentPendingEstimate="0" assignmentID="5000015" assignmentStart="2002-05-13T08:00:00" chargeCodeID="DEV" assignmentFinish="2002-07-12T17:00:00" taskID="~rmw">
+							<DailyActuals>
+								<Actual actualDate="2002-06-02" amount="1"/>
+								<Actual actualDate="2002-06-03" amount="2"/>
+								<Actual actualDate="2002-06-04" amount="3"/>
+								<Actual actualDate="2002-06-05" amount="4"/>
+								<Actual actualDate="2002-06-06" amount="5"/>
+								<Actual actualDate="2002-06-07" amount="6"/>
+								<Actual actualDate="2002-06-08" amount="7"/>
+							</DailyActuals>
+						</TimeSheetEntry>
+						<TimeSheetEntry assignmentFinish="2002-07-12T17:00:00" taskID="~rmw" assignmentStart="2002-05-13T08:00:00" chargeCodeID="DEV" assignmentPendingEstimate="0" assignmentID="5000015" projectID="TIMESHTGAMES" assignmentEstimate="360">
+							<DailyActuals>
+								<Actual actualDate="2002-06-02" amount="0"/>
+								<Actual actualDate="2002-06-03" amount="2"/>
+								<Actual actualDate="2002-06-04" amount="4"/>
+								<Actual actualDate="2002-06-05" amount="6"/>
+								<Actual actualDate="2002-06-06" amount="4"/>
+								<Actual actualDate="2002-06-07" amount="2"/>
+								<Actual actualDate="2002-06-08" amount="0"/>
+							</DailyActuals>
+						</TimeSheetEntry>
+						<TimeSheetEntry assignmentEstimate="2096" assignmentID="5000033" assignmentPendingEstimate="0" projectID="TIDA" assignmentStart="2002-05-16T08:00:00" taskID="~rmw" assignmentFinish="2003-05-16T17:00:00">
+							<DailyActuals>
+								<Actual actualDate="2002-06-02" amount="7"/>
+								<Actual actualDate="2002-06-03" amount="6"/>
+								<Actual actualDate="2002-06-04" amount="5"/>
+								<Actual actualDate="2002-06-05" amount="4"/>
+								<Actual actualDate="2002-06-06" amount="3"/>
+								<Actual actualDate="2002-06-07" amount="2"/>
+								<Actual actualDate="2002-06-08" amount="1"/>
+							</DailyActuals>
+						</TimeSheetEntry>
+					</TimeSheetEntries>
+					<Notes>
+						<NoteData noteText="This is a note!" createdBy="DGORMAN" createdTime="2002-06-04T16:52:18" category="NoteCat"/>
+					</Notes>
+				</TimeSheet>
+			</TimeSheets>
+		</TimePeriod>
+	<TimePeriod finish="2005-03-08T00:00:00" start="2005-03-01T00:00:00">
+			<TimeSheets>
+				<TimeSheet ID="5000041" resourceID="ANU" version="3" action="add" status="0">
+					<TimeSheetEntries>
+						<TimeSheetEntry incidentCode="Software is buggy" incidentInvestmentCode="New Product">
+							<DailyActuals>
+								<Actual actualDate="2005-03-01" amount="6"/>
+								<Actual actualDate="2005-03-02" amount="6"/>
+								<Actual actualDate="2005-03-03" amount="6"/>
+								<Actual actualDate="2005-03-04" amount="6"/>
+								<Actual actualDate="2005-03-05" amount="6"/>
+								<Actual actualDate="2005-03-06" amount="6"/>
+								<Actual actualDate="2005-03-07" amount="6"/>
+							</DailyActuals>
+						</TimeSheetEntry>
+						<TimeSheetEntry incidentCode="Network is down" incidentInvestmentCode="New Asset">
+							<DailyActuals>
+								<Actual actualDate="2005-03-01" amount="5"/>
+								<Actual actualDate="2005-03-02" amount="5"/>
+								<Actual actualDate="2005-03-03" amount="5"/>
+								<Actual actualDate="2005-03-04" amount="5"/>
+								<Actual actualDate="2005-03-05" amount="5"/>
+								<Actual actualDate="2005-03-06" amount="5"/>
+								<Actual actualDate="2005-03-07" amount="5"/>
+							</DailyActuals>
+						</TimeSheetEntry>						
+					</TimeSheetEntries>
+					<Notes>
+						<NoteData noteText="Note created by Anu!" createdBy="anu" createdTime="2005-03-17T16:52:18" category="NoteCat"/>
+					</Notes>
+				</TimeSheet>
+			</TimeSheets>
+		</TimePeriod>				
+	</TimePeriods>
+</NikuDataBus>

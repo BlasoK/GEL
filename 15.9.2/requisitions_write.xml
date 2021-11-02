@@ -1,0 +1,41 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_requisition.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="requisition" version="8.0.0.3893"/>
+    <requisitions>
+        <requisition bookingManagerId="setNull" code="req5"
+            dueDate="2006-02-13T00:00:00" name="architect"
+            priorityCode="Medium" projectId="testprojreq5"
+            requestedBy="testinstall" requirementId="architect"
+            resourceId="architect" statusCode="Open">
+            <description/>
+            <requisitionResource isPreferred="false" isSelected="true" resourceId="pabrams">
+                <requestCurve default="0.0" finish="2005-12-31T17:00:00"
+                    start="2005-11-28T08:00:00" type="percentage">
+                    <segment finish="2005-12-31T17:00:00"
+                        isDefaultSegment="false" rate="1.0" start="2005-11-28T08:00:00"/>
+                </requestCurve>
+                <CustomInformation>
+                    <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+                </CustomInformation>
+            </requisitionResource>
+            <requisitionResource isPreferred="false" isSelected="false" resourceId="daguirre">
+                <requestCurve default="0.0" finish="2005-12-31T17:00:00"
+                    start="2005-11-28T08:00:00" type="percentage">
+                    <segment finish="2005-12-31T17:00:00"
+                        isDefaultSegment="false" rate="1.0" start="2005-11-28T08:00:00"/>
+                </requestCurve>
+                <CustomInformation>
+                    <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+                </CustomInformation>
+            </requisitionResource>
+            <requestCurve default="0.0" finish="2005-12-31T00:00:00"
+                start="2005-11-28T00:00:00" type="percentage">
+                <segment finish="2005-12-31T00:00:00"
+                    isDefaultSegment="false" rate="1.0" start="2005-11-28T00:00:00"/>
+            </requestCurve>
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+        </requisition>
+    </requisitions>
+</NikuDataBus>

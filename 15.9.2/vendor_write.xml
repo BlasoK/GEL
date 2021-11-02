@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="../xsd/nikuxog_wipclass.xsd">
+    <Header action="write" externalSource="NIKU" objectType="vendor" version="13.0"/>
+    <vendors>
+	 <vendor>
+	      <code>vendor3</code>
+	      <name>The test vendor 3</name>
+	      <affiliation>none</affiliation>
+	      <status>Active</status>
+	      <address1>2000 Seaport Blvd Redwood City CA 94086</address1>
+	      <attentionName>Jon Doe</attentionName>
+	      <attentionPhone>650-298-5902</attentionPhone>
+	      <contactName>Jon Doe</contactName>
+	      <contactPhone>650-298-5902</contactPhone>
+	 </vendor>
+	 <vendor>
+	      <code>vendor4</code>
+	      <name>The test vendor 4</name>
+	      <affiliation>none</affiliation>
+	      <status>Active</status>
+	      <address1>2000</address1>
+	      <address2>Seaport</address2>
+	      <address3>dr</address3>
+	      <address4>Redwood City</address4>
+	      <address5>CA</address5>
+	      <address6>94089</address6>
+	      <attentionName>John Smith</attentionName>
+	      <attentionPhone>650-298-5902</attentionPhone>
+	      <contactName>John Smith</contactName>
+	      <contactPhone>650-298-5902</contactPhone>
+	 </vendor>
+	 <vendor>
+	      <code>vendor5</code>
+	      <name>The test vendor 5</name>
+	      <status>Active</status>
+	      <attentionName>Jane Smith</attentionName>
+	      <attentionPhone>650-298-5902</attentionPhone>
+	      <contactName>Jane Smith</contactName>
+	      <contactPhone>650-298-5902</contactPhone>
+	 </vendor>
+    </vendors>
+</NikuDataBus>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="../xsd/nikuxog_notification.xsd">
+  <Header version="12.0" action="read" objectType="wipclass" externalSource="NIKU"/>
+  <Query>
+		<Filter name="wipclass" criteria="EQUALS">wipcls1</Filter>
+  </Query>
+</NikuDataBus>

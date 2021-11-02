@@ -1,0 +1,18 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_processnotification.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="processnotification" version="12.0.0.4327"/>
+    <processnotifications>
+        <processnotification functionalAreaCode="NOTIFICATION_WORKFLOW" isCustomized="1"
+            notificationCode="bpm.esc.noMoreUsers" process_code="AssignRisk">
+            <notificationNameDesc>
+                <nls description="The process escalation has stopped"
+                    languageCode="en" name="Process - Stop escalation"/>
+            </notificationNameDesc>
+            <notificationSubjectBody>
+                <nls
+                    description="Escalation stopped for the following process as there are no more users to escalate:\n\Process: {0}\n\\"
+                    languageCode="en" name="Escalation stopped"/>
+            </notificationSubjectBody>
+        </processnotification>
+    </processnotifications>
+</NikuDataBus>

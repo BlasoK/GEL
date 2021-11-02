@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_transactionclass.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="transactionclass" version="12.0.0.4339"/>
+    <transactionclasses>
+        <transactionclass description="Billable Fees"
+            shortdesc="Fees" transclass="BILLFEES" transtype="L"/>
+        <transactionclass description="Fees"
+            shortdesc="Fees" transclass="FEES" transtype="L"/>
+        <transactionclass description="Time" 
+            shortdesc="Time" transclass="TIME" transtype="L"/>
+        <transactionclass description="Chargeback" 
+            shortdesc="Chargeback" transclass="CHARGE" transtype="L"/>
+        <transactionclass description="FC TC Desc" 
+            shortdesc="FC Short Desc" transclass="FC TC" transtype="L"/>
+        <transactionclass description="tclass 1 desc" 
+            shortdesc="short 1 desc" transclass="class1" transtype="L"/>
+    </transactionclasses>
+</NikuDataBus>

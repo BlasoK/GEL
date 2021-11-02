@@ -1,0 +1,475 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+    <Header action="write" externalSource="NIKU" objectType="project" version="7.5.0"/>
+    <Projects>
+			<Project active="true" approved="true"
+					baseFinish="2004-12-17T17:00:00"
+					baseStart="2004-08-02T08:00:00"
+					calculateFinancialMetrics="true" closed="false"
+					currencyISOcode="USD" finish="2004-12-17T17:00:00"
+					setBudgetValuesEqualToPlannedValues="true" lastUpdatedBy="sbutler"
+					lastUpdatedDate="2004-10-04T13:22:47"
+					managerResourceID="sbutler" name="PRJ_COVRG_BASELINE"
+					openForTimeEntry="true" priority="10" program="false"
+					progress="0" projectID="PRJ_COVRG_BASELINE"
+					start="2004-08-02T08:00:00" trackMode="2">
+					<ProjectBaselines>
+							<ProjectBaseline currentRevision="false"
+									description="First baseline - no assignments, just allocations"
+									name="FIRST" revisionID="FIRST">
+									<BaselineDetails costSum="0" duration="100"
+											finish="2004-12-17T17:00:00"
+											start="2004-08-02T08:00:00" usageSum="0">
+											<UsageCurve/>
+											<CostCurve/>
+									</BaselineDetails>
+							</ProjectBaseline>
+							<ProjectBaseline currentRevision="false"
+									description="Assigned to T1" name="SECOND" revisionID="SECOND">
+									<BaselineDetails costSum="24800" duration="100"
+											finish="2004-12-17T17:00:00"
+											start="2004-08-02T08:00:00" usageSum="400">
+											<UsageCurve>
+													<Segment finish="2004-09-03T17:00:00"
+															start="2004-08-02T08:00:00" sum="400.0"/>
+											</UsageCurve>
+											<CostCurve>
+													<Segment finish="2004-08-16T00:00:00"
+															start="2004-08-02T08:00:00" sum="8000.0"/>
+													<Segment finish="2004-09-03T17:00:00"
+															start="2004-08-16T00:00:00" sum="16800.0"/>
+											</CostCurve>
+									</BaselineDetails>
+							</ProjectBaseline>
+							<ProjectBaseline currentRevision="true"
+									description="Assigned to T2" name="THIRD" revisionID="THIRD">
+									<BaselineDetails costSum="26912" duration="100"
+											finish="2004-12-17T17:00:00"
+											start="2004-08-02T08:00:00" usageSum="1104">
+											<UsageCurve>
+													<Segment finish="2004-09-03T17:00:00"
+															start="2004-08-02T08:00:00" sum="400.0"/>
+													<Segment finish="2004-12-17T17:00:00"
+															start="2004-10-19T08:00:00" sum="704.0"/>
+											</UsageCurve>
+											<CostCurve>
+													<Segment finish="2004-08-16T00:00:00"
+															start="2004-08-02T08:00:00" sum="8000.0"/>
+													<Segment finish="2004-09-03T17:00:00"
+															start="2004-08-16T00:00:00" sum="16800.0"/>
+													<Segment finish="2004-12-17T17:00:00"
+															start="2004-10-19T08:00:00" sum="2112.0"/>
+											</CostCurve>
+									</BaselineDetails>
+							</ProjectBaseline>
+					</ProjectBaselines>
+					<Resources>
+							<Resource availFrom="2004-08-02T08:00:00"
+									availTo="2004-12-17T17:00:00"
+									isProjectManager="false" lastUpdatedBy="sbutler"
+									lastUpdatedDate="2004-10-04T13:21:30"
+									openForTimeEntry="true"
+									projectRoleID="PRJ_COVRG_RES_ROLE" resourceID="PRJ_CVRG_BASELN_RES1">
+									<Baselines>
+											<Baseline revisionID="FIRST">
+													<BaselineDetails usageSum="0">
+															<UsageCurve/>
+															<CostCurve/>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="SECOND">
+													<BaselineDetails costSum="12400"
+															duration="25"
+															finish="2004-09-03T17:00:00"
+															start="2004-08-02T08:00:00" usageSum="200">
+															<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+															</UsageCurve>
+															<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+															</CostCurve>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="THIRD">
+													<BaselineDetails costSum="13456"
+															duration="100"
+															finish="2004-12-17T17:00:00"
+															start="2004-08-02T08:00:00" usageSum="552">
+															<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="352.0"/>
+															</UsageCurve>
+															<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="1056.0"/>
+															</CostCurve>
+													</BaselineDetails>
+											</Baseline>
+									</Baselines>
+									<CustomInformation/>
+							</Resource>
+							<Resource availFrom="2004-08-02T08:00:00"
+									availTo="2004-12-17T17:00:00"
+									isProjectManager="false" lastUpdatedBy="sbutler"
+									lastUpdatedDate="2004-10-04T13:21:30"
+									openForTimeEntry="true" resourceID="PRJ_CVRG_BASELN_RES2">
+									<Baselines>
+											<Baseline revisionID="FIRST">
+													<BaselineDetails usageSum="0">
+															<UsageCurve/>
+															<CostCurve/>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="SECOND">
+													<BaselineDetails costSum="12400"
+															duration="25"
+															finish="2004-09-03T17:00:00"
+															start="2004-08-02T08:00:00" usageSum="200">
+															<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+															</UsageCurve>
+															<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+															</CostCurve>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="THIRD">
+													<BaselineDetails costSum="13456"
+															duration="100"
+															finish="2004-12-17T17:00:00"
+															start="2004-08-02T08:00:00" usageSum="552">
+															<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="352.0"/>
+															</UsageCurve>
+															<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="1056.0"/>
+															</CostCurve>
+													</BaselineDetails>
+											</Baseline>
+									</Baselines>
+									<CustomInformation/>
+							</Resource>
+					</Resources>
+					<Tasks>
+							<Task baseFinish="2004-09-03T17:00:00"
+									baseStart="2004-08-02T08:00:00"
+									finish="2004-09-03T17:00:00"
+									internalTaskID="5017657" key="true"
+									lastUpdatedBy="sbutler"
+									lastUpdatedDate="2004-10-04T13:22:47"
+									milestone="false" name="T1" orderID="1"
+									outlineLevel="1" percComp="0"
+									start="2004-08-02T08:00:00" status="1"
+									summary="false" taskID="T1">
+									<Baselines>
+											<Baseline revisionID="FIRST">
+													<BaselineDetails costSum="0" duration="25"
+															finish="2004-09-03T17:00:00"
+															start="2004-08-02T08:00:00" usageSum="0">
+															<UsageCurve/>
+															<CostCurve/>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="SECOND">
+													<BaselineDetails costSum="24800"
+															duration="25"
+															finish="2004-09-03T17:00:00"
+															start="2004-08-02T08:00:00" usageSum="400">
+															<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="400.0"/>
+															</UsageCurve>
+															<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="8000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="16800.0"/>
+															</CostCurve>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="THIRD">
+													<BaselineDetails costSum="24800"
+															duration="25"
+															finish="2004-09-03T17:00:00"
+															start="2004-08-02T08:00:00" usageSum="400">
+															<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="400.0"/>
+															</UsageCurve>
+															<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="8000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="16800.0"/>
+															</CostCurve>
+													</BaselineDetails>
+											</Baseline>
+									</Baselines>
+									<Assignments>
+											<TaskLabor actualWork="0" baselineWork="200"
+													estPattern="3" finish="2004-09-03T17:00:00"
+													lastUpdatedBy="sbutler"
+													lastUpdatedDate="2004-10-04T13:22:47"
+													remainingWork="200"
+													resourceID="PRJ_CVRG_BASELN_RES2"
+													start="2004-08-02T08:00:00" unpostedActuals="0">
+													<Baselines>
+															<Baseline revisionID="FIRST"/>
+															<Baseline revisionID="SECOND">
+																	<BaselineDetails costSum="12400"
+																	duration="25"
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" usageSum="200">
+																	<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+																	</UsageCurve>
+																	<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+																	</CostCurve>
+																	</BaselineDetails>
+															</Baseline>
+															<Baseline revisionID="THIRD">
+																	<BaselineDetails costSum="12400"
+																	duration="25"
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" usageSum="200">
+																	<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+																	</UsageCurve>
+																	<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+																	</CostCurve>
+																	</BaselineDetails>
+															</Baseline>
+													</Baselines>
+													<CustomInformation/>
+											</TaskLabor>
+											<TaskLabor actualWork="0" baselineWork="200"
+													estPattern="3" finish="2004-09-03T17:00:00"
+													lastUpdatedBy="sbutler"
+													lastUpdatedDate="2004-10-04T13:22:47"
+													remainingWork="200"
+													resourceID="PRJ_CVRG_BASELN_RES1"
+													start="2004-08-02T08:00:00" unpostedActuals="0">
+													<Baselines>
+															<Baseline revisionID="FIRST"/>
+															<Baseline revisionID="SECOND">
+																	<BaselineDetails costSum="12400"
+																	duration="25"
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" usageSum="200">
+																	<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+																	</UsageCurve>
+																	<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+																	</CostCurve>
+																	</BaselineDetails>
+															</Baseline>
+															<Baseline revisionID="THIRD">
+																	<BaselineDetails costSum="12400"
+																	duration="25"
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" usageSum="200">
+																	<UsageCurve>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-02T08:00:00" sum="200.0"/>
+																	</UsageCurve>
+																	<CostCurve>
+																	<Segment
+																	finish="2004-08-16T00:00:00"
+																	start="2004-08-02T08:00:00" sum="4000.0"/>
+																	<Segment
+																	finish="2004-09-03T17:00:00"
+																	start="2004-08-16T00:00:00" sum="8400.0"/>
+																	</CostCurve>
+																	</BaselineDetails>
+															</Baseline>
+													</Baselines>
+													<CustomInformation/>
+											</TaskLabor>
+									</Assignments>
+									<CustomInformation/>
+							</Task>
+							<Task baseFinish="2004-12-17T17:00:00"
+									baseStart="2004-10-19T08:00:00"
+									finish="2004-12-17T17:00:00"
+									internalTaskID="5017658" key="true"
+									lastUpdatedBy="sbutler"
+									lastUpdatedDate="2004-10-04T13:22:47"
+									milestone="false" name="T2" nextSiblingOf="T1"
+									orderID="2" outlineLevel="1" percComp="0"
+									start="2004-10-19T08:00:00" status="0"
+									summary="false" taskID="T2">
+									<Baselines>
+											<Baseline revisionID="FIRST">
+													<BaselineDetails costSum="0" duration="44"
+															finish="2004-12-17T17:00:00"
+															start="2004-10-19T08:00:00" usageSum="0">
+															<UsageCurve/>
+															<CostCurve/>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="SECOND">
+													<BaselineDetails costSum="0" duration="44"
+															finish="2004-12-17T17:00:00"
+															start="2004-10-19T08:00:00" usageSum="0">
+															<UsageCurve/>
+															<CostCurve/>
+													</BaselineDetails>
+											</Baseline>
+											<Baseline revisionID="THIRD">
+													<BaselineDetails costSum="2112"
+															duration="44"
+															finish="2004-12-17T17:00:00"
+															start="2004-10-19T08:00:00" usageSum="704">
+															<UsageCurve>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="704.0"/>
+															</UsageCurve>
+															<CostCurve>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="2112.0"/>
+															</CostCurve>
+													</BaselineDetails>
+											</Baseline>
+									</Baselines>
+									<Assignments>
+											<TaskLabor actualWork="0" baselineWork="352"
+													estPattern="3" finish="2004-12-17T17:00:00"
+													lastUpdatedBy="sbutler"
+													lastUpdatedDate="2004-10-04T13:22:47"
+													remainingWork="352"
+													resourceID="PRJ_CVRG_BASELN_RES1"
+													start="2004-10-19T08:00:00" unpostedActuals="0">
+													<Baselines>
+															<Baseline revisionID="FIRST"/>
+															<Baseline revisionID="SECOND"/>
+															<Baseline revisionID="THIRD">
+																	<BaselineDetails costSum="1056"
+																	duration="44"
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" usageSum="352">
+																	<UsageCurve>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="352.0"/>
+																	</UsageCurve>
+																	<CostCurve>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="1056.0"/>
+																	</CostCurve>
+																	</BaselineDetails>
+															</Baseline>
+													</Baselines>
+													<CustomInformation/>
+											</TaskLabor>
+											<TaskLabor actualWork="0" baselineWork="352"
+													estPattern="3" finish="2004-12-17T17:00:00"
+													lastUpdatedBy="sbutler"
+													lastUpdatedDate="2004-10-04T13:22:47"
+													remainingWork="352"
+													resourceID="PRJ_CVRG_BASELN_RES2"
+													start="2004-10-19T08:00:00" unpostedActuals="0">
+													<Baselines>
+															<Baseline revisionID="FIRST"/>
+															<Baseline revisionID="SECOND"/>
+															<Baseline revisionID="THIRD">
+																	<BaselineDetails costSum="1056"
+																	duration="44"
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" usageSum="352">
+																	<UsageCurve>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="352.0"/>
+																	</UsageCurve>
+																	<CostCurve>
+																	<Segment
+																	finish="2004-12-17T17:00:00"
+																	start="2004-10-19T08:00:00" sum="1056.0"/>
+																	</CostCurve>
+																	</BaselineDetails>
+															</Baseline>
+													</Baselines>
+													<CustomInformation/>
+											</TaskLabor>
+									</Assignments>
+									<CustomInformation/>
+							</Task>
+					</Tasks>
+        <CustomInformation/>
+					<General addedBy="sbutler" addedDate="2004-09-19"/>
+					<OBSAssocs/>
+			</Project>
+    </Projects>
+</NikuDataBus>
+

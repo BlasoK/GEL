@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+	<Header version="6.0.13" action="read" objectType="resource" externalSource="NIKU">
+		<args name="include_contact" value="true"/>
+		<args name="include_management" value="true"/>
+		<args name="include_custom" value="true"/>
+		<args name="include_financial" value="true"/>
+	</Header> 
+	<Query>
+<!--		<Filter name="primaryRoleID" criteria="EQUALS">ARCHITECT</Filter> 
+		<Filter name="isActive" criteria="EQUALS">true</Filter>
+        <Filter name="resourceType" criteria="OR">EXPENSE, MATERIAL</Filter> -->
+        <Filter name="resourceID" criteria="OR">admin%, %admin</Filter>       
+	</Query>
+</NikuDataBus>

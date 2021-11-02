@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+	<Header version="6.0.11" action="read" objectType="project" externalSource="NIKU">
+		<!-- you change the order by simply swap 1 and 2 number in the name attribute -->
+		<args name="order_by_1" value="name"/>
+		<args name="order_by_2" value="projectID"/>
+		<args name="include_tasks" value="true"/>
+		<args name="include_resources" value="true"/>
+    <args name="include_custom" value="true"/>
+    <args name="include_dependencies" value="true"/>
+	</Header>
+	<Query>
+<!--
+		<FilterByCustomInfo name="project_billability" criteria="EQUALS">proj bill</FilterByCustomInfo>
+		<FilterByCustomInfo name="first_bill_date" criteria="BETWEEN">1999-01-07,2002-07-01</FilterByCustomInfo>
+		<FilterByCustomInfo name="project_risk" criteria="EQUALS">Medium</FilterByCustomInfo>
+		<FilterByCustomInfo name="profitable_project" criteria="EQUALS">true</FilterByCustomInfo>
+		<FilterByCustomInfo name="owner" criteria="EQUALS">last</FilterByCustomInfo>
+   -->
+		
+      <Filter name="projectID" criteria="EQUALS">WBS_DEPS_XOG</Filter>
+<!--
+		<Filter name="active" criteria="EQUALS">true</Filter>
+		<Filter name="approved" criteria="EQUALS">true</Filter>
+		<Filter name="closed" criteria="EQUALS">false</Filter>
+		<Filter name="approvedForBilling" criteria="EQUALS">false</Filter>
+		<Filter name="start" criteria="BETWEEN">1999-01-07,2001-01-15</Filter>
+		<Filter name="finish" criteria="EQUALS">Customer</Filter>
+		<Filter name="lastUpdatedDate" criteria="EQUALS">2002-01-26T11:42:03</Filter>
+		<Filter name="resourceID" criteria="EQUALS">jsmith</Filter>
+		<Filter name="trackMode" criteria="EQUALS">2</Filter>
+   -->
+	</Query>
+</NikuDataBus>

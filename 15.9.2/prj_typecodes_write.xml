@@ -1,0 +1,6 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_typecode.xsd">
+  <Header action="write" externalSource="NIKU" objectType="typecode" version="7.5"/>
+  <TypeCodes>
+    <TypeCode id="5018301" isChargeable="true" name="CODING_XOG" openForTimeEntry="false" typeCodeID="CODING_XOG"/>
+  </TypeCodes>
+</NikuDataBus>

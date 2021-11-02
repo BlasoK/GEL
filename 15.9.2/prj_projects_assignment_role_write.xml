@@ -1,0 +1,112 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+    <Header action="write" externalSource="NIKU" objectType="project" version="7.1.0.3023"/>
+    <Projects>
+        <Project active="true" approved="false"
+            calculateFinancialMetrics="true" closed="false"
+            currencyISOcode="USD" finish="2004-12-16T17:00:00"
+            setBudgetValuesEqualToPlannedValues="true" lastUpdatedBy="sbutler"
+            lastUpdatedDate="2004-09-16T10:32:18"
+            managerResourceID="sbutler" name="PRJ_CVRG_ASSIGN_ROLE"
+            openForTimeEntry="true" program="false" progress="0"
+            projectID="PRJ_CVRG_ASSIGN_ROLE" start="2004-09-16T08:00:00" trackMode="2">
+            <Resources>
+                <Resource availFrom="2004-09-16T08:00:00"
+                    availTo="2004-12-16T17:00:00"
+                    isProjectManager="false" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-16T11:03:00"
+                    openForTimeEntry="false" resourceID="PRJ_COVRG_ASSIGN_RES1">
+                    <CustomInformation/>
+                </Resource>
+                <Resource availFrom="2004-09-16T08:00:00"
+                    availTo="2004-12-16T17:00:00"
+                    isProjectManager="false" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-16T11:03:40"
+                    openForTimeEntry="false"
+                    projectRoleID="PRJ_COVRG_PROJ_ROLE" resourceID="PRJ_COVRG_ASSIGN_RES2">
+                    <CustomInformation/>
+                </Resource>
+                <Resource availFrom="2004-09-16T08:00:00"
+                    availTo="2004-12-16T17:00:00"
+                    isProjectManager="false" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-16T11:05:05"
+                    openForTimeEntry="false"
+                    resourceID="PRJ_COVRG_ASSIGN_RES3">
+                    <CustomInformation/>
+                </Resource>
+                <Resource availFrom="2004-09-16T08:00:00"
+                    availTo="2004-12-16T17:00:00"
+                    isProjectManager="false" lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-16T11:30:31"
+                    openForTimeEntry="false" resourceID="PRJ_COVRG_ASSIGN_RES4">
+                    <CustomInformation/>
+                </Resource>
+              <Resource availFrom="2004-09-16T08:00:00"
+                  availTo="2004-12-16T17:00:00"
+                  isProjectManager="false" lastUpdatedBy="sbutler"
+                  lastUpdatedDate="2004-09-16T11:03:40"
+                  openForTimeEntry="false"
+                  projectRoleID="PRJ_COVRG_PROJ_ROLE" resourceID="PRJ_COVRG_ASSIGN_RES5">
+                  <CustomInformation/>
+              </Resource>
+            </Resources>
+            <Tasks>
+                <Task finish="2004-12-16T17:00:00"
+                    internalTaskID="5018150" key="false"
+                    lastUpdatedBy="sbutler"
+                    lastUpdatedDate="2004-09-16T11:03:00"
+                    milestone="false" name="Effort" orderID="1"
+                    outlineLevel="1" percComp="0"
+                    start="2004-09-16T08:00:00" status="0"
+                    summary="false" taskID="~rmw">
+                    <Assignments>
+                        <TaskLabor actualWork="0" baselineWork="0"
+                            estPattern="3" finish="2004-12-16T17:00:00"
+                            lastUpdatedBy="sbutler"
+                            lastUpdatedDate="2004-09-16T11:05:34"
+                            remainingWork="528"
+                            resourceID="PRJ_COVRG_ASSIGN_RES1"
+                            roleID="PRJ_COVRG_ASSIGN_ROLE"
+                            start="2004-09-16T08:00:00" unpostedActuals="0">
+                            <CustomInformation/>
+                        </TaskLabor>
+                        <TaskLabor actualWork="0" baselineWork="0"
+                            estPattern="3" finish="2004-12-16T17:00:00"
+                            lastUpdatedBy="sbutler"
+                            lastUpdatedDate="2004-09-16T11:03:40"
+                            remainingWork="528"
+                            resourceID="PRJ_COVRG_ASSIGN_RES2"
+                            roleID="PRJ_COVRG_PROJ_ROLE"
+                            start="2004-09-16T08:00:00" unpostedActuals="0">
+                            <CustomInformation/>
+                        </TaskLabor>
+                        <TaskLabor actualWork="0" baselineWork="0"
+                            estPattern="3" finish="2004-12-16T17:00:00"
+                            lastUpdatedBy="sbutler"
+                            lastUpdatedDate="2004-09-16T11:05:05"
+                            remainingWork="528"
+                            resourceID="PRJ_COVRG_ASSIGN_RES3"
+                            roleID="PRJ_COVRG_RES_ROLE"
+                            start="2004-09-16T08:00:00" unpostedActuals="0">
+                            <CustomInformation/>
+                        </TaskLabor>
+                        <TaskLabor actualWork="0" baselineWork="0"
+                            estPattern="3" finish="2004-12-16T17:00:00"
+                            lastUpdatedBy="sbutler"
+                            lastUpdatedDate="2004-09-16T11:30:31"
+                            remainingWork="528"
+                            resourceID="PRJ_COVRG_ASSIGN_RES4"
+                            start="2004-09-16T08:00:00" unpostedActuals="0">
+                            <CustomInformation/>
+                        </TaskLabor>
+                    </Assignments>
+                    <CustomInformation/>
+                </Task>
+            </Tasks>
+            <Dependencies/>
+            <CustomInformation/>
+            <General addedBy="sbutler" addedDate="2004-09-16"/>
+            <OBSAssocs/>
+        </Project>
+    </Projects>
+</NikuDataBus>
+

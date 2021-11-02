@@ -1,0 +1,21 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+    <Header action="write" externalSource="NIKU" objectType="project" version="7.1.0.3023"/>
+    <Projects>
+        <Project active="true" approved="false"
+            calculateFinancialMetrics="true" closed="false"
+            currencyISOcode="USD" finish="2004-12-16T17:00:00"
+            setBudgetValuesEqualToPlannedValues="true" lastUpdatedBy="sbutler"
+            lastUpdatedDate="2004-09-16T10:32:18"
+            managerResourceID="sbutler" name="PRJ_COVRG_LAYOUT_DEF"
+            openForTimeEntry="true"
+            program="false" progress="0"
+            projectID="PRJ_COVRG_LAYOUT_DEF" start="2004-09-16T08:00:00" trackMode="2">
+            <Resources/>
+            <Tasks/>
+            <Dependencies/>
+            <CustomInformation/>
+            <General addedBy="sbutler" addedDate="2004-09-16"/>
+            <OBSAssocs/>
+        </Project>
+    </Projects>
+</NikuDataBus>
