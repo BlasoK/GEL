@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_user.xsd">
+  <Header version="6010" action="write" objectType="user" externalSource="ORACLE-FINANCIAL"/>
+  <Users>
+    <User userLanguage="English" userStatus="Active" userName="xoguser90" userType="Internal" externalId="2323">
+      <PersonalInformation lastName="xoglastname90" firstName="xogfirstname90" emailAddress="xog1@niku.com" homeUrl="personal.settings"/>
+      <Resource resourceId="xoguser90"/>
+      <Company companyId="xogtestcompany"/>
+      <General addedBy="admin" addedDate="2001-09-05"/>
+      <OBSAssocs>
+        <OBSAssoc name="loc" id="loc" unitPath="/USA"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+      <Groups>
+        <Group id="StudioAccessRole"/>
+      </Groups>
+      <GlobalRights>
+        <Right id="AssetViewAll"/>
+        <Right id="COMPANY-WRITE"/>
+      </GlobalRights>
+      <InstanceRights>
+        <Right id="ResourceEditFull">
+          <InstanceObject id="admin" type="SRM_RESOURCES"/>
+        </Right>
+        <Right id="PortletViewInstanceRight">
+          <InstanceObject id="calendar.myActionItems" type="CMN_PORTLETS"/>
+        </Right>
+        <Right id="PageViewInstanceRight">
+          <InstanceObject id="niku.overviewFrame" type="CMN_PAGES"/>
+        </Right>
+      <!--  <Right id="ReportCreator">
+          <InstanceObject id="Company_Listing" type="CMN_SCH_JOB_DEFINITIONS"/>
+        </Right> -->
+        <Right id="JobCreator">
+          <InstanceObject id="Batch_Printing" type="CMN_SCH_JOB_DEFINITIONS"/>
+        </Right>
+        <Right id="PROCESS-DEF-INST-WRITE">
+          <InstanceObject id="APPLE_APPROVAL_PROCESS" type="BPM_DEF_PROCESSES"/>
+        </Right>
+      </InstanceRights>
+      <InstanceOBSRights>
+        <Right id="ApplicationEdit">
+          <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Development"/>
+        </Right>
+        <Right id="ApplicationEdit">
+          <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Marketing"/>
+        </Right>
+        <Right id="ApplicationEditAccess">
+          <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Development"/>
+        </Right>
+        <Right id="ApplicationEditAccess">
+          <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Marketing"/>
+        </Right>
+        <Right id="ApplicationApprove">
+          <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Development"/>
+        </Right>
+        <Right id="ApplicationApprove">
+          <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Marketing"/>
+        </Right>
+      </InstanceOBSRights>
+    </User>
+    <User userLanguage="English" userStatus="Active" userName="shethp" userType="Internal" externalId="2323">
+      <PersonalInformation lastName="parag" firstName="sheth" emailAddress="peees@niku.com"/>
+      <Resource resourceId="shethp"/>
+      <Company companyId="xogtestcompany"/>
+      <General addedBy="admin" addedDate="2001-09-05"/>
+      <OBSAssocs>
+        <OBSAssoc name="loc" id="loc" unitPath="/USA"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+    </User>
+    <User userLanguage="English" userStatus="InActive" userName="xoguser8" userType="Internal" externalId="2323">
+      <PersonalInformation lastName="xoglastname8" firstName="xogfirstname8" emailAddress="xog8@niku.com"/>
+      <Resource resourceId="xoguser8"/>
+      <Company companyId="xogtestcompany"/>
+      <General addedBy="admin" addedDate="2001-09-05"/>
+      <OBSAssocs>
+        <OBSAssoc name="loc" id="loc" unitPath="/USA"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+    </User>
+    <User userLanguage="English" userStatus="Active" userName="xoguser9" userType="Internal" externalId="2323" userLocale="fr_FR" userTimezone="America/Los_Angeles">
+      <PersonalInformation lastName="xoglastname9" firstName="xogfirstname9" emailAddress="xog9@niku.com"/>
+      <General addedBy="admin" addedDate="2001-09-05"/>
+      <OBSAssocs>
+        <OBSAssoc name="loc" id="loc" unitPath="/USA"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+    </User>
+    <User userLanguage="English" userStatus="Active" userName="xogdemo98" userType="Internal" externalId="2try773">
+      <PersonalInformation lastName="xogdemo88 lastname" firstName="xogdemo88" emailAddress="xogdemo88@niku.com"/>
+      <General addedBy="admin" addedDate="2001-09-11"/>
+      <OBSAssocs>
+        <OBSAssoc name="loc" id="loc" unitPath="/USA"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+    </User>
+    <User userLanguage="english" userStatus="Active" userName="xogdemo998" userType="INTERNAL" externalId="245234673">
+      <PersonalInformation lastName="xogdemo888 lastname" firstName="xogdemo888" emailAddress="xogdemo@niku.com"/>
+      <General addedBy="admin" addedDate="2001-09-11"/>
+      <OBSAssocs>
+        <OBSAssoc name="loc" id="loc" unitPath="/USA"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+    </User>
+    <User userLanguage="English" userStatus="InActive" userName="xoguser10" userType="Internal" externalId="2323">
+      <PersonalInformation lastName="xoglastname10" firstName="xogfirstname10" emailAddress="xog10@niku.com"/>
+      <Resource resourceId="xoguser10"/>
+      <Company companyId="xogtestcompany"/>
+      <General addedBy="admin" addedDate="2001-09-05"/>
+      <OBSAssocs>
+        <OBSAssoc name="loc" id="loc" unitPath="/USA"/>
+        <OBSAssoc name="dept" id="dept" unitPath="/Niku"/>
+      </OBSAssocs>
+    </User>
+  </Users>
+</NikuDataBus>
+<!--Locale defaulted to 'en_US' , Timezone defaulted to 'Europe/London' , Country defaulted to '1' i.e US . Password defaulted to 'niku2000' Forcing a password Change on first login.-->

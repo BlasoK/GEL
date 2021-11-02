@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+  <Header action="write" externalSource="NIKU" objectType="contentPack" version="8.0"/>
+  <contentPack update="true">
+    <objects>
+      <object code="shoe" update="true" partitionModelCode="GEOGRAPHY">
+        <nls description="A shoe" languageCode="de" name="Shoe"/>
+        <nls description="A shoe" languageCode="en" name="Shoe"/>
+        <nls description="A shoe" languageCode="es" name="Shoe"/>
+        <nls description="A shoe" languageCode="fr" name="Shoe"/>
+        <nls description="A shoe" languageCode="ja" name="Shoe"/>
+        <nls description="A shoe" languageCode="nl" name="Shoe"/>
+        <customAttribute active="true" code="shoe_size"
+          column="shoe_size" constant="false" currencyConnected="false"
+          custom="true" dataType="number" editable="true" maxValue="15"
+          minValue="4" multiValued="false" private="false"
+          required="false" scale="1" unique="false" virtual="false">
+          <nls description="Size" languageCode="de" name="Size"/>
+          <nls description="Size" languageCode="en" name="Size"/>
+          <nls description="Size" languageCode="es" name="Size"/>
+          <nls description="Size" languageCode="fr" name="Size"/>
+          <nls description="Size" languageCode="ja" name="Size"/>
+          <nls description="Size" languageCode="nl" name="Size"/>
+        </customAttribute>
+        <customAttribute active="true" code="type" column="type"
+          constant="false" currencyConnected="false" custom="true"
+          dataType="string" editable="true" extendedType="lookup"
+          multiValued="false" private="false" required="false"
+          unique="false" virtual="false" lookupType="SHOE_TYPES">
+          <nls description="Type" languageCode="de" name="Type"/>
+          <nls description="Type" languageCode="en" name="Type"/>
+          <nls description="Type" languageCode="es" name="Type"/>
+          <nls description="Type" languageCode="fr" name="Type"/>
+          <nls description="Type" languageCode="ja" name="Type"/>
+          <nls description="Type" languageCode="nl" name="Type"/>
+        </customAttribute>
+        <customAttribute active="true" code="invalidpartition" column="type"
+          constant="false" currencyConnected="false" custom="true"
+          dataType="string" editable="true" partitionCode="InValidPaRtItIoN">
+          <nls description="Invalid partition code" languageCode="en" name="Invalid partition code"/>
+        </customAttribute>
+        <customAttribute active="true" code="invalidpartition2" column="type"
+          constant="false" currencyConnected="false" custom="true"
+          dataType="string" editable="true" partitionCode="HH">
+          <nls description="Invalid partition code - wrong model" languageCode="en" name="Invalid partition code 2"/>
+        </customAttribute>
+      </object>
+      <!-- top level object with a sub object -->
+      <object code="manufacturer" update="true" partitionModelCode="GEOGRAPHY">
+        <nls description="A manufacturer of widgets" languageCode="de" name="Manufacturer"/>
+        <nls description="A manufacturer of widgets" languageCode="en" name="Manufacturer"/>
+        <nls description="A manufacturer of widgets" languageCode="es" name="Manufacturer"/>
+        <nls description="A manufacturer of widgets" languageCode="fr" name="Manufacturer"/>
+        <nls description="A manufacturer of widgets" languageCode="ja" name="Manufacturer"/>
+        <nls description="A manufacturer of widgets" languageCode="nl" name="Manufacturer"/>
+        <customAttribute active="true" code="url" column="url" constant="false"
+          currencyConnected="false" custom="true" dataType="string"
+          editable="true" multiValued="false" private="false"
+          required="false" scale="0" unique="false" virtual="false">
+          <nls description="Website URL" languageCode="de" name="Website URL"/>
+          <nls description="Website URL" languageCode="en" name="Website URL"/>
+          <nls description="Website URL" languageCode="es" name="Website URL"/>
+          <nls description="Website URL" languageCode="fr" name="Website URL"/>
+          <nls description="Website URL" languageCode="ja" name="Website URL"/>
+          <nls description="Website URL" languageCode="nl" name="Website URL"/>
+        </customAttribute>
+        <customAttribute active="true" code="na_cost" column="na_cost"
+          constant="false" currencyConnected="false" custom="true"
+          dataType="number" editable="true" maxValue="99999" minValue="1"
+          multiValued="false" partitionCode="NA"
+          partitionMode="PARTITION_ONLY"
+          private="false" required="true" scale="0"
+          unique="false" virtual="false">
+          <nls description="North America Cost per unit" languageCode="de" name="North America Cost"/>
+          <nls description="North America Cost per unit" languageCode="en" name="North America Cost"/>
+          <nls description="North America Cost per unit" languageCode="es" name="North America Cost"/>
+          <nls description="North America Cost per unit" languageCode="fr" name="North America Cost"/>
+          <nls description="North America Cost per unit" languageCode="ja" name="North America Cost"/>
+          <nls description="North America Cost per unit" languageCode="nl" name="North America Cost"/>
+        </customAttribute>
+        <!-- Sub object -->
+        <object code="widget" update="true" parentObjectCode="manufacturer">
+          <nls description="A widget" languageCode="de" name="Widget"/>
+          <nls description="A widget" languageCode="en" name="Widget"/>
+          <nls description="A widget" languageCode="es" name="Widget"/>
+          <nls description="A widget" languageCode="fr" name="Widget"/>
+          <nls description="A widget" languageCode="ja" name="Widget"/>
+          <nls description="A widget" languageCode="nl" name="Widget"/>
+          <customAttribute active="true" code="cost_per_unit" column="cost_per_unit"
+            constant="false" currencyConnected="false" custom="true"
+            dataType="number" editable="true" maxValue="99999" minValue="1"
+            multiValued="false" partitionCode="NIKU.ROOT"
+            partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+            private="false" required="false" scale="0"
+            unique="false" virtual="false">
+            <nls description="Cost per unit" languageCode="de" name="Cost"/>
+            <nls description="Cost per unit" languageCode="en" name="Cost"/>
+            <nls description="Cost per unit" languageCode="es" name="Cost"/>
+            <nls description="Cost per unit" languageCode="fr" name="Cost"/>
+            <nls description="Cost per unit" languageCode="ja" name="Cost"/>
+            <nls description="Cost per unit" languageCode="nl" name="Cost"/>
+          </customAttribute>
+          <customAttribute active="true" code="na_cost" column="na_cost"
+            constant="false" currencyConnected="false" custom="true"
+            dataType="number" editable="true" maxValue="99999" minValue="1"
+            multiValued="false" partitionCode="NA"
+            partitionMode="PARTITION_ONLY"
+            private="false" required="true" scale="0"
+            unique="false" virtual="false">
+            <nls description="North America Cost per unit" languageCode="de" name="North America Cost"/>
+            <nls description="North America Cost per unit" languageCode="en" name="North America Cost"/>
+            <nls description="North America Cost per unit" languageCode="es" name="North America Cost"/>
+            <nls description="North America Cost per unit" languageCode="fr" name="North America Cost"/>
+            <nls description="North America Cost per unit" languageCode="ja" name="North America Cost"/>
+            <nls description="North America Cost per unit" languageCode="nl" name="North America Cost"/>
+          </customAttribute>
+          <object code="commercial_product"
+            parentObjectCode="widget" raiseEvents="false" update="true">
+            <nls languageCode="de" name="Commercial Product"/>
+            <nls languageCode="en" name="Commercial Product"/>
+            <nls languageCode="es" name="Commercial Product"/>
+            <nls languageCode="fr" name="Commercial Product"/>
+            <nls languageCode="ja" name="Commercial Product"/>
+            <nls languageCode="nl" name="Commercial Product"/>
+            <customAttribute active="true" code="fab_date"
+              column="fab_date" constant="false"
+              currencyConnected="false" custom="true"
+              dataSize="20" dataType="date"
+              editable="true" multiValued="false"
+              partitionCode="NIKU.ROOT"
+              partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+              presenceRequired="true" private="false"
+              required="false" unique="false" virtual="false">
+              <nls languageCode="de" name="Fabrication Date"/>
+              <nls languageCode="en" name="Fabrication Date"/>
+              <nls languageCode="es" name="Fabrication Date"/>
+              <nls languageCode="fr" name="Fabrication Date"/>
+              <nls languageCode="ja" name="Fabrication Date"/>
+              <nls languageCode="nl" name="Fabrication Date"/>
+            </customAttribute>
+            <customAttribute active="true"
+              code="series_number" column="series_number"
+              constant="false" currencyConnected="false"
+              custom="true" dataSize="20"
+              dataType="string" editable="true"
+              multiValued="false"
+              partitionCode="NIKU.ROOT"
+              partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+              presenceRequired="false" private="false"
+              required="false" unique="false" virtual="false">
+              <nls languageCode="de" name="Series Number"/>
+              <nls languageCode="en" name="Series Number"/>
+              <nls languageCode="es" name="Series Number"/>
+              <nls languageCode="fr" name="Series Number"/>
+              <nls languageCode="ja" name="Series Number"/>
+              <nls languageCode="nl" name="Series Number"/>
+            </customAttribute>
+            <customAttribute active="true" code="na_cost" column="na_cost"
+              constant="false" currencyConnected="false" custom="true"
+              dataType="number" editable="true" maxValue="99999" minValue="1"
+              multiValued="false" partitionCode="NA"
+              partitionMode="PARTITION_ONLY"
+              private="false" required="true" scale="0"
+              unique="false" virtual="false">
+              <nls description="North America Cost per unit" languageCode="de" name="North America Cost"/>
+              <nls description="North America Cost per unit" languageCode="en" name="North America Cost"/>
+              <nls description="North America Cost per unit" languageCode="es" name="North America Cost"/>
+              <nls description="North America Cost per unit" languageCode="fr" name="North America Cost"/>
+              <nls description="North America Cost per unit" languageCode="ja" name="North America Cost"/>
+              <nls description="North America Cost per unit" languageCode="nl" name="North America Cost"/>
+            </customAttribute>
+          </object>
+        </object>
+      </object>
+    </objects>
+    <lookups update="true">
+      <staticLookup code="SHOE_TYPES" hiddenAttributeName="lookup_code" sortStyle="alphanumeric" source="niku.com" status="active" update="true">
+        <nls description="Shoe Types" languageCode="de" name="Shoe Types"/>
+        <nls description="Shoe Types" languageCode="en" name="Shoe Types"/>
+        <nls description="Shoe Types" languageCode="es" name="Shoe Types"/>
+        <nls description="Shoe Types" languageCode="fr" name="Shoe Types"/>
+        <nls description="Shoe Types" languageCode="ja" name="Shoe Types"/>
+        <nls description="Shoe Types" languageCode="nl" name="Shoe Types"/>
+        <lookupValue code="CUSHIONED" sortOrder="0" status="active">
+          <nls description="Cushioned" languageCode="de" name="Cushioned"/>
+          <nls description="Cushioned" languageCode="en" name="Cushioned"/>
+          <nls description="Cushioned" languageCode="es" name="Cushioned"/>
+          <nls description="Cushioned" languageCode="fr" name="Cushioned"/>
+          <nls description="Cushioned" languageCode="ja" name="Cushioned"/>
+          <nls description="Cushioned" languageCode="nl" name="Cushioned"/>
+        </lookupValue>
+        <lookupValue code="MOTIONCONTROL" sortOrder="0" status="active">
+          <nls description="Motion Control" languageCode="de" name="Motion Control"/>
+          <nls description="Motion Control" languageCode="en" name="Motion Control"/>
+          <nls description="Motion Control" languageCode="es" name="Motion Control"/>
+          <nls description="Motion Control" languageCode="fr" name="Motion Control"/>
+          <nls description="Motion Control" languageCode="ja" name="Motion Control"/>
+          <nls description="Motion Control" languageCode="nl" name="Motion Control"/>
+        </lookupValue>
+        <lookupValue code="STABILITY" sortOrder="0" status="active">
+          <nls description="Stability" languageCode="de" name="Stability"/>
+          <nls description="Stability" languageCode="en" name="Stability"/>
+          <nls description="Stability" languageCode="es" name="Stability"/>
+          <nls description="Stability" languageCode="fr" name="Stability"/>
+          <nls description="Stability" languageCode="ja" name="Stability"/>
+          <nls description="Stability" languageCode="nl" name="Stability"/>
+        </lookupValue>
+      </staticLookup>
+    </lookups>
+  </contentPack>
+</NikuDataBus>

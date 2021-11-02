@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+  <Header version="8.1" externalSource="xog" action="write" objectType="contentPack"/>
+  <contentPack update="true">
+    <jobDefinitions>
+      <jobDefinition active="1" executable="xog.rox" jobDefinitionCode="XOGReport" source="xog.com" jobType="REPORT"
+                    logEnabled="1" outputEnabled="0">
+        <nls description="Das XOG Reporten Description" languageCode="de" name="Das XOG Reporten"/>
+        <nls description="XOG Report" languageCode="en" name="XOG Report"/>
+        <nls description="El XOGo reporto descriptionio" languageCode="es" name="El XOG report0"/>
+        <nls description="le grand report XOGieme" languageCode="fr" name="Le report de XOG"/>
+        <nls description="JP - Report XOG" languageCode="ja" name="JP - report XOG"/>
+        <nls description="Dutch XOG Report Description" languageCode="nl" name="Dutch XOG Reporten"/>
+        <parameter code="browse_code" dataType="string"
+            defaultValue="5000001" readOnly="false"
+            lookupCardinality="1"
+            lookupCode="LOOKUP_SYSTEM_GROUPS"
+            required="false" widgetType="browse"
+            order="1">
+            <nls description="No description" languageCode="de" name="die browse label"/>
+            <nls description="No description" languageCode="en" name="browse label"/>
+            <nls description="No description" languageCode="es" name="el browse label"/>
+            <nls description="No description" languageCode="fr" name="le browse label"/>
+            <nls description="No description" languageCode="ja" name="ah browse label"/>
+            <nls description="No description" languageCode="nl" name="huip browse label"/>
+        </parameter>
+        <parameter code="text_code" dataType="string"
+            defaultValue="text default" readOnly="true"
+            required="true" widgetType="text"
+            order="2">
+            <nls description="No description" languageCode="de" name="die text label"/>
+            <nls description="No description" languageCode="en" name="text label"/>
+            <nls description="No description" languageCode="es" name="el text label"/>
+            <nls description="No description" languageCode="fr" name="le text label"/>
+            <nls description="No description" languageCode="ja" name="ah text label"/>
+            <nls description="No description" languageCode="nl" name="huip text label"/>
+        </parameter>
+        <parameter code="checkbox_code" dataType="boolean"
+            defaultValue="1" readOnly="true"
+            required="false" widgetType="checkbox"
+            order="3">
+            <nls description="No description" languageCode="de" name="die checkbox label"/>
+            <nls description="No description" languageCode="en" name="checkbox label"/>
+            <nls description="No description" languageCode="es" name="el checkbox label"/>
+            <nls description="No description" languageCode="fr" name="le checkbox label"/>
+            <nls description="No description" languageCode="ja" name="pokemon checkbox label"/>
+            <nls description="No description" languageCode="nl" name="huip checkbox label"/>
+        </parameter>
+        <parameter code="pulldown_code" dataType="string"
+            defaultValue="1801" readOnly="false"
+            lookupCardinality="1"
+            lookupCode="BOOKING_STATUS_LIST"
+            required="false" widgetType="select"
+            order="4">
+            <nls description="No description" languageCode="de" name="die pulldown label"/>
+            <nls description="pulldown label" languageCode="en" name="pulldown label"/>
+            <nls description="No description" languageCode="es" name="el pulldown label"/>
+            <nls description="No description" languageCode="fr" name="le pulldown label"/>
+            <nls description="No description" languageCode="ja" name="ah pulldown label"/>
+            <nls description="No description" languageCode="nl" name="huip pulldown label"/>
+        </parameter>
+        <parameter code="date_code" dataType="datetime"
+            defaultValue="1/1/01" readOnly="false"
+            required="false" widgetType="datepicker"
+            order="5">
+            <nls description="No description" languageCode="de" name="die date label"/>
+            <nls description="No description" languageCode="en" name="date label"/>
+            <nls description="No description" languageCode="es" name="el date label"/>
+            <nls description="No description" languageCode="fr" name="le date label"/>
+            <nls description="No description" languageCode="ja" name="ah date label"/>
+            <nls description="No description" languageCode="nl" name="huip date label"/>
+        </parameter>
+        <category code="PROJECTMANAGEMENT"/>
+        <category code="UTILITY"/>
+        <category code="NoSuchJobCategoryXOG"/>
+        <OBSAssocs complete="true">
+            <OBSAssoc id="loc" name="Location" unitPath="/USA/New York"/>
+            <OBSAssoc id="dept" name="Department" unitPath="/Niku/Marketing"/>
+        </OBSAssocs>
+        <Security>
+            <OBSSecurity name="Department"
+                rightCode="ReportJobEditDefinitionRight"
+                rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+            <OBSSecurity name="Department" rightCode="ReportCreator"
+                rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+            <OBSSecurity name="Location" rightCode="ReportCreator"
+                rightMode="OBS_UNIT_CHILD_AND_ANCESTORS"
+                typeCode="loc" unitPath="/USA/California/Petaluma"/>
+            <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="ReportCreator"/>
+            <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="ReportJobEditDefinitionRight"/>
+            <GroupSecurity groupCode="FINANCIAL_MANAGER" rightCode="ReportCreator"/>
+            <UserSecurity rightCode="ReportCreator" userName="aanderson"/>
+            <UserSecurity rightCode="ReportCreator" userName="pabrams"/>
+            <UserSecurity rightCode="ReportJobEditDefinitionRight" userName="pabrams"/>
+        </Security>
+      </jobDefinition>
+      <jobDefinition active="1" executable="xog#import.xbl" jobDefinitionCode="XOGJobThisIsVeryLongOver30Chars" source="xog.com" jobType="XBL" logEnabled="1" outputEnabled="0">
+        <nls description="XOG Invalid Job code too long" languageCode="en" name="XOG Invalid Job"/>
+        <parameter code="text_code" dataType="string" readOnly="true" required="true" widgetType="text" order="1">
+          <nls description="Text label" languageCode="en" name="Text label"/>
+        </parameter>
+        <OBSAssocs/>
+        <Security/>
+      </jobDefinition>
+      <jobDefinition active="1" executable="xog#import.xbl" jobDefinitionCode="XOGJob" source="xog.com" jobType="XBL" logEnabled="1" outputEnabled="0">
+        <nls description="XOG XBL Job" languageCode="en" name="XOG XBL Job"/>
+        <parameter code="text_code" dataType="string"
+            readOnly="true"
+            required="true" widgetType="text"
+            order="1">
+            <nls description="No description" languageCode="en" name="Text label"/>
+        </parameter>
+        <OBSAssocs>
+        </OBSAssocs>
+        <Security>
+        </Security>
+      </jobDefinition>
+      <jobDefinition active="1" executable="xog#import.xbl" jobDefinitionCode="XOGJobNonConcur" source="xog.com" jobType="XBL" logEnabled="1" outputEnabled="0">
+        <nls description="XOG XBL Job for Non Concurrency Testing" languageCode="en" name="XOG XBL Job For NonConcur"/>
+        <parameter code="text_code" dataType="string"
+            readOnly="true"
+            required="true" widgetType="text"
+            order="1">
+            <nls description="No description" languageCode="en" name="Text label"/>
+        </parameter>
+        <nonConcurrentJob code="XOGJob"/>
+        <nonConcurrentJob code="XOGReport"/>
+        <OBSAssocs>
+        </OBSAssocs>
+        <Security>
+        </Security>
+      </jobDefinition>
+    </jobDefinitions>
+  </contentPack>
+</NikuDataBus>

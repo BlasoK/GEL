@@ -1,0 +1,16 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_department.xsd">
+    <Header action="write" externalSource="NIKU" objectType="department" version="8.0.0.3895"/>
+    <Departments>
+        <Department department_code="CLARITY_DEV"
+            dept_manager_code="admin" entity="cf test entity" short_description="Development">
+            <Description><![CDATA[Development within Clarity]]></Description>
+            <LocationAssociations>
+                <LocationAssociation locationcode="New York"/>
+            </LocationAssociations>
+            <Budget is_calc_pv_info="1" is_fcst_eq_bdgt="1"/>
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+        </Department>
+    </Departments>
+</NikuDataBus>

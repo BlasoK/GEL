@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./src/webroot/WEB-INF/xog/xsd/nikuxog_glaccount.xsd">
+    <Header version="8.0" action="read" objectType="glaccount" externalSource="NIKU"/>
+    <Query>
+
+  <!--      <Filter name="mainAcctId" criteria="EQUALS">MAIN_ID234</Filter>
+        <Filter name="subAcctId" criteria="EQUALS">SUB_ID2</Filter>     
+        <Filter name="description" criteria="OR">*updated*</Filter> -->
+
+    </Query>
+</NikuDataBus>

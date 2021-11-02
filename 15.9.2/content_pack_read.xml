@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="8.0" action="read" objectType="contentPack" externalSource="NIKU">
+    <!-- the contentType is used to determine which filter goes where -->
+    <args contentType="job_definition" name="order_by_1" value="code"/>
+    <args contentType="menu" name="order_by_1" value="code"/>
+    <args contentType="view" name="order_by_1" value="code"/>
+    <args contentType="process" name="order_by_1" value="code"/>
+    <args contentType="object" name="order_by_1" value="code"/>
+  </Header>
+  <MenuQuery>
+    <Filter name="code" criteria="EQUALS">application</Filter>
+  </MenuQuery>
+  <PageQuery>
+    <Filter name="code" criteria="EQUALS">niku.overviewFrame</Filter>
+  </PageQuery>
+  <JobQuery>
+    <Filter name="code" criteria="EQUALS">XOGJob</Filter>
+  </JobQuery>
+  <JobQuery>
+    <Filter name="code" criteria="EQUALS">XOGReport</Filter>
+  </JobQuery>
+  <ProcessQuery>
+    <Filter name="code" criteria="EQUALS">NPDTP</Filter>
+  </ProcessQuery>
+  <LookupQuery>
+      <!-- Static lookup -->
+    <Filter name="code" criteria="EQUALS">SEC_OBJECT_TYPE</Filter>
+  </LookupQuery>
+  <LookupQuery>
+  <!-- Dynamic Lookup -->
+  <Filter name="code" criteria="EQUALS">LOOKUP_COMPANIES</Filter>
+  </LookupQuery>
+  <LookupQuery>
+    <!-- Dependent Lookup -->
+      <Filter name="code" criteria="EQUALS">ODF_TST_COUNTRIES</Filter>
+  </LookupQuery>
+  <ViewQuery>
+    <Filter name="code" criteria="EQUALS">property</Filter>
+  </ViewQuery>
+  <ViewQuery>
+    <Filter name="code" criteria="EQUALS">list</Filter>
+  </ViewQuery>
+  <ObjectQuery>
+    <Filter name="object_code" criteria="EQUALS">green_banana</Filter>
+  </ObjectQuery>
+  <PartitionModelQuery>
+    <Filter name="code" criteria="EQUALS">GEOGRAPHY</Filter>
+  </PartitionModelQuery>
+  <PartitionModelQuery>
+    <Filter name="code" criteria="EQUALS">DIVISION</Filter>
+  </PartitionModelQuery>
+  <ObjectMappingQuery>
+    <Filter name="mappingCode" criteria="EQUALS">testmap</Filter>
+  </ObjectMappingQuery> 
+  <!-- FormQuery>
+    <Filter name="parentObjectType" criteria="EQUALS">Project</Filter>
+    <Filter name="parentObjectID" criteria="EQUALS">aProj</Filter>
+    <Filter name="formFolderName" criteria="EQUALS">change_request</Filter -->
+    <!-- Filter name="formName" criteria="EQUALS">chgRqstForm1</Filter -->
+  <!-- /FormQuery -->
+</NikuDataBus>

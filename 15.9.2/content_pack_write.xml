@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+  <Header version="8.0" externalSource="xog" action="write" objectType="contentPack"/>
+  <contentPack update="true">
+    <menus>
+      <menu update="true" code="application" source="niku.com">
+        <nls description="Anwendungsmenü" languageCode="de" name="Anwendungsmenü"/>
+        <nls description="Navigator Menu" languageCode="en" name="Navigator Menu"/>
+        <nls description="ES - Standard Left Navigation" languageCode="es" name="ES - Standard Left Navigation"/>
+        <nls description="Menu d&apos;application" languageCode="fr" name="Menu d&apos;application"/>
+        <nls description="Navigator Menu" languageCode="ja" name="Navigator Menu"/>
+        <section code="xogCPSection" position="7" update="true">
+          <nls description="DE -XOG CP Section" languageCode="de" name="XOG CP Section DE"/>
+          <nls description="XOG CP Section" languageCode="en" name="CP Section XOG"/>
+          <link pageCode="npt.overview" position="1" pageSource="niku.com" update="true">
+            <nls description="Übersicht" languageCode="de" name="Übersicht"/>
+            <nls description="Overview" languageCode="en" name="Overview"/>
+            <nls description="ES - NPT Organizer Main Tab" languageCode="es" name="ES - NPT Organizer Main Tab"/>
+            <nls description="Présentation" languageCode="fr" name="Présentation"/>
+            <nls description="Overview" languageCode="ja" name="Overview"/>
+          </link>
+          <link pageCode="xogCPTab1" pageSource="xog.com" update="true" position="2">
+            <nls description="Tab 1 Link" languageCode="de" name="Tab CP 1 Link de"/>
+            <nls description="Tab 1 Link" languageCode="en" name="Tab CP 1 Link en"/>
+            <nls description="Tab 1 Link" languageCode="es" name="Tab CP 1 Link es"/>
+            <nls description="Tab 1 Link" languageCode="fr" name="Tab CP 1 Link fr"/>
+            <nls description="Tab 1 Link" languageCode="ja" name="Tab CP 1 Link ja"/>
+          </link>
+          <link pageCode="noSuchTab" pageSource="xog.com" update="true" position="3">
+            <nls description="Tab 6 Link" languageCode="de" name="Tab CP 6 Link de"/>
+            <nls description="Tab 6 Link" languageCode="en" name="Tab CP 6 Link en"/>
+            <nls description="Tab 6 Link" languageCode="es" name="Tab CP 6 Link es"/>
+            <nls description="Tab 6 Link" languageCode="fr" name="Tab CP 6 Link fr"/>
+            <nls description="Tab 6 Link" languageCode="ja" name="Tab CP 6 Link ja"/>
+          </link>
+        </section>
+      </menu>
+    </menus>
+    <pages>
+      <tabbedPage personalizable="false" code="xogCPTab" source="xog.com" template="application" active="true" layout="three-column-layout-25-50-25">
+        <nls description="My tabs" languageCode="en" name="XOG CP Tab Page"/>
+        <nls description="My tabs" languageCode="es" name="XOG CP Tab Page"/>
+        <nls description="My tabs" languageCode="ja" name="XOG CP Tab Page"/>
+        <nls description="DE - My tabs" languageCode="de" name="Die Tabs"/>
+        <nls description="FR - My tabs" languageCode="fr" name="Le Tabs"/>
+        <tab code="xogCPTab1" source="xog.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab1" languageCode="en" name="tab one"/>
+          <nls description="tab1" languageCode="es" name="tab one"/>
+          <nls description="tab1" languageCode="ja" name="tab one"/>
+          <nls description="DE - tab1" languageCode="de" name="tab ein"/>
+          <nls description="FR - tab1" languageCode="fr" name="tab un"/>
+          <portlet code="projmgr.homeHotList" source="niku.com" row="1" col="1" required="true">
+            <nls description="Hot Projects" languageCode="en" name="Hot List"/>
+            <nls description="Hot Projects" languageCode="es" name="Hot List"/>
+            <nls description="Hot Projects" languageCode="ja" name="Hot List"/>
+            <nls description="Hot Projects" languageCode="nl" name="Hot List"/>
+            <nls description="DE - Hot Projects" languageCode="de" name="Die Hot List"/>
+            <nls description="FR - Hot Projects" languageCode="fr" name="Chaud List"/>
+          </portlet>
+          <portlet code="calendar.homeEvents" source="niku.com" row="1" col="2" required="false">
+            <nls description="List of events" languageCode="en" name="My Events"/>
+            <nls description="List of events" languageCode="es" name="My Events"/>
+            <nls description="List of events" languageCode="ja" name="My Events"/>
+            <nls description="List of events" languageCode="nl" name="My Events"/>
+            <nls description="DE - List of events" languageCode="de" name="Mein Events"/>
+            <nls description="FR - List of events" languageCode="fr" name="Les Events de Moi"/>
+          </portlet>
+          <OBSAssocs>
+            <OBSAssoc id="loc" name="Location" unitPath="/USA/New York"/>
+            <OBSAssoc id="dept" name="Department" unitPath="/Niku/Marketing"/>
+          </OBSAssocs>
+        </tab>
+        <tab code="xogCPTab2" source="xog.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab 2" languageCode="en" name="tab CP two"/>
+          <nls description="tab 2" languageCode="es" name="tab CP two"/>
+          <nls description="tab 2" languageCode="ja" name="tab CP two"/>
+          <nls description="tab2" languageCode="de" name="tab CP 2"/>
+          <nls description="tab 2" languageCode="fr" name="tab CP deux"/>
+          <portlet code="personal.notificationsNugget" source="niku.com" row="1" col="1" required="true">
+            <nls description="Hot Notifications" languageCode="en" name="Notifications"/>
+            <nls description="Hot Notifications" languageCode="es" name="Notifications"/>
+            <nls description="Hot Notifications" languageCode="ja" name="Notifications"/>
+            <nls description="Hot Notifications" languageCode="de" name="Das Notifications"/>
+            <nls description="Hot Notifications" languageCode="fr" name="Les Notifications"/>
+            <nls description="Hot Notifications" languageCode="nl" name="Notifications"/>
+          </portlet>
+          <Security complete="true">
+            <OBSSecurity name="Department" rightCode="PageViewInstanceRight" rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+            <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageViewInstanceRight"/>
+            <UserSecurity rightCode="PageDefinitionEditor" userName="admin"/>
+          </Security>
+        </tab>
+        <OBSAssocs>
+          <OBSAssoc id="loc" name="Location" unitPath="/USA/New York"/>
+        </OBSAssocs>
+        <Security complete="true">
+          <OBSSecurity name="Department" rightCode="PageDefinitionViewer" rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+          <OBSSecurity name="Department" rightCode="PageViewInstanceRight" rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+          <OBSSecurity name="Location" rightCode="PageViewInstanceRight" rightMode="OBS_UNIT_CHILD_AND_ANCESTORS" typeCode="loc" unitPath="/USA/California/Petaluma"/>
+          <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageViewInstanceRight"/>
+          <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageDefinitionEditor"/>
+          <GroupSecurity groupCode="FINANCIAL_MANAGER" rightCode="PageViewInstanceRight"/>
+          <UserSecurity rightCode="PageDefinitionEditor" userName="admin"/>
+        </Security>
+      </tabbedPage>
+    </pages>
+    <Processes>
+      <Process code="NPDTP" createdBy="admin" endStep="ES" startStep="SS" source="niku.com">
+        <nls description="NPD-Template Process Desc" languageCode="de" name="NPD-Template Process"/>
+        <nls description="NPD-Template Process Desc" languageCode="en" name="NPD-Template Process"/>
+        <nls description="NPD-Template Process Desc" languageCode="es" name="NPD-Template Process"/>
+        <nls description="NPD-Template Process Desc" languageCode="fr" name="NPD-Template Process"/>
+        <nls description="NPD-Template Process Desc" languageCode="ja" name="NPD-Template Process"/>
+        <Objects>
+          <Object name="thisProject" objectType="other"/>
+        </Objects>
+        <Security complete="true">
+          <UserSecurity rightCode="PROCESS-DEF-INST-INITIATE" userName="admin"/>
+          <UserSecurity rightCode="PROCESS-DEF-INST-READ" userName="admin"/>
+          <UserSecurity rightCode="PROCESS-DEF-INST-WRITE" userName="admin"/>
+        </Security>
+        <Steps>
+          <Step expirationType="Days" id="SS" isMileStone="false" sequenceNo="1">
+            <nls description="Start Desc" languageCode="de" name="Start"/>
+            <nls description="Start Desc" languageCode="en" name="Start"/>
+            <nls description="Start Desc" languageCode="es" name="Start"/>
+            <nls description="Start Desc" languageCode="fr" name="Start"/>
+            <nls description="Start Desc" languageCode="ja" name="Start"/>
+            <Notifications notifyOwner="false">
+              <NotifyWhen stepActionPerformed="false" stepCompleted="false" stepStarted="false"/>
+              <Assignees/>
+            </Notifications>
+            <Operations/>
+            <TransitionRestrictions>
+              <TransitionRestriction>
+                <Join type="BPM_JT_NONE">
+                  <Condition sequencNo="1" type="Pre-Condition"/>
+                </Join>
+              </TransitionRestriction>
+              <TransitionRestriction>
+                <Split type="BPM_ST_SEQUENCE">
+                  <Condition sequencNo="1" type="Post-Condition">
+                    <Transitions/>
+                  </Condition>
+                </Split>
+              </TransitionRestriction>
+            </TransitionRestrictions>
+          </Step>
+          <Step expirationType="Days" group="Regular Group One" id="RS" isMileStone="false" sequenceNo="1">
+            <nls description="Regular Step Desc" languageCode="de" name="Regular Step"/>
+            <nls description="Regular Step Desc" languageCode="en" name="Regular Step"/>
+            <nls description="Regular Step Desc" languageCode="es" name="Regular Step"/>
+            <nls description="Regular Step Desc" languageCode="fr" name="Regular Step"/>
+            <nls description="Regular Step Desc" languageCode="ja" name="Regular Step"/>
+            <Notifications notifyOwner="false">
+              <NotifyWhen stepActionPerformed="false" stepCompleted="false" stepStarted="false"/>
+              <Assignees/>
+            </Notifications>
+            <Operations/>
+            <TransitionRestrictions>
+              <TransitionRestriction>
+                <Join type="BPM_JT_NONE">
+                  <Condition sequencNo="1" type="Pre-Condition"/>
+                </Join>
+              </TransitionRestriction>
+              <TransitionRestriction>
+                <Split type="BPM_ST_SEQUENCE">
+                  <Condition sequencNo="1" type="Post-Condition">
+                    <Transitions/>
+                  </Condition>
+                </Split>
+              </TransitionRestriction>
+            </TransitionRestrictions>
+          </Step>
+          <Step expirationType="Days" id="NGS" isMileStone="false" sequenceNo="2">
+            <nls description="Non Group Step Desc" languageCode="de" name="Non Group Step"/>
+            <nls description="Non Group Step Desc" languageCode="en" name="Non Group Step"/>
+            <nls description="Non Group Step Desc" languageCode="es" name="Non Group Step"/>
+            <nls description="Non Group Step Desc" languageCode="fr" name="Non Group Step"/>
+            <nls description="Non Group Step Desc" languageCode="ja" name="Non Group Step"/>
+            <Notifications notifyOwner="false">
+              <NotifyWhen stepActionPerformed="false" stepCompleted="false" stepStarted="false"/>
+              <Assignees/>
+            </Notifications>
+            <Operations/>
+            <TransitionRestrictions>
+              <TransitionRestriction>
+                <Join type="BPM_JT_NONE">
+                  <Condition sequencNo="1" type="Pre-Condition"/>
+                </Join>
+              </TransitionRestriction>
+              <TransitionRestriction>
+                <Split type="BPM_ST_SEQUENCE">
+                  <Condition sequencNo="1" type="Post-Condition">
+                    <Transitions/>
+                  </Condition>
+                </Split>
+              </TransitionRestriction>
+            </TransitionRestrictions>
+          </Step>
+          <Step expirationType="Days" id="ES" isMileStone="false" sequenceNo="3">
+            <nls description="End Step Desc" languageCode="de" name="End Step"/>
+            <nls description="End Step Desc" languageCode="en" name="End Step"/>
+            <nls description="End Step Desc" languageCode="es" name="End Step"/>
+            <nls description="End Step Desc" languageCode="fr" name="End Step"/>
+            <nls description="End Step Desc" languageCode="ja" name="End Step"/>
+            <Notifications notifyOwner="false">
+              <NotifyWhen stepActionPerformed="false" stepCompleted="false" stepStarted="false"/>
+              <Assignees/>
+            </Notifications>
+            <Operations/>
+            <TransitionRestrictions>
+              <TransitionRestriction>
+                <Join type="BPM_JT_NONE">
+                  <Condition sequencNo="1" type="Pre-Condition"/>
+                </Join>
+              </TransitionRestriction>
+              <TransitionRestriction>
+                <Split type="BPM_ST_SEQUENCE">
+                  <Condition sequencNo="1" type="Post-Condition">
+                    <Transitions/>
+                  </Condition>
+                </Split>
+              </TransitionRestriction>
+            </TransitionRestrictions>
+          </Step>
+        </Steps>
+        <Groups>
+          <Group sequenceNo="1">
+            <nls languageCode="de" name="Regular Group One"/>
+            <nls languageCode="en" name="Regular Group One"/>
+            <nls languageCode="es" name="Regular Group One"/>
+            <nls languageCode="fr" name="Regular Group One"/>
+            <nls languageCode="ja" name="Regular Group One"/>
+          </Group>
+        </Groups>
+      </Process>
+    </Processes>
+    <views>
+      <property code="create" type="create" objectCode="banana" componentId="odfTest">
+        <column sequence="1">
+          <viewFieldDescriptor attributeCode="string_attr" widgetType="text">
+            <nls name="String Attribute" languageCode="en"/>
+            <nls name="String Attribute" languageCode="de"/>
+            <nls name="String Attribute" languageCode="es"/>
+            <nls name="String Attribute" languageCode="fr"/>
+            <nls name="String Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="type" widgetType="text">
+            <nls name="Type" languageCode="en"/>
+            <nls name="Type" languageCode="de"/>
+            <nls name="Type" languageCode="es"/>
+            <nls name="Type" languageCode="fr"/>
+            <nls name="Type" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="num_attr" widgetType="numeric">
+            <nls name="Number Attribute" languageCode="en"/>
+            <nls name="Number Attribute" languageCode="de"/>
+            <nls name="Number Attribute" languageCode="es"/>
+            <nls name="Number Attribute" languageCode="fr"/>
+            <nls name="Number Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="cost" widgetType="numeric">
+            <nls name="Cost" languageCode="en"/>
+            <nls name="Cost" languageCode="de"/>
+            <nls name="Cost" languageCode="es"/>
+            <nls name="Cost" languageCode="fr"/>
+            <nls name="Cost" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="price" widgetType="numeric">
+            <nls name="Price" languageCode="en"/>
+            <nls name="Price" languageCode="de"/>
+            <nls name="Price" languageCode="es"/>
+            <nls name="Price" languageCode="fr"/>
+            <nls name="Price" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="price_currency" widgetType="text">
+            <nls name="Price Currency" languageCode="en"/>
+            <nls name="Price Currency" languageCode="de"/>
+            <nls name="Price Currency" languageCode="es"/>
+            <nls name="Price Currency" languageCode="fr"/>
+            <nls name="Price Currency" languageCode="ja"/>
+          </viewFieldDescriptor>
+        </column>
+        <section sequence="1">
+          <column sequence="1">
+            <viewFieldDescriptor attributeCode="base2_time_level" widgetType="browse">
+              <nls name="Base2 Time Level" languageCode="en"/>
+              <nls name="Base2 Time Level" languageCode="de"/>
+              <nls name="Base2 Time Level" languageCode="es"/>
+              <nls name="Base2 Time Level" languageCode="fr"/>
+              <nls name="Base2 Time Level" languageCode="ja"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_num_attr" widgetType="numeric">
+              <nls name="Base2 Number Attribute" languageCode="en"/>
+              <nls name="Base2 Number Attribute" languageCode="de"/>
+              <nls name="Base2 Number Attribute" languageCode="es"/>
+              <nls name="Base2 Number Attribute" languageCode="fr"/>
+              <nls name="Base2 Number Attribute" languageCode="ja"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_date_attr" widgetType="datepicker">
+              <nls name="Base2 Date Attrinute" languageCode="en"/>
+              <nls name="Base2 Date Attrinute" languageCode="de"/>
+              <nls name="Base2 Date Attrinute" languageCode="es"/>
+              <nls name="Base2 Date Attrinute" languageCode="fr"/>
+              <nls name="Base2 Date Attrinute" languageCode="ja"/>
+            </viewFieldDescriptor>
+          </column>
+          <column sequence="2">
+            <viewFieldDescriptor attributeCode="base2_currency" widgetType="text">
+              <nls name="Base2 Currency" languageCode="en"/>
+              <nls name="Base2 Currency" languageCode="de"/>
+              <nls name="Base2 Currency" languageCode="es"/>
+              <nls name="Base2 Currency" languageCode="fr"/>
+              <nls name="Base2 Currency" languageCode="ja"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_state_id" widgetType="numeric">
+              <nls name="Base2 State ID" languageCode="en"/>
+              <nls name="Base2 State ID" languageCode="de"/>
+              <nls name="Base2 State ID" languageCode="es"/>
+              <nls name="Base2 State ID" languageCode="fr"/>
+              <nls name="Base2 State ID" languageCode="ja"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_string_attr" widgetType="text">
+              <nls name="Base2 String Attribute" languageCode="en"/>
+              <nls name="Base2 String Attribute" languageCode="de"/>
+              <nls name="Base2 String Attribute" languageCode="es"/>
+              <nls name="Base2 String Attribute" languageCode="fr"/>
+              <nls name="Base2 String Attribute" languageCode="ja"/>
+            </viewFieldDescriptor>
+          </column>
+          <nls languageCode="en" name="Base2 Properties"/>
+          <nls languageCode="de" name="Base2 Properties"/>
+          <nls languageCode="es" name="Base2 Properties"/>
+          <nls languageCode="fr" name="Base2 Properties"/>
+          <nls languageCode="ja" name="Base2 Properties"/>
+        </section>
+        <nls name="Create Banana Property Page" languageCode="en"/>
+        <nls name="Create Banana Property Page" languageCode="de"/>
+        <nls name="Create Banana Property Page" languageCode="es"/>
+        <nls name="Create Banana Property Page" languageCode="fr"/>
+        <nls name="Create Banana Property Page" languageCode="ja"/>
+      </property>
+      <property code="update2" type="update" objectCode="banana" componentId="odfTes">
+        <column sequence="1">
+          <viewFieldDescriptor attributeCode="base2_time_level" widgetType="text">
+            <nls name="Base2 Time Level" languageCode="en"/>
+            <nls name="Base2 Time Level" languageCode="de"/>
+            <nls name="Base2 Time Level" languageCode="es"/>
+            <nls name="Base2 Time Level" languageCode="fr"/>
+            <nls name="Base2 Time Level" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="base2_num_attr" widgetType="numeric">
+            <nls name="Base2 Number Attribute" languageCode="en"/>
+            <nls name="Base2 Number Attribute" languageCode="de"/>
+            <nls name="Base2 Number Attribute" languageCode="es"/>
+            <nls name="Base2 Number Attribute" languageCode="fr"/>
+            <nls name="Base2 Number Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="base2_date_attr" widgetType="datepicker">
+            <nls name="Base2 Date Attrinute" languageCode="en"/>
+            <nls name="Base2 Date Attrinute" languageCode="de"/>
+            <nls name="Base2 Date Attrinute" languageCode="es"/>
+            <nls name="Base2 Date Attrinute" languageCode="fr"/>
+            <nls name="Base2 Date Attrinute" languageCode="ja"/>
+          </viewFieldDescriptor>
+        </column>
+        <column sequence="2">
+          <viewFieldDescriptor attributeCode="base2_currency" widgetType="browse" readOnly="true">
+            <nls name="Base2 Currency" languageCode="en"/>
+            <nls name="Base2 Currency" languageCode="de"/>
+            <nls name="Base2 Currency" languageCode="es"/>
+            <nls name="Base2 Currency" languageCode="fr"/>
+            <nls name="Base2 Currency" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="base2_state_id" widgetType="text">
+            <nls name="Base2 State ID" languageCode="en"/>
+            <nls name="Base2 State ID" languageCode="de"/>
+            <nls name="Base2 State ID" languageCode="es"/>
+            <nls name="Base2 State ID" languageCode="fr"/>
+            <nls name="Base2 State ID" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="base2_string_attr" widgetType="text">
+            <nls name="Base2 String Attribute" languageCode="en"/>
+            <nls name="Base2 String Attribute" languageCode="de"/>
+            <nls name="Base2 String Attribute" languageCode="es"/>
+            <nls name="Base2 String Attribute" languageCode="fr"/>
+            <nls name="Base2 String Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+        </column>
+        <nls name="Banana Update Property Page #2" languageCode="en"/>
+        <nls name="Banana Update Property Page #2" languageCode="de"/>
+        <nls name="Banana Update Property Page #2" languageCode="es"/>
+        <nls name="Banana Update Property Page #2" languageCode="fr"/>
+        <nls name="Banana Update Property Page #2" languageCode="ja"/>
+      </property>
+      <property code="update3" type="update" objectCode="banana" componentId="odfTest">
+        <column sequence="1">
+          <viewFieldDescriptor attributeCode="num_attr" widgetType="numeric">
+            <nls name="Number Attribute" languageCode="en"/>
+            <nls name="Number Attribute" languageCode="de"/>
+            <nls name="Number Attribute" languageCode="es"/>
+            <nls name="Number Attribute" languageCode="fr"/>
+            <nls name="Number Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="base2_num_attr" widgetType="numeric">
+            <nls name="Base2 Number Attribute" languageCode="en"/>
+            <nls name="Base2 Number Attribute" languageCode="de"/>
+            <nls name="Base2 Number Attribute" languageCode="es"/>
+            <nls name="Base2 Number Attribute" languageCode="fr"/>
+            <nls name="Base2 Number Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="score" widgetType="numeric">
+            <nls name="Score" languageCode="en"/>
+            <nls name="Score" languageCode="de"/>
+            <nls name="Score" languageCode="es"/>
+            <nls name="Score" languageCode="fr"/>
+            <nls name="Score" languageCode="ja"/>
+          </viewFieldDescriptor>
+        </column>
+        <nls name="Score View" languageCode="en"/>
+        <nls name="Score View" languageCode="de"/>
+        <nls name="Score View" languageCode="es"/>
+        <nls name="Score View" languageCode="fr"/>
+        <nls name="Score View" languageCode="ja"/>
+      </property>
+      <property code="update" type="update" objectCode="banana" componentId="odfTest">
+        <column sequence="1">
+          <viewFieldDescriptor attributeCode="string_attr" widgetType="text">
+            <nls name="String Attribute" languageCode="en"/>
+            <nls name="String Attribute" languageCode="de"/>
+            <nls name="String Attribute" languageCode="fr"/>
+            <nls name="String Attribute" languageCode="es"/>
+            <nls name="String Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="type" widgetType="text">
+            <nls name="Type" languageCode="en"/>
+            <nls name="Type" languageCode="de"/>
+            <nls name="Type" languageCode="fr"/>
+            <nls name="Type" languageCode="es"/>
+            <nls name="Type" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="num_attr" widgetType="numeric">
+            <nls name="Number Attribute" languageCode="en"/>
+            <nls name="Number Attribute" languageCode="de"/>
+            <nls name="Number Attribute" languageCode="fr"/>
+            <nls name="Number Attribute" languageCode="es"/>
+            <nls name="Number Attribute" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="cost" widgetType="numeric">
+            <nls name="Cost" languageCode="en"/>
+            <nls name="Cost" languageCode="de"/>
+            <nls name="Cost" languageCode="fr"/>
+            <nls name="Cost" languageCode="es"/>
+            <nls name="Cost" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="price" widgetType="numeric">
+            <nls name="Price" languageCode="en"/>
+            <nls name="Price" languageCode="de"/>
+            <nls name="Price" languageCode="fr"/>
+            <nls name="Price" languageCode="es"/>
+            <nls name="Price" languageCode="ja"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="price_currency" widgetType="text" readOnly="true">
+            <nls name="Price Currency" languageCode="en"/>
+            <nls name="Price Currency" languageCode="fr"/>
+            <nls name="Price Currency" languageCode="de"/>
+            <nls name="Price Currency" languageCode="es"/>
+            <nls name="Price Currency" languageCode="ja"/>
+          </viewFieldDescriptor>
+        </column>
+        <nls name="Banana Update Property Page" languageCode="en"/>
+        <nls name="Banana Update Property Page" languageCode="de"/>
+        <nls name="Banana Update Property Page" languageCode="fr"/>
+        <nls name="Banana Update Property Page" languageCode="es"/>
+        <nls name="Banana Update Property Page" languageCode="ja"/>
+      </property>
+      <filter code="bananaListFilter" dataProviderType="object" dataProviderId="banana" objectCode="banana">
+        <section collapsed="true">
+          <column sequence="1">
+            <viewFieldDescriptor attributeCode="num_attr" widgetType="numeric" width="40">
+              <nls languageCode="en" name="Number Attribute 1"/>
+              <nls languageCode="de" name="Number Attribute 1"/>
+              <nls languageCode="fr" name="Number Attribute 1"/>
+              <nls languageCode="es" name="Number Attribute 1"/>
+              <nls languageCode="ja" name="Number Attribute 1"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_string_attr" widgetType="text" width="40">
+              <nls languageCode="en" name="Text Attribute 1"/>
+              <nls languageCode="de" name="Text Attribute 1"/>
+              <nls languageCode="fr" name="Text Attribute 1"/>
+              <nls languageCode="es" name="Text Attribute 1"/>
+              <nls languageCode="ja" name="Text Attribute 1"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_date_attr" widgetType="daterange" width="40">
+              <nls languageCode="en" name="Date Attribute 1"/>
+              <nls languageCode="de" name="Date Attribute 1"/>
+              <nls languageCode="fr" name="Date Attribute 1"/>
+              <nls languageCode="es" name="Date Attribute 1"/>
+              <nls languageCode="ja" name="Date Attribute 1"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_time_level" widgetType="select" width="40">
+              <nls languageCode="en" name="Time Level"/>
+              <nls languageCode="de" name="Time Level"/>
+              <nls languageCode="fr" name="Time Level"/>
+              <nls languageCode="es" name="Time Level"/>
+              <nls languageCode="ja" name="Time Level"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="cost" widgetType="numericrange" width="40">
+              <nls languageCode="en" name="Cost"/>
+              <nls languageCode="de" name="Cost"/>
+              <nls languageCode="fr" name="Cost"/>
+              <nls languageCode="es" name="Cost"/>
+              <nls languageCode="ja" name="Cost"/>
+            </viewFieldDescriptor>
+          </column>
+          <column sequence="2">
+            <viewFieldDescriptor attributeCode="string_attr" widgetType="text" width="40">
+              <nls languageCode="en" name="Text Attribute 2"/>
+              <nls languageCode="de" name="Text Attribute 2"/>
+              <nls languageCode="fr" name="Text Attribute 2"/>
+              <nls languageCode="es" name="Text Attribute 2"/>
+              <nls languageCode="ja" name="Text Attribute 2"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_num_attr" widgetType="numeric" width="40">
+              <nls languageCode="en" name="Number Attribute 2"/>
+              <nls languageCode="de" name="Number Attribute 2"/>
+              <nls languageCode="fr" name="Number Attribute 2"/>
+              <nls languageCode="es" name="Number Attribute 2"/>
+              <nls languageCode="ja" name="Number Attribute 2"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_state_id" widgetType="select" width="40">
+              <nls languageCode="en" name="State"/>
+              <nls languageCode="fr" name="State"/>
+              <nls languageCode="es" name="State"/>
+              <nls languageCode="de" name="State"/>
+              <nls languageCode="ja" name="State"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="base2_currency" widgetType="browse" width="40">
+              <nls languageCode="en" name="Currency"/>
+              <nls languageCode="de" name="Currency"/>
+              <nls languageCode="fr" name="Currency"/>
+              <nls languageCode="es" name="Currency"/>
+              <nls languageCode="ja" name="Currency"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="score2" widgetType="numericrange" width="40">
+              <nls languageCode="en" name="Score (virtual)"/>
+              <nls languageCode="fr" name="Score (virtual)"/>
+              <nls languageCode="de" name="Score (virtual)"/>
+              <nls languageCode="es" name="Score (virtual)"/>
+              <nls languageCode="ja" name="Score (virtual)"/>
+            </viewFieldDescriptor>
+          </column>
+          <nls languageCode="en" name="Banana Filter"/>
+          <nls languageCode="de" name="Banana Filter"/>
+          <nls languageCode="fr" name="Banana Filter"/>
+          <nls languageCode="es" name="Banana Filter"/>
+          <nls languageCode="ja" name="Banana Filter"/>
+        </section>
+      </filter>
+    </views>
+    <objects>
+      <object code="green_banana" update="true">
+            <nls description="Green Banana" languageCode="de" name="Green Banana"/>  
+            <nls description="Green Banana" languageCode="es" name="Green Banana"/>  
+            <nls description="Green Banana" languageCode="en" name="Green Banana"/>  
+            <nls description="Green Banana" languageCode="ja" name="Green Banana"/>  
+            <nls description="Green Banana" languageCode="fr" name="Green Banana"/>  
+            <nls description="Green Banana" languageCode="nl" name="Green Banana"/> 
+        <customAttribute active="true" code="ca_cust_attr" column="ca_cust_attr" currencyConnected="false" custom="true" dataSize="20" dataType="number" editable="true" id="5007002" multiValued="false" private="false" required="false" table="odf_ca_green_banana" unique="false" virtual="false">
+          <nls languageCode="de" name="Custom Attribute 1"/>
+          <nls languageCode="en" name="Custom Attribute 1"/>
+          <nls languageCode="es" name="Custom Attribute 1"/>
+          <nls languageCode="fr" name="Custom Attribute 1"/>
+          <nls languageCode="ja" name="Custom Attribute 1"/>
+          <readExpression dbVendor="all"/>
+          <displayMapping defaultTypeCode="grey" type="color">
+            <mapping hi="100" lo="1" mappingCode="range-1-100-" typeCode="green" value="                     ">
+              <nls languageCode="de" name="XOG Green"/>
+              <nls languageCode="en" name="XOG Green"/>
+              <nls languageCode="es" name="XOG Green"/>
+              <nls languageCode="fr" name="XOG Green"/>
+              <nls languageCode="ja" name="XOG Green"/>
+            </mapping>
+            <mapping hi="102" lo="101" mappingCode="range-101-102-" typeCode="yellow" value="                     ">
+              <nls languageCode="de" name="XOG Yellow"/>
+              <nls languageCode="en" name="XOG Yellow"/>
+              <nls languageCode="es" name="XOG Yellow"/>
+              <nls languageCode="fr" name="XOG Yellow"/>
+              <nls languageCode="ja" name="XOG Yellow"/>
+            </mapping>
+            <mapping hi="150" lo="103" mappingCode="range-103-150-" typeCode="red" value="                     ">
+              <nls languageCode="de" name="XOG Red"/>
+              <nls languageCode="en" name="XOG Red"/>
+              <nls languageCode="es" name="XOG Red"/>
+              <nls languageCode="fr" name="XOG Red"/>
+              <nls languageCode="ja" name="XOG Red"/>
+            </mapping>
+          </displayMapping>
+        </customAttribute>
+        <links objectCode="green_banana">
+          <link action="projmgr.getProjectOverview" code="green_banana.Green_Banana_Link1">
+            <nls description="Company Link" languageCode="de" name="Link One"/>
+            <nls description="Company Link" languageCode="en" name="Link One"/>
+            <nls description="Company Link" languageCode="es" name="Link One"/>
+            <nls description="Company Link" languageCode="fr" name="Link One"/>
+            <nls description="Company Link" languageCode="ja" name="Link One"/>
+            <linkParam dataRef="base2_string_attr" dataSource="data" paramCode="ID"/>
+          </link>
+        </links>
+        <audit>
+          <attribute code="ca_cust_attr" deleteOperation="true" insertOperation="false" updateOperation="false"/>
+        </audit>        
+      </object>
+    </objects>
+    <lookups update="true">
+      <dynamicLookup code="CPACK_LOOKUP_COMPANIES" displayAttributeName="company_name" hiddenAttributeName="id" sortAttributeName="company_name" sortDirection="asc" source="niku.com" status="active" update="true">
+        <nls description="Liste der aktiven Unternehmen" languageCode="de" name="Aktive Niku 6 Unternehmen"/>
+        <nls description="List of active companies" languageCode="en" name="A-1 active companies-A2"/>
+        <nls description="List of active companies" languageCode="es" name="Active Niku 6 Companies"/>
+        <nls description="Liste des entreprises actives" languageCode="fr" name="Activer les entreprises Niku 6"/>
+        <nls description="List of active companies" languageCode="ja" name="Active Niku 6 Companies"/>
+        <nsql dbVendor="all">SELECT  @SELECT:c.id:id@,
+                    @SELECT:c.company_id:company_id@,
+          @SELECT:c.company_name:company_name@
+          FROM    srm_companies c                WHERE
+          @FILTER@</nsql>
+        <browsePage>
+          <singleSelectPageTitles>
+            <nls description="Unternehmen" languageCode="de" name="Unternehmen"/>
+            <nls description="Companies" languageCode="en" name="Companies-Single-Select"/>
+            <nls description="Companies" languageCode="es" name="Companies-Boom"/>
+            <nls description="Entreprises" languageCode="fr" name="Entreprises"/>
+            <nls description="Companies" languageCode="ja" name="Companies"/>
+          </singleSelectPageTitles>
+          <multiSelectPageTitles>
+            <nls description="Unternehmen" languageCode="de" name="Unternehmen"/>
+            <nls description="Companies" languageCode="en" name="Companies-Multi-Select"/>
+            <nls description="Companies" languageCode="es" name="Companies"/>
+            <nls description="Entreprises" languageCode="fr" name="Entreprises"/>
+            <nls description="Companies" languageCode="ja" name="Companies"/>
+          </multiSelectPageTitles>
+          <filter code="company_id" defaultValue="" order="2" widgetType="text">
+            <nls description="Keine Beschreibung" languageCode="de" name="ID"/>
+            <nls description="No description" languageCode="en" name="ID-EN"/>
+            <nls description="No description" languageCode="es" name="ID"/>
+            <nls description="Pas de description" languageCode="fr" name="ID"/>
+            <nls description="No description" languageCode="ja" name="ID"/>
+          </filter>
+          <filter code="company_name" defaultValue="" order="1" widgetType="text">
+            <nls description="Keine Beschreibung" languageCode="de" name="Unternehmen"/>
+            <nls description="No description" languageCode="en" name="Company"/>
+            <nls description="No description" languageCode="es" name="Company Namoes"/>
+            <nls description="Pas de description" languageCode="fr" name="Entreprise"/>
+            <nls description="No description" languageCode="ja" name="Company"/>
+          </filter>
+          <listColumn code="id" order="3" widgetType="hidden">
+            <nls description="Keine Beschreibung" languageCode="de" name="id"/>
+            <nls description="No description" languageCode="en" name="id"/>
+            <nls description="No description" languageCode="es" name="id"/>
+            <nls description="Pas de description" languageCode="fr" name="ID"/>
+            <nls description="No description" languageCode="ja" name="id"/>
+          </listColumn>
+          <listColumn code="company_id" order="2" widgetType="text">
+            <nls description="Keine Beschreibung" languageCode="de" name="ID"/>
+            <nls description="No description" languageCode="en" name="ID"/>
+            <nls description="No description" languageCode="es" name="ID"/>
+            <nls description="Pas de description" languageCode="fr" name="ID"/>
+            <nls description="No description" languageCode="ja" name="ID"/>
+          </listColumn>
+          <listColumn code="company_name" order="1" widgetType="text">
+            <nls description="Keine Beschreibung" languageCode="de" name="Unternehmen"/>
+            <nls description="No description" languageCode="en" name="Company"/>
+            <nls description="No description" languageCode="es" name="Company"/>
+            <nls description="Pas de description" languageCode="fr" name="Entreprise"/>
+            <nls description="No description" languageCode="ja" name="Company"/>
+          </listColumn>
+        </browsePage>
+      </dynamicLookup>
+      <staticLookup code="SEC_OBJECT_TYPE" sortStyle="alphanumeric" source="niku.com" status="active" update="true">
+        <nls description="Objekttyp Sicherheit" languageCode="de" name="Objekttyp Sicherheit"/>
+        <nls description="Security Object Type" languageCode="en" name="Security Object Type"/>
+        <nls description="Tipo de Objeto de Seguridad" languageCode="es" name="Tipo de Objeto de Seguridad"/>
+        <nls description="Type d&apos;objet de sécurité" languageCode="fr" name="Type d&apos;objet de sécurité"/>
+        <nls description="?????? ?????? ???" languageCode="ja" name="?????? ?????? ???"/>
+        <lookupValue code="BUTTON" sortOrder="5" status="active">
+          <nls description="Schaltfläche" languageCode="de" name="Schaltfläche"/>
+          <nls description="Button" languageCode="en" name="Button"/>
+          <nls description="Botón" languageCode="es" name="Botón"/>
+          <nls description="Bouton" languageCode="fr" name="Bouton"/>
+          <nls description="???" languageCode="ja" name="???"/>
+        </lookupValue>
+        <lookupValue code="COMPANY_RECORD" sortOrder="0" status="active">
+          <nls description="Unternehmen" languageCode="de" name="Unternehmen"/>
+          <nls description="Company" languageCode="en" name="Company"/>
+          <nls description="Compañía" languageCode="es" name="Compañía"/>
+          <nls description="Entreprise" languageCode="fr" name="Entreprise"/>
+          <nls description="??" languageCode="ja" name="??"/>
+        </lookupValue>
+        <lookupValue code="COMPANY-OBJECT" sortOrder="0" status="active">
+          <nls description="Unternehmensobjekttyp" languageCode="de" name="Unternehmen"/>
+          <nls description="Company Object Type" languageCode="en" name="Company"/>
+          <nls description="Tipo de Objeto de Compañía" languageCode="es" name="Compañía"/>
+          <nls description="Type d&apos;objet de l&apos;entreprise" languageCode="fr" name="Entreprise"/>
+          <nls description="????????? ???" languageCode="ja" name="??"/>
+        </lookupValue>
+        <lookupValue code="COMPANY_ACCT_RECORD" sortOrder="0" status="active">
+          <nls description="Unternehmensbuchhaltung" languageCode="de" name="Unternehmensbuchhaltung"/>
+          <nls description="Company Accounting" languageCode="en" name="Company Accounting-en"/>
+          <nls description="Contabilidad de la Compañía" languageCode="es" name="Contabilidad de la Compañía"/>
+          <nls description="Comptabilité de l&apos;entreprise" languageCode="fr" name="Comptabilité de l&apos;entreprise"/>
+          <nls description="?????" languageCode="ja" name="?????"/>
+        </lookupValue>
+        <lookupValue code="COMPANY_SUPP_RECORD" sortOrder="0" status="active">
+          <nls description="Unternehmenszusatz" languageCode="de" name="Unternehmenszusatz"/>
+          <nls description="Company Supplemental" languageCode="en" name="Company Supplemental"/>
+          <nls description="Complementario de la Compañía" languageCode="es" name="Complementario de la Compañía"/>
+          <nls description="Entreprise supplémentaire" languageCode="fr" name="Entreprise supplémentaire"/>
+          <nls description="???????" languageCode="ja" name="???????"/>
+        </lookupValue>
+        <lookupValue code="CREATE_BUTTON" sortOrder="1" status="active">
+          <nls description="Schaltfläche Erstellen" languageCode="de" name="Schaltfläche Erstellen"/>
+          <nls description="Create Button" languageCode="en" name="Create Button"/>
+          <nls description="Botón Crear" languageCode="es" name="Botón Crear"/>
+          <nls description="Bouton Créer" languageCode="fr" name="Bouton Créer"/>
+          <nls description="??????" languageCode="ja" name="??????"/>
+        </lookupValue>        
+        <lookupValue code="DELETE_BUTTON" sortOrder="1" status="active">
+          <nls description="Schaltfläche Löschen" languageCode="de" name="Schaltfläche Löschen"/>
+          <nls description="Delete Button" languageCode="en" name="Delete Button"/>
+          <nls description="Botón Eliminar" languageCode="es" name="Botón Eliminar"/>
+          <nls description="Bouton Supprimer" languageCode="fr" name="Bouton Supprimer"/>
+          <nls description="?????" languageCode="ja" name="?????"/>
+        </lookupValue>
+        <lookupValue code="FIELD" sortOrder="7" status="active">
+          <nls description="Feld" languageCode="de" name="Feld"/>
+          <nls description="Field" languageCode="en" name="Field"/>
+          <nls description="Campo" languageCode="es" name="Campo"/>
+          <nls description="Champ" languageCode="fr" name="Champ"/>
+          <nls description="?????" languageCode="ja" name="?????"/>
+        </lookupValue>
+        <lookupValue code="FOLDER" sortOrder="1" status="active">
+          <nls description="Ordner" languageCode="de" name="Ordner"/>
+          <nls description="Folder" languageCode="en" name="Folder"/>
+          <nls description="Carpeta" languageCode="es" name="Carpeta"/>
+          <nls description="Dossier" languageCode="fr" name="Dossier"/>
+          <nls description="????" languageCode="ja" name="????"/>
+        </lookupValue>
+        <lookupValue code="JOB" sortOrder="0" status="active">
+          <nls description="Scheduler-Auftrag" languageCode="de" name="Auftrag"/>
+          <nls description="Scheduler Job" languageCode="en" name="Job"/>
+          <nls description="ES - Scheduler Job" languageCode="es" name="Puesto de Trabajo"/>
+          <nls description="Travail du planificateur" languageCode="fr" name="Travail"/>
+          <nls description="Scheduler Job" languageCode="ja" name="Job"/>
+        </lookupValue>
+        <lookupValue code="MKT_OBJECT" sortOrder="1" status="active">
+          <nls description="OBJEKT IM MARKT" languageCode="de" name="MKT_OBJECT"/>
+          <nls description="OBJECT IN MARKET" languageCode="en" name="MKT_OBJECT"/>
+          <nls description="OBJETO EN EL MARKETPLACE" languageCode="es" name="MKT_OBJECT"/>
+          <nls description="OBJET SUR LE MARCHE" languageCode="fr" name="MKT_OBJECT"/>
+          <nls description="?????????" languageCode="ja" name="MKT_OBJECT"/>
+        </lookupValue>
+        <lookupValue code="COMPONENT" sortOrder="1" status="active">
+          <nls description="Modul" languageCode="de" name="Modul"/>
+          <nls description="Module" languageCode="en" name="Module"/>
+          <nls description="Módulo" languageCode="es" name="Módulo"/>
+          <nls description="Module" languageCode="fr" name="Module"/>
+          <nls description="?????" languageCode="ja" name="?????"/>
+        </lookupValue>
+        <lookupValue code="PAGE" sortOrder="2" status="active">
+          <nls description="Seite" languageCode="de" name="Seite"/>
+          <nls description="Page" languageCode="en" name="Page"/>
+          <nls description="Página" languageCode="es" name="Página"/>
+          <nls description="Page" languageCode="fr" name="Page"/>
+          <nls description="???" languageCode="ja" name="???"/>
+        </lookupValue>
+        <lookupValue code="FRAGMENT" sortOrder="1" status="active">
+          <nls description="Objekttyp Seitenfragment" languageCode="de" name="Seitenfragment"/>
+          <nls description="Page Fragment Object Type" languageCode="en" name="Page Fragment"/>
+          <nls description="El Tipo de Objeto es un Fragmento de Página" languageCode="es" name="Fragmento de Página"/>
+          <nls description="Type d&apos;objet de fragment de page" languageCode="fr" name="Fragment de page"/>
+          <nls description="??????????? ???" languageCode="ja" name="?????"/>
+        </lookupValue>
+        <lookupValue code="PORTLET" sortOrder="0" status="active">
+          <nls description="Portlet" languageCode="de" name="Portlet"/>
+          <nls description="Portlet" languageCode="en" name="Portlet"/>
+          <nls description="ES - Portlet" languageCode="es" name="ES - Portlet"/>
+          <nls description="Portlet" languageCode="fr" name="Portlet"/>
+          <nls description="Portlet" languageCode="ja" name="Portlet"/>
+        </lookupValue>
+        <lookupValue code="RECORD" sortOrder="6" status="active">
+          <nls description="Datensatz" languageCode="de" name="Datensatz"/>
+          <nls description="Record" languageCode="en" name="Record"/>
+          <nls description="Registro" languageCode="es" name="Registro"/>
+          <nls description="Enregistrement" languageCode="fr" name="Enregistrement"/>
+          <nls description="????" languageCode="ja" name="????"/>
+        </lookupValue>
+        <lookupValue code="REPORT" sortOrder="0" status="active">
+          <nls description="Bericht" languageCode="de" name="Bericht"/>
+          <nls description="Report" languageCode="en" name="Report"/>
+          <nls description="ES - Report" languageCode="es" name="ES - Report"/>
+          <nls description="Rapport" languageCode="fr" name="Rapport"/>
+          <nls description="Report" languageCode="ja" name="Report"/>
+        </lookupValue>
+        <lookupValue code="SEARCH_BUTTON" sortOrder="1" status="active">
+          <nls description="Schaltfläche Suchen" languageCode="de" name="Schaltfläche Suchen"/>
+          <nls description="Search Button" languageCode="en" name="Search Button"/>
+          <nls description="Botón Buscar" languageCode="es" name="Botón Buscar"/>
+          <nls description="Bouton Rechercher" languageCode="fr" name="Bouton Rechercher"/>
+          <nls description="?????" languageCode="ja" name="?????"/>
+        </lookupValue>
+        <lookupValue code="SELECTION" sortOrder="3" status="active">
+          <nls description="Auswahl" languageCode="de" name="Auswahl"/>
+          <nls description="Selection" languageCode="en" name="Selection"/>
+          <nls description="Selección" languageCode="es" name="Selección"/>
+          <nls description="Sélection" languageCode="fr" name="Sélection"/>
+          <nls description="??" languageCode="ja" name="??"/>
+        </lookupValue>
+        <lookupValue code="SERVICE" sortOrder="0" status="active">
+          <nls description="Leistung" languageCode="de" name="Leistung"/>
+          <nls description="Service" languageCode="en" name="Service"/>
+          <nls description="Servicio" languageCode="es" name="Servicio"/>
+          <nls description="Service" languageCode="fr" name="Service"/>
+          <nls description="Service" languageCode="ja" name="Service"/>
+        </lookupValue>
+        <lookupValue code="TEXTAREA" sortOrder="4" status="active">
+          <nls description="Textbereich" languageCode="de" name="Textbereich"/>
+          <nls description="Text Area" languageCode="en" name="Text Area"/>
+          <nls description="Área de Texto" languageCode="es" name="Área de Texto"/>
+          <nls description="Zone de texte" languageCode="fr" name="Zone de texte"/>
+          <nls description="???? ???" languageCode="ja" name="???? ???"/>
+        </lookupValue>
+        <lookupValue code="UPDATE_BUTTON" sortOrder="1" status="active">
+          <nls description="Schaltfläche Aktualisieren" languageCode="de" name="Schaltfläche Aktualisieren"/>
+          <nls description="Update Button" languageCode="en" name="Update Button"/>
+          <nls description="Botón Actualizar" languageCode="es" name="Botón Actualizar"/>
+          <nls description="Bouton Mettre à jour" languageCode="fr" name="Bouton Mettre à jour"/>
+          <nls description="?????" languageCode="ja" name="?????"/>
+        </lookupValue>
+        <lookupValue code="LINK" sortOrder="1" status="active">
+          <nls description="URL-Link" languageCode="de" name="URL-Link"/>
+          <nls description="URL Link" languageCode="en" name="URL Link"/>
+          <nls description="Enlace de URL" languageCode="es" name="Enlace de URL"/>
+          <nls description="Lien URL" languageCode="fr" name="Lien URL"/>
+          <nls description="URL ???" languageCode="ja" name="URL ???"/>
+        </lookupValue>
+      </staticLookup>
+    </lookups>
+        <partitionModels>
+            <partitionModel code="GEOGRAPHY" isActive="true">
+                <nls description="Geographical Location Partition"
+                    languageCode="de" name="Geography"/>
+                <nls description="Geographical Location Partition"
+                    languageCode="en" name="Geography"/>
+                <nls description="Geographical Location Partition"
+                    languageCode="es" name="Geography"/>
+                <nls description="Geographical Location Partition"
+                    languageCode="fr" name="Geography"/>
+                <nls description="Geographical Location Partition"
+                    languageCode="ja" name="Geography"/>
+                <nls description="Geographical Location Partition"
+                    languageCode="nl" name="Geography"/>
+                <partition code="GLOBAL" isActive="true">
+                    <nls description="Global Partition"
+                        languageCode="de" name="Global"/>
+                    <nls description="Global Partition"
+                        languageCode="en" name="Global"/>
+                    <nls description="Global Partition"
+                        languageCode="es" name="Global"/>
+                    <nls description="Global Partition"
+                        languageCode="fr" name="Global"/>
+                    <nls description="Global Partition"
+                        languageCode="ja" name="Global"/>
+                    <nls description="Global Partition"
+                        languageCode="nl" name="Global"/>
+                    <partitionMembers>
+                        <resourceMember userName="admin"/>
+                        <resourceMember userName="admin_de"/>
+                        <resourceMember userName="admin_es"/>
+                        <resourceMember userName="admin_fr"/>
+                        <resourceMember userName="admin_ja"/>
+                        <resourceMember userName="admin_nl"/>
+                        <resourceMember userName="process_admin"/>
+                        <groupMember groupCode="JOB_MONITORS"/>
+                        <groupMember groupCode="JobUsers"/>
+                        <obsMember mode="OBS_UNIT_AND_CHILDREN" typeCode="dept" typeName="Department" unitPath="/Niku"/>
+                        <obsMember mode="OBS_UNIT_CHILD_AND_ANCESTORS" typeCode="dept" typeName="Department" unitPath="/Niku/Sales"/>
+                        <obsMember mode="OBS_UNIT_CHILD_AND_ANCESTORS" typeCode="dept" typeName="Department" unitPath="/Niku/Marketing"/>
+                    </partitionMembers>
+                    <partition code="NA" isActive="true" uiThemeCode="yellow">
+                        <nls languageCode="de" name="North America"/>
+                        <nls languageCode="en" name="North America"/>
+                        <nls languageCode="es" name="North America"/>
+                        <nls languageCode="fr" name="North America"/>
+                        <nls languageCode="ja" name="North America"/>
+                        <nls languageCode="nl" name="North America"/>
+                        <partitionMembers>
+                            <resourceMember userName="admin_es"/>
+                            <resourceMember userName="admin_nl"/>
+                            <resourceMember userName="admin_de"/>
+                            <resourceMember userName="admin_fr"/>
+                            <resourceMember userName="admin_ja"/>
+                            <resourceMember userName="admin"/>
+                            <resourceMember userName="dbetterton"/>
+                            <groupMember groupCode="PortfolioManager"/>
+                            <groupMember groupCode="ProjectOfficer"/>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN" typeCode="loc" typeName="Location" unitPath="/USA/California"/>
+                        </partitionMembers>
+                        <partition code="USA" isActive="true" uiThemeCode="blue-tan">
+                            <nls languageCode="de" name="The United States"/>
+                            <nls languageCode="en" name="The United States"/>
+                            <nls languageCode="es" name="The United States"/>
+                            <nls languageCode="fr" name="The United States"/>
+                            <nls languageCode="ja" name="The United States"/>
+                            <nls languageCode="nl" name="The United States"/>
+                            <partitionMembers>
+                                <resourceMember userName="AAA1754296081ResL1"/>
+                                <resourceMember userName="AAA1765922645ResL1"/>
+                                <resourceMember userName="aanderson"/>
+                                <resourceMember userName="aarokiasamy"/>
+                                <resourceMember userName="admin"/>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <resourceMember userName="dbetterton"/>
+                                <resourceMember userName="process_admin"/>
+                                <groupMember groupCode="JOB_MONITORS"/>
+                                <groupMember groupCode="JobUsers"/>
+                            </partitionMembers>
+                            <partition code="CA" isActive="true" uiThemeCode="green">
+                              <nls languageCode="en" name="California"/>
+                              <partitionMembers>
+                                <resourceMember userName="admin"/>
+                                <resourceMember userName="dbetterton"/>
+                              </partitionMembers>
+                            </partition>
+                            <partition code="MA" isActive="true" uiThemeCode="blue-tan">
+                              <nls languageCode="en" name="Massachussetts"/>
+                              <partitionMembers>
+                                <resourceMember userName="admin"/>
+                                <resourceMember userName="dbetterton"/>
+                              </partitionMembers>
+                            </partition>
+                            <partition code="CO" isActive="true" uiThemeCode="green">
+                              <nls languageCode="en" name="Colorado"/>
+                              <partitionMembers>
+                                <resourceMember userName="admin"/>
+                              </partitionMembers>
+                            </partition>
+                        </partition>
+                        <partition code="CANADA" isActive="true" uiThemeCode="blue-tan">
+                            <nls languageCode="de" name="Canada"/>
+                            <nls languageCode="en" name="Canada"/>
+                            <nls languageCode="es" name="Canada"/>
+                            <nls languageCode="fr" name="Canada"/>
+                            <nls languageCode="ja" name="Canada"/>
+                            <nls languageCode="nl" name="Canada"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_nl"/>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="dbetterton"/>
+                                <groupMember groupCode="JOB_MONITORS"/>
+                                <groupMember groupCode="JobUsers"/>
+                                <obsMember mode="OBS_UNIT_ONLY"
+                                    typeCode="Location"
+                                    typeName="Location" unitPath="/USA"/>
+                                <obsMember
+                                    mode="OBS_UNIT_CHILD_AND_ANCESTORS"
+                                    typeCode="Location"
+                                    typeName="Location" unitPath="/USA/US-Central"/>
+                                <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                    typeCode="Location"
+                                    typeName="Location" unitPath="/USA/US-West/Oregon"/>
+                            </partitionMembers>
+                        </partition>
+                    </partition>
+                    <partition code="EU" isActive="true" uiThemeCode="green">
+                        <nls languageCode="de" name="Europe"/>
+                        <nls languageCode="en" name="Europe"/>
+                        <nls languageCode="es" name="Europe"/>
+                        <nls languageCode="fr" name="Europe"/>
+                        <nls languageCode="ja" name="Europe"/>
+                        <nls languageCode="nl" name="Europe"/>
+                        <partitionMembers>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                typeCode="loc" typeName="Location" unitPath="/UK"/>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                typeCode="loc" typeName="Location" unitPath="/France"/>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                typeCode="loc" typeName="Location" unitPath="/Spain"/>
+                        </partitionMembers>
+                        <partition code="UK" isActive="true" uiThemeCode="blue-tan">
+                            <nls languageCode="de" name="The United Kingdom"/>
+                            <nls languageCode="en" name="The United Kingdom"/>
+                            <nls languageCode="es" name="The United Kingdom"/>
+                            <nls languageCode="fr" name="The United Kingdom"/>
+                            <nls languageCode="ja" name="The United Kingdom"/>
+                            <nls languageCode="nl" name="The United Kingdom"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="ProjectAuthor"/>
+                                <groupMember groupCode="ProjectManager"/>
+                                <groupMember groupCode="ProjectOfficer"/>
+                                <obsMember mode="OBS_UNIT_CHILD_AND_ANCESTORS"
+                                    typeCode="Location"
+                                    typeName="Location" unitPath="/USA"/>
+                                <obsMember mode="OBS_UNIT_CHILD_AND_ANCESTORS"
+                                    typeCode="Location"
+                                    typeName="Location" unitPath="/USA/California"/>
+                             </partitionMembers>
+                        </partition>
+                        <partition code="ITALY" isActive="true" uiThemeCode="default">
+                            <nls languageCode="de" name="Italy"/>
+                            <nls languageCode="en" name="Italy"/>
+                            <nls languageCode="es" name="Italy"/>
+                            <nls languageCode="fr" name="Italy"/>
+                            <nls languageCode="ja" name="Italy"/>
+                            <nls languageCode="nl" name="Italy"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                                <groupMember groupCode="ResourceManager"/>
+                                <groupMember groupCode="Worker"/>
+                            </partitionMembers>
+                        </partition>
+                    </partition>
+                    <partition code="ASIA" isActive="true" uiThemeCode="blue-tan">
+                        <nls languageCode="de" name="Asia"/>
+                        <nls languageCode="en" name="Asia"/>
+                        <nls languageCode="es" name="Asia"/>
+                        <nls languageCode="fr" name="Asia"/>
+                        <nls languageCode="ja" name="Asia"/>
+                        <nls languageCode="nl" name="Asia"/>
+                        <partitionMembers>
+                            <resourceMember userName="admin_de"/>
+                            <resourceMember userName="admin_es"/>
+                            <resourceMember userName="admin_fr"/>
+                            <resourceMember userName="admin_ja"/>
+                            <resourceMember userName="admin_nl"/>
+                            <groupMember groupCode="COMPANY_CREATOR"/>
+                            <groupMember groupCode="COMPANY_MANAGER"/>
+                            <groupMember groupCode="ObjectAdmin"/>
+                            <obsMember mode="OBS_UNIT_ONLY"
+                                typeCode="dept" typeName="Department" unitPath="/Niku"/>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                typeCode="dept" typeName="Department" unitPath="/Niku/Marketing"/>
+                            <obsMember mode="OBS_UNIT_AND_ANCESTORS"
+                                typeCode="dept" typeName="Department" unitPath="/Niku/Marketing/test"/>
+                        </partitionMembers>
+                        <partition code="CHINA" isActive="true" uiThemeCode="blue-tan">
+                            <nls languageCode="de" name="China"/>
+                            <nls languageCode="en" name="China"/>
+                            <nls languageCode="es" name="China"/>
+                            <nls languageCode="fr" name="China"/>
+                            <nls languageCode="ja" name="China"/>
+                            <nls languageCode="nl" name="China"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="COMPANY_CREATOR"/>
+                                <groupMember groupCode="COMPANY_MANAGER"/>
+                                <groupMember groupCode="ObjectAdmin"/>
+                            </partitionMembers>
+                            <partition code="HK" isActive="true" uiThemeCode="blue-tan">
+                                <nls languageCode="de" name="Hong Kong District"/>
+                                <nls languageCode="en" name="Hong Kong District"/>
+                                <nls languageCode="es" name="Hong Kong District"/>
+                                <nls languageCode="fr" name="Hong Kong District"/>
+                                <nls languageCode="ja" name="Hong Kong District"/>
+                                <nls languageCode="nl" name="Hong Kong District"/>
+                                <partitionMembers>
+                                    <resourceMember userName="admin_de"/>
+                                    <resourceMember userName="admin_es"/>
+                                    <resourceMember userName="admin_fr"/>
+                                    <resourceMember userName="admin_ja"/>
+                                    <resourceMember userName="admin_nl"/>
+                                    <groupMember groupCode="COMPANY_CREATOR"/>
+                                    <groupMember groupCode="COMPANY_MANAGER"/>
+                                    <groupMember groupCode="ObjectAdmin"/>
+                                    <obsMember
+                                    mode="OBS_UNIT_AND_CHILDREN"
+                                    typeCode="Location"
+                                    typeName="Location" unitPath="/USA/US-West/California/Redwood City"/>
+                                </partitionMembers>
+                            </partition>
+                            <partition code="MACAO" isActive="true" uiThemeCode="orange">
+                                <nls languageCode="de" name="Macao District"/>
+                                <nls languageCode="en" name="Macao District"/>
+                                <nls languageCode="es" name="Macao District"/>
+                                <nls languageCode="fr" name="Macao District"/>
+                                <nls languageCode="ja" name="Macao District"/>
+                                <nls languageCode="nl" name="Macao District"/>
+                            </partition>
+                        </partition>
+                        <partition code="JAPAN" isActive="true" uiThemeCode="web-safe">
+                            <nls languageCode="de" name="Japan"/>
+                            <nls languageCode="en" name="Japan"/>
+                            <nls languageCode="es" name="Japan"/>
+                            <nls languageCode="fr" name="Japan"/>
+                            <nls languageCode="ja" name="Japan"/>
+                            <nls languageCode="nl" name="Japan"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="COMPANY_CREATOR"/>
+                                <groupMember groupCode="COMPANY_MANAGER"/>
+                                <groupMember groupCode="ObjectAdmin"/>
+                                <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                    typeCode="loc" typeName="Location" unitPath="/Japan"/>
+                            </partitionMembers>
+                        </partition>
+                    </partition>
+                </partition>
+            </partitionModel>
+            <partitionModel code="DIVISION" isActive="true">
+                <nls
+                    description="Division: Broken down by subsidiaries and then by functional divisions therein"
+                    languageCode="de" name="Division"/>
+                <nls
+                    description="Division: Broken down by subsidiaries and then by functional divisions therein"
+                    languageCode="en" name="Division"/>
+                <nls
+                    description="Division: Broken down by subsidiaries and then by functional divisions therein"
+                    languageCode="es" name="Division"/>
+                <nls
+                    description="Division: Broken down by subsidiaries and then by functional divisions therein"
+                    languageCode="fr" name="Division"/>
+                <nls
+                    description="Division: Broken down by subsidiaries and then by functional divisions therein"
+                    languageCode="ja" name="Division"/>
+                <nls
+                    description="Division: Broken down by subsidiaries and then by functional divisions therein"
+                    languageCode="nl" name="Division"/>
+                <partition code="HC" isActive="true" uiThemeCode="default">
+                    <nls
+                        description="Corporate Level Description"
+                        languageCode="de" name="Hilton Corporation"/>
+                    <nls description="Corporate Level Description"
+                        languageCode="en" name="Hilton Corporation"/>
+                    <nls
+                        description="Corporate Level Description"
+                        languageCode="es" name="Hilton Corporation"/>
+                    <nls
+                        description="Corporate Level Description"
+                        languageCode="fr" name="Hilton Corporation"/>
+                    <nls
+                        description="Corporate Level Description"
+                        languageCode="ja" name="Hilton Corporation"/>
+                    <nls
+                        description="Corporate Level Description"
+                        languageCode="nl" name="Hilton Corporation"/>
+                    <partitionMembers>
+                        <resourceMember userName="admin"/>
+                        <resourceMember userName="admin_de"/>
+                        <resourceMember userName="admin_es"/>
+                        <resourceMember userName="admin_fr"/>
+                        <resourceMember userName="admin_ja"/>
+                        <resourceMember userName="admin_nl"/>
+                        <resourceMember userName="process_admin"/>
+                        <groupMember groupCode="StudioAccessRole"/>
+                        <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                            typeCode="dept" typeName="Department" unitPath="/Niku/Sales"/>
+                        <obsMember mode="OBS_UNIT_AND_ANCESTORS"
+                            typeCode="dept" typeName="Department" unitPath="/Niku/Development/TEST"/>
+                    </partitionMembers>
+                    <partition code="DT" isActive="true" uiThemeCode="blue-tan">
+                        <nls languageCode="de" name="DoubleTree"/>
+                        <nls languageCode="en" name="DoubleTree"/>
+                        <nls languageCode="es" name="DoubleTree"/>
+                        <nls languageCode="fr" name="DoubleTree"/>
+                        <nls languageCode="ja" name="DoubleTree"/>
+                        <nls languageCode="nl" name="DoubleTree"/>
+                        <partitionMembers>
+                            <resourceMember userName="admin_de"/>
+                            <resourceMember userName="admin_es"/>
+                            <resourceMember userName="admin_fr"/>
+                            <resourceMember userName="admin_ja"/>
+                            <resourceMember userName="admin_nl"/>
+                            <groupMember groupCode="ApplAdminRl"/>
+                            <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                            <groupMember groupCode="PortfolioAccess"/>
+                            <groupMember groupCode="PortfolioManager"/>
+                            <groupMember groupCode="PortfolioUsers"/>
+                            <groupMember groupCode="ResourceManager"/>
+                            <groupMember groupCode="StudioAccessRole"/>
+                            <groupMember groupCode="StudioUser"/>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                typeCode="dept" typeName="Department" unitPath="/Niku/Marketing"/>
+                        </partitionMembers>
+                        <partition code="DT_FIN" isActive="true" uiThemeCode="web-safe">
+                            <nls
+                                description="Finance Department"
+                                languageCode="de" name="Double Tree - Finance"/>
+                            <nls description="Finance Department"
+                                languageCode="en" name="Double Tree - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="es" name="Double Tree - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="fr" name="Double Tree - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="ja" name="Double Tree - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="nl" name="Double Tree - Finance"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="ApplAdminRl"/>
+                                <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                                <groupMember groupCode="PortfolioAccess"/>
+                                <groupMember groupCode="PortfolioManager"/>
+                                <groupMember groupCode="PortfolioUsers"/>
+                                <groupMember groupCode="ResourceManager"/>
+                                <groupMember groupCode="StudioAccessRole"/>
+                                <groupMember groupCode="StudioUser"/>
+                            </partitionMembers>
+                        </partition>
+                        <partition code="DT_IT" isActive="true" uiThemeCode="blue-tan">
+                            <nls description="IT Department"
+                                languageCode="de" name="DoubleTree - IT"/>
+                            <nls description="IT Department"
+                                languageCode="en" name="DoubleTree - IT"/>
+                            <nls description="IT Department"
+                                languageCode="es" name="DoubleTree - IT"/>
+                            <nls description="IT Department"
+                                languageCode="fr" name="DoubleTree - IT"/>
+                            <nls description="IT Department"
+                                languageCode="ja" name="DoubleTree - IT"/>
+                            <nls description="IT Department"
+                                languageCode="nl" name="DoubleTree - IT"/>
+                            <partition code="DT_IT_DESKTOP" isActive="true" uiThemeCode="yellow">
+                                <nls
+                                    description="Double Tree IT Department: Desktop Service"
+                                    languageCode="de" name="DoubleTree - IT - Desktop"/>
+                                <nls
+                                    description="Double Tree IT Department: Desktop Service"
+                                    languageCode="en" name="DoubleTree - IT - Desktop"/>
+                                <nls
+                                    description="Double Tree IT Department: Desktop Service"
+                                    languageCode="es" name="DoubleTree - IT - Desktop"/>
+                                <nls
+                                    description="Double Tree IT Department: Desktop Service"
+                                    languageCode="fr" name="DoubleTree - IT - Desktop"/>
+                                <nls
+                                    description="Double Tree IT Department: Desktop Service"
+                                    languageCode="ja" name="DoubleTree - IT - Desktop"/>
+                                <nls
+                                    description="Double Tree IT Department: Desktop Service"
+                                    languageCode="nl" name="DoubleTree - IT - Desktop"/>
+                                <partitionMembers>
+                                    <resourceMember userName="admin_de"/>
+                                    <resourceMember userName="admin_es"/>
+                                    <resourceMember userName="admin_fr"/>
+                                    <resourceMember userName="admin_ja"/>
+                                    <resourceMember userName="admin_nl"/>
+                                    <groupMember groupCode="ApplAdminRl"/>
+                                    <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                                    <groupMember groupCode="PortfolioAccess"/>
+                                    <groupMember groupCode="PortfolioManager"/>
+                                    <groupMember groupCode="PortfolioUsers"/>
+                                    <groupMember groupCode="ResourceManager"/>
+                                    <groupMember groupCode="StudioAccessRole"/>
+                                    <groupMember groupCode="StudioUser"/>
+                                </partitionMembers>
+                            </partition>
+                            <partition code="DT_IT_SERVER" isActive="true" uiThemeCode="green">
+                                <nls
+                                    description="Double Tree IT Department: Server System"
+                                    languageCode="de" name="DoubleTree - IT - Server"/>
+                                <nls
+                                    description="Double Tree IT Department: Server System"
+                                    languageCode="en" name="DoubleTree - IT - Server"/>
+                                <nls
+                                    description="Double Tree IT Department: Server System"
+                                    languageCode="es" name="DoubleTree - IT - Server"/>
+                                <nls
+                                    description="Double Tree IT Department: Server System"
+                                    languageCode="fr" name="DoubleTree - IT - Server"/>
+                                <nls
+                                    description="Double Tree IT Department: Server System"
+                                    languageCode="ja" name="DoubleTree - IT - Server"/>
+                                <nls
+                                    description="Double Tree IT Department: Server System"
+                                    languageCode="nl" name="DoubleTree - IT - Server"/>
+                                <partitionMembers>
+                                    <resourceMember userName="admin_de"/>
+                                    <resourceMember userName="admin_es"/>
+                                    <resourceMember userName="admin_fr"/>
+                                    <resourceMember userName="admin_ja"/>
+                                    <resourceMember userName="admin_nl"/>
+                                    <groupMember groupCode="ApplAdminRl"/>
+                                    <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                                    <groupMember groupCode="PortfolioAccess"/>
+                                    <groupMember groupCode="PortfolioManager"/>
+                                    <groupMember groupCode="PortfolioUsers"/>
+                                    <groupMember groupCode="ResourceManager"/>
+                                    <groupMember groupCode="StudioAccessRole"/>
+                                    <groupMember groupCode="StudioUser"/>
+                                </partitionMembers>
+                            </partition>
+                        </partition>
+                        <partition code="DT_OTHER" isActive="true" uiThemeCode="blue-tan">
+                            <nls
+                                description="All other departments"
+                                languageCode="de" name="DoubleTree - Other"/>
+                            <nls description="All other departments"
+                                languageCode="en" name="DoubleTree - Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="es" name="DoubleTree - Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="fr" name="DoubleTree - Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="ja" name="DoubleTree - Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="nl" name="DoubleTree - Other"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="ApplAdminRl"/>
+                                <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                                <groupMember groupCode="PortfolioAccess"/>
+                                <groupMember groupCode="PortfolioManager"/>
+                                <groupMember groupCode="PortfolioUsers"/>
+                                <groupMember groupCode="ResourceManager"/>
+                                <groupMember groupCode="StudioAccessRole"/>
+                                <groupMember groupCode="StudioUser"/>
+                            </partitionMembers>
+                        </partition>
+                    </partition>
+                    <partition code="ES" isActive="true" uiThemeCode="blue-tan">
+                        <nls languageCode="de" name="Embassy Suites"/>
+                        <nls languageCode="en" name="Embassy Suites"/>
+                        <nls languageCode="es" name="Embassy Suites"/>
+                        <nls languageCode="fr" name="Embassy Suites"/>
+                        <nls languageCode="ja" name="Embassy Suites"/>
+                        <nls languageCode="nl" name="Embassy Suites"/>
+                        <partitionMembers>
+                            <resourceMember userName="AAA1754296081ResL1"/>
+                            <resourceMember userName="AAA1765922645ResL1"/>
+                            <resourceMember userName="aanderson"/>
+                            <resourceMember userName="aarokiasamy"/>
+                            <resourceMember userName="admin"/>
+                            <resourceMember userName="admin_de"/>
+                            <resourceMember userName="admin_es"/>
+                            <resourceMember userName="admin_fr"/>
+                            <resourceMember userName="admin_ja"/>
+                            <resourceMember userName="admin_nl"/>
+                            <resourceMember userName="daguirre"/>
+                            <resourceMember userName="admin_de"/>
+                            <resourceMember userName="admin_es"/>
+                            <resourceMember userName="admin_fr"/>
+                            <resourceMember userName="admin_ja"/>
+                            <resourceMember userName="admin_nl"/>
+                            <groupMember groupCode="DATABUS_ADMINISTRATOR_ROLE"/>
+                            <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                            <groupMember groupCode="ResourceManager"/>
+                            <groupMember groupCode="StudioUser"/>
+                            <groupMember groupCode="SystemAdminRl"/>
+                            <groupMember groupCode="TimesheetsAccess"/>
+                            <groupMember groupCode="Worker"/>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                typeCode="dept" typeName="Department" unitPath="/Niku"/>
+                        </partitionMembers>
+                        <partition code="ES_FIN" isActive="true" uiThemeCode="orange">
+                            <nls
+                                description="Finance Department"
+                                languageCode="de" name="Embassy Suites - Finance"/>
+                            <nls description="Finance Department"
+                                languageCode="en" name="Embassy Suites - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="es" name="Embassy Suites - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="fr" name="Embassy Suites - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="ja" name="Embassy Suites - Finance"/>
+                            <nls
+                                description="Finance Department"
+                                languageCode="nl" name="Embassy Suites - Finance"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="ApplAdminRl"/>
+                                <groupMember groupCode="COMPANY_CREATOR"/>
+                                <groupMember groupCode="COMPANY_MANAGER"/>
+                                <groupMember groupCode="ExternalResourceManager"/>
+                                <groupMember groupCode="FINANCIAL_MANAGER"/>
+                                <groupMember groupCode="JOB_MONITORS"/>
+                                <groupMember groupCode="JobUsers"/>
+                                <groupMember groupCode="ObjectAdmin"/>
+                                <groupMember groupCode="PortfolioAccess"/>
+                                <groupMember groupCode="PortfolioManager"/>
+                                <groupMember groupCode="PortfolioUsers"/>
+                                <groupMember groupCode="PROCESS-DEF-ADMIN"/>
+                                <groupMember groupCode="ProjectAuthor"/>
+                                <groupMember groupCode="ProjectManager"/>
+                                <groupMember groupCode="ProjectOfficer"/>
+                                <groupMember groupCode="ReportAdministratorGroup"/>
+                                <groupMember groupCode="ReportJobAdministrator"/>
+                                <groupMember groupCode="ReportUsers"/>
+                                <groupMember groupCode="ResourceCreator"/>
+                                <groupMember groupCode="StudioAccessRole"/>
+                            </partitionMembers>
+                        </partition>
+                        <partition code="ES_IT" isActive="true" uiThemeCode="default">
+                            <nls description="IT Department"
+                                languageCode="de" name="Embassy Suites - IT"/>
+                            <nls description="IT Department"
+                                languageCode="en" name="Embassy Suites - IT"/>
+                            <nls description="IT Department"
+                                languageCode="es" name="Embassy Suites - IT"/>
+                            <nls description="IT Department"
+                                languageCode="fr" name="Embassy Suites - IT"/>
+                            <nls description="IT Department"
+                                languageCode="ja" name="Embassy Suites - IT"/>
+                            <nls description="IT Department"
+                                languageCode="nl" name="Embassy Suites - IT"/>
+                            <partitionMembers>
+                                <obsMember mode="OBS_UNIT_AND_ANCESTORS"
+                                    typeCode="dept"
+                                    typeName="Department" unitPath="/Niku/Development"/>
+                                <obsMember mode="OBS_UNIT_ONLY"
+                                    typeCode="dept"
+                                    typeName="Department" unitPath="/Niku/Marketing"/>
+                            </partitionMembers>
+                        </partition>
+                        <partition code="ES_OTHER" isActive="true" uiThemeCode="blue-tan">
+                            <nls
+                                description="All other departments"
+                                languageCode="de" name="Embassy Suites- Other"/>
+                            <nls description="All other departments"
+                                languageCode="en" name="Embassy Suites- Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="es" name="Embassy Suites- Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="fr" name="Embassy Suites- Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="ja" name="Embassy Suites- Other"/>
+                            <nls
+                                description="All other departments"
+                                languageCode="nl" name="Embassy Suites- Other"/>
+                            <partitionMembers>
+                                <resourceMember userName="admin_de"/>
+                                <resourceMember userName="admin_es"/>
+                                <resourceMember userName="admin_fr"/>
+                                <resourceMember userName="admin_ja"/>
+                                <resourceMember userName="admin_nl"/>
+                                <groupMember groupCode="ApplAdminRl"/>
+                                <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                                <groupMember groupCode="PortfolioAccess"/>
+                                <groupMember groupCode="PortfolioManager"/>
+                                <groupMember groupCode="PortfolioUsers"/>
+                                <groupMember groupCode="ResourceManager"/>
+                                <groupMember groupCode="StudioAccessRole"/>
+                                <groupMember groupCode="StudioUser"/>
+                            </partitionMembers>
+                        </partition>
+                    </partition>
+                    <partition code="HH" isActive="true" uiThemeCode="blue-tan">
+                        <nls languageCode="de" name="Hilton Hotels"/>
+                        <nls languageCode="en" name="Hilton Hotels"/>
+                        <nls languageCode="es" name="Hilton Hotels"/>
+                        <nls languageCode="fr" name="Hilton Hotels"/>
+                        <nls languageCode="ja" name="Hilton Hotels"/>
+                        <nls languageCode="nl" name="Hilton Hotels"/>
+                        <partitionMembers>
+                            <resourceMember userName="admin_de"/>
+                            <resourceMember userName="admin_es"/>
+                            <resourceMember userName="admin_fr"/>
+                            <resourceMember userName="admin_ja"/>
+                            <resourceMember userName="admin_nl"/>
+                            <groupMember groupCode="ApplAdminRl"/>
+                            <groupMember groupCode="OPPPROJECT_ENABLE_ROLE"/>
+                            <groupMember groupCode="PortfolioAccess"/>
+                            <groupMember groupCode="PortfolioManager"/>
+                            <groupMember groupCode="PortfolioUsers"/>
+                            <groupMember groupCode="ResourceManager"/>
+                            <groupMember groupCode="StudioAccessRole"/>
+                            <groupMember groupCode="StudioUser"/>
+                            <obsMember mode="OBS_UNIT_AND_CHILDREN"
+                                typeCode="dept" typeName="Department" unitPath="/Niku/Development"/>
+                            <obsMember
+                                mode="OBS_UNIT_CHILD_AND_ANCESTORS"
+                                typeCode="dept" typeName="Department" unitPath="/Niku/Marketing"/>
+                        </partitionMembers>
+                    </partition>
+                </partition>
+            </partitionModel>
+        </partitionModels>
+        <objectMappings>
+          <objectMapping mappingCode="testMap" srcObjectCode="idea" destObjectCode="project" complete="true"> <!-- should see all-->
+            <nls description="Map From Idea to Project" languageCode="de" name="aMap"/>
+            <nls description="Map From Idea to Project" languageCode="en" name="aMap"/>
+            <nls description="Map From Idea to Project" languageCode="es" name="aMap"/>
+            <nls description="Map From Idea to Project" languageCode="fr" name="aMap"/>
+            <nls description="Map From Idea to Project" languageCode="ja" name="aMap"/>
+            <nls description="Map From Idea to Project" languageCode="nl" name="aMap"/>
+            <attributeMappings>
+              <attributeMapping srcAttributeCode="name" destAttributeCode="name"/>
+              <attributeMapping srcAttributeCode="unique_code" destAttributeCode="unique_code"/>
+              <attributeMapping srcAttributeCode="description" destAttributeCode="description"/>
+            </attributeMappings>
+            <objectMapping mappingCode="testSubMap" srcObjectCode="sub_idea" destObjectCode="sub_project" expression="sub_idea.is_cost == 1">
+              <nls description="Map From Sub Idea to Sub Project" languageCode="de" name="testSubMap"/>
+              <nls description="Map From Sub Idea to Sub Project" languageCode="en" name="testSubMap"/>
+              <nls description="Map From Sub Idea to Sub Project" languageCode="es" name="testSubMap"/>
+              <nls description="Map From Sub Idea to Sub Project" languageCode="fr" name="testSubMap"/>
+              <nls description="Map From Sub Idea to Sub Project" languageCode="ja" name="testSubMap"/>
+              <nls description="Map From Sub Idea to Sub Project" languageCode="nl" name="testSubMap"/>
+              <attributeMappings>
+                <attributeMapping srcAttributeCode="code" destAttributeCode="code"/>
+                <attributeMapping srcAttributeCode="name" destAttributeCode="name"/>
+                <attributeMapping srcAttributeCode="is_multi_value" destAttributeCode="ps_multi_value"/>
+                <attributeMapping srcAttributeCode="is_start_date" destAttributeCode="ps_start_date"/>
+                <attributeMapping srcAttributeCode="is_finish_date" destAttributeCode="ps_finish_date"/>
+                <attributeMapping srcAttributeCode="is_cost" destAttributeCode="ps_cost"/>
+              </attributeMappings>
+              <objectMapping mappingCode="testSubSubMap" srcObjectCode="sub_sub_idea" destObjectCode="sub_sub_project" expression="sub_sub_idea.iss_cost == 1">
+                 <nls description="Map From Sub Sub Idea to Sub Sub Project" languageCode="de" name="testSubSubMap"/>
+                 <nls description="Map From Sub Sub Idea to Sub Sub Project" languageCode="en" name="testSubSubMap"/>
+                 <nls description="Map From Sub Sub Idea to Sub Sub Project" languageCode="es" name="testSubSubMap"/>
+                 <nls description="Map From Sub Sub Idea to Sub Sub Project" languageCode="fr" name="testSubSubMap"/>
+                 <nls description="Map From Sub Sub Idea to Sub Sub Project" languageCode="ja" name="testSubSubMap"/>
+                 <nls description="Map From Sub Sub  Idea to Sub Sub Project" languageCode="nl" name="testSubSubMap"/>
+                 <attributeMappings>
+                   <attributeMapping srcAttributeCode="code" destAttributeCode="code"/>
+                   <attributeMapping srcAttributeCode="name" destAttributeCode="name"/>
+                   <attributeMapping srcAttributeCode="iss_start_date" destAttributeCode="pss_start_date"/>
+                   <attributeMapping srcAttributeCode="iss_finish_date" destAttributeCode="pss_finish_date"/>
+                   <attributeMapping srcAttributeCode="iss_cost" destAttributeCode="pss_cost"/>
+                 </attributeMappings>
+              </objectMapping>
+            </objectMapping>
+          </objectMapping>
+        </objectMappings>
+    <!-- Forms>
+          <Parent object="Project" parentId="proj_4_forms" name="proj_4_forms">
+            <FormFolder name="actual_benefits">
+          <Form name="test_benefits1" status="OPEN">
+            <ColumnValue name="DESCRIPTION">test1</ColumnValue>
+            <ColumnValue name="EFFICNT_PCT">103</ColumnValue>
+            <ColumnValue name="CUST_SVC_PCT">100</ColumnValue>
+            <ColumnValue name="RED_HEAD_CNT">10</ColumnValue>
+          </Form>
+          <Form name="test_benefits2" status="INPROGRESS">
+            <ColumnValue name="DESCRIPTION">test2</ColumnValue>
+            <ColumnValue name="EFFICNT_PCT">102</ColumnValue>
+            <ColumnValue name="CUST_SVC_PCT">101</ColumnValue>
+            <ColumnValue name="RED_HEAD_CNT">20</ColumnValue>
+          </Form>
+            </FormFolder>
+            <FormFolder name="risk_tracking">
+          <Form name="test_risk1" status="OPEN">
+            <ColumnValue name="DESCRIPTION">testrisk1</ColumnValue>
+            <ColumnValue name="DISCUSSION">Test discussion</ColumnValue>
+            <ColumnValue name="DATE_IDENTIFIED">2002-10-10</ColumnValue>
+            <ColumnValue name="RISK_TYPE">CUSTOMER</ColumnValue>
+            <ColumnValue name="TASK">td1,td2,bu2</ColumnValue>
+            <ColumnValue name="OWNER">pabrams</ColumnValue> 
+            <ColumnValue name="ASSIGNED_TO">admin</ColumnValue> 
+          </Form>
+          <Form name="test_risk2" status="DONE">
+            <ColumnValue name="DISCUSSION">Test discussion1</ColumnValue>
+            <ColumnValue name="DATE_IDENTIFIED">2002-10-13</ColumnValue>
+          </Form>
+            </FormFolder>
+          </Parent>
+      </Forms -->
+  </contentPack>
+</NikuDataBus>

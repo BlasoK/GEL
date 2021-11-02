@@ -1,0 +1,80 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_application.xsd">
+    <Header action="write" externalSource="NIKU" objectType="application" version="7.0.1"/>
+    <Applications>
+        <Application budgetBreakEven="2003-11-01T00:00:00"
+            budgetCostFinish="2003-10-01T00:00:00"
+            budgetCostStart="2003-08-01T00:00:00"
+            budgetCostOperatingTotal="500000" budgetNPV="84894.904109"
+            budgetROI="0.170494" budgetRevFinish="2004-01-01T00:00:00"
+            budgetRevStart="2003-11-01T00:00:00" budgetRevTotal="600000"
+            calculateFinancialMetrics="true" currencyISOcode="USD"
+            forecastBreakEven="2003-11-01T00:00:00"
+            forecastCostFinish="2003-11-01T00:00:00"
+            forecastCostStart="2003-09-01T00:00:00"
+            forecastCostTotal="500000" setBudgetValuesEqualToPlannedValues="false"
+            forecastNPV="89751.617086" forecastROI="0.180248"
+            forecastRevFinish="2004-01-01T00:00:00"
+            forecastRevStart="2003-11-01T00:00:00"
+            forecastRevTotal="600000" functionPoints="0"
+            lastUpdatedBy="sbutler"
+            lastUpdatedDate="2003-11-15T14:32:29" licenceCount="0"
+            start="2006-02-17T08:00:00"                     
+            finish="2006-10-31T17:00:00" 
+            managerUserName="sbutler" name="AppSplit"
+            objectID="AppSplitImport" populationServed="0" progress="0"
+            status="0" totalCostOfOwnership="0">
+            <General addedBy="sbutler" addedDate="2003-11-14"/>
+            <OBSAssocs/>
+        </Application>
+        <Application budgetCostFinish="2004-01-01T00:00:00"
+            budgetCostStart="2003-09-01T00:00:00"
+            budgetCostOperatingTotal="1000000" budgetNPV="197534.390476"
+            budgetROI="0.2" budgetRevFinish="2004-01-01T00:00:00"
+            budgetRevStart="2003-09-01T00:00:00"
+            budgetRevTotal="1200000" calculateFinancialMetrics="true"
+            chargeCodeExtID="DEV" currencyISOcode="USD"
+            forecastBreakEven="2004-04-01T00:00:00"
+            forecastCostFinish="2004-01-01T00:00:00"
+            forecastCostStart="2003-09-01T00:00:00"
+            forecastCostTotal="1000000" setBudgetValuesEqualToPlannedValues="false"
+            forecastNPV="163820.296138" forecastROI="0.165865"
+            forecastRevFinish="2004-07-01T00:00:00"
+            forecastRevStart="2003-10-01T00:00:00"
+            forecastRevTotal="1200000" functionPoints="0"
+            lastUpdatedBy="sbutler"
+            lastUpdatedDate="2003-11-15T14:10:43" licenceCount="0"
+            start="2006-02-17T08:00:00"                     
+            finish="2006-10-31T17:00:00" 
+            managerUserName="sbutler" name="Apps1" objectID="Apps1Import"
+            populationServed="0" progress="0" 
+            status="0" totalCostOfOwnership="0">
+            <General addedBy="sbutler" addedDate="2003-11-13"/>
+            <OBSAssocs/>
+         </Application>
+        <Application approvedByID="testinstall" approvedTime="2003-09-01T00:00:00"
+            budgetCostFinish="2004-01-01T00:00:00"
+            budgetCostStart="2003-09-01T00:00:00"
+            budgetCostOperatingTotal="1000000" budgetNPV="197534.390476"
+            budgetROI="0.2" budgetRevFinish="2004-01-01T00:00:00"
+            budgetRevStart="2003-09-01T00:00:00"
+            budgetRevTotal="1200000" calculateFinancialMetrics="true"
+            chargeCodeExtID="DEV" currencyISOcode="USD"
+            forecastBreakEven="2004-04-01T00:00:00"
+            forecastCostFinish="2004-01-01T00:00:00"
+            forecastCostStart="2003-09-01T00:00:00"
+            forecastCostTotal="1000000" setBudgetValuesEqualToPlannedValues="false"
+            forecastNPV="163820.296138" forecastROI="0.165865"
+            forecastRevFinish="2004-07-01T00:00:00"
+            forecastRevStart="2003-10-01T00:00:00"
+            forecastRevTotal="1200000" functionPoints="0"
+            lastUpdatedBy="sbutler"
+            start="2006-02-17T08:00:00"                     
+            finish="2006-10-31T17:00:00" 
+            lastUpdatedDate="2003-11-15T14:10:43" licenceCount="0"
+            managerUserName="sbutler" name="AppsApproved1" objectID="AppsApproved1"
+            populationServed="0" progress="0"
+            status="1" totalCostOfOwnership="0">
+            <General addedBy="sbutler" addedDate="2003-11-13"/>
+            <OBSAssocs/>
+         </Application>    </Applications>
+</NikuDataBus>

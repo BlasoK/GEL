@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="contentPack" version="8.0"/>
+    <contentPack update="true">
+        <objects>
+            <object code="banana" update="true" raiseEvents="true">
+              <nls description="Banana- A healthy fruit" languageCode="de" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="en" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="es" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="fr" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="ja" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="nl" name="Banana"/>
+      
+                <customAttribute active="true" code="attach_attr"
+                  column="attach_attr" constant="false"
+                  currencyConnected="false" custom="true"
+                  dataType="attachment" editable="true"
+                  multiValued="false" private="false" required="false"
+                  unique="false" virtual="false">
+                    <nls description="Attachment Attribute"
+                        languageCode="de" name="Attachment Attribute"/>
+                    <nls description="Custom Attribute"
+                        languageCode="en" name="Attachment Attr"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="es" name="Attachment Attribute"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="fr" name="Attachment Attribute"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="ja" name="Attachment Attribute"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="nl" name="Attachment Attribute"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_cust_attr"
+                    column="cust_attr" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="true"
+                    maxValue="99999999" minValue="0" multiValued="false"
+                    private="false" required="false" scale="0"
+                    unique="false" virtual="false">
+                    <nls description="Custom Attribute 1"
+                        languageCode="de" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute"
+                        languageCode="en" name="Cust Attr"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="es" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="fr" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="ja" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="nl" name="Custom Attribute 1"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_url_attr"
+                    column="url_attr" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="string" editable="true" extendedType="url"
+                    multiValued="false" private="false" required="false"
+                    unique="false" virtual="false">
+                    <nls description="URL" languageCode="de" name="URL"/>
+                    <nls description="URL" languageCode="en" name="URL"/>
+                    <nls description="URL" languageCode="es" name="URL"/>
+                    <nls description="URL" languageCode="fr" name="URL"/>
+                    <nls description="URL" languageCode="ja" name="URL"/>
+                    <nls description="URL" languageCode="nl" name="URL"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_score"
+                    column="ca_score" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="false"
+                    extendedType="formula" multiValued="false"
+                    private="false" required="false" scale="1"
+                    unique="false" virtual="true">
+                    <nls description="True Score" languageCode="de" name="True Score"/>
+                    <nls description="Number of Users" languageCode="en" name="Num Users"/>
+                    <nls description="True Score" languageCode="es" name="True Score"/>
+                    <nls description="True Score" languageCode="fr" name="True Score"/>
+                    <nls description="True Score" languageCode="ja" name="True Score"/>
+                    <nls description="True Score" languageCode="nl" name="True Score"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_score2"
+                    column="ca_score2" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="false"
+                    extendedType="formula" multiValued="false"
+                    private="false" required="false" unique="false" virtual="true">
+                    <nls description="Incomplete Score"
+                        languageCode="de" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="en" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="es" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="fr" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="ja" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="nl" name="Incomplete Score"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_req_num"
+                    column="req_num" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="true"
+                    multiValued="false" private="false" required="true"
+                    unique="false" virtual="false">
+                    <nls description="Required Number" languageCode="de" name="Required Number"/>
+                    <nls description="Required Number" languageCode="en" name="Required Number"/>
+                    <nls description="Required Number" languageCode="es" name="Required Number"/>
+                    <nls description="Required Number" languageCode="fr" name="Required Number"/>
+                    <nls description="Required Number" languageCode="ja" name="Required Number"/>
+                    <nls description="Required Number" languageCode="nl" name="Required Number"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_multi_lookup_attr"
+                    column="ca_multi_lookup_attr" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" extendedType="lookup" editable="true"
+                    multiValued="true" private="false" required="false"
+                    unique="false" virtual="false" lookupType="LOOKUP_USERS">
+                    <nls description="Multi-valued Lookup Attribute" languageCode="de" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="en" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="es" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="fr" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="ja" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="nl" name="Multi-valued Lookup Attribute"/>
+                </customAttribute>
+
+                <customAttribute active="true" code="ca_multi_dep_lookup"
+                    column="ca_multi_dep_lookup" constant="false"
+                    currencyConnected="false" custom="true" dataSize="2000"
+                    dataType="string" extendedType="lookup" editable="true"
+                    multiValued="true" private="false" required="false"
+                    unique="false" virtual="false" lookupType="ODF_TST_COUNTRIES" dependentExit="ODF_TST_CITIES" dependentEntry="ODF_TST_COUNTRIES">
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="de" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="en" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="es" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="fr" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="ja" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="nl" name="Multi-valued Dependent Lookup Attribute"/>
+                </customAttribute>
+
+                <customAttribute active="true" code="ca_multi_stat_lookup"
+                    column="ca_multi_stat_lookup" constant="false"
+                    currencyConnected="false" custom="true" dataSize="2000"
+                    dataType="string" extendedType="lookup" editable="true"
+                    multiValued="true" private="false" required="false"
+                    unique="false" virtual="false" lookupType="ODF_COLORS">
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="de" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="en" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="es" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="fr" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="ja" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="nl" name="Multi-valued Dependent Lookup Attribute"/>
+                </customAttribute>
+                <links objectCode="banana">
+                    <link action="odfTest.bananaPropertyView" code="odf.banana.properties2">
+                        <nls description="Banana Properties Link"
+                            languageCode="de" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="en" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="es" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="fr" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="ja" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="nl" name="Banana Properties Link"/>
+                        <linkParam dataRef="odf_pk" dataSource="data" paramCode="odf_pk"/>
+                        <linkParam dataRef="/data/header/action/@id"
+                            dataSource="input" paramCode="odf_return_to"/>
+                        <linkParam dataRef="update" dataSource="static" paramCode="odf_view"/>
+                    </link>
+                    <link action="odfTest.bananaPropertyView" code="odf.banana.properties3">
+                        <nls description="Banana Properties Link"
+                            languageCode="de" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="en" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="es" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="fr" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="ja" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="nl" name="Banana Properties Link"/>
+                        <linkParam dataRef="odf_pk" dataSource="data" paramCode="odf_pk"/>
+                        <linkParam dataRef="/data/header/action/@id"
+                            dataSource="input" paramCode="odf_return_to"/>
+                        <linkParam dataRef="update" dataSource="static" paramCode="odf_view"/>
+                    </link>
+                </links>
+                <displayMappings/>
+                <scoreContributions>
+                    <scoreContribution attribute="ca_score"
+                        contributor="num_attr" weight="2"/>
+                    <scoreContribution attribute="ca_score"
+                        contributor="base2_num_attr" weight="0.3636"/>
+                    <scoreContribution attribute="ca_score"
+                        contributor="ca_cust_attr" weight="10"/>
+                </scoreContributions>
+                <actions>
+                  <action action="odfTest.bananaPropertyView"
+                          code="banana.objectAction" component="odfTest"
+                          isActive="true" isCustom="false"
+                          isGeneric="true" isInstance="true"
+                          jobDefinitionCode="NONE" navigateTo="OBJECT"
+                          needUserConfirmation="false"
+                          needUserInput="false" objectCode="banana"
+                          partitionCode="NIKU.ROOT"
+                          partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+                          processCode="NONE" rendering="cviewAction"
+                          targetWidget="none" type="internallink">
+                    <nls
+                      description="[cs: Link to the Banana Property Page]"
+                      languageCode="cs" name="[cs: Link to the Banana Property Page]"/>
+                    <nls
+                      description="[da: Link to the Banana Property Page]"
+                      languageCode="da" name="[da: Link to the Banana Property Page]"/>
+                    <nls
+                      description="DE Link to the Banana Property Page"
+                      languageCode="de" name="DE Link to the Banana Property Page"/>
+                    <nls
+                      description="Link to the Banana Property Page"
+                      languageCode="en" name="Link to the Banana Property Page"/>
+                    <nls
+                      description="[es: Link to the Banana Property Page]"
+                      languageCode="es" name="[es: Link to the Banana Property Page]"/>
+                    <nls
+                      description="[fi: Link to the Banana Property Page]"
+                      languageCode="fi" name="[fi: Link to the Banana Property Page]"/>
+                    <nls
+                      description="FRLink to the Banana Property Page"
+                      languageCode="fr" name="FRLink to the Banana Property Page"/>
+                    <nls
+                      description="[it: Link to the Banana Property Page]"
+                      languageCode="it" name="[it: Link to the Banana Property Page]"/>
+                    <nls
+                      description="[ja: Link to the Banana Property Page]"
+                      languageCode="ja" name="[ja: Link to the Banana Property Page]"/>
+                    <nls
+                      description="[ko: Link to the Banana Property Page]"
+                      languageCode="ko" name="[ko: Link to the Banana Property Page]"/>
+                    <nls
+                      description="NL Link to the Banana Property Page"
+                      languageCode="nl" name="NL Link to the Banana Property Page"/>
+                    <nls
+                      description="[pt: Link to the Banana Property Page]"
+                      languageCode="pt" name="[pt: Link to the Banana Property Page]"/>
+                    <nls
+                      description="[sv: Link to the Banana Property Page]"
+                      languageCode="sv" name="[sv: Link to the Banana Property Page]"/>
+                    <nls
+                      description="[zh: Link to the Banana Property Page]"
+                      languageCode="zh" name="[zh: Link to the Banana Property Page]"/>
+                    <nls
+                      description="[zh_TW: Link to the Banana Property Page]"
+                      languageCode="zh_TW" name="[zh_TW: Link to the Banana Property Page]"/>
+                    <linkParam dataRef="odf_pk" dataSource="data" paramCode="odf_pk"/>
+                    <linkParam dataRef="/data/header/action/@id"
+                               dataSource="input" paramCode="odf_return_to"/>
+                    <linkParam dataRef="update" dataSource="static" paramCode="odf_view"/>
+                    <availableView viewCode="banana" viewType="property"/>
+                    <availableView viewCode="odfTest.bananaList" viewType="grid"/>
+                  </action>
+                  <action action="odf.banana.properties2"
+                          code="banana.objectAction2" component="odfTest"
+                          isActive="true" isCustom="false"
+                          isGeneric="false" isInstance="true"
+                          jobDefinitionCode="NONE" navigateTo="OBJECT"
+                          needUserConfirmation="false"
+                          needUserInput="false" objectCode="banana"
+                          partitionCode="NIKU.ROOT"
+                          partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+                          processCode="NONE" rendering="cviewAction"
+                          targetWidget="none" type="internallink">
+                    <nls description="[cs: Banana Properties Link]"
+                         languageCode="cs" name="[cs: Banana Properties Link]"/>
+                    <nls description="[da: Banana Properties Link]"
+                         languageCode="da" name="[da: Banana Properties Link]"/>
+                    <nls description="[de: Banana Properties Link]"
+                         languageCode="de" name="[de: Banana Properties Link]"/>
+                    <nls description="Banana Properties Link"
+                         languageCode="en" name="Banana Properties Link"/>
+                    <nls description="[es: Banana Properties Link]"
+                         languageCode="es" name="[es: Banana Properties Link]"/>
+                    <nls description="[fi: Banana Properties Link]"
+                         languageCode="fi" name="[fi: Banana Properties Link]"/>
+                    <nls description="[fr: Banana Properties Link]"
+                         languageCode="fr" name="[fr: Banana Properties Link]"/>
+                    <nls description="[it: Banana Properties Link]"
+                         languageCode="it" name="[it: Banana Properties Link]"/>
+                    <nls description="[ja: Banana Properties Link]"
+                         languageCode="ja" name="[ja: Banana Properties Link]"/>
+                    <nls description="[ko: Banana Properties Link]"
+                         languageCode="ko" name="[ko: Banana Properties Link]"/>
+                    <nls description="[nl: Banana Properties Link]"
+                         languageCode="nl" name="[nl: Banana Properties Link]"/>
+                    <nls description="[pt: Banana Properties Link]"
+                         languageCode="pt" name="[pt: Banana Properties Link]"/>
+                    <nls description="[sv: Banana Properties Link]"
+                         languageCode="sv" name="[sv: Banana Properties Link]"/>
+                    <nls description="[zh: Banana Properties Link]"
+                         languageCode="zh" name="[zh: Banana Properties Link]"/>
+                    <nls
+                      description="[zh_TW: Banana Properties Link]"
+                      languageCode="zh_TW" name="[zh_TW: Banana Properties Link]"/>
+                    <linkParam dataRef="odf_pk" dataSource="data" paramCode="odf_pk"/>
+                    <linkParam dataRef="/data/header/action/@id"
+                               dataSource="input" paramCode="odf_return_to"/>
+                    <linkParam dataRef="update" dataSource="static" paramCode="odf_view"/>
+                  </action>
+                  <action action="odf.banana.properties3"
+                          code="banana.objectAction3" component="odfTest"
+                          isActive="true" isCustom="false"
+                          isGeneric="false" isInstance="true"
+                          jobDefinitionCode="NONE" navigateTo="OBJECT"
+                          needUserConfirmation="false"
+                          needUserInput="false" objectCode="banana"
+                          partitionCode="NIKU.ROOT"
+                          partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+                          processCode="NONE" rendering="cviewAction"
+                          targetWidget="none" type="internallink">
+                    <nls description="[cs: Banana Properties Link]"
+                         languageCode="cs" name="[cs: Banana Properties Link]"/>
+                    <nls description="[da: Banana Properties Link]"
+                         languageCode="da" name="[da: Banana Properties Link]"/>
+                    <nls description="[de: Banana Properties Link]"
+                         languageCode="de" name="[de: Banana Properties Link]"/>
+                    <nls description="Banana Properties Link"
+                         languageCode="en" name="Banana Properties Link"/>
+                    <nls description="[es: Banana Properties Link]"
+                         languageCode="es" name="[es: Banana Properties Link]"/>
+                    <nls description="[fi: Banana Properties Link]"
+                         languageCode="fi" name="[fi: Banana Properties Link]"/>
+                    <nls description="[fr: Banana Properties Link]"
+                         languageCode="fr" name="[fr: Banana Properties Link]"/>
+                    <nls description="[it: Banana Properties Link]"
+                         languageCode="it" name="[it: Banana Properties Link]"/>
+                    <nls description="[ja: Banana Properties Link]"
+                         languageCode="ja" name="[ja: Banana Properties Link]"/>
+                    <nls description="[ko: Banana Properties Link]"
+                         languageCode="ko" name="[ko: Banana Properties Link]"/>
+                    <nls description="[nl: Banana Properties Link]"
+                         languageCode="nl" name="[nl: Banana Properties Link]"/>
+                    <nls description="[pt: Banana Properties Link]"
+                         languageCode="pt" name="[pt: Banana Properties Link]"/>
+                    <nls description="[sv: Banana Properties Link]"
+                         languageCode="sv" name="[sv: Banana Properties Link]"/>
+                    <nls description="[zh: Banana Properties Link]"
+                         languageCode="zh" name="[zh: Banana Properties Link]"/>
+                    <nls
+                      description="[zh_TW: Banana Properties Link]"
+                      languageCode="zh_TW" name="[zh_TW: Banana Properties Link]"/>
+                    <linkParam dataRef="odf_pk" dataSource="data" paramCode="odf_pk"/>
+                    <linkParam dataRef="/data/header/action/@id"
+                               dataSource="input" paramCode="odf_return_to"/>
+                    <linkParam dataRef="update" dataSource="static" paramCode="odf_view"/>
+                  </action>
+                  <action action="bpm.startProcess"
+                          code="processaction" component="odfTest"
+                          isActive="true" isCustom="true" isGeneric="true"
+                          isInstance="true" jobDefinitionCode="NONE"
+                          needUserConfirmation="false"
+                          needUserInput="false" objectCode="banana"
+                          partitionCode="NIKU.ROOT"
+                          partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+                          processCode="HELLO_WORLD_PROCESS"
+                          rendering="cviewAction" targetWidget="none" type="process">
+                    <nls description="Process Action"
+                         languageCode="cs" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="da" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="de" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="en" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="es" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="fi" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="fr" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="it" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="ja" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="ko" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="nl" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="pt" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="sv" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="zh" name="Process Action"/>
+                    <nls description="Process Action"
+                         languageCode="zh_TW" name="Process Action"/>
+                    <linkParam dataRef="odf_pk" dataSource="data" paramCode="primaryObjAttr"/>
+                  </action>
+                  <action action="nmc.jobPropertiesNew"
+                          code="jobaction" component="odfTest"
+                          isActive="true" isCustom="true" isGeneric="true"
+                          isInstance="false"
+                          jobDefinitionCode="ASSIGN_INCIDENTS"
+                          needUserConfirmation="true"
+                          needUserInput="false" objectCode="banana"
+                          partitionCode="NIKU.ROOT"
+                          partitionMode="PARTITION_AND_ANSTRS_DESDNTS"
+                          processCode="NONE" rendering="cviewAction"
+                          targetWidget="none" type="job">
+                    <nls description="Job Action" languageCode="cs" name="Job Action"/>
+                    <nls description="Job Action" languageCode="da" name="Job Action"/>
+                    <nls description="Job Action" languageCode="de" name="Job Action"/>
+                    <nls description="Job Action" languageCode="en" name="Job Action"/>
+                    <nls description="Job Action" languageCode="es" name="Job Action"/>
+                    <nls description="Job Action" languageCode="fi" name="Job Action"/>
+                    <nls description="Job Action" languageCode="fr" name="Job Action"/>
+                    <nls description="Job Action" languageCode="it" name="Job Action"/>
+                    <nls description="Job Action" languageCode="ja" name="Job Action"/>
+                    <nls description="Job Action" languageCode="ko" name="Job Action"/>
+                    <nls description="Job Action" languageCode="nl" name="Job Action"/>
+                    <nls description="Job Action" languageCode="pt" name="Job Action"/>
+                    <nls description="Job Action" languageCode="sv" name="Job Action"/>
+                    <nls description="Job Action" languageCode="zh" name="Job Action"/>
+                    <nls description="Job Action"
+                         languageCode="zh_TW" name="Job Action"/>
+                    <linkParam dataRef="jobactionSavedParam"
+                               dataSource="static" paramCode="saveParamName"/>
+                  </action>
+                </actions>
+            </object>
+        </objects>
+    </contentPack>
+    <XOGOutput>
+        <Object type="contentPack"/>
+        <Status state="SUCCESS"/>
+        <Statistics failureRecords="0" insertedRecords="0"
+            totalNumberOfRecords="1" updatedRecords="0"/>
+        <Records/>
+    </XOGOutput>
+</NikuDataBus>

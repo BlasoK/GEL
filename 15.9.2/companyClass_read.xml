@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="../xsd/nikuxog_notification.xsd">
+    <Header action="read" externalSource="NIKU" objectType="companyclass" version="13.0" />
+    <Query>
+       <Filter name="companyclass" criteria="EQUALS">compcls1</Filter>
+    </Query>
+</NikuDataBus>

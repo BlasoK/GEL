@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_document.xsd">
+  <Header action="write" externalSource="NIKU" objectType="document" version="7.5" />
+  <Documents>
+    <Parent documentLocation="D:\niku\main\build/xog/test/documentXogLocation" parentObjectId="1010" parentObjectType="KS">
+      <Folder allowNonParticipants="0" hasAllParticipants="1" name="specs">
+        <Folder allowNonParticipants="0" hasAllParticipants="1" name="abstracts">
+          <Document allowNonParticipants="0" fileCreatedDate="2003-09-24T11:25:43" hasAllParticipants="1" language="en" 
+                    name="Document Purge Abstract.doc" numCheckoutDays="1" status="0" versioningEnabled="1">
+            <Version id="5002970" status="0" versionNumber="1" owner="whodat"/>
+          </Document>
+        </Folder>
+        <Document allowNonParticipants="0" fileCreatedDate="2002-11-04T15:20:23" hasAllParticipants="1" language="en" 
+                  name="DMS Knowledge Store.doc" numCheckoutDays="1" status="0" versioningEnabled="1" owner="betda05">
+          <Version id="5002975" status="0" versionNumber="1" owner="dbetterton"/>
+        </Document>
+      </Folder>
+    </Parent>
+  </Documents>
+</NikuDataBus>
+

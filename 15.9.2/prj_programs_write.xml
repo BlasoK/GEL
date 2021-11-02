@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_project.xsd">
+  <Header version="6.0.11" action="write" objectType="project" externalSource="NIKU"/>
+  <Projects>
+
+    <!-- Create a couple of projects that will become part of a Program -->
+
+    <Project projectID="PRJ_Sub_A" name="PRJ_Sub_A" managerResourceID="admin" start="1999-01-01T00:00:00" finish="2002-01-01T00:00:00" active="1" openForTimeEntry="false" trackMode="0" format="0">
+      <Tasks>
+      	<Task name="PSA_Task_A" taskID="PSA_Task_A" outlineLevel="1" start="1999-01-01T00:00:00" finish="2000-01-01T00:00:00"  summary="false" key="true"/>
+      	<Task name="PSA_Task_B" taskID="PSA_Task_B" outlineLevel="1" start="1999-01-01T00:00:00" finish="2000-01-01T00:00:00"  summary="false" key="true"/>
+      	<Task name="PSA_Task_C" taskID="PSA_Task_C" outlineLevel="1" start="1999-01-01T00:00:00" finish="2000-01-01T00:00:00"  summary="false" key="true"/>
+      </Tasks>
+    </Project>
+
+    <Project projectID="PRJ_Sub_B" name="PRJ_Sub_B" managerResourceID="admin" start="1999-01-01T00:00:00" finish="2002-01-01T00:00:00" active="1" openForTimeEntry="false" trackMode="0" format="0">
+      <Tasks>
+      	<Task name="PSB_Task_A" taskID="PSB_Task_A" outlineLevel="1" start="1999-01-01T00:00:00" finish="2000-01-01T00:00:00"  summary="false" key="true"/>
+      	<Task name="PSB_Task_B" taskID="PSB_Task_B" outlineLevel="1" start="1999-01-01T00:00:00" finish="2000-01-01T00:00:00"  summary="false" key="true"/>
+      	<Task name="PSB_Task_C" taskID="PSB_Task_C" outlineLevel="1" start="1999-01-01T00:00:00" finish="2000-01-01T00:00:00"  summary="false" key="true"/>
+      </Tasks>
+    </Project>
+
+    <!-- Create a Program using the 2 previous subs -->
+
+    <Project projectID="PRJ_Pgm_A" name="PRJ_Pgm_A" program="true" managerResourceID="admin" start="1999-01-01T00:00:00" finish="2002-01-01T00:00:00" active="1" openForTimeEntry="false" trackMode="0" format="0">
+      <Tasks>
+      	<Task name="PMA_Milestone_A" taskID="PMA_Milestone_A" milestone="true" outlineLevel="1" start="1999-01-01T00:00:00" duration="0" summary="false" key="true"/>
+      	<Task name="PMA_Milestone_B" taskID="PMA_Milestone_B" milestone="true" outlineLevel="1" start="1999-01-01T00:00:00" duration="0" summary="false" key="true"/>
+      	<Task name="PMA_Milestone_C" taskID="PMA_Milestone_C" milestone="true" outlineLevel="1" start="1999-01-01T00:00:00" duration="0" summary="false" key="true"/>
+      </Tasks>
+      <Subprojects>
+      	<Subproject projectID="PRJ_Sub_A" succeedingTaskID="PMA_Milestone_B"/>
+      	<Subproject projectID="PRJ_Sub_B" succeedingTaskID="PMA_Milestone_C"/>
+      </Subprojects>
+    </Project>
+  </Projects>
+</NikuDataBus>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="7.5" action="read" objectType="document" externalSource="NIKU">
+    <args name="documentLocation" value="D:\niku\main\build/xog/test/documentXogLocation" />
+  </Header>
+  <DocumentQuery>
+    <!--Filter name="parentObjectID" criteria="EQUALS">1010</Filter>
+    <Filter name="parentObjectType" criteria="EQUALS">KS</Filter-->
+    <Filter name="folderName" criteria="EQUALS">specs</Filter>
+    <Filter name="folderPath" criteria="EQUALS">/Root/DMS/KS</Filter>
+  </DocumentQuery>
+</NikuDataBus>
+

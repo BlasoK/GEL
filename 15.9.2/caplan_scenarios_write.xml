@@ -1,0 +1,44 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_capplanScenario.xsd">
+  <Header action="write" externalSource="NIKU" objectType="capplanScenario" version="6.1"/>
+  <Scenarios>
+    <General addedBy="admin" addedDate="2003-05-11"/>
+      <Scenario budgetBenefit="180000" budgetCost="120000"
+          description="Description of the XOG scenario." isPublic="0"
+          name="XOG Scenario" ownerUserName="mgaul">
+          <Members>
+              <Member budgetBenefit="18000" budgetCost="12000"
+                  forecastBenefit="20000" forecastCost="14000"
+                  isActive="true" isApproved="true" isExcluded="true"
+                  investmentType="APPLICATION" start="2004-05-01T00:00:00">
+                  <Investment investmentID="Apps1Import"/>
+              </Member>
+              <Member isActive="true" isApproved="true"
+                  budgetBenefit="19000" budgetCost="13000"
+                  isExcluded="false" investmentType="ASSET">
+                  <Expression expression=" like( asset.name, &quot;Asset&quot; )"/>
+              </Member>
+          </Members>
+          <constraints>
+            <constraint optionCode="PMA_CNSTR_PIN_REQD" value="true"/>
+            <investment code="Apps1Import" isExcluded="false" memberTypeCode="APPLICATION"/>
+          </constraints>
+          <optimizations>
+            <optimization attributeCode="bdgt_roi" criteriaCode="HIGH" weight="2"/>
+            <optimization attributeCode="category_code" criteriaCode="BALANCE" weight="1"/>
+            <optimization attributeCode="HARDWARE" parentAttributeCode="category_code" weight="2"/>
+            <optimization attributeCode="SOFTWARE" parentAttributeCode="category_code" weight="1"/>
+          </optimizations>
+      </Scenario>
+      <Scenario budgetBenefit="200" budgetCost="100"
+          description="Description of the 2nd XOG scenario." isPublic="0"
+          name="2nd XOG Scenario" ownerUserName="mgaul">
+          <Members>
+              <Member budgetBenefit="30" budgetCost="20"
+                  isActive="false" isApproved="true" isExcluded="true"
+                  investmentType="APPLICATION" start="2004-06-01T00:00:00">
+                  <Investment investmentID="AppSplitImport"/>
+              </Member>
+          </Members>
+      </Scenario>
+  </Scenarios>
+</NikuDataBus>

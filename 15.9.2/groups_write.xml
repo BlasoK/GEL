@@ -1,0 +1,61 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_group.xsd">
+  <Header action="write" externalSource="NIKU" objectType="group" version="7.5"/>
+  <groups>
+    <group isActive="true" code="XOGTestGroup">
+      <nls description="DE - XOG Test Group" languageCode="de" name="DE - XOG Test Group"/>
+      <nls description="XOG Test Group" languageCode="en" name="XOG Test Group"/>
+      <nls description="ES - XOG Test Group" languageCode="es" name="ES - XOG Test Group"/>
+      <nls description="FR - XOG Test Group" languageCode="fr" name="FR - XOG Test Group"/>
+      <nls description="JA - XOG Test Group" languageCode="ja" name="JA - XOG Test Group"/>
+      <nls description="NL - XOG Test Group" languageCode="nl" name="NL - XOG Test Group"/>
+      <members>
+        <resource userName="admin"/>
+        <resource userName="admin_nl"/>
+        <resource userName="admin_es"/>
+        <resource userName="admin_ja"/>
+        <resource userName="admin_fr"/>
+        <resource userName="admin_de"/>
+      </members>
+      <rights>
+        <GlobalRights>
+          <Right id="CreateProject"/>
+          <Right id="DOCM_COMPANIES_RWD_RIGHT"/>
+          <Right id="MgmtMethodology"/>
+          <Right id="OPP_ENABLE_RIGHT"/>
+          <Right id="PRJ_EN_FIN"/>
+          <Right id="ProjectEditAccountingAll"/>
+          <Right id="ProjectEditManagementAll"/>
+          <Right id="ProjectModifyBaselineAll"/>
+          <Right id="ResourceAccessScreens"/>
+          <Right id="ResourceEditFullAll"/>
+          <Right id="ResourceHardBookAll"/>
+          <Right id="ResourceSoftBookAll"/>
+          <Right id="RiskIssueEditAll"/>
+          <Right id="RiskIssueViewAll"/>
+        </GlobalRights>
+        <InstanceRights>
+          <Right id="PortletDefinitionEditor">
+            <InstanceObject id="NIKU1001" name="DHL" type="CMN_PORTLETS"/>
+          </Right>
+          <Right id="CustomObjectsEditor">
+              <InstanceObject id="resource" name="Resource" type="ODF_OBJECTS"/>
+          </Right>
+        </InstanceRights>
+        <InstanceOBSRights>
+          <Right id="ApplicationEdit">
+            <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Development"/>
+          </Right>
+          <Right id="ApplicationEdit">
+            <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Marketing"/>
+          </Right>
+          <Right id="ApplicationApprove">
+            <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Development"/>
+          </Right>
+            <Right id="ApplicationApprove">
+              <OBSAssoc id="dept" mode="OBS_UNIT_AND_CHILDREN" name="Department" unitPath="/Niku/Marketing"/>
+            </Right>
+          </InstanceOBSRights>
+        </rights>                     
+      </group>
+    </groups>
+</NikuDataBus>

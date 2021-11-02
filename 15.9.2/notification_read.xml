@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_notification.xsd">
+	<Header version="12.0" action="read" objectType="notification" externalSource="NIKU"/>
+	<Query>
+		<Filter name="languageCode" criteria="EQUALS">en</Filter>
+		<Filter name="functionalAreaCode" criteria="EQUALS">NOTIFICATION_WORKFLOW</Filter>
+		<Filter name="notificationCode" criteria="EQUALS">NOTIFICATION_PROJ_PARTICIPANTS</Filter>
+	</Query>
+</NikuDataBus>

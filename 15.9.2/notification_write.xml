@@ -1,0 +1,30 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_notification.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="notification" version="12.0.0.4327"/>
+    <notifications>
+        <notification functionalAreaCode="NOTIFICATION_EVENT_TYPE"
+            isCustomized="0" notificationCode="EVENT_CHANGED">
+            <notificationNameDesc>
+                <nls description="Event has changed" languageCode="en" name="Event - Change to an event"/>
+            </notificationNameDesc>
+            <notificationSubjectBody>
+                <nls
+                    description="This event has been changed:{1}:\n\{0}\n\Date: {2}\n\Duration: {3}\n\Location: {4}\n\Participant List: {7}\n\If you have questions, you may contact {5} at {6}.\n\\"
+                    languageCode="en" name="Event changed"/>
+            </notificationSubjectBody>
+        </notification>
+        <notification functionalAreaCode="NOTIFICATION_WORKFLOW" isCustomized="0"
+                      notificationCode="PROCESS_STEP_ACTION_PERFORMED_SUB">
+          <notificationNameDesc>
+            <nls
+              description="Performed subprocess step action where the process definition is not associated to an object"
+              languageCode="en" name="Process - Performed subprocess step action (no object)"/>
+          </notificationNameDesc>
+          <notificationSubjectBody>
+            <nls
+              description="The following subprocess step action has been performed: Process: {0}, Step: {1}, Action: {2}.\n\\"
+              languageCode="en" name="Subprocess Step Action Performed"/>
+          </notificationSubjectBody>
+        </notification>
+    </notifications>
+</NikuDataBus>

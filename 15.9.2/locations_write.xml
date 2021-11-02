@@ -1,0 +1,38 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="../xsd/nikuxog_location.xsd">
+  <Header action="write" externalSource="NIKU" objectType="location" version="8.0.0.3890"/>
+  <Locations>
+    <Location address1="One Computer Associates Plaza"
+              city="Islandia" countryid="US"
+              entity="CA"
+              fax="+1 631 342 6800"
+              locationCode="IS" locationManagerCode="admin"
+              name="Islandia" phone="+1 631 342 6000" stateprov="NY" zip="11749">
+      <Description><![CDATA[CA Headquarters]]></Description>
+      <DepartmentAssociations>
+        <DepartmentAssociation departmentcode="CLR_BSO"/>
+      </DepartmentAssociations>
+      <Location address1="2000 Seaport Blvd." city="Redwood City"
+                countryid="US" entity="CA"
+                fax="+1 650 298 4601" locationCode="RWC"
+                locationManagerCode="admin" name="Redwood City"
+                phone="+1 650 298 4600" stateprov="CA" zip="94063">
+        <Description><![CDATA[Clarity Division BSO]]></Description>
+        <DepartmentAssociations>
+          <DepartmentAssociation departmentcode="DEV"/>
+        </DepartmentAssociations>
+        <Location address1="1353 Redwood Way" city="Petaluma"
+                  countryid="US" entity="CA"
+                  fax="+1 707 793 8318"
+                  locationCode="PET" locationManagerCode="admin"
+                  name="Petaluma" phone="+1 707 793 8300"
+                  stateprov="CA" zip="94954">
+          <Description><![CDATA[Clarity BSO]]></Description>
+          <DepartmentAssociations>
+            <DepartmentAssociation departmentcode="QA"/>
+          </DepartmentAssociations>
+        </Location>
+      </Location>
+    </Location>
+  </Locations>
+</NikuDataBus>

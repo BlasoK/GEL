@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2011, CA Inc.  All rights reserved. -->
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="13.0" action="read" objectType="uitheme" externalSource="NIKU">
+  </Header>
+  <Query>
+    <Filter name="uiThemeID" criteria="EQUALS">ui_theme_created_by_xog_test</Filter>
+  </Query>
+</NikuDataBus>

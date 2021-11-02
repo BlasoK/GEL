@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_document.xsd">
+  <Header action="write" externalSource="OS" objectType="document" version="7.5" />
+  <Documents>
+    <Parent parentObjectId="1010" parentObjectType="KS" documentLocation="D:\niku\main\build/xog/test/documentXogLocation/ExternalSystemDocs">
+      <General addedBy="admin" addedDate="2003-01-01" />
+    </Parent>
+  </Documents>
+</NikuDataBus>
+

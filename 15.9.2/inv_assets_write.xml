@@ -1,0 +1,43 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_asset.xsd">
+    <Header action="write" externalSource="NIKU" objectType="asset" version="7.0.1"/>
+    <Assets>
+        <Asset alignment="50" budgetBreakEven="2005-04-01T00:00:00"
+            budgetCostFinish="2004-01-02T00:00:00"
+            budgetCostStart="2003-05-01T00:00:00"
+            budgetCostOperatingTotal="560000" budgetNPV="440000.04"
+            budgetROI="0.785714" budgetRevFinish="2006-05-02T00:00:00"
+            budgetRevStart="2004-02-01T00:00:00"
+            budgetRevTotal="1000000" calculateFinancialMetrics="true"
+            currencyISOcode="USD" description="Monetary instrument:  "
+            forecastBreakEven="2005-04-01T00:00:00"
+            forecastCostFinish="2004-01-02T00:00:00"
+            forecastCostStart="2003-05-01T00:00:00"
+            forecastCostTotal="560000" setBudgetValuesEqualToPlannedValues="false"
+            forecastNPV="440000.04" forecastROI="0.785714"
+            forecastRevFinish="2006-05-02T00:00:00"
+            forecastRevStart="2004-02-01T00:00:00"
+            start="2006-02-17T08:00:00"                     
+            finish="2006-10-31T17:00:00" 
+            forecastRevTotal="1000000" goalCode="AVOID_COST"
+            lastUpdatedBy="sbutler" managerUserName="sbutler"
+            name="Asset1" objectID="Asset1" processCode="ASSET_MGMT"
+            progress="1" priority="12" risk="30" stageCode="ASSET_AM_CONFIGURE"
+            status="1" statusIndicator="3" totalCostOfOwnership="560000">
+            <General addedBy="sbutler" addedDate="2003-11-18"/>
+            <OBSAssocs complete="true"/>
+        </Asset>
+        <Asset calculateFinancialMetrics="true" currencyISOcode="USD"
+            description="Seed farm on Ortega Road"
+            setBudgetValuesEqualToPlannedValues="true"
+            goalCode="AVOID_COST" lastUpdatedBy="sbutler"
+            managerUserName="sbutler" name="Seed Farm"
+            objectID="seedfarm" processCode="ASSET_MGMT" progress="0"
+            stageCode="ASSET_AM_MONITOR" 
+            start="2006-02-17T08:00:00"                     
+            finish="2006-10-31T17:00:00" 
+            status="0" statusIndicator="1" totalCostOfOwnership="6000000">
+            <General addedBy="sbutler" addedDate="2003-11-18"/>
+            <OBSAssocs complete="true"/>
+        </Asset>
+    </Assets>
+</NikuDataBus>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2013, CA Inc.  All rights reserved. -->
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+    <Header action="read" externalSource="NIKU" objectType="investmentclass" version="14.1" />
+    <Query>
+      <Filter name="investmentclass" criteria="EQUALS">invcls01</Filter>
+      <!--<Filter name="description" criteria="EQUALS">invcls desc</Filter>
+      <Filter name="shortdesc" criteria="EQUALS">short desc</Filter>-->
+    </Query>
+</NikuDataBus>

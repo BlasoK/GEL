@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="8.0" action="read" objectType="bpm_process" externalSource="NIKU"/>
+  <Query>
+    <Filter name="process_code" criteria="EQUALS">bpm_level_1_test_process_b</Filter>
+  </Query>
+</NikuDataBus>

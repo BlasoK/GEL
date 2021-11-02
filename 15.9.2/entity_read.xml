@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./src/webroot/WEB-INF/xog/xsd/nikuxog_entity.xsd">
+	<Header version="13.0" action="read" objectType="entity" externalSource="NIKU">
+   <!-- Use include_glperiods, if you need to read fiscal time periods for entity -->
+	 <args name="include_glperiods" value="true"/>
+   <!-- Use include_plandefaults, if you need to read plan defaults for entity -->
+	 <args name="include_plandefaults" value="true"/>
+	 
+	 </Header>
+	<Query>
+<!--
+		<Filter name="entity" criteria="EQUALS">entity 987</Filter>
+		<Filter name="description" criteria="OR">*multi*</Filter>
+-->		
+	</Query>
+</NikuDataBus>

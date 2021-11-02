@@ -1,0 +1,18 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_matrix.xsd">
+  <Header action="write" externalSource="NIKU" objectType="matrix" version="7.5"/>
+  <matrices>
+    <matrix defaultCurrencyCode="USD" name="NIKU_XOG" type="Cost/Rate" incremental="false">
+      <columns>
+        <column name="entity"/>
+        <column name="location"/>
+        <column name="chargeCode"/>
+      </columns>
+      <matrixRows>
+        <matrixRow actualCost="64" currencyCode="RFE" entity="*" fromDate="1992-01-01" rate="200" location="*" chargeCode="*" standardCost="45" toDate="2999-12-31"/>
+        <matrixRow actualCost="75" currencyCode="USD" entity="*" fromDate="1993-01-01" rate="300" location="*" chargeCode="*" standardCost="75" toDate="2999-12-31"/>
+        <matrixRow actualCost="50" currencyCode="USD" entity="NIKU_XOG" rate="250" location="*" chargeCode="CODING_XOG" standardCost="50" toDate="2999-12-31"/>
+        <matrixRow actualCost="25" currencyCode="USD" entity="*" fromDate="1991-01-01" rate="100" location="NIKU_XOG" standardCost="25" toDate="2999-12-31"/>
+      </matrixRows>
+    </matrix>
+  </matrices>
+</NikuDataBus>

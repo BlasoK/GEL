@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="8.0" action="read" objectType="contentPack" externalSource="NIKU">
+    <!-- the contentType is used to determine which filter goes where -->
+    <args contentType="job_definition" name="order_by_1" value="code"/>
+    <args contentType="menu" name="order_by_1" value="code"/>
+    <args contentType="view" name="order_by_1" value="code"/>
+    <args contentType="process" name="order_by_1" value="code"/>
+    <args contentType="object" name="order_by_1" value="code"/>
+  </Header>
+  <ObjectQuery>
+    <Filter name="object_code" criteria="EQUALS">banana</Filter>
+  </ObjectQuery>
+</NikuDataBus>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="7.0.1" action="read" objectType="otherInvestment" externalSource="NIKU">
+    <!-- you change the order by simply swap 1 and 2 number in the name attribute -->
+    <args name="order_by_1" value="name"/>
+    <args name="order_by_2" value="objectID"/>
+    <args name="include_resources" value="true"/>
+    <args name="include_tasks" value="true"/>
+    <args name="include_allocations" value="true"/>
+  </Header>
+  <Query>
+    <Filter name="objectID" criteria="EQUALS">Parkinglot</Filter>
+    <!--
+	  <Filter name="objectID" criteria="EQUALS">test</Filter>
+		<Filter name="status" criteria="EQUALS">1</Filter>
+		<Filter name="lastUpdatedDate" criteria="EQUALS">2002-01-26T11:42:03</Filter>
+   -->
+  </Query>
+</NikuDataBus>

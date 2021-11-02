@@ -1,0 +1,29 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../xsd/nikuxog_incident.xsd">
+	<Header action="write" externalSource="NIKU" objectType="incident"
+		version="7.5.0.3077" />
+	<incidents>
+		<incident assignedTo="admin" categoryCode="Network"
+			externalId="12345678-abc-Network" flagForConversion="false"
+			impactCode="3" incidentCode="Exchange lock up"
+			isPriorityOverriden="true" priorityCode="1" reportedBy="admin"
+			sourceCode="ORACLE-FINANCIAL" statusCode="ASSIGNED"
+			subject="Exchange lock up" urgencyCode="2">
+			<description>
+				<![CDATA[Exchange server locked up unexpectedly!!]]>
+			</description>
+			<notes>
+				<note subject="note1">
+					<![CDATA[note1 description]]>
+				</note>
+			</notes>
+			<efforts />
+			<contacts>
+				<contact />
+			</contacts>
+			<CustomInformation>
+				<ColumnValue name="PARTITION_CODE">NIKU.ROOT</ColumnValue>
+			</CustomInformation>
+		</incident>
+	</incidents>
+</NikuDataBus>

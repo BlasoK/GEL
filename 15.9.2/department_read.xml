@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="8.0" action="read" objectType="department" externalSource="NIKU">
+    <args name="documentLocation" value="/niku/xog/test/documentXogDepartment/department"/>
+  </Header>
+  <Query>
+    <Filter name="entity" criteria="EQUALS">E1</Filter>
+  </Query>
+</NikuDataBus>

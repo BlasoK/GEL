@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_glaccount.xsd">
+	<Header version="6010" action="write" objectType="glaccount" externalSource="ORACLE-FINANCIAL"/>
+	<GLAccounts>
+		<GLAccount entity="NIKU" description="abcd asdf" accountNumber="5671-98-09878" active="true" allocationsEnabled="true" externalId="2323AAA">
+			<General addedBy="admin" addedDate="2001-09-05"/>
+		</GLAccount>
+		<GLAccount entity="NIKU" description="AAAAAAAAAA" accountNumber="1234-56-78" active="false" allocationsEnabled="true" externalId="23sdfg">
+			<General addedBy="admin" addedDate="2001-09-05"/>
+		</GLAccount>
+	</GLAccounts>
+</NikuDataBus>

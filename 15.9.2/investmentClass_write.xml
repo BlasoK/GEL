@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2013, CA Inc.  All rights reserved. -->
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_investmentclass.xsd">
+	<Header action="write" externalSource="NIKU" objectType="investmentclass" version="14.1"/>
+	<investmentclasses>
+		<investmentclass investmentclass="invcls01" description="Investment class 1 description" shortdesc="Inv cls 1 desc" />
+    <investmentclass investmentclass="invcls02" description="Investment class 2 description" shortdesc="Inv cls 2 desc" />
+	</investmentclasses>
+</NikuDataBus>

@@ -1,0 +1,1757 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="contentPack" version="8.0"/>
+    <contentPack update="true">
+        <portlets update="true">
+            <gridPortlet allowEditing="true"
+                category="businessIntelligence" code="resource_workload"
+                dataProviderId="resourceAggregate"
+                dataProviderPartitionId="NIKU.ROOT"
+                dataProviderType="system" defaultSortColumn="full_name"
+                defaultSortOrder="ascending" forceFilter="false"
+                hasEditableColumn="true" metricsLocation="bottom"
+                objectType="SYSTEM" pageSize="20"
+                showAltValueText="false" source="niku.com">
+                <OBSAssocs/>
+                <Security complete="true"/>
+                <filter code="resource_workload" componentCode="odf"
+                    dataProviderId="resourceAggregate"
+                    dataProviderType="system"
+                    objectCode="resourceAggregate"
+                    obsTableNameKey="SRM_RESOURCES" partitionCode="NIKU.ROOT">
+                    <section collapsed="true" currentState="collapsed" filterByExpression="false">
+                        <column sequence="1">
+                            <viewFieldDescriptor
+                                attributeCode="odf_obs_unit_id_list"
+                                dataSize="20" fixedWidget="false"
+                                hidden="false" multiValued="false"
+                                notEqualXPath="false" readOnly="false"
+                                required="false" virtual="false"
+                                widgetType="browse" width="20">
+                                <nls description="OBS Unit"
+                                    languageCode="de" name="OBS Unit"/>
+                                <nls description="OBS Unit"
+                                    languageCode="en" name="OBS Unit"/>
+                                <nls description="OBS Unit"
+                                    languageCode="es" name="OBS Unit"/>
+                                <nls description="OBS Unit"
+                                    languageCode="fr" name="OBS Unit"/>
+                                <nls description="OBS Unit"
+                                    languageCode="ja" name="OBS Unit"/>
+                                <nls description="OBS Unit"
+                                    languageCode="nl" name="OBS Unit"/>
+                            </viewFieldDescriptor>
+                            <viewFieldDescriptor active="true"
+                                aggregate="false"
+                                attributeCode="resource_type_caption"
+                                dataSize="0" decimals="0" extType="enum"
+                                fixedWidget="false" hidden="false"
+                                lookupType="RESOURCE_TYPE"
+                                multiValued="false"
+                                notEqualXPath="false" readOnly="false"
+                                required="false" virtual="false"
+                                widgetType="select" width="0">
+                                <nls languageCode="de" name="Ressourcenart"/>
+                                <nls languageCode="en" name="Resource Type"/>
+                                <nls languageCode="es" name="Tipo de recurso"/>
+                                <nls languageCode="fr" name="Type de ressource"/>
+                                <nls languageCode="ja" name="リソース タイプ"/>
+                                <nls languageCode="nl" name="Medewerkertype"/>
+                            </viewFieldDescriptor>
+                            <viewFieldDescriptor active="true"
+                                aggregate="false"
+                                attributeCode="full_name" dataSize="30"
+                                decimals="0" fixedWidget="false"
+                                hidden="false" multiValued="false"
+                                notEqualXPath="false" readOnly="false"
+                                required="false" virtual="false"
+                                widgetType="text" width="30">
+                                <nls languageCode="de" name="Vollständiger Name"/>
+                                <nls languageCode="en" name="Full Name"/>
+                                <nls languageCode="es" name="Nombre completo"/>
+                                <nls languageCode="fr" name="Nom complet"/>
+                                <nls languageCode="ja" name="姓名"/>
+                                <nls languageCode="nl" name="Volledige naam"/>
+                            </viewFieldDescriptor>
+                        </column>
+                        <nls languageCode="de" name="A Res Workload Filter"/>
+                        <nls languageCode="en" name="A Res Workload Filter"/>
+                        <nls languageCode="es" name="A Res Workload Filter"/>
+                        <nls languageCode="fr" name="A Res Workload Filter"/>
+                        <nls languageCode="ja" name="A Res Workload Filter"/>
+                        <nls languageCode="nl" name="A Res Workload Filter"/>
+                    </section>
+                    <defaultDisplay>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="availability" dataSize="6"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="true"
+                            widgetType="numeric" width="6">
+                            <nls languageCode="de" name="Verfügbarkeitsrate"/>
+                            <nls languageCode="en" name="Availability Rate"/>
+                            <nls languageCode="es" name="Tasa de disponibilidad"/>
+                            <nls languageCode="fr" name="Taux de disponibilité"/>
+                            <nls languageCode="ja" name="利用可能時間の割合"/>
+                            <nls languageCode="nl" name="Beschikbaarheidsfactor"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="date_of_hire" dataSize="0"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="datepicker" width="0">
+                            <nls languageCode="de" name="Anstellungsdatum"/>
+                            <nls languageCode="en" name="Date of Hire"/>
+                            <nls languageCode="es" name="Fecha de contratación"/>
+                            <nls languageCode="fr" name="Date d&apos;embauche"/>
+                            <nls languageCode="ja" name="入社（契約開始）日"/>
+                            <nls languageCode="nl" name="Datum in dienst"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="date_of_termination"
+                            dataSize="0" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            midnightDate="true" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="datepicker" width="0">
+                            <nls languageCode="de" name="Anstellungsende"/>
+                            <nls languageCode="en" name="Date of Termination"/>
+                            <nls languageCode="es" name="Fecha de fin"/>
+                            <nls languageCode="fr" name="Date de départ"/>
+                            <nls languageCode="ja" name="退職予定（契約終了）日"/>
+                            <nls languageCode="nl" name="Einddatum"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="email"
+                            dataSize="30" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="text" width="30">
+                            <nls languageCode="de" name="E-Mail-Adresse"/>
+                            <nls languageCode="en" name="Email Address"/>
+                            <nls languageCode="es" name="Dirección de correo electrónico"/>
+                            <nls languageCode="fr" name="Adresse électronique"/>
+                            <nls languageCode="ja" name="Eメール アドレス"/>
+                            <nls languageCode="nl" name="E-mailadres"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="first_name"
+                            dataSize="30" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="text" width="30">
+                            <nls languageCode="de" name="Vorname"/>
+                            <nls languageCode="en" name="First Name"/>
+                            <nls languageCode="es" name="Nombre"/>
+                            <nls languageCode="fr" name="Prénom"/>
+                            <nls languageCode="ja" name="名"/>
+                            <nls languageCode="nl" name="Voornaam"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="include_flag" dataSize="0"
+                            decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select" width="0">
+                            <nls languageCode="de" name="In Datamart einschließen"/>
+                            <nls languageCode="en" name="Include in Datamart"/>
+                            <nls languageCode="es" name="Incluir en datamart"/>
+                            <nls languageCode="fr" name="Inclure dans l&apos;entrepôt de données"/>
+                            <nls languageCode="ja" name="データマートに含める"/>
+                            <nls languageCode="nl" name="Opnemen in Datamart"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="is_active"
+                            dataSize="0" decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select" width="0">
+                            <nls languageCode="de" name="Verfügbar"/>
+                            <nls languageCode="en" name="Active"/>
+                            <nls languageCode="es" name="Activo"/>
+                            <nls languageCode="fr" name="Actif"/>
+                            <nls languageCode="ja" name="アクティブ"/>
+                            <nls languageCode="nl" name="Actief"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="is_external" dataSize="0"
+                            decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select" width="0">
+                            <nls languageCode="de" name="Extern"/>
+                            <nls languageCode="en" name="External"/>
+                            <nls languageCode="es" name="Externo"/>
+                            <nls languageCode="fr" name="Externe"/>
+                            <nls languageCode="ja" name="外部"/>
+                            <nls languageCode="nl" name="Extern"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="last_name"
+                            dataSize="30" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="text" width="30">
+                            <nls languageCode="de" name="Nachname"/>
+                            <nls languageCode="en" name="Last Name"/>
+                            <nls languageCode="es" name="Apellidos"/>
+                            <nls languageCode="fr" name="Nom"/>
+                            <nls languageCode="ja" name="姓"/>
+                            <nls languageCode="nl" name="Achternaam"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="manager_id_caption"
+                            dataSize="0" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="LOOKUP_SEC_RESMGR"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="0">
+                            <nls languageCode="de" name="Manager"/>
+                            <nls languageCode="en" name="Manager"/>
+                            <nls languageCode="es" name="Director"/>
+                            <nls languageCode="fr" name="Responsable"/>
+                            <nls languageCode="ja" name="管理者"/>
+                            <nls languageCode="nl" name="Manager"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="overalloc_thresh"
+                            dataSize="8" decimals="0" extType="percent"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="true" widgetType="numeric" width="8">
+                            <nls languageCode="de" name="Überlastungsgrenzwert"/>
+                            <nls languageCode="en" name="Overallocation Threshhold"/>
+                            <nls languageCode="es" name="Umbral de sobreasignación"/>
+                            <nls languageCode="fr" name="Seuil de sur-allocation"/>
+                            <nls languageCode="ja" name="割り当て超過のしきい値"/>
+                            <nls languageCode="nl" name="Drempel overtoekenning"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="partition_code_caption"
+                            dataSize="30" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="LOOKUP_USER_PARTITIONS"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="30">
+                            <nls languageCode="de" name="Partition"/>
+                            <nls languageCode="en" name="Partition"/>
+                            <nls languageCode="es" name="Partición"/>
+                            <nls languageCode="fr" name="Partition"/>
+                            <nls languageCode="ja" name="パーティション"/>
+                            <nls languageCode="nl" name="Partitie"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="person_type_caption"
+                            dataSize="0" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="SRM_RESOURCE_TYPE"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="0">
+                            <nls languageCode="de" name="Personentyp"/>
+                            <nls languageCode="en" name="Person Type"/>
+                            <nls languageCode="es" name="Tipo de persona"/>
+                            <nls languageCode="fr" name="Type de personne"/>
+                            <nls languageCode="ja" name="個人のタイプ"/>
+                            <nls languageCode="nl" name="Persoontype"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="prcategory"
+                            dataSize="30" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="text" width="30">
+                            <nls languageCode="de" name="Kategorie"/>
+                            <nls languageCode="en" name="Category"/>
+                            <nls languageCode="es" name="Categoría"/>
+                            <nls languageCode="fr" name="Catégorie"/>
+                            <nls languageCode="ja" name="カテゴリ"/>
+                            <nls languageCode="nl" name="Categorie"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="preagg_approved" dataSize="0"
+                            decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="true" widgetType="select" width="0">
+                            <nls languageCode="de" name="Genehmigtes Projekt (Kumulierung)"/>
+                            <nls languageCode="en" name="Approved Project (Aggregation)"/>
+                            <nls languageCode="es" name="Proyecto aprobado (Conjunto)"/>
+                            <nls languageCode="fr" name="Projet approuvé (regroupement)"/>
+                            <nls languageCode="ja" name="承認済みプロジェクト (総計)"/>
+                            <nls languageCode="nl" name="Goedgekeurd project (totalisatie)"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="preagg_bookstatus"
+                            dataSize="5" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="BOOKING_STATUS_LIST"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="true" widgetType="browse" width="5">
+                            <nls languageCode="de" name="Buchungsstatus (Kumulierung)"/>
+                            <nls languageCode="en" name="Booking Status (Aggregation)"/>
+                            <nls languageCode="es" name="Estado de la reserva (Conjunto)"/>
+                            <nls languageCode="fr" name="Statut de réservation (regroupement)"/>
+                            <nls languageCode="ja" name="予約状況 (総計)"/>
+                            <nls languageCode="nl" name="Boekingsstatus (totalisatie)"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="preagg_proj_obs" dataSize="5"
+                            decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="OBS_BROWSE_FLT_ALL"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="true" widgetType="browse" width="5">
+                            <nls languageCode="de" name="Projekt-Unternehmensstruktur (Kumulierung)"/>
+                            <nls languageCode="en" name="Project OBS (Aggregation)"/>
+                            <nls languageCode="es" name="Estructura Organizativa (OBS) (Conjunto)"/>
+                            <nls languageCode="fr" name="Projet OBS (regroupement)"/>
+                            <nls languageCode="ja" name="プロジェクト OBS (総計)"/>
+                            <nls languageCode="nl" name="OBS project (totalisatie)"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="preagg_reqstatus"
+                            dataSize="5" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="REQUEST_STATUS_LIST"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="true" widgetType="browse" width="5">
+                            <nls languageCode="de" name="Anforderungsstatus (Kumulierung)"/>
+                            <nls languageCode="en" name="Request Status (Aggregation)"/>
+                            <nls languageCode="es" name="Estado de la solicitud (Conjunto)"/>
+                            <nls languageCode="fr" name="Statut de la demande (regroupement)"/>
+                            <nls languageCode="ja" name="要求状況 (総計)"/>
+                            <nls languageCode="nl" name="Status aanvraag (totalisatie)"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="prisopen"
+                            dataSize="0" decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select" width="0">
+                            <nls languageCode="de" name="Geöffnet für Zeiteingabe"/>
+                            <nls languageCode="en" name="Open for Time Entry"/>
+                            <nls languageCode="es" name="Abierto para entrada de tiempo"/>
+                            <nls languageCode="fr" name="Ouvert à la saisie des temps"/>
+                            <nls languageCode="ja" name="時間入力可能"/>
+                            <nls languageCode="nl" name="Open voor tijdsinvoer"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="prisrole"
+                            dataSize="0" decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select" width="0">
+                            <nls languageCode="de" name="Ist-Rolle"/>
+                            <nls languageCode="en" name="Is Role"/>
+                            <nls languageCode="es" name="Es rol"/>
+                            <nls languageCode="fr" name="Afficher les rôles"/>
+                            <nls languageCode="ja" name="ロール"/>
+                            <nls languageCode="nl" name="Alleen rollen"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="prparentid_caption"
+                            dataSize="0" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="SCH_BROWSE_ROLE"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="0">
+                            <nls languageCode="de" name="Übergeordnete Rolle"/>
+                            <nls languageCode="en" name="Parent Role"/>
+                            <nls languageCode="es" name="Rol de nivel superior"/>
+                            <nls languageCode="fr" name="Rôle parent"/>
+                            <nls languageCode="ja" name="親ロール"/>
+                            <nls languageCode="nl" name="Bovenliggende rol"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="prprimaryroleid_caption"
+                            dataSize="0" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="PRIMARY_ROLE_HIER_BROWSE"
+                            modeEnabledLookup="true" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="browse" width="0">
+                            <nls languageCode="de" name="Primäre Rolle"/>
+                            <nls languageCode="en" name="Primary Role"/>
+                            <nls languageCode="es" name="Rol primario"/>
+                            <nls languageCode="fr" name="Rôle principal"/>
+                            <nls languageCode="ja" name="主要ロール"/>
+                            <nls languageCode="nl" name="Primaire rol"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="trackmode_caption"
+                            dataSize="0" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="prTrackMode" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="browse" width="0">
+                            <nls languageCode="de" name="Rückmeldemodus"/>
+                            <nls languageCode="en" name="Track Mode"/>
+                            <nls languageCode="es" name="Modo de seguimiento"/>
+                            <nls languageCode="fr" name="Mode de suivi"/>
+                            <nls languageCode="ja" name="管理モード"/>
+                            <nls languageCode="nl" name="Modus traceren"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="prtypecodeid_caption"
+                            dataSize="0" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="LOOKUP_INPUT_TYPES"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="0">
+                            <nls languageCode="de" name="Eingabetyp-Code"/>
+                            <nls languageCode="en" name="Input Type Code"/>
+                            <nls languageCode="es" name="Código de tipo de entrada"/>
+                            <nls languageCode="fr" name="Code de valorisation"/>
+                            <nls languageCode="ja" name="入力タイプ コード"/>
+                            <nls languageCode="nl" name="Code invoertype"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="pruserflag1" dataSize="0"
+                            decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select" width="0">
+                            <nls languageCode="de" name="Benutzer-Flag1"/>
+                            <nls languageCode="en" name="User Flag1"/>
+                            <nls languageCode="es" name="Indicador de usuario 1"/>
+                            <nls languageCode="fr" name="Indicateur Utilisateur 1"/>
+                            <nls languageCode="ja" name="ユーザー フラグ1"/>
+                            <nls languageCode="nl" name="Gebruikersmarkering1"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="pruserflag2" dataSize="0"
+                            decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select" width="0">
+                            <nls languageCode="de" name="Benutzer-Flag2"/>
+                            <nls languageCode="en" name="User Flag2"/>
+                            <nls languageCode="es" name="Indicador de usuario 2"/>
+                            <nls languageCode="fr" name="Indicateur Utilisateur 2"/>
+                            <nls languageCode="ja" name="ユーザー フラグ2"/>
+                            <nls languageCode="nl" name="Gebruikersmarkering2"/>
+                            <defaultValue value="-1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="prusertext1" dataSize="30"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="text" width="30">
+                            <nls languageCode="de" name="Text1"/>
+                            <nls languageCode="en" name="Text 1"/>
+                            <nls languageCode="es" name="Texto 1"/>
+                            <nls languageCode="fr" name="Texte1"/>
+                            <nls languageCode="ja" name="テキスト 1"/>
+                            <nls languageCode="nl" name="Tekst 1"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="prusertext2" dataSize="30"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="text" width="30">
+                            <nls languageCode="de" name="Text2"/>
+                            <nls languageCode="en" name="Text 2"/>
+                            <nls languageCode="es" name="Texto 2"/>
+                            <nls languageCode="fr" name="Texte2"/>
+                            <nls languageCode="ja" name="テキスト 2"/>
+                            <nls languageCode="nl" name="Tekst 2"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="prusertext3" dataSize="30"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="text" width="30">
+                            <nls languageCode="de" name="Text3"/>
+                            <nls languageCode="en" name="Text 3"/>
+                            <nls languageCode="es" name="Texto 3"/>
+                            <nls languageCode="fr" name="Texte3"/>
+                            <nls languageCode="ja" name="テキスト 3"/>
+                            <nls languageCode="nl" name="Tekst 3"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="prusertext4" dataSize="30"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="text" width="30">
+                            <nls languageCode="de" name="Text4"/>
+                            <nls languageCode="en" name="Text 4"/>
+                            <nls languageCode="es" name="Texto 4"/>
+                            <nls languageCode="fr" name="Texte4"/>
+                            <nls languageCode="ja" name="テキスト 4"/>
+                            <nls languageCode="nl" name="Tekst 4"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false" attributeCode="sms_email"
+                            dataSize="30" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="text" width="30">
+                            <nls languageCode="de" name="SMS-Mail"/>
+                            <nls languageCode="en" name="SMS Email"/>
+                            <nls languageCode="es" name="Correo electrónico SMS"/>
+                            <nls languageCode="fr" name="E-mail SMS"/>
+                            <nls languageCode="ja" name="SMS 電子メール"/>
+                            <nls languageCode="nl" name="SMS e-mail"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="under_allocation"
+                            dataSize="0" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="true" widgetType="numeric" width="0">
+                            <nls languageCode="de" name="Nicht-Auslastung"/>
+                            <nls languageCode="en" name="Under Allocation"/>
+                            <nls languageCode="es" name="Subasignación"/>
+                            <nls languageCode="fr" name="En cours d&apos;allocation"/>
+                            <nls languageCode="ja" name="割り当て中"/>
+                            <nls languageCode="nl" name="Ondertoekenning"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor active="true"
+                            aggregate="false"
+                            attributeCode="unique_name" dataSize="30"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="text" width="30">
+                            <nls languageCode="de" name="Ressourcen-ID"/>
+                            <nls languageCode="en" name="Resource ID"/>
+                            <nls languageCode="es" name="ID del recurso"/>
+                            <nls languageCode="fr" name="ID de ressource"/>
+                            <nls languageCode="ja" name="リソース ID"/>
+                            <nls languageCode="nl" name="Medewerker-ID"/>
+                        </viewFieldDescriptor>
+                    </defaultDisplay>
+                </filter>
+                <nls languageCode="de" name="A Res Workload"/>
+                <nls languageCode="nl" name="A Res Workload"/>
+                <nls languageCode="ja" name="A Res Workload"/>
+                <nls languageCode="es" name="A Res Workload"/>
+                <nls languageCode="en" name="A Res Workload"/>
+                <nls languageCode="fr" name="A Res Workload"/>
+                <column align="left" allowEditing="true"
+                    allowHeaderWrapping="false" allowWrapping="true"
+                    code="full_name" isEditable="true" position="1"
+                    showHeaderLabel="true" type="label">
+                    <nls languageCode="de" name="Vollständiger Name"/>
+                    <nls languageCode="nl" name="Volledige naam"/>
+                    <nls languageCode="ja" name="姓名"/>
+                    <nls languageCode="es" name="Nombre completo"/>
+                    <nls languageCode="en" name="Full Name"/>
+                    <nls languageCode="fr" name="Nom complet"/>
+                </column>
+                <column align="left"
+                    allowEditing="false" allowHeaderWrapping="false"
+                    allowWrapping="false" code="5016852" extType="vbar"
+                    formatPattern="2" isEditable="false" position="2"
+                    showHeaderLabel="true" type="timePeriod" valueAttr="agg_alloc">
+                    <nls languageCode="de" name="Weekly Allocation"/>
+                    <nls languageCode="nl" name="Weekly Allocation"/>
+                    <nls languageCode="ja" name="Weekly Allocation"/>
+                    <nls languageCode="es" name="Weekly Allocation"/>
+                    <nls languageCode="en" name="Weekly Allocation"/>
+                    <nls languageCode="fr" name="Weekly Allocation"/>
+                    <gantt grouping="month" numberOfTimePeriods="8"
+                        showGroupHeaderRow="true" timeScale="yearWeek"
+                        timeWindowStartDateMacro="currentMonth" timeWindowStartType="macro"/>
+                    <bar colorCode="Yellow" compareCode="data"
+                        length="20" stackColorCode="Blue"
+                        thresholdAttribute="availability"
+                        thresholdColorCode="Purple" widthCode="span"/>
+                    <aggregationBar colorCode="Green" compareCode="row"
+                        displayTypeCode="vbar" length="25"
+                        stackColorCode="Blue"
+                        thresholdAggregationTypeCode="sum"
+                        thresholdAttribute="availability"
+                        thresholdColorCode="Red" widthCode="span"/>
+                </column>
+                <column align="center" allowEditing="true"
+                    allowHeaderWrapping="false" allowWrapping="true"
+                    code="is_external" image="is_external"
+                    isEditable="true" position="-1"
+                    showHeaderLabel="true" type="image">
+                    <nls languageCode="de" name="Extern"/>
+                    <nls languageCode="nl" name="Extern"/>
+                    <nls languageCode="ja" name="外部"/>
+                    <nls languageCode="es" name="Externo"/>
+                    <nls languageCode="en" name="External"/>
+                    <nls languageCode="fr" name="Externe"/>
+                </column>
+                <aggregationRow show="true">
+                              <nls languageCode="en" name="Aggregation"/>
+                              <column columnCode="5016852" function="sum"/>
+                            </aggregationRow>
+            </gridPortlet>
+        </portlets>
+        <lookups update="true">
+            <dynamicLookup code="LOOKUP_SEC_RESMGR"
+                displayAttributeName="full_name"
+                hiddenAttributeName="user_id" objectCode=""
+                sortAttributeName="last_name" sortDirection="asc"
+                source="niku.com" status="active" update="true">
+                <nls
+                    description="Liste der aktiven und gesperrten Ressourcen"
+                    languageCode="de" name="Aktive Ressourcen"/>
+                <nls description="List of active and locked resources"
+                    languageCode="en" name="Active Resources"/>
+                <nls
+                    description="Lista de recursos activos y bloqueados"
+                    languageCode="es" name="Recursos activos"/>
+                <nls
+                    description="Liste des ressources actives et verrouillées"
+                    languageCode="fr" name="Ressources actives"/>
+                <nls description="アクティブおよびロックされたリソースのリスト"
+                    languageCode="ja" name="アクティブなリソース"/>
+                <nls
+                    description="Lijst van actieve en vergrendelde medewerkers"
+                    languageCode="nl" name="Actieve medewerkers"/>
+                <nsql dbVendor="all"><![CDATA[
+                SELECT  @SELECT:u.id:user_id@,
+                @SELECT:r.id:resource_id@,
+                @SELECT:r.unique_name:unique_name@,
+                @SELECT:r.first_name:first_name@,
+                @SELECT:r.last_name:last_name@,
+                @SELECT:r.person_type:person_type_id@,
+                @SELECT:r.full_name:full_name@,
+                @SELECT:l.name:person_type@               FROM
+                srm_resources r,
+                cmn_sec_users u,
+                cmn_lookups_v l,
+                cmn_lookups_v s               WHERE  
+                @WHERE:SECURITY:RESOURCE:r.id@ 
+                AND u.id = r.user_id
+                AND @FILTER@                    AND r.person_type = l.id
+                AND l.language_code=@WHERE:PARAM:LANGUAGE@
+                AND l.lookup_type='SRM_RESOURCE_TYPE'
+                AND u.user_status_id = s.id                    AND
+                s.language_code=@WHERE:PARAM:LANGUAGE@
+                AND s.lookup_type='SEC_USER_STATUS'
+                AND s.lookup_code IN ('ACTIVE',
+                'LOCK') 
+      ]]></nsql>
+                <browsePage>
+                    <singleSelectPageTitles>
+                        <nls description="Ressourcen" languageCode="de" name="Ressourcen"/>
+                        <nls description="Resources" languageCode="en" name="Resources"/>
+                        <nls description="Recursos" languageCode="es" name="Recursos"/>
+                        <nls description="Ressources" languageCode="fr" name="Ressources"/>
+                        <nls description="リソース" languageCode="ja" name="リソース"/>
+                        <nls description="Medewerkers" languageCode="nl" name="Medewerkers"/>
+                    </singleSelectPageTitles>
+                    <multiSelectPageTitles>
+                        <nls description="Ressourcen" languageCode="de" name="Ressourcen"/>
+                        <nls description="Resources" languageCode="en" name="Resources"/>
+                        <nls description="Recursos" languageCode="es" name="Recursos"/>
+                        <nls description="Ressources" languageCode="fr" name="Ressources"/>
+                        <nls description="リソース" languageCode="ja" name="リソース"/>
+                        <nls description="Medewerkers" languageCode="nl" name="Medewerkers"/>
+                    </multiSelectPageTitles>
+                    <filter code="unique_name" defaultValue="" order="3" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Ressourcen-ID"/>
+                        <nls description="No description"
+                            languageCode="en" name="Resource ID"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="ID del recurso"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="ID de ressource"/>
+                        <nls description="説明がありません" languageCode="ja" name="リソース ID"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Medewerker-ID"/>
+                    </filter>
+                    <filter code="first_name" defaultValue="" order="2" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Vorname"/>
+                        <nls description="No description"
+                            languageCode="en" name="First Name"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Nombre"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Prénom"/>
+                        <nls description="説明がありません" languageCode="ja" name="名"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Voornaam"/>
+                    </filter>
+                    <filter code="last_name" defaultValue="" order="1" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Nachname"/>
+                        <nls description="No description"
+                            languageCode="en" name="Last Name"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Apellidos"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Nom"/>
+                        <nls description="説明がありません" languageCode="ja" name="姓"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Achternaam"/>
+                    </filter>
+                    <filter code="person_type_id" defaultValue=""
+                        lookupCode="SRM_RESOURCE_TYPE" order="4" widgetType="select">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Anstellungsverhältnis"/>
+                        <nls description="No description"
+                            languageCode="en" name="Employment Type"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Tipo de empleo"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Type d&apos;emploi"/>
+                        <nls description="説明がありません" languageCode="ja" name="雇用形態"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Type dienstverband"/>
+                    </filter>
+                    <listColumn code="user_id" order="5" widgetType="hidden">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="user_id"/>
+                        <nls description="No description"
+                            languageCode="en" name="user_id"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="user_id"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="user_id"/>
+                        <nls description="説明がありません" languageCode="ja" name="user_id"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="user_id"/>
+                    </listColumn>
+                    <listColumn code="unique_name" order="3" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Ressourcen-ID"/>
+                        <nls description="No description"
+                            languageCode="en" name="Resource ID"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="ID del recurso"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="ID de ressource"/>
+                        <nls description="説明がありません" languageCode="ja" name="リソース ID"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Medewerker-ID"/>
+                    </listColumn>
+                    <listColumn code="first_name" order="2" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Vorname"/>
+                        <nls description="No description"
+                            languageCode="en" name="First Name"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Nombre"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Prénom"/>
+                        <nls description="説明がありません" languageCode="ja" name="名"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Voornaam"/>
+                    </listColumn>
+                    <listColumn code="last_name" order="1" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Nachname"/>
+                        <nls description="No description"
+                            languageCode="en" name="Last Name"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Apellidos"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Nom"/>
+                        <nls description="説明がありません" languageCode="ja" name="姓"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Achternaam"/>
+                    </listColumn>
+                    <listColumn code="full_name" order="6" widgetType="hidden">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="full_name"/>
+                        <nls description="No description"
+                            languageCode="en" name="full_name"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="full_name"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="full_name"/>
+                        <nls description="説明がありません" languageCode="ja" name="full_name"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="full_name"/>
+                    </listColumn>
+                    <listColumn code="person_type" order="4" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Anstellungsverhältnis"/>
+                        <nls description="No description"
+                            languageCode="en" name="Employment Type"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Tipo de empleo"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Type d&apos;emploi"/>
+                        <nls description="説明がありません" languageCode="ja" name="雇用形態"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Type dienstverband"/>
+                    </listColumn>
+                </browsePage>
+            </dynamicLookup>
+            <dynamicLookup code="LOOKUP_USER_PARTITIONS"
+                displayAttributeName="partition_name"
+                hiddenAttributeName="partition_code" objectCode=""
+                sortAttributeName="partition_name" sortDirection="asc"
+                source="niku.com" status="active" update="true">
+                <nls
+                    description="UNDEF - List of Partitions that user is member of"
+                    languageCode="de" name="UNDEF - Partition that user is member of"/>
+                <nls
+                    description="List of Partitions that user is member of"
+                    languageCode="en" name="Partition that user is member of"/>
+                <nls
+                    description="UNDEF - List of Partitions that user is member of"
+                    languageCode="es" name="UNDEF - Partition that user is member of"/>
+                <nls
+                    description="UNDEF - List of Partitions that user is member of"
+                    languageCode="fr" name="UNDEF - Partition that user is member of"/>
+                <nls
+                    description="UNDEF - List of Partitions that user is member of"
+                    languageCode="ja" name="UNDEF - Partition that user is member of"/>
+                <nls
+                    description="UNDEF - List of Partitions that user is member of"
+                    languageCode="nl" name="UNDEF - Partition that user is member of"/>
+                <nsql dbVendor="all"><![CDATA[SELECT 
+  @select:up.model_name:model_name@,
+    @select:up.model_description:model_description@,
+    @select:up.partition_name:partition_name@,
+    @select:up.partition_description:partition_description@,
+    @select:up.partition_code:partition_code@,
+    @select:up.model_code:model_code@,
+    @select:up.is_active:is_active@,
+    @select:up.depth:depth@
+FROM 
+( SELECT nls2.name model_name, nls2.description model_description, nls1.name partition_name, nls1.description partition_description,
+    cpv.partition_code partition_code, cpv.model_code model_code, cpv.is_active is_active, cpv.depth depth 
+    FROM
+  cmn_user_partitions_v cpv,
+  cmn_captions_nls nls1,
+  cmn_captions_nls nls2,
+  cmn_partition_models cpm
+WHERE 
+  cpv.user_id = @where:param:user_id@ and
+  cpv.model_code = cpm.code and
+ ( (@where:param:user_def:string:model_code@  IS NOT NULL 
+               AND cpm.code = @where:param:user_def:string:model_code@)
+           OR (@where:param:user_def:string:model_code@ IS NULL 
+                AND  cpm.code=  cpm.code)) and
+  nls1.table_name = 'CMN_PARTITIONS' and
+  nls1.pk_id = cpv.partition_id and
+  nls1.language_code = @where:param:language@ and
+  nls2.table_name = 'CMN_PARTITION_MODELS' and
+  nls2.pk_id = cpm.id and
+  nls2.language_code = @where:param:language@  and
+  cpv.is_active = 1
+  union
+  SELECT nls.name model_name, nls.description model_description, nls.name partition_name, nls.description partition_description,
+    'NIKU.ROOT' partition_code, 'NIKU.ROOT' model_code, 1 is_active, 1 depth 
+    FROM
+  cmn_captions_nls nls
+WHERE 
+  nls.table_name = 'CMN_PARTITIONS' and
+  nls.pk_id = -1 and
+  nls.language_code = @where:param:language@ 
+  union
+  SELECT nls2.name model_name, nls2.description model_description, nls1.name partition_name, nls1.description partition_description,
+    cpv.partition_code partition_code, cpv.model_code model_code, cpv.is_active is_active, cpv.depth depth 
+    FROM
+  cmn_user_partitions_v cpv,
+  cmn_captions_nls nls1,
+  cmn_captions_nls nls2,
+  cmn_partition_models cpm
+WHERE 
+  cpv.model_code = cpm.code and
+ ( (@where:param:user_def:string:model_code@  IS NOT NULL 
+               AND cpm.code = @where:param:user_def:string:model_code@)
+           OR (@where:param:user_def:string:model_code@ IS NULL 
+                AND  cpm.code=  cpm.code)) and
+  nls1.table_name = 'CMN_PARTITIONS' and
+  nls1.pk_id = cpv.partition_id and
+  nls1.language_code = @where:param:language@ and
+  nls2.table_name = 'CMN_PARTITION_MODELS' and
+  nls2.pk_id = cpm.id and
+  nls2.language_code = @where:param:language@ and
+  cpv.is_active = 1
+  ) up
+  WHERE @FILTER@]]></nsql>
+                <browsePage>
+                    <singleSelectPageTitles>
+                        <nls description="UNDEF - Select Partition"
+                            languageCode="de" name="UNDEF - Select Partition"/>
+                        <nls description="Select Partition"
+                            languageCode="en" name="Select Partition"/>
+                        <nls description="UNDEF - Select Partition"
+                            languageCode="es" name="UNDEF - Select Partition"/>
+                        <nls description="UNDEF - Select Partition"
+                            languageCode="fr" name="UNDEF - Select Partition"/>
+                        <nls description="UNDEF - Select Partition"
+                            languageCode="ja" name="UNDEF - Select Partition"/>
+                        <nls description="UNDEF - Select Partition"
+                            languageCode="nl" name="UNDEF - Select Partition"/>
+                    </singleSelectPageTitles>
+                    <multiSelectPageTitles>
+                        <nls description="UNDEF - Select Partitions"
+                            languageCode="de" name="UNDEF - Select Partitions"/>
+                        <nls description="Select Partitions"
+                            languageCode="en" name="Select Partitions"/>
+                        <nls description="UNDEF - Select Partitions"
+                            languageCode="es" name="UNDEF - Select Partitions"/>
+                        <nls description="UNDEF - Select Partitions"
+                            languageCode="fr" name="UNDEF - Select Partitions"/>
+                        <nls description="UNDEF - Select Partitions"
+                            languageCode="ja" name="UNDEF - Select Partitions"/>
+                        <nls description="UNDEF - Select Partitions"
+                            languageCode="nl" name="UNDEF - Select Partitions"/>
+                    </multiSelectPageTitles>
+                    <filter code="partition_name" defaultValue=""
+                        order="1" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Partition Name"/>
+                        <nls description="No description"
+                            languageCode="en" name="Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Partition Name"/>
+                    </filter>
+                    <filter code="partition_description" defaultValue=""
+                        order="3" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Description"/>
+                        <nls description="No description"
+                            languageCode="en" name="Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Description"/>
+                    </filter>
+                    <filter code="partition_code" defaultValue=""
+                        order="2" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Partition ID"/>
+                        <nls description="No description"
+                            languageCode="en" name="Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Partition ID"/>
+                    </filter>
+                    <listColumn code="partition_name" order="1" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Partition Name"/>
+                        <nls description="No description"
+                            languageCode="en" name="Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Partition Name"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Partition Name"/>
+                    </listColumn>
+                    <listColumn code="partition_description" order="3" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Description"/>
+                        <nls description="No description"
+                            languageCode="en" name="Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Description"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Description"/>
+                    </listColumn>
+                    <listColumn code="partition_code" order="2" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Partition ID"/>
+                        <nls description="No description"
+                            languageCode="en" name="Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Partition ID"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Partition ID"/>
+                    </listColumn>
+                </browsePage>
+            </dynamicLookup>
+            <dynamicLookup code="SCH_BROWSE_ROLE"
+                displayAttributeName="prname" hiddenAttributeName="prid"
+                objectCode="resource" sortAttributeName="prname"
+                sortDirection="asc" source="niku.com" status="active" update="true">
+                <nls description="Rolle - Liste" languageCode="de" name="Rolle - Liste"/>
+                <nls description="Role browse" languageCode="en" name="Role browse"/>
+                <nls description="Búsqueda de rol" languageCode="es" name="Búsqueda de rol"/>
+                <nls description="Recherche de rôles" languageCode="fr" name="Recherche de rôles"/>
+                <nls description="ロールの参照" languageCode="ja" name="ロールの参照"/>
+                <nls description="Bladeren in rollen" languageCode="nl" name="Bladeren in rollen"/>
+                <nsql dbVendor="all"><![CDATA[
+                SELECT @SELECT:RES.PRID:PRID@,
+                @SELECT:RES.PRNAME:PRNAME@               FROM PRRESOURCE
+                RES               WHERE @FILTER@               AND
+                RES.PRISROLE != 0                ]]></nsql>
+                <browsePage>
+                    <singleSelectPageTitles>
+                        <nls description="Rolle auswählen"
+                            languageCode="de" name="Rolle auswählen"/>
+                        <nls description="Select Role" languageCode="en" name="Select Role"/>
+                        <nls description="Seleccionar rol"
+                            languageCode="es" name="Seleccionar rol"/>
+                        <nls description="Sélectionner un rôle"
+                            languageCode="fr" name="Sélectionner un rôle"/>
+                        <nls description="ロールの選択" languageCode="ja" name="ロールの選択"/>
+                        <nls description="Rol selecteren"
+                            languageCode="nl" name="Rol selecteren"/>
+                    </singleSelectPageTitles>
+                    <multiSelectPageTitles>
+                        <nls description="Rolle auswählen"
+                            languageCode="de" name="Rolle auswählen"/>
+                        <nls description="Select Role&apos;s"
+                            languageCode="en" name="Select Role&apos;s"/>
+                        <nls description="Seleccionar roles"
+                            languageCode="es" name="Seleccionar roles"/>
+                        <nls description="Sélectionner un rôle"
+                            languageCode="fr" name="Sélectionner un rôle"/>
+                        <nls description="ロールの選択" languageCode="ja" name="ロールの選択"/>
+                        <nls description="Rollen selecteren"
+                            languageCode="nl" name="Rollen selecteren"/>
+                    </multiSelectPageTitles>
+                    <filter code="prname" defaultValue="" order="1" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Name"/>
+                        <nls description="No description"
+                            languageCode="en" name="Name"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Nombre"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Nom"/>
+                        <nls description="説明がありません" languageCode="ja" name="名前"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Naam"/>
+                    </filter>
+                    <listColumn code="prid" order="2" widgetType="hidden">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="prID"/>
+                        <nls description="No description"
+                            languageCode="en" name="PrId"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="prID"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="prID"/>
+                        <nls description="説明がありません" languageCode="ja" name="PrId"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="prID"/>
+                    </listColumn>
+                    <listColumn code="prname" order="1" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Name"/>
+                        <nls description="No description"
+                            languageCode="en" name="Name"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Nombre"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Nom"/>
+                        <nls description="説明がありません" languageCode="ja" name="名前"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Naam"/>
+                    </listColumn>
+                </browsePage>
+            </dynamicLookup>
+            <dynamicLookup code="PRIMARY_ROLE_HIER_BROWSE"
+                displayAttributeName="last_name"
+                hiddenAttributeName="resource_id" objectCode=""
+                sortAttributeName="last_name" sortDirection="asc"
+                source="niku.com" status="active" update="true">
+                <nls
+                    description="UNDEF - Browse Hierarchy Resource Roles"
+                    languageCode="de" name="UNDEF - Browse Hierarchy Resource Roles"/>
+                <nls description="Browse Hierarchy Resource Roles"
+                    languageCode="en" name="Browse Hierarchy Resource Roles"/>
+                <nls
+                    description="UNDEF - Browse Hierarchy Resource Roles"
+                    languageCode="es" name="UNDEF - Browse Hierarchy Resource Roles"/>
+                <nls
+                    description="UNDEF - Browse Hierarchy Resource Roles"
+                    languageCode="fr" name="UNDEF - Browse Hierarchy Resource Roles"/>
+                <nls
+                    description="UNDEF - Browse Hierarchy Resource Roles"
+                    languageCode="ja" name="UNDEF - Browse Hierarchy Resource Roles"/>
+                <nls
+                    description="UNDEF - Browse Hierarchy Resource Roles"
+                    languageCode="nl" name="UNDEF - Browse Hierarchy Resource Roles"/>
+                <nsql dbVendor="all"><![CDATA[SELECT @SELECT:p.prid:resource_id@,
+        @SELECT:r.last_name:last_name@
+        FROM srm_resources r, prj_resources p
+        WHERE r.id = p.prid
+        AND p.prisrole = 1
+        AND (@where:param:user_def:integer:resource_type@ is null or r.resource_type = @where:param:user_def:integer:resource_type@)
+        AND @FILTER@]]></nsql>
+                <browsePage>
+                    <singleSelectPageTitles>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="de" name="UNDEF - Select Role"/>
+                        <nls description="Select Role" languageCode="en" name="Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="es" name="UNDEF - Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="fr" name="UNDEF - Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="ja" name="UNDEF - Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="nl" name="UNDEF - Select Role"/>
+                    </singleSelectPageTitles>
+                    <multiSelectPageTitles>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="de" name="UNDEF - Select Role"/>
+                        <nls description="Select Role" languageCode="en" name="Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="es" name="UNDEF - Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="fr" name="UNDEF - Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="ja" name="UNDEF - Select Role"/>
+                        <nls description="UNDEF - Select Role"
+                            languageCode="nl" name="UNDEF - Select Role"/>
+                    </multiSelectPageTitles>
+                    <filter code="last_name" defaultValue="" order="1" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Role"/>
+                        <nls description="No description"
+                            languageCode="en" name="Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Role"/>
+                    </filter>
+                    <listColumn code="resource_id" order="2" widgetType="hidden">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - resource_id"/>
+                        <nls description="No description"
+                            languageCode="en" name="resource_id"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - resource_id"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - resource_id"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - resource_id"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - resource_id"/>
+                    </listColumn>
+                    <listColumn code="last_name" order="1" widgetType="text">
+                        <nls description="UNDEF - No description"
+                            languageCode="de" name="UNDEF - Role"/>
+                        <nls description="No description"
+                            languageCode="en" name="Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="es" name="UNDEF - Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="fr" name="UNDEF - Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="ja" name="UNDEF - Role"/>
+                        <nls description="UNDEF - No description"
+                            languageCode="nl" name="UNDEF - Role"/>
+                    </listColumn>
+                </browsePage>
+            </dynamicLookup>
+            <dynamicLookup code="LOOKUP_INPUT_TYPES"
+                displayAttributeName="prname" hiddenAttributeName="prid"
+                objectCode="" sortAttributeName="prname"
+                sortDirection="asc" source="niku.com" status="active" update="true">
+                <nls description="Liste der aktiven Eingabetyp-Codes"
+                    languageCode="de" name="Aktive Eingabetyp-Codes"/>
+                <nls description="List of active input type codes"
+                    languageCode="en" name="Active Input Type Codes"/>
+                <nls
+                    description="Lista de códigos de tipo de entrada activos"
+                    languageCode="es" name="Códigos de tipo de entrada activos"/>
+                <nls
+                    description="Liste des codes de valorisation actifs"
+                    languageCode="fr" name="Codes de valorisation actifs"/>
+                <nls description="アクティブな入力タイプ コードのリスト" languageCode="ja" name="アクティブな入力タイプ コード"/>
+                <nls description="Lijst van actieve invoertypecodes"
+                    languageCode="nl" name="Actieve invoertypecodes"/>
+                <nsql dbVendor="all"><![CDATA[SELECT  @SELECT:prID:prID@,
+        @SELECT:prName:prName@,
+        @SELECT:prExternalID:prExternalID@               
+FROM    PRTypeCode               
+WHERE   @FILTER@
+AND     prIsOpen  != 0]]></nsql>
+                <browsePage>
+                    <singleSelectPageTitles>
+                        <nls description="Eingabetyp-Codes"
+                            languageCode="de" name="Eingabetyp-Codes"/>
+                        <nls description="Input Type Codes"
+                            languageCode="en" name="Input Type Codes"/>
+                        <nls description="Códigos de tipo de entrada"
+                            languageCode="es" name="Códigos de tipo de entrada"/>
+                        <nls description="Codes de valorisation"
+                            languageCode="fr" name="Codes de valorisation"/>
+                        <nls description="入力タイプ コード" languageCode="ja" name="入力タイプ コード"/>
+                        <nls description="Codes invoertype"
+                            languageCode="nl" name="Codes invoertype"/>
+                    </singleSelectPageTitles>
+                    <multiSelectPageTitles>
+                        <nls description="Eingabetyp-Codes"
+                            languageCode="de" name="Eingabetyp-Codes"/>
+                        <nls description="Input Type Codes"
+                            languageCode="en" name="Input Type Codes"/>
+                        <nls description="Códigos de tipo de entrada"
+                            languageCode="es" name="Códigos de tipo de entrada"/>
+                        <nls description="Codes de valorisation"
+                            languageCode="fr" name="Codes de valorisation"/>
+                        <nls description="入力タイプ コード" languageCode="ja" name="入力タイプ コード"/>
+                        <nls description="Codes invoertype"
+                            languageCode="nl" name="Codes invoertype"/>
+                    </multiSelectPageTitles>
+                    <filter code="prname" defaultValue="" order="1" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Eingabetyp"/>
+                        <nls description="No description"
+                            languageCode="en" name="Input Type"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Tipo de entrada"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Code de valorisation"/>
+                        <nls description="説明がありません" languageCode="ja" name="入力タイプ"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Invoertype"/>
+                    </filter>
+                    <filter code="prexternalid" defaultValue=""
+                        order="2" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="ID"/>
+                        <nls description="No description"
+                            languageCode="en" name="ID"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="ID"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="ID"/>
+                        <nls description="説明がありません" languageCode="ja" name="ID"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="ID"/>
+                    </filter>
+                    <listColumn code="prid" order="3" widgetType="hidden">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="prID"/>
+                        <nls description="No description"
+                            languageCode="en" name="prID"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="prID"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="prID"/>
+                        <nls description="説明がありません" languageCode="ja" name="prID"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="prID"/>
+                    </listColumn>
+                    <listColumn code="prname" order="1" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="Eingabetyp"/>
+                        <nls description="No description"
+                            languageCode="en" name="Input Type"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="Tipo de entrada"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="Code de valorisation"/>
+                        <nls description="説明がありません" languageCode="ja" name="入力タイプ"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="Invoertype"/>
+                    </listColumn>
+                    <listColumn code="prexternalid" order="2" widgetType="text">
+                        <nls description="Keine Beschreibung"
+                            languageCode="de" name="ID"/>
+                        <nls description="No description"
+                            languageCode="en" name="ID"/>
+                        <nls description="No existe ninguna descripción"
+                            languageCode="es" name="ID"/>
+                        <nls description="Pas de description"
+                            languageCode="fr" name="ID"/>
+                        <nls description="説明がありません" languageCode="ja" name="ID"/>
+                        <nls description="Geen omschrijving"
+                            languageCode="nl" name="ID"/>
+                    </listColumn>
+                </browsePage>
+            </dynamicLookup>
+            <staticLookup code="CMN_CATEGORIES" hiddenAttributeName="id"
+                sortStyle="alphanumeric" source="niku.com"
+                status="active" update="true">
+                <nls description="Kategorien für Portlets"
+                    languageCode="de" name="Portlet-Kategorien"/>
+                <nls description="Categories for Portlets"
+                    languageCode="en" name="Portlet Categories"/>
+                <nls description="Categorías para mini informes"
+                    languageCode="es" name="Categorías de mini informe"/>
+                <nls description="Catégories pour portlets"
+                    languageCode="fr" name="Catégories de portlets"/>
+                <nls description="ポートレットのカテゴリ" languageCode="ja" name="ポートレット カテゴリ"/>
+                <nls description="Categorieën voor portlets"
+                    languageCode="nl" name="Portlet-categorieën"/>
+                <lookupValue code="businessIntelligence" sortOrder="30" status="active">
+                    <nls
+                        description="Business Intelligence Portlet-Kategorie"
+                        languageCode="de" name="Business Intelligence"/>
+                    <nls
+                        description="Business Intelligence Portlet Category"
+                        languageCode="en" name="Business Intelligence"/>
+                    <nls
+                        description="Categoría de mini informe de información comercial"
+                        languageCode="es" name="Información comercial"/>
+                    <nls
+                        description="Catégorie de portlet de renseignements commerciaux"
+                        languageCode="fr" name="Renseignements commerciaux"/>
+                    <nls description="ビジネス インテリジェンス ポートレット カテゴリ"
+                        languageCode="ja" name="ビジネス インテリジェンス"/>
+                    <nls
+                        description="Portletcategorie bedrijfsinlichtingen"
+                        languageCode="nl" name="Bedrijfsinlichtingen"/>
+                </lookupValue>
+                <lookupValue code="COLLABORATION" sortOrder="0" status="active">
+                    <nls description="Zusammenarbeit" languageCode="de" name="Zusammenarbeit"/>
+                    <nls description="Collaboration" languageCode="en" name="Collaboration"/>
+                    <nls description="Colaboración" languageCode="es" name="Colaboración"/>
+                    <nls description="Collaboration" languageCode="fr" name="Collaboration"/>
+                    <nls description="コラボレーション" languageCode="ja" name="コラボレーション"/>
+                    <nls description="Samenwerking" languageCode="nl" name="Samenwerking"/>
+                </lookupValue>
+                <lookupValue code="framework" sortOrder="30" status="active">
+                    <nls description="Rahmenstruktur-Portlet-Kategorie"
+                        languageCode="de" name="Rahmenstruktur"/>
+                    <nls description="Framework Portlet Category"
+                        languageCode="en" name="Framework"/>
+                    <nls
+                        description="Categoría de mini informe de marco"
+                        languageCode="es" name="Marco"/>
+                    <nls description="Catégorie de portlet de cadre"
+                        languageCode="fr" name="Cadre"/>
+                    <nls description="フレームワーク ポートレット カテゴリ"
+                        languageCode="ja" name="フレームワーク"/>
+                    <nls description="Raamwerk portlet-categorie"
+                        languageCode="nl" name="Raamwerk"/>
+                </lookupValue>
+                <lookupValue code="PERSONALIZATION" sortOrder="0" status="active">
+                    <nls description="Persönlich" languageCode="de" name="Persönlich"/>
+                    <nls description="Personal" languageCode="en" name="Personal"/>
+                    <nls description="Personal" languageCode="es" name="Personal"/>
+                    <nls description="Personnel" languageCode="fr" name="Personnel"/>
+                    <nls description="パーソナル" languageCode="ja" name="パーソナル"/>
+                    <nls description="Persoonlijk" languageCode="nl" name="Persoonlijk"/>
+                </lookupValue>
+                <lookupValue code="PRODUCTIVITY" sortOrder="0" status="active">
+                    <nls description="Produktivitätshilfe"
+                        languageCode="de" name="Produktivität"/>
+                    <nls description="Productivity aid"
+                        languageCode="en" name="Productivity"/>
+                    <nls description="Ayuda de productividad"
+                        languageCode="es" name="Productividad"/>
+                    <nls description="Aide à la productivité"
+                        languageCode="fr" name="Productivité"/>
+                    <nls description="生産性向上支援" languageCode="ja" name="生産性"/>
+                    <nls description="Productiviteitshulp"
+                        languageCode="nl" name="Productiviteit"/>
+                </lookupValue>
+                <lookupValue code="PROJECT" sortOrder="0" status="active">
+                    <nls description="Projekt" languageCode="de" name="Projekt"/>
+                    <nls description="Project" languageCode="en" name="Project"/>
+                    <nls description="Proyecto" languageCode="es" name="Proyecto"/>
+                    <nls description="Projet" languageCode="fr" name="Projet"/>
+                    <nls description="プロジェクト" languageCode="ja" name="プロジェクト"/>
+                    <nls description="Project" languageCode="nl" name="Project"/>
+                </lookupValue>
+                <lookupValue code="RESOURCE" sortOrder="0" status="active">
+                    <nls description="Ressource" languageCode="de" name="Ressource"/>
+                    <nls description="Resource" languageCode="en" name="Resource"/>
+                    <nls description="Recurso" languageCode="es" name="Recurso"/>
+                    <nls description="Ressource" languageCode="fr" name="Ressource"/>
+                    <nls description="リソース" languageCode="ja" name="リソース"/>
+                    <nls description="Medewerker" languageCode="nl" name="Medewerker"/>
+                </lookupValue>
+            </staticLookup>
+          <staticLookup code="RESOURCE_TYPE"
+              hiddenAttributeName="lookup_enum"
+              sortStyle="alphanumeric" source="niku.com"
+              status="active" update="true">
+              <nls description="Typ zdroje" languageCode="cs" name="Typ zdroje"/>
+              <nls description="Ressourcetype" languageCode="da" name="Ressourcetype"/>
+              <nls description="Ressourcentyp" languageCode="de" name="Ressourcentyp"/>
+              <nls description="Resource Type" languageCode="en" name="Resource Type"/>
+              <nls description="Tipo de recurso" languageCode="es" name="Tipo de recurso"/>
+              <nls description="Type de ressource" languageCode="fr" name="Type de ressource"/>
+              <nls description="Tipo di risorsa" languageCode="it" name="Tipo di risorsa"/>
+              <nls description="リソース タイプ" languageCode="ja" name="リソース タイプ"/>
+              <nls description="리소스 유형" languageCode="ko" name="리소스 유형"/>
+              <nls description="Medewerkertype" languageCode="nl" name="Medewerkertype"/>
+              <nls description="Tipo de recurso" languageCode="pt" name="Tipo de recurso"/>
+              <nls description="Resurstyp" languageCode="sv" name="Resurstyp"/>
+              <nls description="资源类型" languageCode="zh" name="资源类型"/>
+              <nls description="資源類型" languageCode="zh_TW" name="資源類型"/>
+              <lookupValue code="1" enum="1" sortOrder="3" status="active">
+                  <nls description="Zařízení" languageCode="cs" name="Zařízení"/>
+                  <nls description="Udstyr" languageCode="da" name="Udstyr"/>
+                  <nls description="Ausstattung/Geräte"
+                      languageCode="de" name="Ausstattung/Geräte"/>
+                  <nls description="Equipment" languageCode="en" name="Equipment"/>
+                  <nls description="Equipamiento" languageCode="es" name="Equipamiento"/>
+                  <nls description="Equipement" languageCode="fr" name="Equipement"/>
+                  <nls description="Apparecchiatura" languageCode="it" name="Apparecchiatura"/>
+                  <nls description="備品" languageCode="ja" name="備品"/>
+                  <nls description="장비" languageCode="ko" name="장비"/>
+                  <nls description="Apparatuur" languageCode="nl" name="Apparatuur"/>
+                  <nls description="Equipamento" languageCode="pt" name="Equipamento"/>
+                  <nls description="Utrustning" languageCode="sv" name="Utrustning"/>
+                  <nls description="设备" languageCode="zh" name="设备"/>
+                  <nls description="設備" languageCode="zh_TW" name="設備"/>
+              </lookupValue>
+              <lookupValue code="3" enum="3" sortOrder="4" status="active">
+                  <nls description="Výdaje" languageCode="cs" name="Výdaje"/>
+                  <nls description="Udgifter" languageCode="da" name="Udgifter"/>
+                  <nls description="Aufwand" languageCode="de" name="Aufwand"/>
+                  <nls description="Expense" languageCode="en" name="Expense"/>
+                  <nls description="Gasto" languageCode="es" name="Gasto"/>
+                  <nls description="Dépenses" languageCode="fr" name="Dépenses"/>
+                  <nls description="Spesa" languageCode="it" name="Spesa"/>
+                  <nls description="経費" languageCode="ja" name="経費"/>
+                  <nls description="비용" languageCode="ko" name="비용"/>
+                  <nls description="Uitgave" languageCode="nl" name="Uitgave"/>
+                  <nls description="Despesa" languageCode="pt" name="Despesa"/>
+                  <nls description="Utgift" languageCode="sv" name="Utgift"/>
+                  <nls description="费用" languageCode="zh" name="费用"/>
+                  <nls description="支出" languageCode="zh_TW" name="支出"/>
+              </lookupValue>
+              <lookupValue code="0" enum="0" sortOrder="1" status="active">
+                  <nls description="Pracovní" languageCode="cs" name="Pracovní"/>
+                  <nls description="Arbejdskraft" languageCode="da" name="Arbejdskraft"/>
+                  <nls description="Arbeit" languageCode="de" name="Arbeit"/>
+                  <nls description="Labor" languageCode="en" name="Labor"/>
+                  <nls description="Trabajo" languageCode="es" name="Trabajo"/>
+                  <nls description="Main-d'œuvre" languageCode="fr" name="Main-d'œuvre"/>
+                  <nls description="Manodopera" languageCode="it" name="Manodopera"/>
+                  <nls description="労働" languageCode="ja" name="労働"/>
+                  <nls description="노동" languageCode="ko" name="노동"/>
+                  <nls description="Arbeid" languageCode="nl" name="Arbeid"/>
+                  <nls description="Mão-de-obra" languageCode="pt" name="Mão-de-obra"/>
+                  <nls description="Personal" languageCode="sv" name="Personal"/>
+                  <nls description="人工" languageCode="zh" name="人工"/>
+                  <nls description="勞工" languageCode="zh_TW" name="勞工"/>
+              </lookupValue>
+              <lookupValue code="2" enum="2" sortOrder="2" status="active">
+                  <nls description="Materiál" languageCode="cs" name="Materiál"/>
+                  <nls description="Materiale" languageCode="da" name="Materiale"/>
+                  <nls description="Material" languageCode="de" name="Material"/>
+                  <nls description="Material" languageCode="en" name="Material"/>
+                  <nls description="Material" languageCode="es" name="Material"/>
+                  <nls description="Matériaux" languageCode="fr" name="Matériaux"/>
+                  <nls description="Materiale" languageCode="it" name="Materiale"/>
+                  <nls description="資材" languageCode="ja" name="資材"/>
+                  <nls description="자재" languageCode="ko" name="자재"/>
+                  <nls description="Materiaal" languageCode="nl" name="Materiaal"/>
+                  <nls description="Material" languageCode="pt" name="Material"/>
+                  <nls description="Material" languageCode="sv" name="Material"/>
+                  <nls description="材料" languageCode="zh" name="材料"/>
+                  <nls description="原料" languageCode="zh_TW" name="原料"/>
+              </lookupValue>
+          </staticLookup>
+            <staticLookup code="SRM_RESOURCE_TYPE"
+                hiddenAttributeName="id" sortStyle="alphanumeric"
+                source="niku.com" status="active" update="true">
+                <nls description="Ressourcenart" languageCode="de" name="Ressourcenart"/>
+                <nls description="Resource Type" languageCode="en" name="Resource Type"/>
+                <nls description="Tipo de recurso" languageCode="es" name="Tipo de recurso"/>
+                <nls description="Type de ressource" languageCode="fr" name="Type de ressource"/>
+                <nls description="リソース タイプ" languageCode="ja" name="リソース タイプ"/>
+                <nls description="Medewerkertype" languageCode="nl" name="Medewerkertype"/>
+                <lookupValue code="CONTRACTOR" sortOrder="1" status="active">
+                    <nls description="Freiberufler" languageCode="de" name="Freiberufler"/>
+                    <nls description="Contractor" languageCode="en" name="Contractor"/>
+                    <nls description="Contratista" languageCode="es" name="Contratista"/>
+                    <nls description="Contractant" languageCode="fr" name="Contractant"/>
+                    <nls description="契約社員" languageCode="ja" name="契約社員"/>
+                    <nls description="Derden" languageCode="nl" name="Derden"/>
+                </lookupValue>
+                <lookupValue code="EMPLOYEE" sortOrder="1" status="active">
+                    <nls description="Mitarbeiter" languageCode="de" name="Mitarbeiter"/>
+                    <nls description="Employee" languageCode="en" name="Employee"/>
+                    <nls description="Empleado" languageCode="es" name="Empleado"/>
+                    <nls description="Employé" languageCode="fr" name="Employé"/>
+                    <nls description="従業員" languageCode="ja" name="従業員"/>
+                    <nls description="Werknemer" languageCode="nl" name="Werknemer"/>
+                </lookupValue>
+            </staticLookup>
+          <staticLookup code="BOOKING_STATUS_LIST"
+              hiddenAttributeName="lookup_enum"
+              sortStyle="alphanumeric" source="niku.com"
+              status="active" update="true">
+              <nls description="Stav rezervace" languageCode="cs" name="Stav rezervace"/>
+              <nls description="Reservationsstatus" languageCode="da" name="Reservationsstatus"/>
+              <nls description="Buchungsstatus" languageCode="de" name="Buchungsstatus"/>
+              <nls description="Booking Status" languageCode="en" name="Booking Status"/>
+              <nls description="Estado de la reserva"
+                  languageCode="es" name="Estado de la reserva"/>
+              <nls description="Statut de réservation"
+                  languageCode="fr" name="Statut de réservation"/>
+              <nls description="Stato prenotazione" languageCode="it" name="Stato prenotazione"/>
+              <nls description="予約状況" languageCode="ja" name="予約状況"/>
+              <nls description="예약 상태" languageCode="ko" name="예약 상태"/>
+              <nls description="Boekingsstatus" languageCode="nl" name="Boekingsstatus"/>
+              <nls description="Status da reserva" languageCode="pt" name="Status da reserva"/>
+              <nls description="Bokningsstatus" languageCode="sv" name="Bokningsstatus"/>
+              <nls description="预定状态" languageCode="zh" name="预定状态"/>
+              <nls description="預約狀態" languageCode="zh_TW" name="預約狀態"/>
+              <lookupValue code="HARD" enum="15" sortOrder="1" status="active">
+                  <nls description="Potvrzený" languageCode="cs" name="Potvrzený"/>
+                  <nls description="Fast" languageCode="da" name="Fast"/>
+                  <nls description="Verbindlich" languageCode="de" name="Verbindlich"/>
+                  <nls description="Hard" languageCode="en" name="Hard"/>
+                  <nls description="En firme" languageCode="es" name="En firme"/>
+                  <nls description="Ferme" languageCode="fr" name="Ferme"/>
+                  <nls description="Effettiva" languageCode="it" name="Effettiva"/>
+                  <nls description="ハード" languageCode="ja" name="ハード"/>
+                  <nls description="확정" languageCode="ko" name="확정"/>
+                  <nls description="Vast" languageCode="nl" name="Vast"/>
+                  <nls description="Definitiva" languageCode="pt" name="Definitiva"/>
+                  <nls description="Svår" languageCode="sv" name="Svår"/>
+                  <nls description="硬性" languageCode="zh" name="硬性"/>
+                  <nls description="硬式" languageCode="zh_TW" name="硬式"/>
+              </lookupValue>
+              <lookupValue code="MIX" enum="10" sortOrder="3" status="active">
+                  <nls description="Smíąené" languageCode="cs" name="Smíąené"/>
+                  <nls description="Blandet" languageCode="da" name="Blandet"/>
+                  <nls description="Gemischt" languageCode="de" name="Gemischt"/>
+                  <nls description="Mixed" languageCode="en" name="Mixed"/>
+                  <nls description="Mixta" languageCode="es" name="Mixta"/>
+                  <nls description="Mixte" languageCode="fr" name="Mixte"/>
+                  <nls description="Combinata" languageCode="it" name="Combinata"/>
+                  <nls description="混合" languageCode="ja" name="混合"/>
+                  <nls description="혼합" languageCode="ko" name="혼합"/>
+                  <nls description="Gemengd" languageCode="nl" name="Gemengd"/>
+                  <nls description="Misto" languageCode="pt" name="Misto"/>
+                  <nls description="Blandat" languageCode="sv" name="Blandat"/>
+                  <nls description="混合" languageCode="zh" name="混合"/>
+                  <nls description="混合的" languageCode="zh_TW" name="混合的"/>
+              </lookupValue>
+              <lookupValue code="SOFT" enum="5" sortOrder="2" status="active">
+                  <nls description="Předběľný" languageCode="cs" name="Předběľný"/>
+                  <nls description="Midlertidig" languageCode="da" name="Midlertidig"/>
+                  <nls description="Unverbindlich" languageCode="de" name="Unverbindlich"/>
+                  <nls description="Soft" languageCode="en" name="Soft"/>
+                  <nls description="Prerreservado" languageCode="es" name="Prerreservado"/>
+                  <nls description="Optionnel" languageCode="fr" name="Optionnel"/>
+                  <nls description="Provvisoria" languageCode="it" name="Provvisoria"/>
+                  <nls description="ソフト" languageCode="ja" name="ソフト"/>
+                  <nls description="미확정" languageCode="ko" name="미확정"/>
+                  <nls description="Voorlopig" languageCode="nl" name="Voorlopig"/>
+                  <nls description="Temporária" languageCode="pt" name="Temporária"/>
+                  <nls description="Preliminär" languageCode="sv" name="Preliminär"/>
+                  <nls description="软性" languageCode="zh" name="软性"/>
+                  <nls description="軟式" languageCode="zh_TW" name="軟式"/>
+              </lookupValue>
+          </staticLookup>
+          <staticLookup code="REQUEST_STATUS_LIST"
+              hiddenAttributeName="lookup_enum" sortStyle="manual"
+              source="niku.com" status="active" update="true">
+              <nls description="Stav ľádosti" languageCode="cs" name="Stav ľádosti"/>
+              <nls description="Status for anmodning"
+                  languageCode="da" name="Status for anmodning"/>
+              <nls description="Anforderungsstatus" languageCode="de" name="Anforderungsstatus"/>
+              <nls description="Request Status" languageCode="en" name="Request Status"/>
+              <nls description="Estado de la solicitud"
+                  languageCode="es" name="Estado de la solicitud"/>
+              <nls description="Statut de la demande"
+                  languageCode="fr" name="Statut de la demande"/>
+              <nls description="Stato richiesta" languageCode="it" name="Stato richiesta"/>
+              <nls description="要求ステータス" languageCode="ja" name="要求ステータス"/>
+              <nls description="요청 상태" languageCode="ko" name="요청 상태"/>
+              <nls description="Status aanvraag" languageCode="nl" name="Status aanvraag"/>
+              <nls description="Status da solicitação"
+                  languageCode="pt" name="Status da solicitação"/>
+              <nls description="Förfrågans status" languageCode="sv" name="Förfrågans status"/>
+              <nls description="请求状态" languageCode="zh" name="请求状态"/>
+              <nls description="要求狀態" languageCode="zh_TW" name="要求狀態"/>
+              <lookupValue code="New" enum="5" sortOrder="1" status="active">
+                  <nls description="Nový" languageCode="cs" name="Nový"/>
+                  <nls description="Ny" languageCode="da" name="Ny"/>
+                  <nls description="Neu" languageCode="de" name="Neu"/>
+                  <nls description="New" languageCode="en" name="New"/>
+                  <nls description="Nuevo" languageCode="es" name="Nuevo"/>
+                  <nls description="Créer" languageCode="fr" name="Créer"/>
+                  <nls description="Nuovo" languageCode="it" name="Nuovo"/>
+                  <nls description="新規" languageCode="ja" name="新規"/>
+                  <nls description="신규" languageCode="ko" name="신규"/>
+                  <nls description="Nieuw" languageCode="nl" name="Nieuw"/>
+                  <nls description="Novo" languageCode="pt" name="Novo"/>
+                  <nls description="Ny" languageCode="sv" name="Ny"/>
+                  <nls description="新建" languageCode="zh" name="新建"/>
+                  <nls description="新增" languageCode="zh_TW" name="新增"/>
+              </lookupValue>
+              <lookupValue code="Open" enum="1" sortOrder="2" status="active">
+                  <nls description="Otevřít" languageCode="cs" name="Otevřít"/>
+                  <nls description="Åben" languageCode="da" name="Åben"/>
+                  <nls description="Öffnen" languageCode="de" name="Öffnen"/>
+                  <nls description="Open" languageCode="en" name="Open"/>
+                  <nls description="Abierto" languageCode="es" name="Abierto"/>
+                  <nls description="Ouvert" languageCode="fr" name="Ouvert"/>
+                  <nls description="Aperto" languageCode="it" name="Aperto"/>
+                  <nls description="オープン" languageCode="ja" name="オープン"/>
+                  <nls description="미해결" languageCode="ko" name="미해결"/>
+                  <nls description="Open" languageCode="nl" name="Open"/>
+                  <nls description="Aberto" languageCode="pt" name="Aberto"/>
+                  <nls description="Öppna" languageCode="sv" name="Öppna"/>
+                  <nls description="打开" languageCode="zh" name="打开"/>
+                  <nls description="開啟" languageCode="zh_TW" name="開啟"/>
+              </lookupValue>
+              <lookupValue code="Proposed" enum="2" sortOrder="3" status="active">
+                  <nls description="Navrhované" languageCode="cs" name="Navrhované"/>
+                  <nls description="Foreslået" languageCode="da" name="Foreslået"/>
+                  <nls description="Vorgeschlagen" languageCode="de" name="Vorgeschlagen"/>
+                  <nls description="Proposed" languageCode="en" name="Proposed"/>
+                  <nls description="Propuesta" languageCode="es" name="Propuesta"/>
+                  <nls description="Proposé" languageCode="fr" name="Proposé"/>
+                  <nls description="Proposto" languageCode="it" name="Proposto"/>
+                  <nls description="提案済み" languageCode="ja" name="提案済み"/>
+                  <nls description="제안" languageCode="ko" name="제안"/>
+                  <nls description="Voorgesteld" languageCode="nl" name="Voorgesteld"/>
+                  <nls description="Proposto" languageCode="pt" name="Proposto"/>
+                  <nls description="Föreslagen" languageCode="sv" name="Föreslagen"/>
+                  <nls description="已提议" languageCode="zh" name="已提议"/>
+                  <nls description="已提議" languageCode="zh_TW" name="已提議"/>
+              </lookupValue>
+              <lookupValue code="Approved" enum="3" sortOrder="4" status="active">
+                  <nls description="Schváleno" languageCode="cs" name="Schváleno"/>
+                  <nls description="Godkendt" languageCode="da" name="Godkendt"/>
+                  <nls description="Genehmigt" languageCode="de" name="Genehmigt"/>
+                  <nls description="Approved" languageCode="en" name="Approved"/>
+                  <nls description="Aprobado" languageCode="es" name="Aprobado"/>
+                  <nls description="Approuvé" languageCode="fr" name="Approuvé"/>
+                  <nls description="Approvato" languageCode="it" name="Approvato"/>
+                  <nls description="承認" languageCode="ja" name="承認"/>
+                  <nls description="Goedgekeurd" languageCode="nl" name="Goedgekeurd"/>
+                  <nls description="Aprovado" languageCode="pt" name="Aprovado"/>
+                  <nls description="Godkänd" languageCode="sv" name="Godkänd"/>
+                  <nls description="已核准" languageCode="zh" name="已核准"/>
+                  <nls description="已核准" languageCode="zh_TW" name="已核准"/>
+              </lookupValue>
+              <lookupValue code="Booked" enum="4" sortOrder="5" status="active">
+                  <nls description="Zarezervováno" languageCode="cs" name="Zarezervováno"/>
+                  <nls description="Reserveret" languageCode="da" name="Reserveret"/>
+                  <nls description="Gebucht" languageCode="de" name="Gebucht"/>
+                  <nls description="Booked" languageCode="en" name="Booked"/>
+                  <nls description="Reservado" languageCode="es" name="Reservado"/>
+                  <nls description="Réservé" languageCode="fr" name="Réservé"/>
+                  <nls description="Prenotato" languageCode="it" name="Prenotato"/>
+                  <nls description="予約済み" languageCode="ja" name="予約済み"/>
+                  <nls description="예약됨" languageCode="ko" name="예약됨"/>
+                  <nls description="Geboekt" languageCode="nl" name="Geboekt"/>
+                  <nls description="Reservado" languageCode="pt" name="Reservado"/>
+                  <nls description="Bokad" languageCode="sv" name="Bokad"/>
+                  <nls description="已预定" languageCode="zh" name="已预定"/>
+                  <nls description="已預約" languageCode="zh_TW" name="已預約"/>
+              </lookupValue>
+              <lookupValue code="Closed" enum="0" sortOrder="6" status="active">
+                  <nls description="Uzavřeno" languageCode="cs" name="Uzavřeno"/>
+                  <nls description="Lukket" languageCode="da" name="Lukket"/>
+                  <nls description="Geschlossen" languageCode="de" name="Geschlossen"/>
+                  <nls description="Closed" languageCode="en" name="Closed"/>
+                  <nls description="Cerrado" languageCode="es" name="Cerrado"/>
+                  <nls description="Fermé" languageCode="fr" name="Fermé"/>
+                  <nls description="Chiuso" languageCode="it" name="Chiuso"/>
+                  <nls description="閉止" languageCode="ja" name="閉止"/>
+                  <nls description="해결" languageCode="ko" name="해결"/>
+                  <nls description="Gesloten" languageCode="nl" name="Gesloten"/>
+                  <nls description="Fechado" languageCode="pt" name="Fechado"/>
+                  <nls description="Stängd" languageCode="sv" name="Stängd"/>
+                  <nls description="已关闭" languageCode="zh" name="已关闭"/>
+                  <nls description="已結案" languageCode="zh_TW" name="已結案"/>
+              </lookupValue>
+          </staticLookup>
+            <staticLookup code="PRTRACKMODE"
+                hiddenAttributeName="lookup_enum"
+                sortStyle="alphanumeric" source="niku.com"
+                status="active" update="true"/>
+        </lookups>
+    </contentPack>
+    <XOGOutput>
+        <Object type="contentPack"/>
+        <Status state="SUCCESS"/>
+        <Statistics failureRecords="0" insertedRecords="0"
+            totalNumberOfRecords="13" updatedRecords="0"/>
+        <Records/>
+    </XOGOutput>
+</NikuDataBus>

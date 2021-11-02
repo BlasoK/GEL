@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="contentPack" version="8.0"/>
+    <contentPack update="true">
+        <views update="true">
+            <filter code="bananaList" componentCode="odf"
+                dataProviderId="banana" dataProviderType="object"
+                objectCode="banana" obsTableNameKey="ODF_TST_BANANAS">
+                <section collapsed="false" currentState="expanded" filterByExpression="false">
+                    <column sequence="1">
+                        <viewFieldDescriptor
+                            attributeCode="odf_obs_unit_id_list"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="text" width="20">
+                            <nls description="OBS Unit"
+                                languageCode="de" name="OBS Unit"/>
+                            <nls description="OBS Unit"
+                                languageCode="en" name="OBS Unit"/>
+                            <nls description="OBS Unit"
+                                languageCode="es" name="OBS Unit"/>
+                            <nls description="OBS Unit"
+                                languageCode="fr" name="OBS Unit"/>
+                            <nls description="OBS Unit"
+                                languageCode="ja" name="OBS Unit"/>
+                            <nls description="OBS Unit"
+                                languageCode="nl" name="OBS Unit"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="base2_string_attr"
+                            dataSize="20" decimals="0"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="text" width="20">
+                            <nls description="DE - String Attribute 2"
+                                languageCode="de" name="DE - String Attribute 2"/>
+                            <nls languageCode="en" name="Text Attribute 1"/>
+                            <nls description="[es: String Attribute 2]"
+                                languageCode="es" name="[es: String Attribute 2]"/>
+                            <nls description="FR - String Attribute 2"
+                                languageCode="fr" name="FR - String Attribute 2"/>
+                            <nls description="[ja: String Attribute 2]"
+                                languageCode="ja" name="[ja: String Attribute 2]"/>
+                            <nls description="[nl: String Attribute 2]"
+                                languageCode="nl" name="[nl: String Attribute 2]"/>
+                            <defaultValue value="text attr"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="base2_date_attr" dataSize="0"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false" widgetType="daterange">
+                            <nls
+                                description="DE - Date Attribute from base table 2"
+                                languageCode="de" name="DE - Date Attribute from base table 2"/>
+                            <nls languageCode="en" name="Date Attribute 1"/>
+                            <nls
+                                description="[es: Date Attribute from base table 2]"
+                                languageCode="es" name="[es: Date Attribute from base table 2]"/>
+                            <nls
+                                description="FR - Date Attribute from base table 2"
+                                languageCode="fr" name="FR - Date Attribute from base table 2"/>
+                            <nls
+                                description="[ja: Date Attribute from base table 2]"
+                                languageCode="ja" name="[ja: Date Attribute from base table 2]"/>
+                            <nls
+                                description="[nl: Date Attribute from base table 2]"
+                                languageCode="nl" name="[nl: Date Attribute from base table 2]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="base2_time_level"
+                            dataSize="20" decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="TIME_LEVEL" multiValued="true"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="select" width="20">
+                            <nls description="DE - Time Level"
+                                languageCode="de" name="DE - Time Level"/>
+                            <nls languageCode="en" name="Time Level"/>
+                            <nls description="[es: Time Level]"
+                                languageCode="es" name="[es: Time Level]"/>
+                            <nls description="FR - Time Level"
+                                languageCode="fr" name="FR - Time Level"/>
+                            <nls description="[ja: Time Level]"
+                                languageCode="ja" name="[ja: Time Level]"/>
+                            <nls description="[nl: Time Level]"
+                                languageCode="nl" name="[nl: Time Level]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="cost"
+                            currencyAttribute="base2_currency"
+                            currencyConnected="false" dataSize="0"
+                            decimals="0" extType="money"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="numericrange">
+                            <nls description="DE - Cost"
+                                languageCode="de" name="DE - Cost"/>
+                            <nls languageCode="en" name="Cost"/>
+                            <nls description="[es: Cost]"
+                                languageCode="es" name="[es: Cost]"/>
+                            <nls description="FR - Cost"
+                                languageCode="fr" name="FR - Cost"/>
+                            <nls description="[ja: Cost]"
+                                languageCode="ja" name="[ja: Cost]"/>
+                            <nls description="[nl: Cost]"
+                                languageCode="nl" name="[nl: Cost]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="num_attr" dataSize="0"
+                            decimals="0"
+                            extendedWidgetType="mappinglookup"
+                            fixedWidget="false" hidden="false"
+                            lookupType="ODF.OBJECT.BANANA.NUM_ATTR"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select">
+                            <nls description="DE - Numeric Attribute 1"
+                                languageCode="de" name="DE - Numeric Attribute 1"/>
+                            <nls languageCode="en" name="Numeric 1 Map"/>
+                            <nls description="[es: Numeric Attribute 1]"
+                                languageCode="es" name="[es: Numeric Attribute 1]"/>
+                            <nls description="FR - Numeric Attribute 1"
+                                languageCode="fr" name="FR - Numeric Attribute 1"/>
+                            <nls description="[ja: Numeric Attribute 1]"
+                                languageCode="ja" name="[ja: Numeric Attribute 1]"/>
+                            <nls description="[nl: Numeric Attribute 1]"
+                                languageCode="nl" name="[nl: Numeric Attribute 1]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="us_dep_city" dataSize="30"
+                            decimals="0" dependentEntry="ODF_TST_STATES"
+                            dependentExit="ODF_TST_CITIES"
+                            dependentParentLookup="USA" extType="enum"
+                            extendedWidgetType="dependentLookup"
+                            fixedWidget="false" hidden="false"
+                            lookupType="ODF_TST_COUNTRIES"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="30">
+                            <nls description="DE - Dependent US City"
+                                languageCode="de" name="DE - Dependent US City"/>
+                            <nls languageCode="en" name="US Dependent City"/>
+                            <nls description="[es: Dependent US City]"
+                                languageCode="es" name="[es: Dependent US City]"/>
+                            <nls description="FR - Dependent US City"
+                                languageCode="fr" name="FR - Dependent US City"/>
+                            <nls description="[ja: Dependent US City]"
+                                languageCode="ja" name="[ja: Dependent US City]"/>
+                            <nls description="[nl: Dependent US City]"
+                                languageCode="nl" name="[nl: Dependent US City]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="dep_state" dataSize="30"
+                            decimals="0"
+                            dependentEntry="ODF_TST_COUNTRIES"
+                            dependentExit="ODF_TST_STATES"
+                            extType="enum"
+                            extendedWidgetType="dependentLookup"
+                            fixedWidget="false" hidden="false"
+                            lookupType="ODF_TST_COUNTRIES"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="30">
+                            <nls description="DE - Dependent State"
+                                languageCode="de" name="DE - Dependent State"/>
+                            <nls languageCode="en" name="Dependent State"/>
+                            <nls description="[es: Dependent State]"
+                                languageCode="es" name="[es: Dependent State]"/>
+                            <nls description="FR - Dependent State"
+                                languageCode="fr" name="FR - Dependent State"/>
+                            <nls description="[ja: Dependent State]"
+                                languageCode="ja" name="[ja: Dependent State]"/>
+                            <nls description="[nl: Dependent State]"
+                                languageCode="nl" name="[nl: Dependent State]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="eater_id" dataSize="0"
+                            decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="SCH_BROWSE_RESOURCE"
+                            multiValued="true" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse">
+                            <nls description="DE - Eater"
+                                languageCode="de" name="DE - Eater"/>
+                            <nls languageCode="en" name="Eater"/>
+                            <nls description="[es: Eater]"
+                                languageCode="es" name="[es: Eater]"/>
+                            <nls description="FR - Eater"
+                                languageCode="fr" name="FR - Eater"/>
+                            <nls description="[ja: Eater]"
+                                languageCode="ja" name="[ja: Eater]"/>
+                            <nls description="[nl: Eater]"
+                                languageCode="nl" name="[nl: Eater]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="price"
+                            currencyAttribute="price_currency"
+                            currencyConnected="true" dataSize="0"
+                            decimals="0" extType="money"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="hidden" xpathExpression="/data/price/@value">
+                            <nls description="DE - Price"
+                                languageCode="de" name="DE - Price"/>
+                            <nls languageCode="en" name="Price"/>
+                            <nls description="[es: Price]"
+                                languageCode="es" name="[es: Price]"/>
+                            <nls description="FR - Price"
+                                languageCode="fr" name="FR - Price"/>
+                            <nls description="[ja: Price]"
+                                languageCode="ja" name="[ja: Price]"/>
+                            <nls description="[nl: Price]"
+                                languageCode="nl" name="[nl: Price]"/>
+                        </viewFieldDescriptor>
+                    </column>
+                    <column sequence="2">
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="string_attr" dataSize="20"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false"
+                            widgetType="text" width="20">
+                            <nls description="DE - String Attribute 1"
+                                languageCode="de" name="DE - String Attribute 1"/>
+                            <nls languageCode="en" name="Text Attribute 2"/>
+                            <nls description="[es: String Attribute 1]"
+                                languageCode="es" name="[es: String Attribute 1]"/>
+                            <nls description="FR - String Attribute 1"
+                                languageCode="fr" name="FR - String Attribute 1"/>
+                            <nls description="[ja: String Attribute 1]"
+                                languageCode="ja" name="[ja: String Attribute 1]"/>
+                            <nls description="[nl: String Attribute 1]"
+                                languageCode="nl" name="[nl: String Attribute 1]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="base2_num_attr" dataSize="0"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false" widgetType="numeric">
+                            <nls description="DE - Numeric Attribute 2"
+                                languageCode="de" name="DE - Numeric Attribute 2"/>
+                            <nls languageCode="en" name="Number Attribute 2"/>
+                            <nls description="[es: Numeric Attribute 2]"
+                                languageCode="es" name="[es: Numeric Attribute 2]"/>
+                            <nls description="FR - Numeric Attribute 2"
+                                languageCode="fr" name="FR - Numeric Attribute 2"/>
+                            <nls description="[ja: Numeric Attribute 2]"
+                                languageCode="ja" name="[ja: Numeric Attribute 2]"/>
+                            <nls description="[nl: Numeric Attribute 2]"
+                                languageCode="nl" name="[nl: Numeric Attribute 2]"/>
+                            <defaultValue value="20"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="base2_state_id" dataSize="0"
+                            decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="CMN_STATES" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false" widgetType="select">
+                            <nls description="DE - State"
+                                languageCode="de" name="DE - State"/>
+                            <nls languageCode="en" name="State"/>
+                            <nls description="[es: State]"
+                                languageCode="es" name="[es: State]"/>
+                            <nls description="FR - State"
+                                languageCode="fr" name="FR - State"/>
+                            <nls description="[ja: State]"
+                                languageCode="ja" name="[ja: State]"/>
+                            <nls description="[nl: State]"
+                                languageCode="nl" name="[nl: State]"/>
+                            <defaultValue value="1932"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="base2_currency" dataSize="30"
+                            decimals="0" extType="enum"
+                            fixedWidget="false" hidden="false"
+                            lookupType="LOOKUP_ACTIVE_CURRENCIES"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="30">
+                            <nls description="DE - Currency"
+                                languageCode="de" name="DE - Currency"/>
+                            <nls languageCode="en" name="Currency"/>
+                            <nls description="[es: Currency]"
+                                languageCode="es" name="[es: Currency]"/>
+                            <nls description="FR - Currency"
+                                languageCode="fr" name="FR - Currency"/>
+                            <nls description="[ja: Currency]"
+                                languageCode="ja" name="[ja: Currency]"/>
+                            <nls description="[nl: Currency]"
+                                languageCode="nl" name="[nl: Currency]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="score2" dataSize="0"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false" widgetType="numericrange">
+                            <nls
+                                description="[de: Score Numeric 1 + Numeric 2]"
+                                languageCode="de" name="DE - Score"/>
+                            <nls languageCode="en" name="Score (virtual)"/>
+                            <nls
+                                description="[es: Score Numeric 1 + Numeric 2]"
+                                languageCode="es" name="[es: Score]"/>
+                            <nls
+                                description="[fr: Score Numeric 1 + Numeric 2]"
+                                languageCode="fr" name="FR - Score"/>
+                            <nls
+                                description="[ja: Score Numeric 1 + Numeric 2]"
+                                languageCode="ja" name="[ja: Score]"/>
+                            <nls
+                                description="[nl: Score Numeric 1 + Numeric 2]"
+                                languageCode="nl" name="[nl: Score]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="is_active" dataSize="0"
+                            decimals="0" extType="boolean"
+                            fixedWidget="false" hidden="false"
+                            multiValued="false" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="select">
+                            <nls description="DE - Active"
+                                languageCode="de" name="DE - Active (boolean attr)"/>
+                            <nls languageCode="en" name="Active"/>
+                            <nls description="[es: Active]"
+                                languageCode="es" name="[es: Active (boolean attr)]"/>
+                            <nls description="FR - Active"
+                                languageCode="fr" name="FR - Active (boolean attr)"/>
+                            <nls description="[ja: Active]"
+                                languageCode="ja" name="[ja: Active (boolean attr)]"/>
+                            <nls description="[nl: Active]"
+                                languageCode="nl" name="[nl: Active (boolean attr)]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="dep_city" dataSize="30"
+                            decimals="0"
+                            dependentEntry="ODF_TST_COUNTRIES"
+                            dependentExit="ODF_TST_CITIES"
+                            extType="enum"
+                            extendedWidgetType="dependentLookup"
+                            fixedWidget="false" hidden="false"
+                            lookupType="ODF_TST_COUNTRIES"
+                            multiValued="true" notEqualXPath="false"
+                            readOnly="false" required="false"
+                            virtual="false" widgetType="browse" width="30">
+                            <nls description="DE - Dependent City"
+                                languageCode="de" name="DE - Dependent City"/>
+                            <nls languageCode="en" name="Dependent City"/>
+                            <nls description="[es: Dependent City]"
+                                languageCode="es" name="[es: Dependent City]"/>
+                            <nls description="FR - Dependent City"
+                                languageCode="fr" name="FR - Dependent City"/>
+                            <nls description="[ja: Dependent City]"
+                                languageCode="ja" name="[ja: Dependent City]"/>
+                            <nls description="[nl: Dependent City]"
+                                languageCode="nl" name="[nl: Dependent City]"/>
+                        </viewFieldDescriptor>
+                        <viewFieldDescriptor aggregate="false"
+                            attributeCode="sell_by_date" dataSize="0"
+                            decimals="0" fixedWidget="false"
+                            hidden="false" multiValued="false"
+                            notEqualXPath="false" readOnly="false"
+                            required="false" virtual="false" widgetType="datepicker">
+                            <nls
+                                description="[de: One more Date Attribute]"
+                                languageCode="de" name="DE - Sell By Date"/>
+                            <nls languageCode="en" name="Sell By"/>
+                            <nls
+                                description="[es: One more Date Attribute]"
+                                languageCode="es" name="[es: Sell By Date]"/>
+                            <nls
+                                description="[fr: One more Date Attribute]"
+                                languageCode="fr" name="FR - Sell By Date"/>
+                            <nls
+                                description="[ja: One more Date Attribute]"
+                                languageCode="ja" name="[ja: Sell By Date]"/>
+                            <nls
+                                description="[nl: One more Date Attribute]"
+                                languageCode="nl" name="[nl: Sell By Date]"/>
+                            <defaultValue
+                                replace="date_startofnextmonth" value="2004-05-01T00:00:00"/>
+                        </viewFieldDescriptor>
+                    </column>
+                    <nls languageCode="de" name="banana Filter"/>
+                    <nls languageCode="en" name="Banana Filter"/>
+                    <nls languageCode="es" name="banana Filter"/>
+                    <nls languageCode="fr" name="banana Filter"/>
+                    <nls languageCode="ja" name="banana Filter"/>
+                    <nls languageCode="nl" name="banana Filter"/>
+                </section>
+                <filterValueSet id="0" instanceId="0" name=""
+                    objectCode="banana" portletInstanceCode=""
+                    selected="true"
+                    sessionId="5011682__1de041e:fc3812b63b:-7fb51083278679478"
+                    userId="1" viewCode="bananaList">
+                    <filterValue code="base2_string_attr"
+                        pmdParamName="base2_string_attr_wildcard" value="text attr"/>
+                    <filterValue code="base2_num_attr"
+                        pmdParamName="base2_num_attr" value="20"/>
+                    <filterValue code="base2_state_id"
+                        pmdParamName="base2_state_id" value="1932"/>
+                    <filterValue code="sell_by_date"
+                        pmdParamName="sell_by_date" value="2004-05-01T00:00:00"/>
+                </filterValueSet>
+                <defaultDisplay>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="type" dataSize="30" decimals="0"
+                        fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="text" width="30">
+                        <nls description="DE - Type Attribute"
+                            languageCode="de" name="DE - Type Attribute"/>
+                        <nls description="Type Attribute"
+                            languageCode="en" name="Type Attribute"/>
+                        <nls description="[es: Type Attribute]"
+                            languageCode="es" name="[es: Type Attribute]"/>
+                        <nls description="FR - Type Attribute"
+                            languageCode="fr" name="FR - Type Attribute"/>
+                        <nls description="[ja: Type Attribute]"
+                            languageCode="ja" name="[ja: Type Attribute]"/>
+                        <nls description="[nl: Type Attribute]"
+                            languageCode="nl" name="[nl: Type Attribute]"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="ca_req_num" dataSize="0"
+                        decimals="0" fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="numeric">
+                        <nls description="Required Number"
+                            languageCode="de" name="Required Number"/>
+                        <nls description="Required Number"
+                            languageCode="en" name="Required Number"/>
+                        <nls description="Required Number"
+                            languageCode="es" name="Required Number"/>
+                        <nls description="Required Number"
+                            languageCode="fr" name="Required Number"/>
+                        <nls description="Required Number"
+                            languageCode="ja" name="Required Number"/>
+                        <nls description="Required Number"
+                            languageCode="nl" name="Required Number"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="created_by" dataSize="0"
+                        decimals="0" fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="text">
+                        <nls description="created_by" languageCode="de" name="DE - Created By"/>
+                        <nls description="created_by" languageCode="en" name="Created By"/>
+                        <nls description="created_by" languageCode="es" name="[es: Created By]"/>
+                        <nls description="created_by" languageCode="fr" name="FR - Created By"/>
+                        <nls description="created_by" languageCode="ja" name="[ja: Created By]"/>
+                        <nls description="created_by" languageCode="nl" name="[nl: Created By]"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="updated_by" dataSize="0"
+                        decimals="0" fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="text">
+                        <nls description="updated_by" languageCode="de" name="DE - Updated By"/>
+                        <nls description="updated_by" languageCode="en" name="Updated By"/>
+                        <nls description="updated_by" languageCode="es" name="[es: Updated By]"/>
+                        <nls description="updated_by" languageCode="fr" name="FR - Updated By"/>
+                        <nls description="updated_by" languageCode="ja" name="[ja: Updated By]"/>
+                        <nls description="updated_by" languageCode="nl" name="[nl: Updated By]"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="ca_score2" dataSize="0"
+                        decimals="0" fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="true" required="false" virtual="false" widgetType="numeric">
+                        <nls description="Incomplete Score"
+                            languageCode="de" name="Incomplete Score"/>
+                        <nls description="Incomplete Score"
+                            languageCode="en" name="Incomplete Score"/>
+                        <nls description="Incomplete Score"
+                            languageCode="es" name="Incomplete Score"/>
+                        <nls description="Incomplete Score"
+                            languageCode="fr" name="Incomplete Score"/>
+                        <nls description="Incomplete Score"
+                            languageCode="ja" name="Incomplete Score"/>
+                        <nls description="Incomplete Score"
+                            languageCode="nl" name="Incomplete Score"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="updated_by_user_stat"
+                        dataSize="0" decimals="0" extType="enum"
+                        fixedWidget="false" hidden="false"
+                        lookupType="SEC_USER_STATUS" multiValued="false"
+                        notEqualXPath="false" readOnly="false"
+                        required="false" virtual="false" widgetType="browse">
+                        <nls description="updated_by_user_stat"
+                            languageCode="de" name="DE - Updated By User Status"/>
+                        <nls description="updated_by_user_stat"
+                            languageCode="en" name="Updated By User Status"/>
+                        <nls description="updated_by_user_stat"
+                            languageCode="es" name="[es: Updated By User Status]"/>
+                        <nls description="updated_by_user_stat"
+                            languageCode="fr" name="FR - Updated By User Status"/>
+                        <nls description="updated_by_user_stat"
+                            languageCode="ja" name="[ja: Updated By User Status]"/>
+                        <nls description="updated_by_user_stat"
+                            languageCode="nl" name="[nl: Updated By User Status]"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="score" dataSize="0" decimals="0"
+                        fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="numeric">
+                        <nls
+                            description="[de: Score Numeric 1 + Numeric 2]"
+                            languageCode="de" name="DE - Score"/>
+                        <nls description="Score Numeric 1 + Numeric 2"
+                            languageCode="en" name="Score"/>
+                        <nls
+                            description="[es: Score Numeric 1 + Numeric 2]"
+                            languageCode="es" name="[es: Score]"/>
+                        <nls
+                            description="[fr: Score Numeric 1 + Numeric 2]"
+                            languageCode="fr" name="FR - Score"/>
+                        <nls
+                            description="[ja: Score Numeric 1 + Numeric 2]"
+                            languageCode="ja" name="[ja: Score]"/>
+                        <nls
+                            description="[nl: Score Numeric 1 + Numeric 2]"
+                            languageCode="nl" name="[nl: Score]"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="ca_url_attr" dataSize="0"
+                        decimals="0" extendedWidgetType="url"
+                        fixedWidget="false" hidden="false" lookupType=""
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="text">
+                        <nls description="URL" languageCode="de" name="URL"/>
+                        <nls description="URL" languageCode="en" name="URL"/>
+                        <nls description="URL" languageCode="es" name="URL"/>
+                        <nls description="URL" languageCode="fr" name="URL"/>
+                        <nls description="URL" languageCode="ja" name="URL"/>
+                        <nls description="URL" languageCode="nl" name="URL"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="price_currency" dataSize="20"
+                        decimals="0" extType="enum" fixedWidget="false"
+                        hidden="true"
+                        lookupType="LOOKUP_ACTIVE_CURRENCIES"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="browse" width="20">
+                        <nls description="DE - Price Currency"
+                            languageCode="de" name="DE - Price Currency"/>
+                        <nls description="Price Currency"
+                            languageCode="en" name="Price Currency"/>
+                        <nls description="[es: Price Currency]"
+                            languageCode="es" name="[es: Price Currency]"/>
+                        <nls description="FR - Price Currency"
+                            languageCode="fr" name="FR - Price Currency"/>
+                        <nls description="[ja: Price Currency]"
+                            languageCode="ja" name="[ja: Price Currency]"/>
+                        <nls description="[nl: Price Currency]"
+                            languageCode="nl" name="[nl: Price Currency]"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="ca_cust_attr" dataSize="0"
+                        decimals="0" fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="false" required="false"
+                        virtual="false" widgetType="numeric">
+                        <nls description="Custom Attribute 1"
+                            languageCode="de" name="Custom Attribute 1"/>
+                        <nls description="Custom Attribute"
+                            languageCode="en" name="Cust Attr"/>
+                        <nls description="Custom Attribute 1"
+                            languageCode="es" name="Custom Attribute 1"/>
+                        <nls description="Custom Attribute 1"
+                            languageCode="fr" name="Custom Attribute 1"/>
+                        <nls description="Custom Attribute 1"
+                            languageCode="ja" name="Custom Attribute 1"/>
+                        <nls description="Custom Attribute 1"
+                            languageCode="nl" name="Custom Attribute 1"/>
+                    </viewFieldDescriptor>
+                    <viewFieldDescriptor aggregate="false"
+                        attributeCode="ca_score" dataSize="0"
+                        decimals="1" fixedWidget="false" hidden="false"
+                        multiValued="false" notEqualXPath="false"
+                        readOnly="true" required="false" virtual="false" widgetType="numeric">
+                        <nls description="True Score" languageCode="de" name="True Score"/>
+                        <nls description="Number of Users"
+                            languageCode="en" name="Num Users"/>
+                        <nls description="True Score" languageCode="es" name="True Score"/>
+                        <nls description="True Score" languageCode="fr" name="True Score"/>
+                        <nls description="True Score" languageCode="ja" name="True Score"/>
+                        <nls description="True Score" languageCode="nl" name="True Score"/>
+                    </viewFieldDescriptor>
+                </defaultDisplay>
+                <expression value=""/>
+            </filter>
+            <list code="odfTest.bananaList" dataProviderId="banana"
+                dataProviderType="object" dataProviderPartitionId="NIKU.ROOT"
+                defaultSortColumn="base2_string_attr"
+                defaultSortOrder="ascending" metricsLocation="bottom"
+                showAggregationRow="false" showAltValueText="false"
+                showComparisonRow="false" showVarianceRow="false">
+                <nls languageCode="de" name="DE - Banana List"/>
+                <nls languageCode="nl" name="Banana+List"/>
+                <nls languageCode="ja" name="Banana+List"/>
+                <nls languageCode="es" name="Banana+List"/>
+                <nls languageCode="en" name="Banana List"/>
+                <nls languageCode="fr" name="FR - Banana List"/>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="odf_pk"
+                    extType="selector" position="1"
+                    showHeaderLabel="true" type="checkbox">
+                    <nls languageCode="de" name="Selector"/>
+                    <nls languageCode="nl" name="Selector"/>
+                    <nls languageCode="ja" name="Selector"/>
+                    <nls languageCode="es" name="Selector"/>
+                    <nls languageCode="en" name="Selector"/>
+                    <nls languageCode="fr" name="Selector"/>
+                </column>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="base2_string_attr"
+                    link="banana.properties" position="2"
+                    showHeaderLabel="true" type="label" width="33">
+                    <nls languageCode="de" name="Text 1"/>
+                    <nls languageCode="nl" name="Text 1"/>
+                    <nls languageCode="ja" name="Text 1"/>
+                    <nls languageCode="es" name="Text 1"/>
+                    <nls languageCode="en" name="Text 1"/>
+                    <nls languageCode="fr" name="Text 1"/>
+                </column>
+                <column align="center" allowHeaderWrapping="false"
+                    allowWrapping="false" code="Properties"
+                    image="Properties" link="banana.properties"
+                    linkTarget="new" position="3"
+                    showHeaderLabel="false" type="image" width="2">
+                    <nls languageCode="de" name="Properties Icon"/>
+                    <nls languageCode="nl" name="Properties Icon"/>
+                    <nls languageCode="ja" name="Properties Icon"/>
+                    <nls languageCode="es" name="Properties Icon"/>
+                    <nls languageCode="en" name="Properties Icon"/>
+                    <nls languageCode="fr" name="Properties Icon"/>
+                </column>
+                <column align="center" allowHeaderWrapping="false"
+                    allowWrapping="false" code="num_attr"
+                    image="num_attr" position="4" showHeaderLabel="true"
+                    type="image" width="2">
+                    <nls languageCode="de" name="Number 1"/>
+                    <nls languageCode="nl" name="Number 1"/>
+                    <nls languageCode="ja" name="Number 1"/>
+                    <nls languageCode="es" name="Number 1"/>
+                    <nls languageCode="en" name="Number 1"/>
+                    <nls languageCode="fr" name="Number 1"/>
+                </column>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="base2_state_id_caption"
+                    position="5" showHeaderLabel="true" type="label">
+                    <nls languageCode="de" name="State"/>
+                    <nls languageCode="nl" name="State"/>
+                    <nls languageCode="ja" name="State"/>
+                    <nls languageCode="es" name="State"/>
+                    <nls languageCode="en" name="State"/>
+                    <nls languageCode="fr" name="State"/>
+                </column>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="score2" position="6"
+                    showHeaderLabel="true" type="label">
+                    <nls languageCode="de" name="Score (virtual)"/>
+                    <nls languageCode="nl" name="Score (virtual)"/>
+                    <nls languageCode="ja" name="Score (virtual)"/>
+                    <nls languageCode="es" name="Score (virtual)"/>
+                    <nls languageCode="en" name="Score (virtual)"/>
+                    <nls languageCode="fr" name="Score (virtual)"/>
+                </column>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="price" position="7"
+                    showHeaderLabel="true" type="label">
+                    <nls languageCode="de" name="Price (Context sensitive xPath field)"/>
+                    <nls languageCode="nl" name="Price (Context sensitive xPath field)"/>
+                    <nls languageCode="ja" name="Price (Context sensitive xPath field)"/>
+                    <nls languageCode="es" name="Price (Context sensitive xPath field)"/>
+                    <nls languageCode="en" name="Price (Context sensitive xPath field)"/>
+                    <nls languageCode="fr" name="Price (Context sensitive xPath field)"/>
+                </column>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="updated_by" position="8"
+                    showHeaderLabel="true" type="label">
+                    <nls languageCode="de" name="Updated By"/>
+                    <nls languageCode="nl" name="Updated By"/>
+                    <nls languageCode="ja" name="Updated By"/>
+                    <nls languageCode="es" name="Updated By"/>
+                    <nls languageCode="en" name="Updated By"/>
+                    <nls languageCode="fr" name="Updated By"/>
+                </column>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="base2_num_attr"
+                    image="base2_num_attr" position="9"
+                    showHeaderLabel="true" type="image">
+                    <nls languageCode="de" name="Base2 Num Attr"/>
+                    <nls languageCode="nl" name="Base2 Num Attr"/>
+                    <nls languageCode="ja" name="Base2 Num Attr"/>
+                    <nls languageCode="es" name="Base2 Num Attr"/>
+                    <nls languageCode="en" name="Base2 Num Attr"/>
+                    <nls languageCode="fr" name="Base2 Num Attr"/>
+                </column>
+                <column align="left" allowHeaderWrapping="false"
+                    allowWrapping="false" code="dep_city_caption"
+                    position="10" showHeaderLabel="true" type="label">
+                    <nls languageCode="de" name="Dependent City"/>
+                    <nls languageCode="nl" name="Dependent City"/>
+                    <nls languageCode="ja" name="Dependent City"/>
+                    <nls languageCode="es" name="Dependent City"/>
+                    <nls languageCode="en" name="Dependent City"/>
+                    <nls languageCode="fr" name="Dependent City"/>
+                </column>
+                <actions>
+                  <group code="file" groupOrder="0" id="5004006"
+                         viewId="5005008" viewType="grid">
+                    <action code="npt.setObjectUserPartitions"
+                            objectCode="actionitem" target_widget="cviewAction"/>
+                    <action code="npt.setObjectUserPartitions"
+                            objectCode="department" target_widget="cviewAction"/>
+                    <nls description="File" languageCode="en" name="File"/>
+                  </group>
+                  <group code="edit" groupOrder="1" id="5004007"
+                         viewId="5005008" viewType="grid">
+                    <action code="projmgr.resourceNewOptions_odf"
+                            objectCode="resource" target_widget="cviewAction"/>
+                    <action code="npt.setObjectUserPartitions"
+                            objectCode="portfolio" target_widget="cviewAction"/>
+                    <action code="npt.setObjectUserPartitions"
+                            objectCode="department" target_widget="cviewAction"/>
+                    <nls description="Edit" languageCode="en" name="Edit"/>
+                  </group>
+                  <group code="customm" groupOrder="2" id="5004008"
+                         viewId="5005008" viewType="grid">
+                    <action code="projmgr.resourceNewOptions_odf"
+                            objectCode="resource" target_widget="cviewAction"/>
+                    <action code="npt.setObjectUserPartitions"
+                            objectCode="portfolio" target_widget="cviewAction"/>
+                    <action code="npt.setObjectUserPartitions"
+                            objectCode="department" target_widget="cviewAction"/>
+                    <nls description="Custom Group" languageCode="en" name="Custom"/>
+                  </group>
+                </actions>
+            </list>
+        </views>
+        <objects>
+            <object code="banana" update="true" raiseEvents="true">
+              <nls description="Banana- A healthy fruit" languageCode="de" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="en" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="es" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="fr" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="ja" name="Banana"/>
+              <nls description="Banana- A healthy fruit" languageCode="nl" name="Banana"/>
+                <customAttribute active="true" code="attach_attr"
+                  column="attach_attr" constant="false"
+                  currencyConnected="false" custom="true"
+                  dataType="attachment" editable="true"
+                  multiValued="false" private="false" required="false"
+                  unique="false" virtual="false">
+                    <nls description="Attachment Attribute"
+                        languageCode="de" name="Attachment Attribute"/>
+                    <nls description="Custom Attribute"
+                        languageCode="en" name="Attachment Attr"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="es" name="Attachment Attribute"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="fr" name="Attachment Attribute"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="ja" name="Attachment Attribute"/>
+                    <nls description="Attachment Attribute"
+                        languageCode="nl" name="Attachment Attribute"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_cust_attr"
+                    column="cust_attr" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="true"
+                    maxValue="99999999" minValue="0" multiValued="false"
+                    private="false" required="false" scale="0"
+                    unique="false" virtual="false">
+                    <nls description="Custom Attribute 1"
+                        languageCode="de" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute"
+                        languageCode="en" name="Cust Attr"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="es" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="fr" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="ja" name="Custom Attribute 1"/>
+                    <nls description="Custom Attribute 1"
+                        languageCode="nl" name="Custom Attribute 1"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_url_attr"
+                    column="url_attr" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="string" editable="true" extendedType="url"
+                    multiValued="false" private="false" required="false"
+                    unique="false" virtual="false">
+                    <nls description="URL" languageCode="de" name="URL"/>
+                    <nls description="URL" languageCode="en" name="URL"/>
+                    <nls description="URL" languageCode="es" name="URL"/>
+                    <nls description="URL" languageCode="fr" name="URL"/>
+                    <nls description="URL" languageCode="ja" name="URL"/>
+                    <nls description="URL" languageCode="nl" name="URL"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_score"
+                    column="ca_score" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="false"
+                    extendedType="formula" multiValued="false"
+                    private="false" required="false" scale="1"
+                    unique="false" virtual="true">
+                    <nls description="True Score" languageCode="de" name="True Score"/>
+                    <nls description="Number of Users" languageCode="en" name="Num Users"/>
+                    <nls description="True Score" languageCode="es" name="True Score"/>
+                    <nls description="True Score" languageCode="fr" name="True Score"/>
+                    <nls description="True Score" languageCode="ja" name="True Score"/>
+                    <nls description="True Score" languageCode="nl" name="True Score"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_score2"
+                    column="ca_score2" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="false"
+                    extendedType="formula" multiValued="false"
+                    private="false" required="false" unique="false" virtual="true">
+                    <nls description="Incomplete Score"
+                        languageCode="de" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="en" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="es" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="fr" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="ja" name="Incomplete Score"/>
+                    <nls description="Incomplete Score"
+                        languageCode="nl" name="Incomplete Score"/>
+                </customAttribute>
+                <customAttribute active="true" code="ca_req_num"
+                    column="req_num" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" editable="true"
+                    multiValued="false" private="false" required="true"
+                    unique="false" virtual="false">
+                    <nls description="Required Number" languageCode="de" name="Required Number"/>
+                    <nls description="Required Number" languageCode="en" name="Required Number"/>
+                    <nls description="Required Number" languageCode="es" name="Required Number"/>
+                    <nls description="Required Number" languageCode="fr" name="Required Number"/>
+                    <nls description="Required Number" languageCode="ja" name="Required Number"/>
+                    <nls description="Required Number" languageCode="nl" name="Required Number"/>
+                </customAttribute>
+
+                <customAttribute active="true" code="ca_multi_lookup_attr"
+                    column="ca_multi_lookup_attr" constant="false"
+                    currencyConnected="false" custom="true"
+                    dataType="number" extendedType="lookup" editable="true"
+                    multiValued="true" private="false" required="false"
+                    unique="false" virtual="false" lookupType="LOOKUP_USERS">
+                    <nls description="Multi-valued Lookup Attribute" languageCode="de" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="en" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="es" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="fr" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="ja" name="Multi-valued Lookup Attribute"/>
+                    <nls description="Multi-valued Lookup Attribute" languageCode="nl" name="Multi-valued Lookup Attribute"/>
+                </customAttribute>
+
+                <customAttribute active="true" code="ca_multi_dep_lookup"
+                    column="ca_multi_dep_lookup" constant="false"
+                    currencyConnected="false" custom="true" dataSize="2000"
+                    dataType="string" extendedType="lookup" editable="true"
+                    multiValued="true" private="false" required="false"
+                    unique="false" virtual="false" lookupType="ODF_TST_COUNTRIES" dependentExit="ODF_TST_CITIES" dependentEntry="ODF_TST_COUNTRIES">
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="de" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="en" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="es" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="fr" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="ja" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="nl" name="Multi-valued Dependent Lookup Attribute"/>
+                </customAttribute>
+
+                <customAttribute active="true" code="ca_multi_stat_lookup"
+                    column="ca_multi_stat_lookup" constant="false"
+                    currencyConnected="false" custom="true" dataSize="2000"
+                    dataType="string" extendedType="lookup" editable="true"
+                    multiValued="true" private="false" required="false"
+                    unique="false" virtual="false" lookupType="ODF_COLORS">
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="de" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="en" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="es" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="fr" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="ja" name="Multi-valued Dependent Lookup Attribute"/>
+                    <nls description="Multi-valued Dependent Lookup Attribute" languageCode="nl" name="Multi-valued Dependent Lookup Attribute"/>
+                </customAttribute>
+
+                <links objectCode="banana">
+                    <link action="odfTest.bananaPropertyView" code="odf.banana.properties2">
+                        <nls description="Banana Properties Link"
+                            languageCode="de" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="en" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="es" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="fr" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="ja" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="nl" name="Banana Properties Link"/>
+                        <linkParam dataRef="odf_pk" dataSource="data" paramCode="odf_pk"/>
+                        <linkParam dataRef="/data/header/action/@id"
+                            dataSource="input" paramCode="odf_return_to"/>
+                        <linkParam dataRef="update" dataSource="static" paramCode="odf_view"/>
+                    </link>
+                    <link action="odfTest.bananaPropertyView" code="odf.banana.properties3">
+                        <nls description="Banana Properties Link"
+                            languageCode="de" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="en" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="es" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="fr" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="ja" name="Banana Properties Link"/>
+                        <nls description="Banana Properties Link"
+                            languageCode="nl" name="Banana Properties Link"/>
+                        <linkParam dataRef="odf_pk" dataSource="data" paramCode="odf_pk"/>
+                        <linkParam dataRef="/data/header/action/@id"
+                            dataSource="input" paramCode="odf_return_to"/>
+                        <linkParam dataRef="update" dataSource="static" paramCode="odf_view"/>
+                    </link>
+                </links>
+                <displayMappings/>
+                <scoreContributions>
+                    <scoreContribution attribute="ca_score"
+                        contributor="num_attr" weight="2"/>
+                    <scoreContribution attribute="ca_score"
+                        contributor="base2_num_attr" weight="0.3636"/>
+                    <scoreContribution attribute="ca_score"
+                        contributor="ca_cust_attr" weight="10"/>
+                </scoreContributions>
+            </object>
+        </objects>
+    </contentPack>
+    <XOGOutput>
+        <Object type="contentPack"/>
+        <Status state="SUCCESS"/>
+        <Statistics failureRecords="0" insertedRecords="0"
+            totalNumberOfRecords="11" updatedRecords="0"/>
+        <Records/>
+    </XOGOutput>
+</NikuDataBus>

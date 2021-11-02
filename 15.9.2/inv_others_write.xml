@@ -1,0 +1,30 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_otherInvestment.xsd">
+    <Header action="write" externalSource="NIKU"
+        objectType="otherInvestment" version="7.0.1"/>
+    <OtherInvestments>
+        <OtherInvestment alignment="99" calculateFinancialMetrics="true"
+            currencyISOcode="USD" description="Corner of Bay and 5th"
+            setBudgetValuesEqualToPlannedValues="true" goalCode="GROW_BUSINESS"
+            lastUpdatedBy="sbutler" managerUserName="sbutler"
+            name="Gas Station" objectID="GasStation" priority="13" progress="0"
+            start="2006-02-17T08:00:00"                     
+            finish="2006-10-31T17:00:00" 
+            status="0" statusIndicator="1">
+            <General addedBy="sbutler" addedDate="2003-11-18"/>
+            <OBSAssocs complete="true"/>
+        </OtherInvestment>
+        <OtherInvestment calculateFinancialMetrics="true"
+            currencyISOcode="USD"
+            description="Parking lot near the theatre"
+            setBudgetValuesEqualToPlannedValues="true"
+            goalCode="AVOID_COST" lastUpdatedBy="sbutler"
+            managerUserName="sbutler" name="Parking Lot"
+            objectID="Parkinglot" progress="1"
+            start="2006-02-17T08:00:00"                     
+            finish="2006-10-31T17:00:00" 
+            status="1" statusIndicator="1">
+            <General addedBy="sbutler" addedDate="2003-11-18"/>
+            <OBSAssocs complete="true"/>
+        </OtherInvestment>
+    </OtherInvestments>
+</NikuDataBus>

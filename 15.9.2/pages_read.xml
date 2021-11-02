@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="8.0" action="read" objectType="contentPack" externalSource="NIKU">
+    <!-- the contentType is used to determine which filter goes where -->
+    <args contentType="job_definition" name="order_by_1" value="code"/>
+    <args contentType="menu" name="order_by_1" value="code"/>
+  </Header>
+
+  <PageQuery>
+    <Filter name="code" criteria="EQUALS">xogPage1</Filter>
+    <Filter name="source" criteria="EQUALS">xognpt.com</Filter>
+  </PageQuery>
+
+  <PageQuery>
+    <Filter name="code" criteria="EQUALS">xogTab</Filter>
+    <Filter name="source" criteria="EQUALS">xognpt.com</Filter>
+  </PageQuery>
+
+</NikuDataBus>

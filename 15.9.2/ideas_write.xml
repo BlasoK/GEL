@@ -1,0 +1,38 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="../xsd/nikuxog_idea.xsd">
+    <Header action="write" externalSource="NIKU" objectType="idea" version="8.0"/>
+    <Ideas>
+        <Idea objectID="a" lastUpdatedBy="admin"
+            lastUpdatedDate="2006-02-17T12:06:10" managerUserName="admin"
+            status="0" name="a">
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+        </Idea>
+        <Idea objectID="admin" lastUpdatedBy="admin"
+            lastUpdatedDate="2006-02-17T12:06:10" managerUserName="admin"
+            status="0" name="admin">
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+        </Idea>
+        <Idea benefitDescription="asdfasdf" dependencies="asdfasdf"
+            description="asdf" estimatedBenefit="2555" estimatedCost="255"
+            estimatedFinishDate="2004-02-03T00:00:00"
+            estimatedStartDate="2004-01-15T00:00:00" generalNotes="asdf"
+            objectID="admin1" impact="asdfasdf" 
+            lastUpdatedBy="admin" lastUpdatedDate="2006-02-17T12:06:10"
+            managerUserName="admin" risks="asdfasdf" status="0" name="admin1">
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+        </Idea>
+        <Idea objectID="b" lastUpdatedBy="admin"
+            lastUpdatedDate="2006-02-17T12:06:10" managerUserName="admin"
+            status="0" name="b">
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+        </Idea>
+    </Ideas>
+</NikuDataBus>

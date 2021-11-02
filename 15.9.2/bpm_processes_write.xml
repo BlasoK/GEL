@@ -1,0 +1,104 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+  <Header action="write" externalSource="NIKU" objectType="contentPack" version="8.0"/>
+  <contentPack update="true">
+    <Processes>
+      <Process code="SAM_PROC" createdBy="admin" endStep="Finish" source="niku.com" startEvent="create" startOption="AUTO_START" startStep="Start">
+        <nls description="This is a sample process" languageCode="de" name="Sample Process"/>
+        <nls description="This is a sample process" languageCode="en" name="Sample Process"/>
+        <nls description="This is a sample process" languageCode="es" name="Sample Process"/>
+        <nls description="This is a sample process" languageCode="fr" name="Sample Process"/>
+        <nls description="This is a sample process" languageCode="ja" name="Sample Process"/>
+        <nls description="This is a sample process" languageCode="nl" name="Sample Process"/>
+        <StartCondition><![CDATA[project.actuals == 123]]></StartCondition>
+        <Security complete="true">
+          <UserSecurity rightCode="PROCESS-DEF-INST-INITIATE" userName="admin"/>
+          <UserSecurity rightCode="PROCESS-DEF-INST-WRITE" userName="admin"/>
+        </Security>
+        <Objects>
+          <Object name="thisProject" objectType="project" partitionCode="CA"/>
+        </Objects>
+        <Steps>
+          <Step expirationType="Days" id="Start" isMileStone="false" sequenceNo="1">
+            <nls languageCode="de" name="Start"/>
+            <nls languageCode="en" name="Start"/>
+            <nls languageCode="es" name="Start"/>
+            <nls languageCode="fr" name="Start"/>
+            <nls languageCode="ja" name="Start"/>
+            <nls languageCode="nl" name="Start"/>
+            <Notifications notifyOwner="false">
+              <NotifyWhen stepActionPerformed="false" stepCompleted="false" stepStarted="false"/>
+              <Assignees/>
+            </Notifications>
+            <Operations>
+              <Action code="deleteProjects" jobDefinitionCode="Delete_Projects" synchronized="true" type="BPM_SAT_JOB">
+                <nls languageCode="en" name="Delete Projects"/>
+              </Action>
+            </Operations>
+            <TransitionRestrictions>
+              <TransitionRestriction>
+                <Join type="BPM_JT_NONE">
+                  <Condition sequencNo="1" type="BPM_SCT_PRECONDITION"/>
+                </Join>
+              </TransitionRestriction>
+              <TransitionRestriction>
+                <Split type="BPM_ST_SEQUENCE">
+                  <Condition sequencNo="1" type="BPM_SCT_POSTCONDITION">
+                    <Transitions>
+                      <Transition to="Finish"/>
+                    </Transitions>
+                  </Condition>
+                </Split>
+              </TransitionRestriction>
+            </TransitionRestrictions>
+          </Step>
+          <Step id="Finish" isMileStone="false" sequenceNo="2">
+            <nls languageCode="de" name="Finish"/>
+            <nls languageCode="en" name="Finish"/>
+            <nls languageCode="es" name="Finish"/>
+            <nls languageCode="fr" name="Finish"/>
+            <nls languageCode="ja" name="Finish"/>
+            <nls languageCode="nl" name="Finish"/>
+            <Notifications notifyOwner="false">
+              <NotifyWhen stepActionPerformed="false" stepCompleted="false" stepStarted="false"/>
+              <Assignees/>
+            </Notifications>
+            <Operations>
+              <Action code="approve" aiClose="true" aiObjectName="ActionItem-Finish" aiPriority="CAL_LOW" aiSubject="approve this Action item" type="BPM_SAT_MANUAL">
+                <nls languageCode="en" name="Approve"/>
+                <Assignees>
+                  <Assignee id="admin" type="BPM_ASSIGNEE_RESOURCE"/>
+                </Assignees>
+                <AIActions>
+                  <AIAction statusCode="APPROVED" statusTypeCode="PROCESS_DEFAULT_AI_STATUS"/>
+                  <AIAction statusCode="REJECTED" statusTypeCode="PROCESS_DEFAULT_AI_STATUS"/>
+                </AIActions>
+                <Objects/>
+              </Action>
+            </Operations>
+            <TransitionRestrictions>
+              <TransitionRestriction>
+                <Join type="BPM_JT_NONE">
+                  <Condition sequencNo="1" type="BPM_SCT_PRECONDITION"/>
+                </Join>
+              </TransitionRestriction>
+              <TransitionRestriction>
+                <Split type="BPM_ST_SEQUENCE">
+                  <Condition sequencNo="1" type="BPM_SCT_POSTCONDITION">
+                    <Transitions/>
+                  </Condition>
+                </Split>
+              </TransitionRestriction>
+            </TransitionRestrictions>
+          </Step>
+        </Steps>
+        <Groups/>
+      </Process>
+    </Processes>
+  </contentPack>
+  <XOGOutput>
+    <Object type="unknown"/>
+    <Status state="SUCCESS"/>
+    <Statistics failureRecords="0" insertedRecords="0" totalNumberOfRecords="122" updatedRecords="0"/>
+    <Records/>
+  </XOGOutput>
+</NikuDataBus>

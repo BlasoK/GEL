@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="13.0" action="read" objectType="costPlan" externalSource="NIKU"/>
+  <Query>
+    <!--<Filter name="name" criteria="EQUALS">MasterCostPlan_2010</Filter> -->
+    <!--<Filter name="code" criteria="EQUALS">MasterCostPlan_2010</Filter>-->
+    <Filter name="investmentCode" criteria="EQUALS">finProject</Filter>
+  </Query>
+</NikuDataBus>

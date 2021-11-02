@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_customObjectInstance.xsd">
+  <Header action="write" externalSource="NIKU" objectType="customObjectInstance" version="8.0"/>
+  <customObjectInstances objectCode="manufacturer">
+    <instance instanceCode="Sony" objectCode="manufacturer">
+      <CustomInformation>
+        <ColumnValue name="code">Sony</ColumnValue>
+        <ColumnValue name="name">Sony Inc</ColumnValue>
+        <ColumnValue name="page_layout">odf.manufacturerFrame</ColumnValue>
+        <ColumnValue name="partition_code">ASIA</ColumnValue>
+        <instance instanceCode="camera" objectCode="widget"
+          parentObjectCode="manufacturer">
+          <CustomInformation>
+            <ColumnValue name="code">camera</ColumnValue>
+            <ColumnValue name="name">camera</ColumnValue>
+            <ColumnValue name="odf_parent_id">5000000</ColumnValue>
+          </CustomInformation>
+        </instance>
+        <instance instanceCode="computer" objectCode="widget"
+          parentObjectCode="manufacturer">
+          <CustomInformation>
+            <ColumnValue name="code">computer</ColumnValue>
+            <ColumnValue name="name">computer</ColumnValue>
+            <ColumnValue name="odf_parent_id">5000000</ColumnValue>
+          </CustomInformation>
+        </instance>
+      </CustomInformation>
+    </instance>
+    <instance instanceCode="nikon" objectCode="manufacturer">
+      <CustomInformation>
+        <ColumnValue name="code">nikon</ColumnValue>
+        <ColumnValue name="name">Nikon Corporation</ColumnValue>
+        <ColumnValue name="page_layout">odf.manufacturerFrame</ColumnValue>
+        <ColumnValue name="partition_code">CA</ColumnValue>
+        <instance instanceCode="digicam" objectCode="widget"
+          parentObjectCode="manufacturer">
+          <CustomInformation>
+            <ColumnValue name="code">digicam</ColumnValue>
+            <ColumnValue name="name">digicam</ColumnValue>
+            <ColumnValue name="odf_parent_id">5000001</ColumnValue>
+            <instance instanceCode="sony_digicam_2100"
+                objectCode="commercial_product" parentObjectCode="widget">
+                <CustomInformation>
+                    <ColumnValue name="code">sony_digicam_2100</ColumnValue>
+                    <ColumnValue name="fab_date">1999-02-02</ColumnValue>
+                    <ColumnValue name="name">SONY DIGICAM 2100</ColumnValue>
+                    <ColumnValue name="odf_parent_id">5000004</ColumnValue>
+                </CustomInformation>
+            </instance>
+            <instance instanceCode="sony_digicam_2200"
+                objectCode="commercial_product" parentObjectCode="widget">
+                <CustomInformation>
+                    <ColumnValue name="code">sony_digicam_2200</ColumnValue>
+                    <ColumnValue name="fab_date">2000-01-01</ColumnValue>
+                    <ColumnValue name="name">SONY DIGICAM 2200</ColumnValue>
+                    <ColumnValue name="odf_parent_id">5000004</ColumnValue>
+                </CustomInformation>
+            </instance>
+          </CustomInformation>
+        </instance>
+        <instance instanceCode="lens" objectCode="widget"
+          parentObjectCode="manufacturer">
+          <CustomInformation>
+            <ColumnValue name="code">lens</ColumnValue>
+            <ColumnValue name="name">lens</ColumnValue>
+            <ColumnValue name="odf_parent_id">5000001</ColumnValue>
+          </CustomInformation>
+        </instance>
+      </CustomInformation>
+    </instance>
+  </customObjectInstances>
+  <customObjectInstances objectCode="shoe">
+    <instance instanceCode="brooks" objectCode="shoe">
+      <CustomInformation>
+        <ColumnValue name="code">brooks</ColumnValue>
+        <ColumnValue name="name">test2</ColumnValue>
+        <ColumnValue name="page_layout">odf.shoeFrame</ColumnValue>
+        <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+        <ColumnValue name="shoe_size">11</ColumnValue>
+      </CustomInformation>
+    </instance>
+    <instance instanceCode="nike" objectCode="shoe">
+      <CustomInformation>
+        <ColumnValue name="code">nike</ColumnValue>
+        <ColumnValue name="name">Nike Shox II</ColumnValue>
+        <ColumnValue name="page_layout">odf.shoeFrame</ColumnValue>
+        <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+        <ColumnValue name="shoe_size">10</ColumnValue>
+      </CustomInformation>
+    </instance>
+  </customObjectInstances>
+</NikuDataBus>

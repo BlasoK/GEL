@@ -1,0 +1,114 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_obs.xsd">
+  <Header action="write" externalSource="NIKU" objectType="obs" version="7.5.1"/>
+  <obsTypes>
+    <obs description="XOG Security OBS" code="XOGSecurityOBS" name="XOG Security OBS" isSecurity="true">
+      <level depth="1" name="All"/>
+      <level depth="2" name="Group"/>
+      <level depth="3" name="SubGroup"/>
+      <objectAssociation associationType="Lowest Level" object="application"/>
+      <objectAssociation associationType="Any Unit" object="asset"/>
+      <objectAssociation associationType="Any Unit" object="change"/>
+      <objectAssociation associationType="Lowest Level" object="company"/>
+      <objectAssociation associationType="Any Unit" object="page"/>
+      <objectAssociation associationType="Any Unit" object="portlet"/>
+      <objectAssociation associationType="Any Unit" object="processdef"/>
+      <objectAssociation associationType="Any Unit" object="project"/>
+      <objectAssociation associationType="Any Unit" object="resource"/>
+      <unit code="XOG::nOuNiQuEnAmE" name="Corporate">
+        <unit code="IT" name="IT">
+          <unit code="Portfolio" name="Portfolio">
+            <associatedObject objectCode="NMCTestOBSXog1" objectType="project"/>
+            <associatedObject objectCode="NMCTestOBSXog2" objectType="project"/>
+            <associatedObject objectCode="NMCTestOBSXog3" objectType="project"/>
+            <associatedObject objectCode="NMCTestOBSXog4" objectType="project"/>
+            <associatedObject objectCode="NMCTestOBSXog4" objectType="noSuchObject"/>
+            <associatedObject objectCode="DoesNotExist" objectType="project"/>
+            <rights/>
+            <Security>
+              <GroupSecurity groupCode="NMCTestOBSXogPortfolio" rightCode="ProjectEditAccounting"/>
+              <GroupSecurity groupCode="NMCTestOBSXogPortfolio" rightCode="ProjectEditManagement"/>
+            </Security>
+          </unit>
+          <unit code="Finance" name="Finance">
+            <associatedObject objectCode="sasire" objectType="resource"/>
+            <associatedObject objectCode="jchan" objectType="resource"/>
+            <associatedObject objectCode="mashall" objectType="resource"/>
+            <associatedObject objectCode="admin_es" objectType="resource"/>
+            <Security>
+              <GroupSecurity groupCode="NMCTestOBSXogProgram" rightCode="ResourceEditFull"/>
+              <GroupSecurity groupCode="NMCTestOBSXogProgram" rightCode="ResourceEnterTime"/>
+              <GroupSecurity groupCode="NMCTestOBSXogProgram" rightCode="ResourceApproveTime"/>
+            </Security>
+          </unit>
+          <unit code="Team" name="Team">
+            <associatedObject objectCode="NMCTestOBSXogApp1" objectType="application"/>
+            <associatedObject objectCode="NMCTestOBSXogApp2" objectType="application"/>
+            <associatedObject objectCode="NMCTestOBSXogApp3" objectType="application"/>
+            <associatedObject objectCode="NMCTestOBSXog9" objectType="project"/>
+            <associatedObject objectCode="NMCTestOBSXog10" objectType="project"/>
+            <associatedObject objectCode="dbos" objectType="resource"/>
+            <rights/>
+            <Security>
+              <GroupSecurity groupCode="NMCTestOBSXogTeam" rightCode="ProjectEditManagement"/>
+              <GroupSecurity groupCode="NMCTestOBSXogTeam" rightCode="ProjectModifyBaseline"/>
+              <GroupSecurity groupCode="NMCTestOBSXogTeam" rightCode="ProjectEditProjectPlan"/>
+              <GroupSecurity groupCode="NMCTestOBSXogTeam" rightCode="RiskIssueEdit"/>
+            </Security>
+          </unit>
+          <unit code="Sponsor" name="Sponsor"/>
+          <associatedObject objectCode="NMCTestOBSXog5" objectType="project"/>
+          <associatedObject objectCode="NMCTestOBSXog6" objectType="project"/>
+          <associatedObject objectCode="NMCTestOBSXog7" objectType="project"/>
+          <associatedObject objectCode="NMCTestOBSXog8" objectType="project"/>
+          <associatedObject objectCode="admin_nl" objectType="resource"/>
+          <associatedObject objectCode="admin_fr" objectType="resource"/>
+          <associatedObject objectCode="admin_ja" objectType="resource"/>
+          <associatedObject objectCode="ecronin" objectType="resource"/>
+          <associatedObject objectCode="admin_de" objectType="resource"/>
+          <rights/>
+          <Security>
+            <GroupSecurity groupCode="NMCTestOBSXogPortfolio" rightCode="ResourceEditFull"/>
+            <GroupSecurity groupCode="NMCTestOBSXogProgram" rightCode="ResourceEditFull"/>
+            <GroupSecurity groupCode="NMCTestOBSXogProject" rightCode="ResourceEditFull"/>
+          </Security>
+        </unit>
+        <unit code="NPD" name="NPD">
+          <rights/>
+          <Security>
+            <OBSSecurity name="XOG Security OBS" rightCode="ApplicationEdit" rightMode="OBS_UNIT_AND_CHILDREN" typeCode="XOGSecurityOBS" unitPath="/Corporate"/>
+          </Security>
+        </unit>
+        <rights>
+          <GlobalRights>
+            <Right id="AdminToolAccess"/>
+            <Right id="NoSuchRight"/>
+          </GlobalRights>
+          <InstanceRights>
+            <Right id="PortletViewInstanceRight">
+              <InstanceObject id="Benefits by Goal" name="Benefits by Goal" type="CMN_PORTLETS"/>
+            </Right>
+            <Right id="PortletViewInstanceRight">
+              <InstanceObject id="Balance" name="Balance" type="CMN_PORTLETS"/>
+            </Right>
+            <Right id="PortletViewInstanceRight">
+              <InstanceObject id="noSuchPortlet" name="No Such Portlet" type="CMN_PORTLETS"/>
+            </Right>
+          </InstanceRights>
+          <InstanceOBSRights>
+            <Right id="ApplicationEdit">
+              <OBSAssoc id="XOGSecurityOBS" mode="OBS_UNIT_AND_CHILDREN" name="XOG Security OBS" unitPath="/Corporate/NPD"/>
+            </Right>
+          </InstanceOBSRights>
+        </rights>
+        <Security>
+          <OBSSecurity name="XOG Security OBS" rightCode="ApplicationEdit" rightMode="OBS_UNIT_AND_CHILDREN" typeCode="XOGSecurityOBS" unitPath="/Corporate"/>
+          <OBSSecurity name="XOG Security OBS" rightCode="ApplicationEdit" rightMode="OBS_UNIT_AND_CHILDREN" typeCode="noSuchType" unitPath="/NoSuchPath"/>
+          <GroupSecurity groupCode="StudioAccessRole" rightCode="ApplicationEdit"/>
+          <GroupSecurity groupCode="noSuchGroup" rightCode="ProjectEditManagement"/>
+          <UserSecurity rightCode="AssetEdit" userName="admin"/>
+          <UserSecurity rightCode="AssetEdit" userName="noSuchUser"/>
+        </Security>
+      </unit>
+    </obs>
+  </obsTypes>
+</NikuDataBus>

@@ -1,0 +1,19 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_category.xsd">
+  <Header action="write" externalSource="NIKU" objectType="category" version="7.5.0.3077"/>
+  <categories>
+    <category code="Network" name="Network">
+      <description><![CDATA[Network Problems]]></description>
+      <investments>
+        <investment objectCode="Firebug" objectType="APPLICATION"/>
+        <investment objectCode="Cisco CS3000 Router" objectType="ASSET"/>
+        <investment objectCode="Dell P990 Monitors" objectType="ASSET"/>
+      </investments>
+    </category>
+  </categories>
+  <XOGOutput>
+    <Object type="category"/>
+    <Status state="SUCCESS"/>
+    <Statistics failureRecords="0" insertedRecords="0" totalNumberOfRecords="0" updatedRecords="0"/>
+    <Records/>
+  </XOGOutput>
+</NikuDataBus>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+
+  <Header version="8.0" action="read" objectType="contentPack" externalSource="NIKU">
+    <!-- you change the order by simply swap 1 and 2 number in the name attribute -->
+    <args contentType="job_definition" name="order_by_1" value="job_code"/>
+    <!--args name="order_by_2" value="executable"/-->
+    <!--args name="order_by_3" value="jobType"/-->
+  </Header>
+
+  <JobQuery>
+    <Filter name="code" criteria="EQUALS">XOGJob</Filter>
+  </JobQuery>
+  <JobQuery>
+    <Filter name="code" criteria="EQUALS">XOGReport</Filter>
+  </JobQuery>
+
+</NikuDataBus>

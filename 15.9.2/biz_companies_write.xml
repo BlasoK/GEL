@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_company.xsd">
+  <Header version="6010" action="write" objectType="company" externalSource="ORACLE-FINANCIAL"/>
+  <Companies>
+    <Company companyId="XOGTESTCUST10" status="Active" name="new XOG Test company 10" type="Other" externalId="2323">
+      <SupplementalInformation description="nice company" ratings="high" sicCode="SIC_CODE_1" parentCompany="XOGTESTCUST10" affiliateCompany="XOGTESTCUST10" division="div" category="manufacturing" industry="Other" numberOfEmployees="34" ownership="corporation" tickerSymbol="ttt" referralSource="paper" accountManager="admin" notes="this is a sample company" primaryContactName="test" primaryContactEmail="ss@test.com" primaryContactPhone="4444444444"/>
+      <ContactInformation type="main" webAddress="http://www.niku.com" address1="432432" address2="4234234" city="fremont" state="CA" country="US" postalCode="94063" workPhone="323324324" fax="4324234234"/>
+      <ContactInformation type="postal" webAddress="http://www.niku.com" address1="432432" address2="4234234" city="fremont" state="CA" country="US" postalCode="94063" workPhone="323324324" fax="4324234234"/>
+      <CustomInformation>
+        <ColumnValue name="CEO_NAME">ceo2</ColumnValue>
+        <ColumnValue name="DEFAULTWEBSITE">http://www1</ColumnValue>
+        <ColumnValue name="NUM_OF_EMPLOYEES">100</ColumnValue>
+        <ColumnValue name="OPPORTUNITY">1</ColumnValue>
+        <ColumnValue name="PRIM_INTERNAL_CONTACT">muralis</ColumnValue>
+        <ColumnValue name="CURRENT_PROJECT">TEST1</ColumnValue>
+        <ColumnValue name="COMPANY_COMPETITOR">XOGTESTCUST10</ColumnValue>
+        <ColumnValue name="AGREEMENT_START_DATE">2002-01-30</ColumnValue>
+        <ColumnValue name="INDUSTRY">EDUCATION</ColumnValue>
+      </CustomInformation>
+      <FinancialInformation location="LOC1" department="DEPT1" clientClass="CCLASS1" dateOpened="2002-01-01" projectClass="PCLASS1" status="active" WIPclass="WCLASS1">
+        <BillingInformation billingCode="XOGTESTCUSTBILL444" billingCompanyName="XOGCUSTBILL11COMPNAME" address1="22222222555" address2="31234DDDDDDD234" address3="4234DDDDD23" address4="143242343" address5="5454DDDD353" attentionName="tesDDDt" attentionPhone="33243323"/>
+        <BillingInformation billingCode="XOGTESTCUSTBILL555" billingCompanyName="XOGCUSTBILL12COMPNAME" address1="1" address2="2" address3="3" address4="6664" address5="5666" attentionName="tesDDDt" attentionPhone="33243323"/>
+        <BillingInformation billingCode="XOGTESTCUSTBILL666" billingCompanyName="XOGCUSTBILL13COMPNAME" address1="51" address2="52" address3="53" address4="56664" address5="55666" attentionName="55555tesDDDt" attentionPhone="33243323"/>
+      </FinancialInformation>
+      <General addedBy="admin" addedDate="2002-01-31"/>
+      <OBSAssocs>
+        <OBSAssoc id="loc" unitPath="/USA/California"/>
+      </OBSAssocs>
+    </Company>
+    <Company companyId="XOGTESTCUST11" status="Active" name="new XOG Test company 11" type="Other" externalId="2323">
+      <General addedBy="admin" addedDate="2002-01-31"/>
+      <OBSAssocs>
+        <OBSAssoc id="loc" unitPath="/USA/California"/>
+      </OBSAssocs>
+    </Company>
+  </Companies>
+</NikuDataBus>

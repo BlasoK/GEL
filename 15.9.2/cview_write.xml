@@ -1,0 +1,2505 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+  <Header action="write" externalSource="NIKU" objectType="contentPack" version="8.0"/>
+  <contentPack update="true">
+    <views update="true">
+      <property code="assetCreate_default" componentId="projmgr" id="5002000" objectCode="asset" type="fieldList">
+        <column sequence="1">
+          <viewFieldDescriptor attributeCode="test_number" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003064" labelPkId="5003072" readOnly="false" required="true" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="test_number"/>
+            <nls languageCode="en" name="test_number"/>
+            <nls languageCode="es" name="test_number"/>
+            <nls languageCode="fr" name="test_number"/>
+            <nls languageCode="ja" name="test_number"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="test_money_currency" dataSize="20" decimals="3" enterOnce="false" extType="enum" hidden="false" id="5003063" labelPkId="5003073" lookupType="LOOKUP_ACTIVE_CURRENCIES" readOnly="false" required="true" unique="false" virtual="false" widgetType="select">
+            <nls languageCode="de" name="test_money"/>
+            <nls languageCode="en" name="test_money"/>
+            <nls languageCode="es" name="test_money"/>
+            <nls languageCode="fr" name="test_money"/>
+            <nls languageCode="ja" name="test_money"/>
+            <select>
+              <option name="USD ($)" value="USD"/>
+            </select>
+            <defaultValue value="USD"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="test_money" currencyAttribute="test_money_currency" currencyConnected="true" dataSize="20" decimals="3" enterOnce="false" extType="money" hidden="false" id="5003062" labelPkId="5003071" readOnly="false" required="true" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="test_money"/>
+            <nls languageCode="en" name="test_money"/>
+            <nls languageCode="es" name="test_money"/>
+            <nls languageCode="fr" name="test_money"/>
+            <nls languageCode="ja" name="test_money"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="idea_name" decimals="2" enterOnce="false" hidden="false" id="5003061" labelPkId="5003116" readOnly="true" required="false" virtual="true" widgetType="text" width="40">
+            <nls languageCode="de" name="DE - Originating Idea"/>
+            <nls languageCode="en" name="Originating Idea"/>
+            <nls languageCode="es" name="[es: Originating Idea]"/>
+            <nls languageCode="fr" name="Idée initiale"/>
+            <nls languageCode="ja" name="[ja: Originating Idea]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="inv_tco" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003050" labelPkId="5003124" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="DE - TCO"/>
+            <nls languageCode="en" name="TCO"/>
+            <nls languageCode="es" name="[es: TCO]"/>
+            <nls languageCode="fr" name="TCO"/>
+            <nls languageCode="ja" name="[ja: TCO]"/>
+            <defaultValue value="0"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_roi" dataSize="0" decimals="2" enterOnce="false" extType="percent" hidden="false" id="5003047" labelPkId="5003152" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="DE - Forecasted ROI"/>
+            <nls languageCode="en" name="Forecasted ROI"/>
+            <nls languageCode="es" name="[es: Forecasted ROI]"/>
+            <nls languageCode="fr" name="ROI prévu"/>
+            <nls languageCode="ja" name="[ja: Forecasted ROI]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_breakeven" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003045" labelPkId="5003140" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Budgeted Break Even"/>
+            <nls languageCode="en" name="Budgeted Break Even"/>
+            <nls languageCode="es" name="[es: Budgeted Break Even]"/>
+            <nls languageCode="fr" name="Rentabilité budgétée"/>
+            <nls languageCode="ja" name="[ja: Budgeted Break Even]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_npv" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003043" labelPkId="5003138" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="DE - Budgeted NPV"/>
+            <nls languageCode="en" name="Budgeted NPV"/>
+            <nls languageCode="es" name="[es: Budgeted NPV]"/>
+            <nls languageCode="fr" name="NPV budgété"/>
+            <nls languageCode="ja" name="[ja: Budgeted NPV]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_rev_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003041" labelPkId="5003149" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Forecasted Benefit On Hold]"/>
+            <nls languageCode="en" name="Forecasted Benefit On Hold"/>
+            <nls languageCode="es" name="[es: Forecasted Benefit On Hold]"/>
+            <nls languageCode="fr" name="Bénéfices prévus en attente"/>
+            <nls languageCode="ja" name="[ja: Forecasted Benefit On Hold]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_rev_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003032" labelPkId="5003136" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Budgeted Benefit Resume]"/>
+            <nls languageCode="en" name="Budgeted Benefit Resume"/>
+            <nls languageCode="es" name="[es: Budgeted Benefit Resume]"/>
+            <nls languageCode="fr" name="Reprise des bénéfices budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Benefit Resume]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_cst_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003033" labelPkId="5003141" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="DE - Forecasted Cost"/>
+            <nls languageCode="en" name="Forecasted Cost"/>
+            <nls languageCode="es" name="[es: Forecasted Cost]"/>
+            <nls languageCode="fr" name="Coût prévu"/>
+            <nls languageCode="ja" name="[ja: Forecasted Cost]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_cst_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003034" labelPkId="5003142" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Forecasted Cost Start"/>
+            <nls languageCode="en" name="Forecasted Cost Start"/>
+            <nls languageCode="es" name="[es: Forecasted Cost Start]"/>
+            <nls languageCode="fr" name="Début du coût prévu"/>
+            <nls languageCode="ja" name="[ja: Forecasted Cost Start]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_cst_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003035" labelPkId="5003143" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Forecasted Cost Finish"/>
+            <nls languageCode="en" name="Forecasted Cost Finish"/>
+            <nls languageCode="es" name="[es: Forecasted Cost Finish]"/>
+            <nls languageCode="fr" name="Fin du coût prévu"/>
+            <nls languageCode="ja" name="[ja: Forecasted Cost Finish]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_cst_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003036" labelPkId="5003144" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Forecasted Cost On Hold"/>
+            <nls languageCode="en" name="Forecasted Cost On Hold"/>
+            <nls languageCode="es" name="[es: Forecasted Cost On Hold]"/>
+            <nls languageCode="fr" name="Coût prévu en attente"/>
+            <nls languageCode="ja" name="[ja: Forecasted Cost On Hold]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_cst_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003037" labelPkId="5003145" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Forecast Cost Resume"/>
+            <nls languageCode="en" name="Forecast Cost Resume"/>
+            <nls languageCode="es" name="[es: Forecast Cost Resume]"/>
+            <nls languageCode="fr" name="Reprise du coût prévu"/>
+            <nls languageCode="ja" name="[ja: Forecast Cost Resume]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_rev_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003038" labelPkId="5003146" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="[de: Forecasted Benefit]"/>
+            <nls languageCode="en" name="Forecasted Benefit"/>
+            <nls languageCode="es" name="[es: Forecasted Benefit]"/>
+            <nls languageCode="fr" name="Bénéfices prévus"/>
+            <nls languageCode="ja" name="[ja: Forecasted Benefit]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_rev_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003039" labelPkId="5003147" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Forecasted Benefit Start]"/>
+            <nls languageCode="en" name="Forecasted Benefit Start"/>
+            <nls languageCode="es" name="[es: Forecasted Benefit Start]"/>
+            <nls languageCode="fr" name="Début des bénéfices prévus"/>
+            <nls languageCode="ja" name="[ja: Forecasted Benefit Start]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_rev_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003040" labelPkId="5003148" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Forecasted Benefit Finish]"/>
+            <nls languageCode="en" name="Forecasted Benefit Finish"/>
+            <nls languageCode="es" name="[es: Forecasted Benefit Finish]"/>
+            <nls languageCode="fr" name="Fin des bénéfices prévus"/>
+            <nls languageCode="ja" name="[ja: Forecasted Benefit Finish]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_cst_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003023" labelPkId="5003127" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="DE - Budgeted Cost"/>
+            <nls languageCode="en" name="Budgeted Cost"/>
+            <nls languageCode="es" name="[es: Budgeted Cost]"/>
+            <nls languageCode="fr" name="Coûts budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Cost]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_cst_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003024" labelPkId="5003128" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Budgeted Cost Start"/>
+            <nls languageCode="en" name="Budgeted Cost Start"/>
+            <nls languageCode="es" name="[es: Budgeted Cost Start]"/>
+            <nls languageCode="fr" name="Lancement coûts budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Cost Start]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_cst_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003025" labelPkId="5003129" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Budgeted Cost Finish"/>
+            <nls languageCode="en" name="Budgeted Cost Finish"/>
+            <nls languageCode="es" name="[es: Budgeted Cost Finish]"/>
+            <nls languageCode="fr" name="Fin des coûts budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Cost Finish]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_cst_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003026" labelPkId="5003130" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Budgeted Cost On Hold"/>
+            <nls languageCode="en" name="Budgeted Cost On Hold"/>
+            <nls languageCode="es" name="[es: Budgeted Cost On Hold]"/>
+            <nls languageCode="fr" name="Coûts budgétés en attente"/>
+            <nls languageCode="ja" name="[ja: Budgeted Cost On Hold]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_cst_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003027" labelPkId="5003131" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Budgeted Cost Resume"/>
+            <nls languageCode="en" name="Budgeted Cost Resume"/>
+            <nls languageCode="es" name="[es: Budgeted Cost Resume]"/>
+            <nls languageCode="fr" name="Reprise des coûts budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Cost Resume]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_rev_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003028" labelPkId="5003132" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="[de: Budgeted Benefit]"/>
+            <nls languageCode="en" name="Budgeted Benefit"/>
+            <nls languageCode="es" name="[es: Budgeted Benefit]"/>
+            <nls languageCode="fr" name="Bénéfices budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Benefit]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_rev_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003029" labelPkId="5003133" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Budgeted Benefit Start]"/>
+            <nls languageCode="en" name="Budgeted Benefit Start"/>
+            <nls languageCode="es" name="[es: Budgeted Benefit Start]"/>
+            <nls languageCode="fr" name="Lancement des bénéfices budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Benefit Start]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_rev_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003030" labelPkId="5003134" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Budgeted Benefit Finish]"/>
+            <nls languageCode="en" name="Budgeted Benefit Finish"/>
+            <nls languageCode="es" name="[es: Budgeted Benefit Finish]"/>
+            <nls languageCode="fr" name="Fin des bénéfices budgétés"/>
+            <nls languageCode="ja" name="[ja: Budgeted Benefit Finish]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_rev_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003031" labelPkId="5003135" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Budgeted Benefit On Hold]"/>
+            <nls languageCode="en" name="Budgeted Benefit On Hold"/>
+            <nls languageCode="es" name="[es: Budgeted Benefit On Hold]"/>
+            <nls languageCode="fr" name="Bénéfices budgétés en attente"/>
+            <nls languageCode="ja" name="[ja: Budgeted Benefit On Hold]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="unique_name" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003004" labelPkId="5003113" readOnly="false" required="true" unique="true" virtual="false" widgetType="text" width="40">
+            <nls languageCode="de" name="DE - Asset ID"/>
+            <nls languageCode="en" name="Asset ID"/>
+            <nls languageCode="es" name="[es: Asset ID]"/>
+            <nls languageCode="fr" name="ID de lactif"/>
+            <nls languageCode="ja" name="[ja: Asset ID]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="name" dataSize="80" decimals="0" enterOnce="false" hidden="false" id="5003005" labelPkId="5003112" readOnly="false" required="true" unique="false" virtual="false" widgetType="text" width="40">
+            <nls languageCode="de" name="DE - Asset Name"/>
+            <nls languageCode="en" name="Asset Name"/>
+            <nls languageCode="es" name="[es: Asset Name]"/>
+            <nls languageCode="fr" name="Nom de lactif"/>
+            <nls languageCode="ja" name="[ja: Asset Name]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="description" dataSize="762" decimals="0" enterOnce="false" hidden="false" id="5003006" labelPkId="5003114" readOnly="false" required="false" unique="false" virtual="false" widgetType="textarea" width="40">
+            <nls languageCode="de" name="Beschreibung"/>
+            <nls languageCode="en" name="Description"/>
+            <nls languageCode="es" name="[es: Description]"/>
+            <nls languageCode="fr" name="Description"/>
+            <nls languageCode="ja" name="[ja: Description]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="manager_id" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003008" labelPkId="5003115" lookupType="LOOKUP_RESOURCES" readOnly="false" required="false" unique="false" virtual="false" widgetType="browse" width="40">
+            <nls languageCode="de" name="Manager"/>
+            <nls languageCode="en" name="Manager"/>
+            <nls languageCode="es" name="[es: Manager]"/>
+            <nls languageCode="fr" name="Responsable"/>
+            <nls languageCode="ja" name="[ja: Manager]"/>
+            <defaultValue value="1"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="goal_code" dataSize="30" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003009" labelPkId="5003117" lookupType="INVESTMENT_GOAL_TYPE" readOnly="false" required="false" unique="false" virtual="false" widgetType="select" width="30">
+            <nls languageCode="de" name="Ziel"/>
+            <nls languageCode="en" name="Goal"/>
+            <nls languageCode="es" name="[es: Goal]"/>
+            <nls languageCode="fr" name="Objectif"/>
+            <nls languageCode="ja" name="[ja: Goal]"/>
+            <select>
+              <option name="Cost Avoidance" value="AVOID_COST"/>
+              <option name="Cost Reduction" value="REDUCE_COST"/>
+              <option name="Grow the Business" value="GROW_BUSINESS"/>
+              <option name="Infrastructure Improvement" value="IMPROVE_INFRASTRUCTURE"/>
+              <option name="Maintain the Business" value="MAINTAIN_BUSINESS"/>
+            </select>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="risk" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003010" labelPkId="5003123" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="3">
+            <nls languageCode="de" name="Risiko"/>
+            <nls languageCode="en" name="Risk"/>
+            <nls languageCode="es" name="[es: Risk]"/>
+            <nls languageCode="fr" name="Risque"/>
+            <nls languageCode="ja" name="[ja: Risk]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="alignment" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003011" labelPkId="5003118" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="3">
+            <nls languageCode="de" name="DE - Alignment"/>
+            <nls languageCode="en" name="Alignment"/>
+            <nls languageCode="es" name="[es: Alignment]"/>
+            <nls languageCode="fr" name="Alignement"/>
+            <nls languageCode="ja" name="[ja: Alignment]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="status_indicator" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003012" labelPkId="5003120" lookupType="INVESTMENT_STATUS_INDICATOR" readOnly="false" required="false" unique="false" virtual="false" widgetType="select" width="3">
+            <nls languageCode="de" name="DE - Status Indicator"/>
+            <nls languageCode="en" name="Status Indicator"/>
+            <nls languageCode="es" name="[es: Status Indicator]"/>
+            <nls languageCode="fr" name="Indicateur de statut"/>
+            <nls languageCode="ja" name="[ja: Status Indicator]"/>
+            <select>
+              <option name="Green" value="1"/>
+              <option name="Yellow" value="2"/>
+              <option name="Red" value="3"/>
+            </select>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prpriority" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003013" labelPkId="5003122" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="2">
+            <nls languageCode="de" name="Priorität"/>
+            <nls languageCode="en" name="Priority"/>
+            <nls languageCode="es" name="[es: Priority]"/>
+            <nls languageCode="fr" name="Priorité"/>
+            <nls languageCode="ja" name="[ja: Priority]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="stage_code" dataSize="30" decimals="0" dependentEntry="INV_PROCESS_TYPE" dependentExit="INV_STAGE_TYPE" dependentParentLookup="INV_ASSET_TYPE" enterOnce="false" extType="enum" extendedWidgetType="dependentLookup" hidden="false" id="5003015" labelPkId="5003121" lookupType="INV_STAGE_TYPE" readOnly="false" required="false" unique="false" virtual="false" widgetType="browse">
+            <nls languageCode="de" name="Stadium"/>
+            <nls languageCode="en" name="Stage"/>
+            <nls languageCode="es" name="[es: Stage]"/>
+            <nls languageCode="fr" name="Stade"/>
+            <nls languageCode="ja" name="[ja: Stage]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="progress" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003016" labelPkId="5003125" lookupType="INVESTMENT_OBJ_PROGRESS" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+            <nls languageCode="de" name="Fortschritt"/>
+            <nls languageCode="en" name="Progress"/>
+            <nls languageCode="es" name="[es: Progress]"/>
+            <nls languageCode="fr" name="Progrès"/>
+            <nls languageCode="ja" name="[ja: Progress]"/>
+            <select>
+              <option name="Completed" value="2"/>
+              <option name="Not Started" value="0"/>
+              <option name="Started" value="1"/>
+            </select>
+            <defaultValue value="0"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="status" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003017" labelPkId="5003119" lookupType="INVESTMENT_OBJ_STATUS" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+            <nls languageCode="de" name="Status"/>
+            <nls languageCode="en" name="Status"/>
+            <nls languageCode="es" name="[es: Status]"/>
+            <nls languageCode="fr" name="Etat"/>
+            <nls languageCode="ja" name="[ja: Status]"/>
+            <select>
+              <option name="Approved" value="1"/>
+              <option name="Cancelled" value="4"/>
+              <option name="On Hold" value="2"/>
+              <option name="Rejected" value="3"/>
+              <option name="Resumed" value="5"/>
+              <option name="Unapproved" value="0"/>
+            </select>
+            <defaultValue value="0"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="currency_code" dataSize="3" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003020" labelPkId="5003126" lookupType="LOOKUP_ACTIVE_CURRENCIES" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+            <nls languageCode="de" name="Währung"/>
+            <nls languageCode="en" name="Currency"/>
+            <nls languageCode="es" name="[es: Currency]"/>
+            <nls languageCode="fr" name="Devise"/>
+            <nls languageCode="ja" name="[ja: Currency]"/>
+            <select>
+              <option name="USD ($)" value="USD"/>
+            </select>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="is_fcst_eq_bdgt" dataSize="0" decimals="0" enterOnce="false" extType="boolean" hidden="false" id="5003021" labelPkId="5003154" readOnly="false" required="false" unique="false" virtual="false" widgetType="checkbox">
+            <nls languageCode="de" name="DE - Forecast Equals Budget"/>
+            <nls languageCode="en" name="Forecast Equals Budget"/>
+            <nls languageCode="es" name="[es: Forecast Equals Budget]"/>
+            <nls languageCode="fr" name="Prévision égale au budget"/>
+            <nls languageCode="ja" name="[ja: Forecast Equals Budget]"/>
+            <defaultValue value="1"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="is_calc_pv_info" dataSize="0" decimals="0" enterOnce="false" extType="boolean" hidden="false" id="5003022" labelPkId="5003137" readOnly="false" required="false" unique="false" virtual="false" widgetType="checkbox">
+            <nls languageCode="de" name="DE - Calculate NPV Data"/>
+            <nls languageCode="en" name="Calculate NPV Data"/>
+            <nls languageCode="es" name="[es: Calculate NPV Data]"/>
+            <nls languageCode="fr" name="Calculer données NPV"/>
+            <nls languageCode="ja" name="[ja: Calculate NPV Data]"/>
+            <defaultValue value="1"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_rev_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003042" labelPkId="5003150" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="[de: Forecasted Benefit Resume]"/>
+            <nls languageCode="en" name="Forecasted Benefit Resume"/>
+            <nls languageCode="es" name="[es: Forecasted Benefit Resume]"/>
+            <nls languageCode="fr" name="Reprise des bénéfices prévues"/>
+            <nls languageCode="ja" name="[ja: Forecasted Benefit Resume]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="bdgt_roi" dataSize="0" decimals="2" enterOnce="false" extType="percent" hidden="false" id="5003044" labelPkId="5003139" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="DE - Budgeted ROI"/>
+            <nls languageCode="en" name="Budgeted ROI"/>
+            <nls languageCode="es" name="[es: Budgeted ROI]"/>
+            <nls languageCode="fr" name="ROI budgété"/>
+            <nls languageCode="ja" name="[ja: Budgeted ROI]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_npv" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003046" labelPkId="5003151" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls languageCode="de" name="DE - Forecasted NPV"/>
+            <nls languageCode="en" name="Forecasted NPV"/>
+            <nls languageCode="es" name="[es: Forecasted NPV]"/>
+            <nls languageCode="fr" name="NPV prévu"/>
+            <nls languageCode="ja" name="[ja: Forecasted NPV]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="fcst_breakeven" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003048" labelPkId="5003153" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls languageCode="de" name="DE - Forecasted Break Even"/>
+            <nls languageCode="en" name="Forecasted Break Even"/>
+            <nls languageCode="es" name="[es: Forecasted Break Even]"/>
+            <nls languageCode="fr" name="Seuil de rentabilité prévu"/>
+            <nls languageCode="ja" name="[ja: Forecasted Break Even]"/>
+          </viewFieldDescriptor>
+        </column>
+        <column sequence="2">
+          <viewFieldDescriptor attributeCode="test_str" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003065" labelPkId="5003065" readOnly="false" required="false" unique="false" virtual="false" widgetType="text" width="20">
+            <nls languageCode="de" name="test_str"/>
+            <nls languageCode="en" name="test_str"/>
+            <nls languageCode="es" name="test_str"/>
+            <nls languageCode="fr" name="test_str"/>
+            <nls languageCode="ja" name="test_str"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="idea_id" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003060" labelPkId="5003060" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls description="DE - Idea(Internal)" languageCode="de" name="DE - Idea(Internal)"/>
+            <nls description="Idea(Internal)" languageCode="en" name="Idea(Internal)"/>
+            <nls description="[es: Idea(Internal)]" languageCode="es" name="[es: Idea(Internal)]"/>
+            <nls description="Idée (Interne)" languageCode="fr" name="Idée (Interne)"/>
+            <nls description="[ja: Idea(Internal)]" languageCode="ja" name="[ja: Idea(Internal)]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prclosedtime" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003059" labelPkId="5003059" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls description="Abschluss" languageCode="de" name="Abschluss"/>
+            <nls description="Closed Time" languageCode="en" name="Closed Time"/>
+            <nls description="[es: Closed Time]" languageCode="es" name="[es: Closed Time]"/>
+            <nls description="Date de clôture" languageCode="fr" name="Date de clôture"/>
+            <nls description="[ja: Closed Time]" languageCode="ja" name="[ja: Closed Time]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="approvedby_id" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003058" labelPkId="5003058" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls description="Genehmigt von" languageCode="de" name="Genehmigt von"/>
+            <nls description="Approved By" languageCode="en" name="Approved By"/>
+            <nls description="[es: Approved By]" languageCode="es" name="[es: Approved By]"/>
+            <nls description="Approuvé par" languageCode="fr" name="Approuvé par"/>
+            <nls description="[ja: Approved By]" languageCode="ja" name="[ja: Approved By]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="created_date" decimals="2" enterOnce="false" hidden="false" id="5003000" labelPkId="5003000" readOnly="false" required="false" virtual="true" widgetType="datepicker">
+            <nls description="Erstellungsdatum" languageCode="de" name="Erstellungsdatum"/>
+            <nls description="Created Date" languageCode="en" name="Created Date"/>
+            <nls description="[es: Created Date]" languageCode="es" name="[es: Created Date]"/>
+            <nls description="Date de création" languageCode="fr" name="Date de création"/>
+            <nls description="[ja: Created Date]" languageCode="ja" name="[ja: Created Date]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="last_updated_date" decimals="2" enterOnce="false" hidden="false" id="5003001" labelPkId="5003001" readOnly="false" required="false" virtual="true" widgetType="datepicker">
+            <nls description="DE - Last Updated Date" languageCode="de" name="DE - Last Updated Date"/>
+            <nls description="Last Updated Date" languageCode="en" name="Last Updated Date"/>
+            <nls description="[es: Last Updated Date]" languageCode="es" name="[es: Last Updated Date]"/>
+            <nls description="Date de dernière mise à jour" languageCode="fr" name="Date de dernière mise à jour"/>
+            <nls description="[ja: Last Updated Date]" languageCode="ja" name="[ja: Last Updated Date]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="created_by" decimals="2" enterOnce="false" hidden="false" id="5003002" labelPkId="5003002" readOnly="false" required="false" virtual="true" widgetType="text">
+            <nls description="Erstellt von" languageCode="de" name="Erstellt von"/>
+            <nls description="Created By" languageCode="en" name="Created By"/>
+            <nls description="[es: Created By]" languageCode="es" name="[es: Created By]"/>
+            <nls description="Créé par" languageCode="fr" name="Créé par"/>
+            <nls description="[ja: Created By]" languageCode="ja" name="[ja: Created By]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="updated_by" decimals="2" enterOnce="false" hidden="false" id="5003003" labelPkId="5003003" readOnly="false" required="false" virtual="true" widgetType="text">
+            <nls description="Aktualisiert von" languageCode="de" name="Aktualisiert von"/>
+            <nls description="Updated By" languageCode="en" name="Updated By"/>
+            <nls description="[es: Updated By]" languageCode="es" name="[es: Updated By]"/>
+            <nls description="Mis à jour par" languageCode="fr" name="Mis à jour par"/>
+            <nls description="[ja: Updated By]" languageCode="ja" name="[ja: Updated By]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="investment_code" dataSize="30" decimals="0" enterOnce="false" hidden="false" id="5003007" labelPkId="5003007" readOnly="true" required="false" unique="false" virtual="false" widgetType="text" width="30">
+            <nls description="investment_code" languageCode="de" name="investment_code"/>
+            <nls description="investment_code" languageCode="en" name="investment_code"/>
+            <nls description="investment_code" languageCode="es" name="investment_code"/>
+            <nls description="investment_code" languageCode="fr" name="investment_code"/>
+            <nls description="investment_code" languageCode="ja" name="investment_code"/>
+            <defaultValue value="ASSET"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="status_comment" dataSize="80" decimals="0" enterOnce="false" hidden="false" id="5003014" labelPkId="5003014" readOnly="false" required="false" unique="false" virtual="false" widgetType="text" width="30">
+            <nls description="DE - Status Comment" languageCode="de" name="DE - Status Comment"/>
+            <nls description="Status Comment" languageCode="en" name="Status Comment"/>
+            <nls description="[es: Status Comment]" languageCode="es" name="[es: Status Comment]"/>
+            <nls description="Commentaire du statut" languageCode="fr" name="Commentaire du statut"/>
+            <nls description="[ja: Status Comment]" languageCode="ja" name="[ja: Status Comment]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prstart" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003018" labelPkId="5003018" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls description="Start" languageCode="de" name="Start"/>
+            <nls description="Start" languageCode="en" name="Start"/>
+            <nls description="[es: Start]" languageCode="es" name="[es: Start]"/>
+            <nls description="Début" languageCode="fr" name="Début"/>
+            <nls description="[ja: Start]" languageCode="ja" name="[ja: Start]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prfinish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003019" labelPkId="5003019" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls description="Ende" languageCode="de" name="Ende"/>
+            <nls description="Finish" languageCode="en" name="Finish"/>
+            <nls description="[es: Finish]" languageCode="es" name="[es: Finish]"/>
+            <nls description="Fin" languageCode="fr" name="Fin"/>
+            <nls description="[ja: Finish]" languageCode="ja" name="[ja: Finish]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="is_approved" decimals="2" enterOnce="false" hidden="false" id="5003049" labelPkId="5003049" readOnly="true" required="false" virtual="true" widgetType="checkbox">
+            <nls description="DE - Approved Flag" languageCode="de" name="DE - Approved Flag"/>
+            <nls description="Approved Flag" languageCode="en" name="Approved Flag"/>
+            <nls description="[es: Approved Flag]" languageCode="es" name="[es: Approved Flag]"/>
+            <nls description="Indicateur approuvé" languageCode="fr" name="Indicateur approuvé"/>
+            <nls description="[ja: Approved Flag]" languageCode="ja" name="[ja: Approved Flag]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prapprovedtime" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003057" labelPkId="5003057" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls description="Genehmigt um:" languageCode="de" name="Genehmigt um:"/>
+            <nls description="Approved Time" languageCode="en" name="Approved Time"/>
+            <nls description="[es: Approved Time]" languageCode="es" name="[es: Approved Time]"/>
+            <nls description="Date approuvée:" languageCode="fr" name="Date approuvée:"/>
+            <nls description="[ja: Approved Time]" languageCode="ja" name="[ja: Approved Time]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prmodtime" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003056" labelPkId="5003056" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls description="Änderungszeit" languageCode="de" name="Änderungszeit"/>
+            <nls description="Modified Time" languageCode="en" name="Modified Time"/>
+            <nls description="[es: Modified Time]" languageCode="es" name="[es: Modified Time]"/>
+            <nls description="Date de modification" languageCode="fr" name="Date de modification"/>
+            <nls description="[ja: Modified Time]" languageCode="ja" name="[ja: Modified Time]"/>
+            <defaultValue value="2004-01-27T11:41:44"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prmodby" dataSize="96" decimals="0" enterOnce="false" hidden="false" id="5003055" labelPkId="5003055" readOnly="false" required="false" unique="false" virtual="false" widgetType="text" width="30">
+            <nls description="Geändert von" languageCode="de" name="Geändert von"/>
+            <nls description="Modified By" languageCode="en" name="Modified By"/>
+            <nls description="[es: Modified By]" languageCode="es" name="[es: Modified By]"/>
+            <nls description="Modifié par" languageCode="fr" name="Modifié par"/>
+            <nls description="[ja: Modified By]" languageCode="ja" name="[ja: Modified By]"/>
+            <defaultValue value="admin"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prversion" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003054" labelPkId="5003054" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls description="DE - Project Version" languageCode="de" name="DE - Project Version"/>
+            <nls description="Project Version" languageCode="en" name="Project Version"/>
+            <nls description="[es: Project Version]" languageCode="es" name="[es: Project Version]"/>
+            <nls description="Version du projet" languageCode="fr" name="Version du projet"/>
+            <nls description="[ja: Project Version]" languageCode="ja" name="[ja: Project Version]"/>
+            <defaultValue value="1"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prformat" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003053" labelPkId="5003053" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+            <nls description="DE - Scheduler Format" languageCode="de" name="DE - Scheduler Format"/>
+            <nls description="Scheduler Format" languageCode="en" name="Scheduler Format"/>
+            <nls description="[es: Scheduler Format]" languageCode="es" name="[es: Scheduler Format]"/>
+            <nls description="Format du planificateur" languageCode="fr" name="Format du planificateur"/>
+            <nls description="[ja: Scheduler Format]" languageCode="ja" name="[ja: Scheduler Format]"/>
+            <defaultValue value="0"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="prfiscalstart" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003052" labelPkId="5003052" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+            <nls description="DE - Workbench Fiscal Start" languageCode="de" name="DE - Workbench Fiscal Start"/>
+            <nls description="Workbench Fiscal Start" languageCode="en" name="Workbench Fiscal Start"/>
+            <nls description="[es: Workbench Fiscal Start]" languageCode="es" name="[es: Workbench Fiscal Start]"/>
+            <nls description="Début dannée fiscale de Workbench" languageCode="fr" name="Début dannée fiscale de Workbench"/>
+            <nls description="[ja: Workbench Fiscal Start]" languageCode="ja" name="[ja: Workbench Fiscal Start]"/>
+          </viewFieldDescriptor>
+          <viewFieldDescriptor attributeCode="pruid" dataSize="32" decimals="0" enterOnce="false" hidden="false" id="5003051" labelPkId="5003051" readOnly="false" required="false" unique="false" virtual="false" widgetType="text" width="30">
+            <nls description="DE - UID for Workbench" languageCode="de" name="DE - UID for Workbench"/>
+            <nls description="UID for Workbench" languageCode="en" name="UID for Workbench"/>
+            <nls description="[es: UID for Workbench]" languageCode="es" name="[es: UID for Workbench]"/>
+            <nls description="UID pour Workbench" languageCode="fr" name="UID pour Workbench"/>
+            <nls description="[ja: UID for Workbench]" languageCode="ja" name="[ja: UID for Workbench]"/>
+          </viewFieldDescriptor>
+        </column>
+        <nls languageCode="de" name="asset assetProperties property  default"/>
+        <nls languageCode="en" name="asset assetProperties property  default"/>
+        <nls languageCode="es" name="asset assetProperties property  default"/>
+        <nls languageCode="fr" name="asset assetProperties property  default"/>
+        <nls languageCode="ja" name="asset assetProperties property  default"/>
+      </property>
+      <property code="assetCreate" componentId="projmgr" id="5002002" objectCode="asset" type="create">
+        <section currentState="collapsed" id="5002000" sequence="1">
+          <column sequence="1">
+            <viewFieldDescriptor attributeCode="name" dataSize="80" decimals="0" enterOnce="false" hidden="false" id="5003066" labelPkId="5003112" readOnly="false" required="true" unique="false" virtual="false" widgetType="text" width="40">
+              <nls languageCode="de" name="DE - Asset Name"/>
+              <nls languageCode="en" name="Asset Name"/>
+              <nls languageCode="es" name="[es: Asset Name]"/>
+              <nls languageCode="fr" name="Nom de lactif"/>
+              <nls languageCode="ja" name="[ja: Asset Name]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="unique_name" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003067" labelPkId="5003113" readOnly="false" required="true" unique="true" virtual="false" widgetType="text" width="40">
+              <nls languageCode="de" name="DE - Asset ID"/>
+              <nls languageCode="en" name="Asset ID"/>
+              <nls languageCode="es" name="[es: Asset ID]"/>
+              <nls languageCode="fr" name="ID de lactif"/>
+              <nls languageCode="ja" name="[ja: Asset ID]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="description" dataSize="762" decimals="0" enterOnce="false" hidden="false" id="5003068" labelPkId="5003114" readOnly="false" required="false" unique="false" virtual="false" widgetType="textarea" width="40">
+              <nls languageCode="de" name="Beschreibung"/>
+              <nls languageCode="en" name="Description"/>
+              <nls languageCode="es" name="[es: Description]"/>
+              <nls languageCode="fr" name="Description"/>
+              <nls languageCode="ja" name="[ja: Description]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="manager_id" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003069" labelPkId="5003115" lookupType="LOOKUP_RESOURCES" readOnly="false" required="false" unique="false" virtual="false" widgetType="browse" width="40">
+              <nls languageCode="de" name="Manager"/>
+              <nls languageCode="en" name="Manager"/>
+              <nls languageCode="es" name="[es: Manager]"/>
+              <nls languageCode="fr" name="Responsable"/>
+              <nls languageCode="ja" name="[ja: Manager]"/>
+              <defaultValue value="1"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="idea_name" decimals="2" enterOnce="false" hidden="false" id="5003070" labelPkId="5003116" readOnly="true" required="false" virtual="true" widgetType="text" width="40">
+              <nls languageCode="de" name="DE - Originating Idea"/>
+              <nls languageCode="en" name="Originating Idea"/>
+              <nls languageCode="es" name="[es: Originating Idea]"/>
+              <nls languageCode="fr" name="Idée initiale"/>
+              <nls languageCode="ja" name="[ja: Originating Idea]"/>
+              <link action="pma.ideaProperties" code="asset.idea">
+                <param code="id" ref="idea_id" source="data"/>
+              </link>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="test_money" currencyAttribute="test_money_currency" currencyConnected="true" dataSize="20" decimals="3" enterOnce="false" extType="money" hidden="false" id="5003071" labelPkId="5003071" readOnly="false" required="true" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="test_money"/>
+              <nls languageCode="en" name="test_money"/>
+              <nls languageCode="es" name="test_money"/>
+              <nls languageCode="fr" name="test_money"/>
+              <nls languageCode="ja" name="test_money"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="test_number" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003072" labelPkId="5003072" readOnly="false" required="true" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="test_number"/>
+              <nls languageCode="en" name="test_number"/>
+              <nls languageCode="es" name="test_number"/>
+              <nls languageCode="fr" name="test_number"/>
+              <nls languageCode="ja" name="test_number"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="test_money_currency" dataSize="20" decimals="3" enterOnce="false" extType="enum" hidden="true" id="5003073" labelPkId="5003073" lookupType="LOOKUP_ACTIVE_CURRENCIES" readOnly="false" required="true" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="test_money"/>
+              <nls languageCode="en" name="test_money"/>
+              <nls languageCode="es" name="test_money"/>
+              <nls languageCode="fr" name="test_money"/>
+              <nls languageCode="ja" name="test_money"/>
+              <select>
+                <option name="USD ($)" value="USD"/>
+              </select>
+              <defaultValue value="USD"/>
+            </viewFieldDescriptor>
+          </column>
+          <column sequence="2">
+            <viewFieldDescriptor attributeCode="goal_code" dataSize="30" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003074" labelPkId="5003117" lookupType="INVESTMENT_GOAL_TYPE" readOnly="false" required="false" unique="false" virtual="false" widgetType="select" width="30">
+              <nls languageCode="de" name="Ziel"/>
+              <nls languageCode="en" name="Goal"/>
+              <nls languageCode="es" name="[es: Goal]"/>
+              <nls languageCode="fr" name="Objectif"/>
+              <nls languageCode="ja" name="[ja: Goal]"/>
+              <select>
+                <option name="Cost Avoidance" value="AVOID_COST"/>
+                <option name="Cost Reduction" value="REDUCE_COST"/>
+                <option name="Grow the Business" value="GROW_BUSINESS"/>
+                <option name="Infrastructure Improvement" value="IMPROVE_INFRASTRUCTURE"/>
+                <option name="Maintain the Business" value="MAINTAIN_BUSINESS"/>
+              </select>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="alignment" dataSize="0" decimals="0" enterOnce="false" extendedWidgetType="icon" hidden="false" id="5003075" labelPkId="5003118" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="3">
+              <nls languageCode="de" name="DE - Alignment"/>
+              <nls languageCode="en" name="Alignment"/>
+              <nls languageCode="es" name="[es: Alignment]"/>
+              <nls languageCode="fr" name="Alignement"/>
+              <nls languageCode="ja" name="[ja: Alignment]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="status" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003076" labelPkId="5003119" lookupType="INVESTMENT_OBJ_STATUS" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="Status"/>
+              <nls languageCode="en" name="Status"/>
+              <nls languageCode="es" name="[es: Status]"/>
+              <nls languageCode="fr" name="Etat"/>
+              <nls languageCode="ja" name="[ja: Status]"/>
+              <select>
+                <option name="Approved" value="1"/>
+                <option name="Cancelled" value="4"/>
+                <option name="On Hold" value="2"/>
+                <option name="Rejected" value="3"/>
+                <option name="Resumed" value="5"/>
+                <option name="Unapproved" value="0"/>
+              </select>
+              <defaultValue value="0"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="status_indicator" dataSize="0" decimals="0" enterOnce="false" extType="enum" extendedWidgetType="icon" hidden="false" id="5003077" labelPkId="5003120" lookupType="INVESTMENT_STATUS_INDICATOR" readOnly="false" required="false" unique="false" virtual="false" widgetType="select" width="3">
+              <nls languageCode="de" name="DE - Status Indicator"/>
+              <nls languageCode="en" name="Status Indicator"/>
+              <nls languageCode="es" name="[es: Status Indicator]"/>
+              <nls languageCode="fr" name="Indicateur de statut"/>
+              <nls languageCode="ja" name="[ja: Status Indicator]"/>
+              <select>
+                <option name="Green" value="1"/>
+                <option name="Yellow" value="2"/>
+                <option name="Red" value="3"/>
+              </select>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="stage_code" dataSize="30" decimals="0" dependentEntry="INV_PROCESS_TYPE" dependentExit="INV_STAGE_TYPE" dependentParentLookup="INV_ASSET_TYPE" enterOnce="false" extType="enum" extendedWidgetType="dependentLookup" hidden="false" id="5003078" labelPkId="5003121" lookupType="INV_STAGE_TYPE" readOnly="false" required="false" unique="false" virtual="false" widgetType="browse">
+              <nls languageCode="de" name="Stadium"/>
+              <nls languageCode="en" name="Stage"/>
+              <nls languageCode="es" name="[es: Stage]"/>
+              <nls languageCode="fr" name="Stade"/>
+              <nls languageCode="ja" name="[ja: Stage]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="prpriority" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003079" labelPkId="5003122" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="2">
+              <nls languageCode="de" name="Priorität"/>
+              <nls languageCode="en" name="Priority"/>
+              <nls languageCode="es" name="[es: Priority]"/>
+              <nls languageCode="fr" name="Priorité"/>
+              <nls languageCode="ja" name="[ja: Priority]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="risk" dataSize="0" decimals="0" enterOnce="false" extendedWidgetType="icon" hidden="false" id="5003080" labelPkId="5003123" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="3">
+              <nls languageCode="de" name="Risiko"/>
+              <nls languageCode="en" name="Risk"/>
+              <nls languageCode="es" name="[es: Risk]"/>
+              <nls languageCode="fr" name="Risque"/>
+              <nls languageCode="ja" name="[ja: Risk]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="inv_tco" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003081" labelPkId="5003124" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - TCO"/>
+              <nls languageCode="en" name="TCO"/>
+              <nls languageCode="es" name="[es: TCO]"/>
+              <nls languageCode="fr" name="TCO"/>
+              <nls languageCode="ja" name="[ja: TCO]"/>
+              <defaultValue value="0"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="progress" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003082" labelPkId="5003125" lookupType="INVESTMENT_OBJ_PROGRESS" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="Fortschritt"/>
+              <nls languageCode="en" name="Progress"/>
+              <nls languageCode="es" name="[es: Progress]"/>
+              <nls languageCode="fr" name="Progrès"/>
+              <nls languageCode="ja" name="[ja: Progress]"/>
+              <select>
+                <option name="Completed" value="2"/>
+                <option name="Not Started" value="0"/>
+                <option name="Started" value="1"/>
+              </select>
+              <defaultValue value="0"/>
+            </viewFieldDescriptor>
+          </column>
+          <nls languageCode="de" name="Allgemein"/>
+          <nls languageCode="en" name="General"/>
+          <nls languageCode="es" name="[es: General]"/>
+          <nls languageCode="fr" name="Général"/>
+          <nls languageCode="ja" name="[ja: General]"/>
+        </section>
+        <section currentState="collapsed" id="5002001" sequence="2">
+          <column sequence="1">
+            <viewFieldDescriptor attributeCode="currency_code" dataSize="3" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003083" labelPkId="5003126" lookupType="LOOKUP_ACTIVE_CURRENCIES" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="Währung"/>
+              <nls languageCode="en" name="Currency"/>
+              <nls languageCode="es" name="[es: Currency]"/>
+              <nls languageCode="fr" name="Devise"/>
+              <nls languageCode="ja" name="[ja: Currency]"/>
+              <select>
+                <option name="USD ($)" value="USD"/>
+              </select>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003084" labelPkId="5003127" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Budgeted Cost"/>
+              <nls languageCode="en" name="Budgeted Cost"/>
+              <nls languageCode="es" name="[es: Budgeted Cost]"/>
+              <nls languageCode="fr" name="Coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003085" labelPkId="5003128" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost Start"/>
+              <nls languageCode="en" name="Budgeted Cost Start"/>
+              <nls languageCode="es" name="[es: Budgeted Cost Start]"/>
+              <nls languageCode="fr" name="Lancement coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003086" labelPkId="5003129" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost Finish"/>
+              <nls languageCode="en" name="Budgeted Cost Finish"/>
+              <nls languageCode="es" name="[es: Budgeted Cost Finish]"/>
+              <nls languageCode="fr" name="Fin des coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003087" labelPkId="5003130" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost On Hold"/>
+              <nls languageCode="en" name="Budgeted Cost On Hold"/>
+              <nls languageCode="es" name="[es: Budgeted Cost On Hold]"/>
+              <nls languageCode="fr" name="Coûts budgétés en attente"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003088" labelPkId="5003131" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost Resume"/>
+              <nls languageCode="en" name="Budgeted Cost Resume"/>
+              <nls languageCode="es" name="[es: Budgeted Cost Resume]"/>
+              <nls languageCode="fr" name="Reprise des coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003089" labelPkId="5003132" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="[de: Budgeted Benefit]"/>
+              <nls languageCode="en" name="Budgeted Benefit"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit]"/>
+              <nls languageCode="fr" name="Bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003090" labelPkId="5003133" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit Start]"/>
+              <nls languageCode="en" name="Budgeted Benefit Start"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit Start]"/>
+              <nls languageCode="fr" name="Lancement des bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003091" labelPkId="5003134" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit Finish]"/>
+              <nls languageCode="en" name="Budgeted Benefit Finish"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit Finish]"/>
+              <nls languageCode="fr" name="Fin des bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003092" labelPkId="5003135" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit On Hold]"/>
+              <nls languageCode="en" name="Budgeted Benefit On Hold"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit On Hold]"/>
+              <nls languageCode="fr" name="Bénéfices budgétés en attente"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003093" labelPkId="5003136" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit Resume]"/>
+              <nls languageCode="en" name="Budgeted Benefit Resume"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit Resume]"/>
+              <nls languageCode="fr" name="Reprise des bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="is_calc_pv_info" dataSize="0" decimals="0" enterOnce="false" extType="boolean" hidden="false" id="5003094" labelPkId="5003137" readOnly="false" required="false" unique="false" virtual="false" widgetType="checkbox">
+              <nls languageCode="de" name="DE - Calculate NPV Data"/>
+              <nls languageCode="en" name="Calculate NPV Data"/>
+              <nls languageCode="es" name="[es: Calculate NPV Data]"/>
+              <nls languageCode="fr" name="Calculer données NPV"/>
+              <nls languageCode="ja" name="[ja: Calculate NPV Data]"/>
+              <defaultValue value="1"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_npv" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003095" labelPkId="5003138" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Budgeted NPV"/>
+              <nls languageCode="en" name="Budgeted NPV"/>
+              <nls languageCode="es" name="[es: Budgeted NPV]"/>
+              <nls languageCode="fr" name="NPV budgété"/>
+              <nls languageCode="ja" name="[ja: Budgeted NPV]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_roi" dataSize="0" decimals="2" enterOnce="false" extType="percent" hidden="false" id="5003096" labelPkId="5003139" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Budgeted ROI"/>
+              <nls languageCode="en" name="Budgeted ROI"/>
+              <nls languageCode="es" name="[es: Budgeted ROI]"/>
+              <nls languageCode="fr" name="ROI budgété"/>
+              <nls languageCode="ja" name="[ja: Budgeted ROI]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_breakeven" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003097" labelPkId="5003140" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Break Even"/>
+              <nls languageCode="en" name="Budgeted Break Even"/>
+              <nls languageCode="es" name="[es: Budgeted Break Even]"/>
+              <nls languageCode="fr" name="Rentabilité budgétée"/>
+              <nls languageCode="ja" name="[ja: Budgeted Break Even]"/>
+            </viewFieldDescriptor>
+          </column>
+          <column sequence="2">
+            <viewFieldDescriptor attributeCode="fcst_cst_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003098" labelPkId="5003141" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Forecasted Cost"/>
+              <nls languageCode="en" name="Forecasted Cost"/>
+              <nls languageCode="es" name="[es: Forecasted Cost]"/>
+              <nls languageCode="fr" name="Coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003099" labelPkId="5003142" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Cost Start"/>
+              <nls languageCode="en" name="Forecasted Cost Start"/>
+              <nls languageCode="es" name="[es: Forecasted Cost Start]"/>
+              <nls languageCode="fr" name="Début du coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003100" labelPkId="5003143" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Cost Finish"/>
+              <nls languageCode="en" name="Forecasted Cost Finish"/>
+              <nls languageCode="es" name="[es: Forecasted Cost Finish]"/>
+              <nls languageCode="fr" name="Fin du coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003101" labelPkId="5003144" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Cost On Hold"/>
+              <nls languageCode="en" name="Forecasted Cost On Hold"/>
+              <nls languageCode="es" name="[es: Forecasted Cost On Hold]"/>
+              <nls languageCode="fr" name="Coût prévu en attente"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003102" labelPkId="5003145" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecast Cost Resume"/>
+              <nls languageCode="en" name="Forecast Cost Resume"/>
+              <nls languageCode="es" name="[es: Forecast Cost Resume]"/>
+              <nls languageCode="fr" name="Reprise du coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecast Cost Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003103" labelPkId="5003146" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="[de: Forecasted Benefit]"/>
+              <nls languageCode="en" name="Forecasted Benefit"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit]"/>
+              <nls languageCode="fr" name="Bénéfices prévus"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003104" labelPkId="5003147" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit Start]"/>
+              <nls languageCode="en" name="Forecasted Benefit Start"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit Start]"/>
+              <nls languageCode="fr" name="Début des bénéfices prévus"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003105" labelPkId="5003148" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit Finish]"/>
+              <nls languageCode="en" name="Forecasted Benefit Finish"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit Finish]"/>
+              <nls languageCode="fr" name="Fin des bénéfices prévus"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003106" labelPkId="5003149" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit On Hold]"/>
+              <nls languageCode="en" name="Forecasted Benefit On Hold"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit On Hold]"/>
+              <nls languageCode="fr" name="Bénéfices prévus en attente"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003107" labelPkId="5003150" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit Resume]"/>
+              <nls languageCode="en" name="Forecasted Benefit Resume"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit Resume]"/>
+              <nls languageCode="fr" name="Reprise des bénéfices prévues"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_npv" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003108" labelPkId="5003151" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Forecasted NPV"/>
+              <nls languageCode="en" name="Forecasted NPV"/>
+              <nls languageCode="es" name="[es: Forecasted NPV]"/>
+              <nls languageCode="fr" name="NPV prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted NPV]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_roi" dataSize="0" decimals="2" enterOnce="false" extType="percent" hidden="false" id="5003109" labelPkId="5003152" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Forecasted ROI"/>
+              <nls languageCode="en" name="Forecasted ROI"/>
+              <nls languageCode="es" name="[es: Forecasted ROI]"/>
+              <nls languageCode="fr" name="ROI prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted ROI]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_breakeven" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003110" labelPkId="5003153" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Break Even"/>
+              <nls languageCode="en" name="Forecasted Break Even"/>
+              <nls languageCode="es" name="[es: Forecasted Break Even]"/>
+              <nls languageCode="fr" name="Seuil de rentabilité prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Break Even]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="is_fcst_eq_bdgt" dataSize="0" decimals="0" enterOnce="false" extType="boolean" hidden="false" id="5003111" labelPkId="5003154" readOnly="false" required="false" unique="false" virtual="false" widgetType="checkbox">
+              <nls languageCode="de" name="DE - Forecast Equals Budget"/>
+              <nls languageCode="en" name="Forecast Equals Budget"/>
+              <nls languageCode="es" name="[es: Forecast Equals Budget]"/>
+              <nls languageCode="fr" name="Prévision égale au budget"/>
+              <nls languageCode="ja" name="[ja: Forecast Equals Budget]"/>
+              <defaultValue value="1"/>
+            </viewFieldDescriptor>
+          </column>
+          <nls languageCode="de" name="Finanzplanung"/>
+          <nls languageCode="en" name="Financial Planning"/>
+          <nls languageCode="es" name="[es: Financial Planning]"/>
+          <nls languageCode="fr" name="Planification financière"/>
+          <nls languageCode="ja" name="[ja: Financial Planning]"/>
+        </section>
+        <nls languageCode="de" name="Allgemein"/>
+        <nls languageCode="en" name="General"/>
+        <nls languageCode="es" name="[es: General]"/>
+        <nls languageCode="fr" name="Général"/>
+        <nls languageCode="ja" name="[ja: General]"/>
+      </property>
+      <property code="assetProperties" componentId="projmgr" id="5002004" objectCode="asset" sequence="1" type="update">
+        <section currentState="collapsed" id="5002002" sequence="1">
+          <column sequence="1">
+            <viewFieldDescriptor attributeCode="name" dataSize="80" decimals="0" enterOnce="false" hidden="false" id="5003112" labelPkId="5003112" readOnly="false" required="true" unique="false" virtual="false" widgetType="text" width="40">
+              <nls languageCode="de" name="DE - Asset Name"/>
+              <nls languageCode="en" name="Asset Name"/>
+              <nls languageCode="es" name="[es: Asset Name]"/>
+              <nls languageCode="fr" name="Nom de lactif"/>
+              <nls languageCode="ja" name="[ja: Asset Name]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="unique_name" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003113" labelPkId="5003113" readOnly="false" required="true" unique="true" virtual="false" widgetType="text" width="40">
+              <nls languageCode="de" name="DE - Asset ID"/>
+              <nls languageCode="en" name="Asset ID"/>
+              <nls languageCode="es" name="[es: Asset ID]"/>
+              <nls languageCode="fr" name="ID de lactif"/>
+              <nls languageCode="ja" name="[ja: Asset ID]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="description" dataSize="762" decimals="0" enterOnce="false" hidden="false" id="5003114" labelPkId="5003114" readOnly="false" required="false" unique="false" virtual="false" widgetType="textarea" width="40">
+              <nls languageCode="de" name="Beschreibung"/>
+              <nls languageCode="en" name="Description"/>
+              <nls languageCode="es" name="[es: Description]"/>
+              <nls languageCode="fr" name="Description"/>
+              <nls languageCode="ja" name="[ja: Description]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="manager_id" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003115" labelPkId="5003115" lookupType="LOOKUP_RESOURCES" readOnly="false" required="false" unique="false" virtual="false" widgetType="browse" width="40">
+              <nls languageCode="de" name="Manager"/>
+              <nls languageCode="en" name="Manager"/>
+              <nls languageCode="es" name="[es: Manager]"/>
+              <nls languageCode="fr" name="Responsable"/>
+              <nls languageCode="ja" name="[ja: Manager]"/>
+              <defaultValue value="1"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="idea_name" decimals="2" enterOnce="false" hidden="false" id="5003116" labelPkId="5003116" readOnly="true" required="false" virtual="true" widgetType="text" width="40">
+              <nls languageCode="de" name="DE - Originating Idea"/>
+              <nls languageCode="en" name="Originating Idea"/>
+              <nls languageCode="es" name="[es: Originating Idea]"/>
+              <nls languageCode="fr" name="Idée initiale"/>
+              <nls languageCode="ja" name="[ja: Originating Idea]"/>
+              <link action="pma.ideaProperties" code="asset.idea">
+                <param code="id" ref="idea_id" source="data"/>
+              </link>
+            </viewFieldDescriptor>
+          </column>
+          <column sequence="2">
+            <viewFieldDescriptor attributeCode="goal_code" dataSize="30" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003117" labelPkId="5003117" lookupType="INVESTMENT_GOAL_TYPE" readOnly="false" required="false" unique="false" virtual="false" widgetType="select" width="30">
+              <nls languageCode="de" name="Ziel"/>
+              <nls languageCode="en" name="Goal"/>
+              <nls languageCode="es" name="[es: Goal]"/>
+              <nls languageCode="fr" name="Objectif"/>
+              <nls languageCode="ja" name="[ja: Goal]"/>
+              <select>
+                <option name="Cost Avoidance" value="AVOID_COST"/>
+                <option name="Cost Reduction" value="REDUCE_COST"/>
+                <option name="Grow the Business" value="GROW_BUSINESS"/>
+                <option name="Infrastructure Improvement" value="IMPROVE_INFRASTRUCTURE"/>
+                <option name="Maintain the Business" value="MAINTAIN_BUSINESS"/>
+              </select>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="alignment" dataSize="0" decimals="0" enterOnce="false" extendedWidgetType="icon" hidden="false" id="5003118" labelPkId="5003118" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="3">
+              <nls languageCode="de" name="DE - Alignment"/>
+              <nls languageCode="en" name="Alignment"/>
+              <nls languageCode="es" name="[es: Alignment]"/>
+              <nls languageCode="fr" name="Alignement"/>
+              <nls languageCode="ja" name="[ja: Alignment]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="status" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003119" labelPkId="5003119" lookupType="INVESTMENT_OBJ_STATUS" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="Status"/>
+              <nls languageCode="en" name="Status"/>
+              <nls languageCode="es" name="[es: Status]"/>
+              <nls languageCode="fr" name="Etat"/>
+              <nls languageCode="ja" name="[ja: Status]"/>
+              <select>
+                <option name="Approved" value="1"/>
+                <option name="Cancelled" value="4"/>
+                <option name="On Hold" value="2"/>
+                <option name="Rejected" value="3"/>
+                <option name="Resumed" value="5"/>
+                <option name="Unapproved" value="0"/>
+              </select>
+              <defaultValue value="0"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="status_indicator" dataSize="0" decimals="0" enterOnce="false" extType="enum" extendedWidgetType="icon" hidden="false" id="5003120" labelPkId="5003120" lookupType="INVESTMENT_STATUS_INDICATOR" readOnly="false" required="false" unique="false" virtual="false" widgetType="select" width="3">
+              <nls languageCode="de" name="DE - Status Indicator"/>
+              <nls languageCode="en" name="Status Indicator"/>
+              <nls languageCode="es" name="[es: Status Indicator]"/>
+              <nls languageCode="fr" name="Indicateur de statut"/>
+              <nls languageCode="ja" name="[ja: Status Indicator]"/>
+              <select>
+                <option name="Green" value="1"/>
+                <option name="Yellow" value="2"/>
+                <option name="Red" value="3"/>
+              </select>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="stage_code" dataSize="30" decimals="0" dependentEntry="INV_PROCESS_TYPE" dependentExit="INV_STAGE_TYPE" dependentParentLookup="INV_ASSET_TYPE" enterOnce="false" extType="enum" extendedWidgetType="dependentLookup" hidden="false" id="5003121" labelPkId="5003121" lookupType="INV_STAGE_TYPE" readOnly="false" required="false" unique="false" virtual="false" widgetType="browse">
+              <nls languageCode="de" name="Stadium"/>
+              <nls languageCode="en" name="Stage"/>
+              <nls languageCode="es" name="[es: Stage]"/>
+              <nls languageCode="fr" name="Stade"/>
+              <nls languageCode="ja" name="[ja: Stage]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="prpriority" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003122" labelPkId="5003122" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="2">
+              <nls languageCode="de" name="Priorität"/>
+              <nls languageCode="en" name="Priority"/>
+              <nls languageCode="es" name="[es: Priority]"/>
+              <nls languageCode="fr" name="Priorité"/>
+              <nls languageCode="ja" name="[ja: Priority]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="risk" dataSize="0" decimals="0" enterOnce="false" extendedWidgetType="icon" hidden="false" id="5003123" labelPkId="5003123" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric" width="3">
+              <nls languageCode="de" name="Risiko"/>
+              <nls languageCode="en" name="Risk"/>
+              <nls languageCode="es" name="[es: Risk]"/>
+              <nls languageCode="fr" name="Risque"/>
+              <nls languageCode="ja" name="[ja: Risk]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="inv_tco" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003124" labelPkId="5003124" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - TCO"/>
+              <nls languageCode="en" name="TCO"/>
+              <nls languageCode="es" name="[es: TCO]"/>
+              <nls languageCode="fr" name="TCO"/>
+              <nls languageCode="ja" name="[ja: TCO]"/>
+              <defaultValue value="0"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="progress" dataSize="0" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003125" labelPkId="5003125" lookupType="INVESTMENT_OBJ_PROGRESS" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="Fortschritt"/>
+              <nls languageCode="en" name="Progress"/>
+              <nls languageCode="es" name="[es: Progress]"/>
+              <nls languageCode="fr" name="Progrès"/>
+              <nls languageCode="ja" name="[ja: Progress]"/>
+              <select>
+                <option name="Completed" value="2"/>
+                <option name="Not Started" value="0"/>
+                <option name="Started" value="1"/>
+              </select>
+              <defaultValue value="0"/>
+            </viewFieldDescriptor>
+          </column>
+          <nls languageCode="de" name="Allgemein"/>
+          <nls languageCode="en" name="General"/>
+          <nls languageCode="es" name="[es: General]"/>
+          <nls languageCode="fr" name="Général"/>
+          <nls languageCode="ja" name="[ja: General]"/>
+        </section>
+        <section currentState="collapsed" id="5002003" sequence="2">
+          <column sequence="1">
+            <viewFieldDescriptor attributeCode="currency_code" dataSize="3" decimals="0" enterOnce="false" extType="enum" hidden="false" id="5003126" labelPkId="5003126" lookupType="LOOKUP_ACTIVE_CURRENCIES" readOnly="false" required="false" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="Währung"/>
+              <nls languageCode="en" name="Currency"/>
+              <nls languageCode="es" name="[es: Currency]"/>
+              <nls languageCode="fr" name="Devise"/>
+              <nls languageCode="ja" name="[ja: Currency]"/>
+              <select>
+                <option name="USD ($)" value="USD"/>
+              </select>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003127" labelPkId="5003127" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Budgeted Cost"/>
+              <nls languageCode="en" name="Budgeted Cost"/>
+              <nls languageCode="es" name="[es: Budgeted Cost]"/>
+              <nls languageCode="fr" name="Coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003128" labelPkId="5003128" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost Start"/>
+              <nls languageCode="en" name="Budgeted Cost Start"/>
+              <nls languageCode="es" name="[es: Budgeted Cost Start]"/>
+              <nls languageCode="fr" name="Lancement coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003129" labelPkId="5003129" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost Finish"/>
+              <nls languageCode="en" name="Budgeted Cost Finish"/>
+              <nls languageCode="es" name="[es: Budgeted Cost Finish]"/>
+              <nls languageCode="fr" name="Fin des coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003130" labelPkId="5003130" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost On Hold"/>
+              <nls languageCode="en" name="Budgeted Cost On Hold"/>
+              <nls languageCode="es" name="[es: Budgeted Cost On Hold]"/>
+              <nls languageCode="fr" name="Coûts budgétés en attente"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_cst_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003131" labelPkId="5003131" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Cost Resume"/>
+              <nls languageCode="en" name="Budgeted Cost Resume"/>
+              <nls languageCode="es" name="[es: Budgeted Cost Resume]"/>
+              <nls languageCode="fr" name="Reprise des coûts budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Cost Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003132" labelPkId="5003132" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="[de: Budgeted Benefit]"/>
+              <nls languageCode="en" name="Budgeted Benefit"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit]"/>
+              <nls languageCode="fr" name="Bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003133" labelPkId="5003133" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit Start]"/>
+              <nls languageCode="en" name="Budgeted Benefit Start"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit Start]"/>
+              <nls languageCode="fr" name="Lancement des bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003134" labelPkId="5003134" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit Finish]"/>
+              <nls languageCode="en" name="Budgeted Benefit Finish"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit Finish]"/>
+              <nls languageCode="fr" name="Fin des bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003135" labelPkId="5003135" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit On Hold]"/>
+              <nls languageCode="en" name="Budgeted Benefit On Hold"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit On Hold]"/>
+              <nls languageCode="fr" name="Bénéfices budgétés en attente"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_rev_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003136" labelPkId="5003136" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Budgeted Benefit Resume]"/>
+              <nls languageCode="en" name="Budgeted Benefit Resume"/>
+              <nls languageCode="es" name="[es: Budgeted Benefit Resume]"/>
+              <nls languageCode="fr" name="Reprise des bénéfices budgétés"/>
+              <nls languageCode="ja" name="[ja: Budgeted Benefit Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="is_calc_pv_info" dataSize="0" decimals="0" enterOnce="false" extType="boolean" hidden="false" id="5003137" labelPkId="5003137" readOnly="false" required="false" unique="false" virtual="false" widgetType="checkbox">
+              <nls languageCode="de" name="DE - Calculate NPV Data"/>
+              <nls languageCode="en" name="Calculate NPV Data"/>
+              <nls languageCode="es" name="[es: Calculate NPV Data]"/>
+              <nls languageCode="fr" name="Calculer données NPV"/>
+              <nls languageCode="ja" name="[ja: Calculate NPV Data]"/>
+              <defaultValue value="1"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_npv" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003138" labelPkId="5003138" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Budgeted NPV"/>
+              <nls languageCode="en" name="Budgeted NPV"/>
+              <nls languageCode="es" name="[es: Budgeted NPV]"/>
+              <nls languageCode="fr" name="NPV budgété"/>
+              <nls languageCode="ja" name="[ja: Budgeted NPV]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_roi" dataSize="0" decimals="2" enterOnce="false" extType="percent" hidden="false" id="5003139" labelPkId="5003139" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Budgeted ROI"/>
+              <nls languageCode="en" name="Budgeted ROI"/>
+              <nls languageCode="es" name="[es: Budgeted ROI]"/>
+              <nls languageCode="fr" name="ROI budgété"/>
+              <nls languageCode="ja" name="[ja: Budgeted ROI]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="bdgt_breakeven" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003140" labelPkId="5003140" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Budgeted Break Even"/>
+              <nls languageCode="en" name="Budgeted Break Even"/>
+              <nls languageCode="es" name="[es: Budgeted Break Even]"/>
+              <nls languageCode="fr" name="Rentabilité budgétée"/>
+              <nls languageCode="ja" name="[ja: Budgeted Break Even]"/>
+            </viewFieldDescriptor>
+          </column>
+          <column sequence="2">
+            <viewFieldDescriptor attributeCode="fcst_cst_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003141" labelPkId="5003141" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Forecasted Cost"/>
+              <nls languageCode="en" name="Forecasted Cost"/>
+              <nls languageCode="es" name="[es: Forecasted Cost]"/>
+              <nls languageCode="fr" name="Coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003142" labelPkId="5003142" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Cost Start"/>
+              <nls languageCode="en" name="Forecasted Cost Start"/>
+              <nls languageCode="es" name="[es: Forecasted Cost Start]"/>
+              <nls languageCode="fr" name="Début du coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003143" labelPkId="5003143" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Cost Finish"/>
+              <nls languageCode="en" name="Forecasted Cost Finish"/>
+              <nls languageCode="es" name="[es: Forecasted Cost Finish]"/>
+              <nls languageCode="fr" name="Fin du coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003144" labelPkId="5003144" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Cost On Hold"/>
+              <nls languageCode="en" name="Forecasted Cost On Hold"/>
+              <nls languageCode="es" name="[es: Forecasted Cost On Hold]"/>
+              <nls languageCode="fr" name="Coût prévu en attente"/>
+              <nls languageCode="ja" name="[ja: Forecasted Cost On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_cst_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003145" labelPkId="5003145" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecast Cost Resume"/>
+              <nls languageCode="en" name="Forecast Cost Resume"/>
+              <nls languageCode="es" name="[es: Forecast Cost Resume]"/>
+              <nls languageCode="fr" name="Reprise du coût prévu"/>
+              <nls languageCode="ja" name="[ja: Forecast Cost Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_total" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003146" labelPkId="5003146" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="[de: Forecasted Benefit]"/>
+              <nls languageCode="en" name="Forecasted Benefit"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit]"/>
+              <nls languageCode="fr" name="Bénéfices prévus"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_start" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003147" labelPkId="5003147" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit Start]"/>
+              <nls languageCode="en" name="Forecasted Benefit Start"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit Start]"/>
+              <nls languageCode="fr" name="Début des bénéfices prévus"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit Start]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_finish" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003148" labelPkId="5003148" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit Finish]"/>
+              <nls languageCode="en" name="Forecasted Benefit Finish"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit Finish]"/>
+              <nls languageCode="fr" name="Fin des bénéfices prévus"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit Finish]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_onhold" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003149" labelPkId="5003149" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit On Hold]"/>
+              <nls languageCode="en" name="Forecasted Benefit On Hold"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit On Hold]"/>
+              <nls languageCode="fr" name="Bénéfices prévus en attente"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit On Hold]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_rev_resume" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003150" labelPkId="5003150" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="[de: Forecasted Benefit Resume]"/>
+              <nls languageCode="en" name="Forecasted Benefit Resume"/>
+              <nls languageCode="es" name="[es: Forecasted Benefit Resume]"/>
+              <nls languageCode="fr" name="Reprise des bénéfices prévues"/>
+              <nls languageCode="ja" name="[ja: Forecasted Benefit Resume]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_npv" currencyAttribute="currency_code" currencyConnected="false" dataSize="0" decimals="2" enterOnce="false" extType="money" hidden="false" id="5003151" labelPkId="5003151" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Forecasted NPV"/>
+              <nls languageCode="en" name="Forecasted NPV"/>
+              <nls languageCode="es" name="[es: Forecasted NPV]"/>
+              <nls languageCode="fr" name="NPV prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted NPV]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_roi" dataSize="0" decimals="2" enterOnce="false" extType="percent" hidden="false" id="5003152" labelPkId="5003152" readOnly="false" required="false" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="DE - Forecasted ROI"/>
+              <nls languageCode="en" name="Forecasted ROI"/>
+              <nls languageCode="es" name="[es: Forecasted ROI]"/>
+              <nls languageCode="fr" name="ROI prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted ROI]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="fcst_breakeven" dataSize="0" decimals="0" enterOnce="false" hidden="false" id="5003153" labelPkId="5003153" midnightDate="true" readOnly="false" required="false" unique="false" virtual="false" widgetType="datepicker">
+              <nls languageCode="de" name="DE - Forecasted Break Even"/>
+              <nls languageCode="en" name="Forecasted Break Even"/>
+              <nls languageCode="es" name="[es: Forecasted Break Even]"/>
+              <nls languageCode="fr" name="Seuil de rentabilité prévu"/>
+              <nls languageCode="ja" name="[ja: Forecasted Break Even]"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="is_fcst_eq_bdgt" dataSize="0" decimals="0" enterOnce="false" extType="boolean" hidden="false" id="5003154" labelPkId="5003154" readOnly="false" required="false" unique="false" virtual="false" widgetType="checkbox">
+              <nls languageCode="de" name="DE - Forecast Equals Budget"/>
+              <nls languageCode="en" name="Forecast Equals Budget"/>
+              <nls languageCode="es" name="[es: Forecast Equals Budget]"/>
+              <nls languageCode="fr" name="Prévision égale au budget"/>
+              <nls languageCode="ja" name="[ja: Forecast Equals Budget]"/>
+              <defaultValue value="1"/>
+            </viewFieldDescriptor>
+          </column>
+          <nls languageCode="de" name="Finanzplanung"/>
+          <nls languageCode="en" name="Financial Planning"/>
+          <nls languageCode="es" name="[es: Financial Planning]"/>
+          <nls languageCode="fr" name="Planification financière"/>
+          <nls languageCode="ja" name="[ja: Financial Planning]"/>
+        </section>
+        <section currentState="collapsed" id="5002004" sequence="3">
+          <column sequence="1">
+            <viewFieldDescriptor attributeCode="test_money" currencyAttribute="test_money_currency" currencyConnected="true" dataSize="20" decimals="3" enterOnce="false" extType="money" hidden="false" id="5003155" labelPkId="5003155" readOnly="false" required="true" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="test_money"/>
+              <nls languageCode="en" name="test_money"/>
+              <nls languageCode="es" name="test_money"/>
+              <nls languageCode="fr" name="test_money"/>
+              <nls languageCode="ja" name="test_money"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="test_number" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003156" labelPkId="5003156" readOnly="false" required="true" unique="false" virtual="false" widgetType="numeric">
+              <nls languageCode="de" name="test_number"/>
+              <nls languageCode="en" name="test_number"/>
+              <nls languageCode="es" name="test_number"/>
+              <nls languageCode="fr" name="test_number"/>
+              <nls languageCode="ja" name="test_number"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="test_str" dataSize="20" decimals="0" enterOnce="false" hidden="false" id="5003157" labelPkId="5003157" readOnly="false" required="false" unique="false" virtual="false" widgetType="text" width="20">
+              <nls languageCode="de" name="test_str"/>
+              <nls languageCode="en" name="test_str"/>
+              <nls languageCode="es" name="test_str"/>
+              <nls languageCode="fr" name="test_str"/>
+              <nls languageCode="ja" name="test_str"/>
+            </viewFieldDescriptor>
+            <viewFieldDescriptor attributeCode="test_money_currency" dataSize="20" decimals="3" enterOnce="false" extType="enum" hidden="true" id="5003158" labelPkId="5003158" lookupType="LOOKUP_ACTIVE_CURRENCIES" readOnly="false" required="true" unique="false" virtual="false" widgetType="select">
+              <nls languageCode="de" name="test_money"/>
+              <nls languageCode="en" name="test_money"/>
+              <nls languageCode="es" name="test_money"/>
+              <nls languageCode="fr" name="test_money"/>
+              <nls languageCode="ja" name="test_money"/>
+              <select>
+                <option name="USD ($)" value="USD"/>
+              </select>
+              <defaultValue value="USD"/>
+            </viewFieldDescriptor>
+          </column>
+          <nls languageCode="de" name="Test Section"/>
+          <nls languageCode="en" name="Test Section"/>
+          <nls languageCode="es" name="Test Section"/>
+          <nls languageCode="fr" name="Test Section"/>
+          <nls languageCode="ja" name="Test Section"/>
+        </section>
+        <nls languageCode="de" name="Allgemein"/>
+        <nls languageCode="en" name="General"/>
+        <nls languageCode="es" name="[es: General]"/>
+        <nls languageCode="fr" name="Général"/>
+        <nls languageCode="ja" name="[ja: General]"/>
+      </property>
+      <list code="projmgr.productList" dataProviderId="product" dataProviderType="object" defaultSortColumn="name" defaultSortOrder="ascending" metricsLocation="bottom" showAggregationRow="false" showAltValueText="false" showComparisonRow="false" showVarianceRow="false">
+        <nls languageCode="de" name="DE - Product List"/>
+        <nls languageCode="ja" name="Product+List"/>
+        <nls languageCode="es" name="Product+List"/>
+        <nls languageCode="en" name="Product List"/>
+        <nls languageCode="fr" name="Liste de produits"/>
+        <column align="left" allowHeaderWrapping="false" allowWrapping="false" code="name" link="product.properties" position="1" showHeaderLabel="true" type="label">
+          <nls languageCode="de" name="Product"/>
+          <nls languageCode="ja" name="Product"/>
+          <nls languageCode="es" name="Product"/>
+          <nls languageCode="en" name="Product"/>
+          <nls languageCode="fr" name="Product"/>
+        </column>
+        <column align="left" allowHeaderWrapping="false" allowWrapping="false" code="odf_pk" extType="selector" position="1" showHeaderLabel="true" type="checkbox" width="2">
+          <nls languageCode="de" name="Selector"/>
+          <nls languageCode="ja" name="Selector"/>
+          <nls languageCode="es" name="Selector"/>
+          <nls languageCode="en" name="Selector"/>
+          <nls languageCode="fr" name="Selector"/>
+        </column>
+        <column align="left" allowHeaderWrapping="false" allowWrapping="false" code="unique_name" position="2" showHeaderLabel="true" type="label">
+          <nls languageCode="de" name="ID"/>
+          <nls languageCode="ja" name="ID"/>
+          <nls languageCode="es" name="ID"/>
+          <nls languageCode="en" name="ID"/>
+          <nls languageCode="fr" name="ID"/>
+        </column>
+        <column align="left" allowHeaderWrapping="false" allowWrapping="false" code="bdgt_cst_total" position="3" showHeaderLabel="true" type="label">
+          <nls languageCode="de" name="Budgeted Cost"/>
+          <nls languageCode="ja" name="Budgeted Cost"/>
+          <nls languageCode="es" name="Budgeted Cost"/>
+          <nls languageCode="en" name="Budgeted Cost"/>
+          <nls languageCode="fr" name="Budgeted Cost"/>
+        </column>
+        <column align="left" allowHeaderWrapping="false" allowWrapping="false" code="goal_code_caption" position="4" showHeaderLabel="true" type="label">
+          <nls languageCode="de" name="Goal"/>
+          <nls languageCode="ja" name="Goal"/>
+          <nls languageCode="es" name="Goal"/>
+          <nls languageCode="en" name="Goal"/>
+          <nls languageCode="fr" name="Goal"/>
+        </column>
+        <column align="center" allowHeaderWrapping="false" allowWrapping="false" code="status_indicator_caption" image="status_indicator_caption" position="5" showHeaderLabel="true" type="image" width="1">
+          <nls languageCode="de" name="Status Indicator"/>
+          <nls languageCode="ja" name="Status Indicator"/>
+          <nls languageCode="es" name="Status Indicator"/>
+          <nls languageCode="en" name="Status Indicator"/>
+          <nls languageCode="fr" name="Status Indicator"/>
+        </column>
+        <column align="left" allowHeaderWrapping="false" allowWrapping="false" code="inv_version" position="-1" showHeaderLabel="true" type="label">
+          <nls languageCode="de" name="Version"/>
+          <nls languageCode="ja" name="Version"/>
+          <nls languageCode="es" name="Version"/>
+          <nls languageCode="en" name="Version"/>
+          <nls languageCode="fr" name="Version"/>
+        </column>
+        <column align="left" allowHeaderWrapping="false" allowWrapping="false" code="status_caption" position="-1" showHeaderLabel="true" type="label">
+          <nls languageCode="de" name="Status"/>
+          <nls languageCode="ja" name="Status"/>
+          <nls languageCode="es" name="Status"/>
+          <nls languageCode="en" name="Status"/>
+          <nls languageCode="fr" name="Status"/>
+        </column>
+      </list>
+    </views>
+    <objects>
+      <object code="asset" update="true">
+        <nls description="Asset" languageCode="de" name="Asset"/>
+        <nls description="Asset" languageCode="es" name="Asset"/>
+        <nls description="Asset" languageCode="en" name="Asset"/>
+        <nls description="Asset" languageCode="ja" name="Asset"/>
+        <nls description="Asset" languageCode="fr" name="Asset"/>
+        <nls description="Asset" languageCode="nl" name="Asset"/>
+        <customAttribute active="true" code="test_money" column="test_money" constant="false" currencyAttribute="test_money_currency" currencyConnected="true" custom="true" dataSize="20" dataType="number" editable="true" extendedType="money" multiValued="false" private="false" required="true" scale="3" unique="false" virtual="false">
+          <nls languageCode="de" name="test_money"/>
+          <nls languageCode="en" name="test_money"/>
+          <nls languageCode="es" name="test_money"/>
+          <nls languageCode="fr" name="test_money"/>
+          <nls languageCode="ja" name="test_money"/>
+        </customAttribute>
+        <customAttribute active="true" code="test_money_currency" column="test_money_currency" constant="false" currencyConnected="false" custom="true" dataSize="20" dataType="string" editable="true" extendedType="lookup" lookupType="LOOKUP_ACTIVE_CURRENCIES" multiValued="false" private="true" required="true" scale="3" unique="false" virtual="false">
+          <nls languageCode="de" name="test_money"/>
+          <nls languageCode="en" name="test_money"/>
+          <nls languageCode="es" name="test_money"/>
+          <nls languageCode="fr" name="test_money"/>
+          <nls languageCode="ja" name="test_money"/>
+          <default value="USD"/>
+        </customAttribute>
+        <customAttribute active="true" code="test_number" column="test_number" constant="false" currencyConnected="false" custom="true" dataSize="20" dataType="number" editable="true" multiValued="false" private="false" required="true" unique="false" virtual="false">
+          <nls languageCode="de" name="test_number"/>
+          <nls languageCode="en" name="test_number"/>
+          <nls languageCode="es" name="test_number"/>
+          <nls languageCode="fr" name="test_number"/>
+          <nls languageCode="ja" name="test_number"/>
+        </customAttribute>
+        <customAttribute active="true" code="test_str" column="test_str" constant="false" currencyConnected="false" custom="true" dataSize="20" dataType="string" editable="true" multiValued="false" private="false" required="false" unique="false" virtual="false">
+          <nls languageCode="de" name="test_str"/>
+          <nls languageCode="en" name="test_str"/>
+          <nls languageCode="es" name="test_str"/>
+          <nls languageCode="fr" name="test_str"/>
+          <nls languageCode="ja" name="test_str"/>
+        </customAttribute>
+        <links objectCode="asset"/>
+        <displayMappings/>
+      </object>
+      <object code="product" update="true">
+        <nls description="Product" languageCode="de" name="Product"/>
+        <nls description="Product" languageCode="es" name="Product"/>
+        <nls description="Product" languageCode="en" name="Product"/>
+        <nls description="Product" languageCode="ja" name="Product"/>
+        <nls description="Product" languageCode="fr" name="Product"/>
+        <nls description="Product" languageCode="nl" name="Product"/>
+        <links objectCode="product"/>
+        <displayMappings/>
+      </object>
+    </objects>
+    <lookups update="true">
+      <dynamicLookup code="LOOKUP_ACTIVE_CURRENCIES" displayAttributeName="currency_name" hiddenAttributeName="currency_code" sortAttributeName="currency_code" sortDirection="asc" source="niku.com" status="active" update="true">
+        <nls description="[de: DE - List of active currencies]" languageCode="de" name="[de: DE - Active Currencies]"/>
+        <nls description="List of active currencies" languageCode="en" name="Active Currencies"/>
+        <nls description="[es: List of active currencies]" languageCode="es" name="[es: Active Currencies]"/>
+        <nls description="[fr: FR - List of active currencies]" languageCode="fr" name="Devises actives"/>
+        <nls description="[ja: List of active currencies]" languageCode="ja" name="[ja: Active Currencies]"/>
+        <nsql dbVendor="mssql"> SELECT
+                    @SELECT:c.currency_code:currency_code@,
+                    @SELECT:c.currency_code + &apos; (&apos; +
+                    c.currency_symbol + &apos;)&apos;:currency_name@
+                    FROM    cmn_currencies c      WHERE   c.is_active =
+                    1       AND     @FILTER@ </nsql>
+        <nsql dbVendor="oracle">SELECT
+                    @SELECT:c.currency_code:currency_code@,
+                    @SELECT:c.currency_code || &apos; (&apos; ||
+                    c.currency_symbol || &apos;)&apos;:currency_name@
+                    FROM    cmn_currencies c WHERE   c.is_active = 1
+                    AND     @FILTER@</nsql>
+        <browsePage>
+          <singleSelectPageTitles>
+            <nls description="[de: Währungen]" languageCode="de" name="[de: Währungen]"/>
+            <nls description="Currencies" languageCode="en" name="Currencies"/>
+            <nls description="[es: Currencies]" languageCode="es" name="[es: Currencies]"/>
+            <nls description="Devises" languageCode="fr" name="Devises"/>
+            <nls description="[ja: Currencies]" languageCode="ja" name="[ja: Currencies]"/>
+          </singleSelectPageTitles>
+          <multiSelectPageTitles>
+            <nls description="[de: Währungen]" languageCode="de" name="[de: Währungen]"/>
+            <nls description="Currencies" languageCode="en" name="Currencies"/>
+            <nls description="[es: Currencies]" languageCode="es" name="[es: Currencies]"/>
+            <nls description="Devises" languageCode="fr" name="Devises"/>
+            <nls description="[ja: Currencies]" languageCode="ja" name="[ja: Currencies]"/>
+          </multiSelectPageTitles>
+          <filter code="currency_code" defaultValue="" order="1" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Währungscode]"/>
+            <nls description="No description" languageCode="en" name="Currency Code"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: Currency Code]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="Code de la devise"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: Currency Code]"/>
+          </filter>
+          <listColumn code="currency_code" order="2" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Währungscode]"/>
+            <nls description="No description" languageCode="en" name="Currency Code"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: Currency Code]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="Code de la devise"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: Currency Code]"/>
+          </listColumn>
+          <listColumn code="currency_name" order="1" widgetType="text">
+            <nls description="Keine Beschreibung" languageCode="de" name="Währungsbezeichnung"/>
+            <nls description="No description" languageCode="en" name="Currency Name"/>
+            <nls description="No description" languageCode="es" name="Currency Name"/>
+            <nls description="Pas de description" languageCode="fr" name="Nom de la devise"/>
+            <nls description="No description" languageCode="ja" name="Currency Name"/>
+          </listColumn>
+        </browsePage>
+      </dynamicLookup>
+      <dynamicLookup code="LOOKUP_RESOURCES" displayAttributeName="full_name" hiddenAttributeName="user_id" sortAttributeName="last_name" sortDirection="asc" source="niku.com" status="active" update="true">
+        <nls description="[de: Liste der aktiven und gesperrten Ressourcen]" languageCode="de" name="[de: Aktive und gesperrte Ressourcen]"/>
+        <nls description="List of active and locked resources" languageCode="en" name="Active and locked resources"/>
+        <nls description="[es: List of active and locked resources]" languageCode="es" name="[es: Active Niku 6 Resources]"/>
+        <nls description="[fr: Liste des ressources actives et verrouillées]" languageCode="fr" name="Ressources actives et verrouillées"/>
+        <nls description="[ja: List of active and locked resources]" languageCode="ja" name="[ja: Active Niku 6 Resources]"/>
+        <nsql dbVendor="all">SELECT  @SELECT:u.id:user_id@,
+                    @SELECT:r.id:resource_id@,
+                    @SELECT:r.unique_name:unique_name@,
+                    @SELECT:r.first_name:first_name@,
+                    @SELECT:r.last_name:last_name@,
+                    @SELECT:r.person_type:person_type_id@,
+                    @SELECT:r.full_name:full_name@,
+                    @SELECT:l.name:person_type@                FROM
+                    srm_resources r,
+                    cmn_sec_users u,         cmn_lookups_v l,
+                    cmn_lookups_v s WHERE   u.id = r.user_id
+                    AND     @FILTER@ AND     r.person_type = l.id
+                    AND     l.language_code=@WHERE:PARAM:LANGUAGE@ AND
+                    l.lookup_type=&apos;SRM_RESOURCE_TYPE&apos; AND
+                    u.user_status_id = s.id                     AND
+                    s.language_code= @WHERE:PARAM:LANGUAGE@ AND
+                    s.lookup_type=&apos;SEC_USER_STATUS&apos; AND
+                    s.lookup_code IN (&apos;ACTIVE&apos;,&apos;LOCK&apos;)</nsql>
+        <browsePage>
+          <singleSelectPageTitles>
+            <nls description="[de: Ressourcen]" languageCode="de" name="[de: Ressourcen]"/>
+            <nls description="Resources" languageCode="en" name="Resources"/>
+            <nls description="[es: Resources]" languageCode="es" name="[es: Resources]"/>
+            <nls description="Ressources" languageCode="fr" name="Ressources"/>
+            <nls description="[ja: Resources]" languageCode="ja" name="[ja: Resources]"/>
+          </singleSelectPageTitles>
+          <multiSelectPageTitles>
+            <nls description="[de: Ressourcen]" languageCode="de" name="[de: Ressourcen]"/>
+            <nls description="Resources" languageCode="en" name="Resources"/>
+            <nls description="[es: Resources]" languageCode="es" name="[es: Resources]"/>
+            <nls description="Ressources" languageCode="fr" name="Ressources"/>
+            <nls description="[ja: Resources]" languageCode="ja" name="[ja: Resources]"/>
+          </multiSelectPageTitles>
+          <filter code="unique_name" defaultValue="" order="3" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Ressourcen-ID]"/>
+            <nls description="No description" languageCode="en" name="Resource ID"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: Resource ID]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="ID de ressource"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: Resource ID]"/>
+          </filter>
+          <filter code="first_name" defaultValue="" order="2" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Vorname]"/>
+            <nls description="No description" languageCode="en" name="First Name"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: First Name]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="Prénom"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: First Name]"/>
+          </filter>
+          <filter code="last_name" defaultValue="" order="1" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Nachname]"/>
+            <nls description="No description" languageCode="en" name="Last Name"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: Last Name]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="Nom"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: Last Name]"/>
+          </filter>
+          <filter code="person_type_id" defaultValue="" lookupCode="SRM_RESOURCE_TYPE" order="4" widgetType="select">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Anstellungsverhältnis]"/>
+            <nls description="No description" languageCode="en" name="Employment Type"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: Employment Type]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="Type d&apos;emploi"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: Employment Type]"/>
+          </filter>
+          <listColumn code="user_id" order="5" widgetType="hidden">
+            <nls description="Keine Beschreibung" languageCode="de" name="user_id"/>
+            <nls description="No description" languageCode="en" name="user_id"/>
+            <nls description="No description" languageCode="es" name="user_id"/>
+            <nls description="Pas de description" languageCode="fr" name="user_id"/>
+            <nls description="No description" languageCode="ja" name="user_id"/>
+          </listColumn>
+          <listColumn code="unique_name" order="3" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Ressourcen-ID]"/>
+            <nls description="No description" languageCode="en" name="Resource ID"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: Resource ID]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="ID de ressource"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: Resource ID]"/>
+          </listColumn>
+          <listColumn code="first_name" order="2" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Vorname]"/>
+            <nls description="No description" languageCode="en" name="First Name"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: First Name]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="Prénom"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: First Name]"/>
+          </listColumn>
+          <listColumn code="last_name" order="1" widgetType="text">
+            <nls description="[de: Keine Beschreibung]" languageCode="de" name="[de: Nachname]"/>
+            <nls description="No description" languageCode="en" name="Last Name"/>
+            <nls description="[es: No description]" languageCode="es" name="[es: Last Name]"/>
+            <nls description="[fr: Pas de description]" languageCode="fr" name="Nom"/>
+            <nls description="[ja: No description]" languageCode="ja" name="[ja: Last Name]"/>
+          </listColumn>
+          <listColumn code="full_name" order="6" widgetType="hidden">
+            <nls description="Keine Beschreibung" languageCode="de" name="full_name"/>
+            <nls description="No description" languageCode="en" name="full_name"/>
+            <nls description="No description" languageCode="es" name="full_name"/>
+            <nls description="Pas de description" languageCode="fr" name="full_name"/>
+            <nls description="No description" languageCode="ja" name="full_name"/>
+          </listColumn>
+          <listColumn code="person_type" order="4" widgetType="text">
+            <nls description="Keine Beschreibung" languageCode="de" name="Anstellungsverhältnis"/>
+            <nls description="No description" languageCode="en" name="Employment Type"/>
+            <nls description="No description" languageCode="es" name="Employment Type"/>
+            <nls description="Pas de description" languageCode="fr" name="Type d&apos;emploi"/>
+            <nls description="No description" languageCode="ja" name="Employment Type"/>
+          </listColumn>
+        </browsePage>
+      </dynamicLookup>
+      <staticLookup code="INVESTMENT_GOAL_TYPE" hiddenAttributeName="lookup_code" sortStyle="alphanumeric" source="niku.com" status="active" update="true">
+        <nls description="[de: DE - Investment Goal]" languageCode="de" name="[de: DE - Investment Goal]"/>
+        <nls description="Investment Goal" languageCode="en" name="Investment Goal"/>
+        <nls description="[es: Investment Goal]" languageCode="es" name="[es: Investment Goal]"/>
+        <nls description="Objectif de linvestissement" languageCode="fr" name="Objectif de linvestissement"/>
+        <nls description="[ja: Investment Goal]" languageCode="ja" name="[ja: Investment Goal]"/>
+        <lookupValue code="AVOID_COST" sortOrder="0" status="active">
+          <nls description="[de: DE - Cost Avoidance]" languageCode="de" name="[de: DE - Cost Avoidance]"/>
+          <nls description="Cost Avoidance" languageCode="en" name="Cost Avoidance"/>
+          <nls description="[es: Cost Avoidance]" languageCode="es" name="[es: Cost Avoidance]"/>
+          <nls description="Evitement de coûts" languageCode="fr" name="Evitement de coûts"/>
+          <nls description="[ja: Cost Avoidance]" languageCode="ja" name="[ja: Cost Avoidance]"/>
+        </lookupValue>
+        <lookupValue code="REDUCE_COST" sortOrder="0" status="active">
+          <nls description="[de: DE - Cost Reduction]" languageCode="de" name="[de: DE - Cost Reduction]"/>
+          <nls description="Cost Reduction" languageCode="en" name="Cost Reduction"/>
+          <nls description="[es: Cost Reduction]" languageCode="es" name="[es: Cost Reduction]"/>
+          <nls description="Réduction de coûts" languageCode="fr" name="Réduction de coûts"/>
+          <nls description="[ja: Cost Reduction]" languageCode="ja" name="[ja: Cost Reduction]"/>
+        </lookupValue>
+        <lookupValue code="GROW_BUSINESS" sortOrder="0" status="active">
+          <nls description="[de: DE - Grow the Business]" languageCode="de" name="[de: DE - Grow the Business]"/>
+          <nls description="Grow the Business" languageCode="en" name="Grow the Business"/>
+          <nls description="[es: Grow the Business]" languageCode="es" name="[es: Grow the Business]"/>
+          <nls description="Développer les activités" languageCode="fr" name="Développer les activités"/>
+          <nls description="[ja: Grow the Business]" languageCode="ja" name="[ja: Grow the Business]"/>
+        </lookupValue>
+        <lookupValue code="IMPROVE_INFRASTRUCTURE" sortOrder="0" status="active">
+          <nls description="[de: DE - Infrastructure Improvement]" languageCode="de" name="[de: DE - Infrastructure Improvement]"/>
+          <nls description="Infrastructure Improvement" languageCode="en" name="Infrastructure Improvement"/>
+          <nls description="[es: Infrastructure Improvement]" languageCode="es" name="[es: Infrastructure Improvement]"/>
+          <nls description="Amélioration dinfrastructure" languageCode="fr" name="Amélioration dinfrastructure"/>
+          <nls description="[ja: Infrastructure Improvement]" languageCode="ja" name="[ja: Infrastructure Improvement]"/>
+        </lookupValue>
+        <lookupValue code="MAINTAIN_BUSINESS" sortOrder="0" status="active">
+          <nls description="[de: DE - Maintain the Business]" languageCode="de" name="[de: DE - Maintain the Business]"/>
+          <nls description="Maintain the Business" languageCode="en" name="Maintain the Business"/>
+          <nls description="[es: Maintain the Business]" languageCode="es" name="[es: Maintain the Business]"/>
+          <nls description="Maintenir les activités" languageCode="fr" name="Maintenir les activités"/>
+          <nls description="[ja: Maintain the Business]" languageCode="ja" name="[ja: Maintain the Business]"/>
+        </lookupValue>
+      </staticLookup>
+      <staticLookup code="INVESTMENT_STATUS_INDICATOR"
+          hiddenAttributeName="lookup_enum" sortStyle="manual"
+          source="niku.com" status="active" update="true">
+          <nls description="Indikátor stavu investice"
+              languageCode="cs" name="Indikátor stavu investice"/>
+          <nls description="Indikator for investeringsstatus"
+              languageCode="da" name="Indikator for investeringsstatus"/>
+          <nls description="Investitionsstatusindikator"
+              languageCode="de" name="Investitionsstatusindikator"/>
+          <nls description="Investment Status Indicator"
+              languageCode="en" name="Investment Status Indicator"/>
+          <nls description="Indicador de estado de inversión"
+              languageCode="es" name="Indicador de estado de inversión"/>
+          <nls description="Indicateur du statut d'investissement"
+              languageCode="fr" name="Indicateur du statut d'investissement"/>
+          <nls description="Indicatore stato investimento"
+              languageCode="it" name="Indicatore stato investimento"/>
+          <nls description="投資状況インジケータ" languageCode="ja" name="投資状況インジケータ"/>
+          <nls description="투자 상태 지표" languageCode="ko" name="투자 상태 지표"/>
+          <nls description="Statusindicator investering"
+              languageCode="nl" name="Statusindicator investering"/>
+          <nls description="Indicador de status do investimento"
+              languageCode="pt" name="Indicador de status do investimento"/>
+          <nls description="Statusindikator för investering"
+              languageCode="sv" name="Statusindikator för investering"/>
+          <nls description="投资状态指示器" languageCode="zh" name="投资状态指示器"/>
+          <nls description="投資狀態指標" languageCode="zh_TW" name="投資狀態指標"/>
+          <lookupValue code="GREEN" enum="1" sortOrder="1" status="active">
+              <nls description="Zelená" languageCode="cs" name="Zelená"/>
+              <nls description="Grøn" languageCode="da" name="Grøn"/>
+              <nls description="Grün" languageCode="de" name="Grün"/>
+              <nls description="Green" languageCode="en" name="Green"/>
+              <nls description="Verde" languageCode="es" name="Verde"/>
+              <nls description="Vert" languageCode="fr" name="Vert"/>
+              <nls description="Verde" languageCode="it" name="Verde"/>
+              <nls description="緑" languageCode="ja" name="緑"/>
+              <nls description="녹색" languageCode="ko" name="녹색"/>
+              <nls description="Groen" languageCode="nl" name="Groen"/>
+              <nls description="Verde" languageCode="pt" name="Verde"/>
+              <nls description="grön" languageCode="sv" name="grön"/>
+              <nls description="绿色" languageCode="zh" name="绿色"/>
+              <nls description="綠色" languageCode="zh_TW" name="綠色"/>
+          </lookupValue>
+          <lookupValue code="YELLOW" enum="2" sortOrder="2" status="active">
+              <nls description="®lutá" languageCode="cs" name="®lutá"/>
+              <nls description="Gul" languageCode="da" name="Gul"/>
+              <nls description="Gelb" languageCode="de" name="Gelb"/>
+              <nls description="Yellow" languageCode="en" name="Yellow"/>
+              <nls description="Amarillo" languageCode="es" name="Amarillo"/>
+              <nls description="Jaune" languageCode="fr" name="Jaune"/>
+              <nls description="Giallo" languageCode="it" name="Giallo"/>
+              <nls description="黄色" languageCode="ja" name="黄色"/>
+              <nls description="노란색" languageCode="ko" name="노란색"/>
+              <nls description="Geel" languageCode="nl" name="Geel"/>
+              <nls description="Amarelo" languageCode="pt" name="Amarelo"/>
+              <nls description="Gult" languageCode="sv" name="Gult"/>
+              <nls description="黄色" languageCode="zh" name="黄色"/>
+              <nls description="黃色" languageCode="zh_TW" name="黃色"/>
+          </lookupValue>
+          <lookupValue code="RED" enum="3" sortOrder="3" status="active">
+              <nls description="Červená" languageCode="cs" name="Červená"/>
+              <nls description="Rød" languageCode="da" name="Rød"/>
+              <nls description="Rot" languageCode="de" name="Rot"/>
+              <nls description="Red" languageCode="en" name="Red"/>
+              <nls description="Rojo" languageCode="es" name="Rojo"/>
+              <nls description="Rouge" languageCode="fr" name="Rouge"/>
+              <nls description="Rosso" languageCode="it" name="Rosso"/>
+              <nls description="赤" languageCode="ja" name="赤"/>
+              <nls description="빨간색" languageCode="ko" name="빨간색"/>
+              <nls description="Rood" languageCode="nl" name="Rood"/>
+              <nls description="Vermelho" languageCode="pt" name="Vermelho"/>
+              <nls description="rött" languageCode="sv" name="rött"/>
+              <nls description="红色" languageCode="zh" name="红色"/>
+              <nls description="紅色" languageCode="zh_TW" name="紅色"/>
+          </lookupValue>
+      </staticLookup>
+      <staticLookup code="INVESTMENT_OBJ_PROGRESS"
+          hiddenAttributeName="lookup_enum"
+          sortStyle="alphanumeric" source="niku.com"
+          status="active" update="true">
+          <nls description="Průběh objektu investice"
+              languageCode="cs" name="Průběh objektu investice"/>
+          <nls description="Investeringsobjekt - status"
+              languageCode="da" name="Investeringsobjekt - status"/>
+          <nls description="Investitionsobjektfortschritt"
+              languageCode="de" name="Investitionsobjektfortschritt"/>
+          <nls description="Investment Object Progress"
+              languageCode="en" name="Investment Object Progress"/>
+          <nls description="Progreso de objeto de inversión"
+              languageCode="es" name="Progreso de objeto de inversión"/>
+          <nls
+              description="Progression de l'objet de l'investissement"
+              languageCode="fr" name="Progression de l'objet de l'investissement"/>
+          <nls description="Avanzamento oggetto Investimento"
+              languageCode="it" name="Avanzamento oggetto Investimento"/>
+          <nls description="投資オブジェクトの進捗状況" languageCode="ja" name="投資オブジェクトの進捗状況"/>
+          <nls description="투자 개체 진행" languageCode="ko" name="투자 개체 진행"/>
+          <nls description="Voortgang investeringsobject"
+              languageCode="nl" name="Voortgang investeringsobject"/>
+          <nls description="Progresso do objeto de investimento"
+              languageCode="pt" name="Progresso do objeto de investimento"/>
+          <nls description="Utveckling för investeringsobjekt"
+              languageCode="sv" name="Utveckling för investeringsobjekt"/>
+          <nls description="投资对象进度" languageCode="zh" name="投资对象进度"/>
+          <nls description="投資物件進度" languageCode="zh_TW" name="投資物件進度"/>
+          <lookupValue code="COMPLETED" enum="2" sortOrder="3" status="active">
+              <nls description="Objekt investice dokončen"
+                  languageCode="cs" name="Dokončeno"/>
+              <nls description="Investeringsobjektet er fuldført"
+                  languageCode="da" name="Fuldført"/>
+              <nls description="Investitionsobjekt ist erledigt"
+                  languageCode="de" name="Abgeschlossen"/>
+              <nls description="Investment object is completed"
+                  languageCode="en" name="Completed"/>
+              <nls
+                  description="El objeto de inversión no ha terminado"
+                  languageCode="es" name="Finalizado"/>
+              <nls
+                  description="L'objet de l'investissement est terminé."
+                  languageCode="fr" name="Terminé"/>
+              <nls description="Oggetto Investimento completo"
+                  languageCode="it" name="Completato"/>
+              <nls description="投資オブジェクトは完了しています"
+                  languageCode="ja" name="完了"/>
+              <nls description="투자 개체 완료됨" languageCode="ko" name="완료됨"/>
+              <nls description="Investeringsobject voltooid"
+                  languageCode="nl" name="Voltooid"/>
+              <nls
+                  description="O objeto de investimento foi concluído"
+                  languageCode="pt" name="Concluído"/>
+              <nls description="Investeringsobjektet är slutfört"
+                  languageCode="sv" name="Klart"/>
+              <nls description="投资对象已完成" languageCode="zh" name="已完成"/>
+              <nls description="投資物件已完成" languageCode="zh_TW" name="已完成"/>
+          </lookupValue>
+          <lookupValue code="NOT_STARTED" enum="0" sortOrder="1" status="active">
+              <nls description="Objekt investice nebyl zahájen"
+                  languageCode="cs" name="Nezahájeno"/>
+              <nls
+                  description="Investeringsobjektet er ikke startet"
+                  languageCode="da" name="Ikke startet"/>
+              <nls
+                  description="Investitionsobjekt ist nicht gestartet"
+                  languageCode="de" name="Nicht gestartet"/>
+              <nls description="Investment object is not started"
+                  languageCode="en" name="Not Started"/>
+              <nls
+                  description="El objeto de inversión no ha comenzado"
+                  languageCode="es" name="No iniciado"/>
+              <nls
+                  description="L'objet de l'investissement n'est pas lancé."
+                  languageCode="fr" name="Non débuté(e)"/>
+              <nls description="Oggetto Investimento non avviato"
+                  languageCode="it" name="Non avviato"/>
+              <nls description="投資オブジェクトは開始していません"
+                  languageCode="ja" name="開始前"/>
+              <nls description="투자 개체 시작 안 됨" languageCode="ko" name="시작 안 됨"/>
+              <nls description="Investeringsobject niet gestart"
+                  languageCode="nl" name="Niet gestart"/>
+              <nls
+                  description="O objeto de investimento não foi iniciado"
+                  languageCode="pt" name="Não iniciado"/>
+              <nls
+                  description="Investeringsobjektet är inte startat"
+                  languageCode="sv" name="Inte startad"/>
+              <nls description="投资对象未开始" languageCode="zh" name="未开始"/>
+              <nls description="投資物件未啟動" languageCode="zh_TW" name="未啟動"/>
+          </lookupValue>
+          <lookupValue code="STARTED" enum="1" sortOrder="2" status="active">
+              <nls description="Objekt investice zahájen"
+                  languageCode="cs" name="Zahájeno"/>
+              <nls description="Investeringsobjektet er startet"
+                  languageCode="da" name="Startet"/>
+              <nls
+                  description="Investitionsobjekt wurde gestartet"
+                  languageCode="de" name="Gestartet"/>
+              <nls description="Investment object is started"
+                  languageCode="en" name="Started"/>
+              <nls
+                  description="El objeto de inversión ha comenzado"
+                  languageCode="es" name="Iniciado"/>
+              <nls
+                  description="L'objet de l'investissement est lancé."
+                  languageCode="fr" name="Débuté(e)"/>
+              <nls description="Oggetto Investimento avviato"
+                  languageCode="it" name="Avviato"/>
+              <nls description="投資オブジェクトは開始されています"
+                  languageCode="ja" name="開始済み"/>
+              <nls description="투자 개체 시작됨" languageCode="ko" name="시작됨"/>
+              <nls description="Investeringsobject gestart"
+                  languageCode="nl" name="Gestart"/>
+              <nls
+                  description="O objeto de investimento foi iniciado"
+                  languageCode="pt" name="Iniciado"/>
+              <nls description="Investeringsobjektet är startat"
+                  languageCode="sv" name="Startad"/>
+              <nls description="投资对象已开始" languageCode="zh" name="已开始"/>
+              <nls description="投資物件已啟動" languageCode="zh_TW" name="已開始"/>
+          </lookupValue>
+      </staticLookup>
+      <staticLookup code="INVESTMENT_OBJ_STATUS"
+          hiddenAttributeName="lookup_enum"
+          sortStyle="alphanumeric" source="niku.com"
+          status="active" update="true">
+          <nls description="Stav objektu investice"
+              languageCode="cs" name="Stav objektu investice"/>
+          <nls description="Investeringsobjekt - tilstand"
+              languageCode="da" name="Investeringsobjekt - tilstand"/>
+          <nls description="Investitionsobjektstatus"
+              languageCode="de" name="Investitionsobjektstatus"/>
+          <nls description="Investment Object State"
+              languageCode="en" name="Investment Object State"/>
+          <nls description="Estado de objeto de inversión"
+              languageCode="es" name="Estado de objeto de inversión"/>
+          <nls description="Etat de l'objet de l'investissement"
+              languageCode="fr" name="Etat de l'objet de l'investissement"/>
+          <nls description="Stato oggetto Investimento"
+              languageCode="it" name="Stato oggetto Investimento"/>
+          <nls description="投資オブジェクトの状態" languageCode="ja" name="投資オブジェクトの状態"/>
+          <nls description="투자 개체 상태" languageCode="ko" name="투자 개체 상태"/>
+          <nls description="Staat investering object"
+              languageCode="nl" name="Staat investering object"/>
+          <nls description="Estado do objeto de investimento"
+              languageCode="pt" name="Estado do objeto de investimento"/>
+          <nls description="Status för investeringsobjekt"
+              languageCode="sv" name="Status för investeringsobjekt"/>
+          <nls description="投资对象状态" languageCode="zh" name="投资对象状态"/>
+          <nls description="投資物件狀態" languageCode="zh_TW" name="投資物件狀態"/>
+          <lookupValue code="APPROVED" enum="1" sortOrder="2" status="active">
+              <nls description="Objekt investice schválen"
+                  languageCode="cs" name="Schváleno"/>
+              <nls description="Investeringsobjekt er godkendt"
+                  languageCode="da" name="Godkendt"/>
+              <nls description="Investitionsobjekt ist genehmigt"
+                  languageCode="de" name="Genehmigt"/>
+              <nls description="Investment object is approved"
+                  languageCode="en" name="Approved"/>
+              <nls
+                  description="El objeto de inversión está aprobado"
+                  languageCode="es" name="Aprobado"/>
+              <nls
+                  description="L'objet de l'investissement est approuvé."
+                  languageCode="fr" name="Approuvé"/>
+              <nls description="Oggetto Investimento approvato"
+                  languageCode="it" name="Approvato"/>
+              <nls description="投資オブジェクトは承認されています"
+                  languageCode="ja" name="承認"/>
+              <nls description="투자 개체 승인됨" languageCode="ko" name="승인됨"/>
+              <nls description="Investeringsobject goedgekeurd"
+                  languageCode="nl" name="Goedgekeurd"/>
+              <nls
+                  description="O objeto de investimento está aprovado"
+                  languageCode="pt" name="Aprovado"/>
+              <nls description="Investeringsobjektet är godkänt"
+                  languageCode="sv" name="Godkänd"/>
+              <nls description="投资对象已核准" languageCode="zh" name="已核准"/>
+              <nls description="投資物件已核准" languageCode="zh_TW" name="已核准"/>
+          </lookupValue>
+          <lookupValue code="CANCELLED" enum="4" sortOrder="5" status="active">
+              <nls description="Objekt investice zruąen"
+                  languageCode="cs" name="Zruąeno"/>
+              <nls
+                  description="Investeringsobjektet er annulleret"
+                  languageCode="da" name="Annulleret"/>
+              <nls
+                  description="Investitionsobjekt wurde abgebrochen"
+                  languageCode="de" name="Abgesagt"/>
+              <nls description="Investment object is cancelled"
+                  languageCode="en" name="Cancelled"/>
+              <nls
+                  description="El objeto de inversión se ha cancelado"
+                  languageCode="es" name="Cancelado"/>
+              <nls
+                  description="L'objet de l'investissement est annulé."
+                  languageCode="fr" name="Annulé"/>
+              <nls description="Oggetto Investimento annullato"
+                  languageCode="it" name="Annullato"/>
+              <nls description="投資オブジェクトはキャンセルされています"
+                  languageCode="ja" name="キャンセル済み"/>
+              <nls description="투자 개체 취소됨" languageCode="ko" name="취소됨"/>
+              <nls description="Investeringsobject geannuleerd"
+                  languageCode="nl" name="Geannuleerd"/>
+              <nls
+                  description="O objeto de investimento foi cancelado"
+                  languageCode="pt" name="Cancelado"/>
+              <nls description="Investeringsobjektet är avbrutet"
+                  languageCode="sv" name="Avbruten"/>
+              <nls description="投资对象已取消" languageCode="zh" name="已取消"/>
+              <nls description="投資物件已取消" languageCode="zh_TW" name="已取消"/>
+          </lookupValue>
+          <lookupValue code="Converted" enum="8" sortOrder="0" status="active">
+              <nls
+                  description="Stav pouľitý na stránce vlastností návrhu a stránce filtrování"
+                  languageCode="cs" name="Převedeno"/>
+              <nls
+                  description="Status, der anvendes til siden Egenskaber for ide og siden Filter"
+                  languageCode="da" name="Konverteret"/>
+              <nls
+                  description="Für Ideeneigenschaftenseite und Filterseite verwendeter Status"
+                  languageCode="de" name="Konvertiert"/>
+              <nls
+                  description="Status used for Idea Properties Page and Filter Page"
+                  languageCode="en" name="Converted"/>
+              <nls
+                  description="Estado utilizado para la página Propiedades de idea y la página Filtro."
+                  languageCode="es" name="Convertido"/>
+              <nls
+                  description="Statut utilisé dans la page Propriétés de l'idée et dans la page Filtre"
+                  languageCode="fr" name="Converti"/>
+              <nls
+                  description="Stato utilizzato per pagine Proprietà idea e Filtro"
+                  languageCode="it" name="Convertito"/>
+              <nls description="提案プロパティ ページとフィルタ ページに使用される状況"
+                  languageCode="ja" name="変換済み"/>
+              <nls description="아이디어 속성 페이지 및 필터 페이지에 사용되는 상태"
+                  languageCode="ko" name="변환됨"/>
+              <nls
+                  description="Status gebruikt voor Idee-eigenschappenpagina en Filterpagina"
+                  languageCode="nl" name="Geconverteerd"/>
+              <nls
+                  description="Status usado para Página de propriedades e Página de filtro"
+                  languageCode="pt" name="Convertido"/>
+              <nls
+                  description="Status används på idéegenskapssidan och filtersidan"
+                  languageCode="sv" name="Omvandlad"/>
+              <nls description="用于“建议属性页面”和“筛选器页面”的状态"
+                  languageCode="zh" name="已转换"/>
+              <nls description="構想內容頁面與篩選器頁面使用的狀態"
+                  languageCode="zh_TW" name="已轉換"/>
+          </lookupValue>
+          <lookupValue code="Incomplete" enum="7" sortOrder="0" status="active">
+              <nls
+                  description="Stav pouľitý na stránce vlastností návrhu a stránce filtrování"
+                  languageCode="cs" name="Nekompletní"/>
+              <nls
+                  description="Status, der anvendes til siden Egenskaber for ide og siden Filter"
+                  languageCode="da" name="Ufuldstændig"/>
+              <nls
+                  description="Für Ideeneigenschaftenseite und Filterseite verwendeter Status"
+                  languageCode="de" name="Unvollständig"/>
+              <nls
+                  description="Status used for Idea Properties Page and Filter Page"
+                  languageCode="en" name="Incomplete"/>
+              <nls
+                  description="Estado utilizado para la página Propiedades de idea y la página Filtro."
+                  languageCode="es" name="Incompleto"/>
+              <nls
+                  description="Statut utilisé dans la page Propriétés de l'idée et dans la page Filtre"
+                  languageCode="fr" name="Inachevé"/>
+              <nls
+                  description="Stato utilizzato per pagine Proprietà idea e Filtro"
+                  languageCode="it" name="Incompleto"/>
+              <nls description="提案プロパティ ページとフィルタ ページに使用される状況"
+                  languageCode="ja" name="未完了"/>
+              <nls description="아이디어 속성 페이지 및 필터 페이지에 사용되는 상태"
+                  languageCode="ko" name="미해결"/>
+              <nls
+                  description="Status gebruikt voor Idee-eigenschappenpagina en Filterpagina"
+                  languageCode="nl" name="Onvolledig"/>
+              <nls
+                  description="Status usado para Página de propriedades e Página de filtro"
+                  languageCode="pt" name="Incompleto"/>
+              <nls
+                  description="Status används på idéegenskapssidan och filtersidan"
+                  languageCode="sv" name="Ofullständig"/>
+              <nls description="用于“建议属性页面”和“筛选器页面”的状态"
+                  languageCode="zh" name="未完成"/>
+              <nls description="構想內容頁面與篩選器頁面使用的狀態"
+                  languageCode="zh_TW" name="不完整"/>
+          </lookupValue>
+          <lookupValue code="ON_HOLD" enum="2" sortOrder="3" status="active">
+              <nls description="Objekt investice pozastaven"
+                  languageCode="cs" name="Pozastaveno"/>
+              <nls
+                  description="Investeringsobjektet er sat i bero"
+                  languageCode="da" name="I bero"/>
+              <nls
+                  description="Investitionsobjekt ist zurückgestellt"
+                  languageCode="de" name="Zurückgestellt"/>
+              <nls description="Investment object is on hold"
+                  languageCode="en" name="On Hold"/>
+              <nls
+                  description="El objeto de inversión está en espera"
+                  languageCode="es" name="En espera"/>
+              <nls
+                  description="L'objet de l'investissement est en attente."
+                  languageCode="fr" name="En attente"/>
+              <nls description="Oggetto Investimento in attesa"
+                  languageCode="it" name="In attesa"/>
+              <nls description="投資オブジェクトは保留になっています。"
+                  languageCode="ja" name="保留"/>
+              <nls description="투자 개체 대기 중" languageCode="ko" name="대기"/>
+              <nls
+                  description="Investeringsobject tijdelijk gestaakt"
+                  languageCode="nl" name="Niet actief"/>
+              <nls
+                  description="O objeto de investimento está em espera"
+                  languageCode="pt" name="Suspenso"/>
+              <nls description="Inv-objektet är satt i vänteläge"
+                  languageCode="sv" name="I vänteläge"/>
+              <nls description="投资对象已暂挂" languageCode="zh" name="等待"/>
+              <nls description="投資物件已保留" languageCode="zh_TW" name="保留"/>
+          </lookupValue>
+          <lookupValue code="REJECTED" enum="3" sortOrder="4" status="active">
+              <nls description="Objekt investice zamítnut"
+                  languageCode="cs" name="Zamítnuto"/>
+              <nls description="Investeringsobjektet er afvist"
+                  languageCode="da" name="Afvist"/>
+              <nls
+                  description="Investitionsobjekt wurde abgelehnt"
+                  languageCode="de" name="Abgelehnt"/>
+              <nls description="Investment object is rejected"
+                  languageCode="en" name="Rejected"/>
+              <nls
+                  description="El objeto de inversión ha sido rechazado"
+                  languageCode="es" name="Rechazado"/>
+              <nls
+                  description="L'objet de l'investissement est rejeté."
+                  languageCode="fr" name="Refusé"/>
+              <nls description="Oggetto Investimento rifiutato"
+                  languageCode="it" name="Rifiutato"/>
+              <nls description="投資オブジェクトは拒否されています"
+                  languageCode="ja" name="拒否済み"/>
+              <nls description="투자 개체 거부됨" languageCode="ko" name="거부됨"/>
+              <nls description="Investeringsobject afgewezen"
+                  languageCode="nl" name="Afgewezen"/>
+              <nls
+                  description="O objeto de investimento foi rejeitado"
+                  languageCode="pt" name="Rejeitado"/>
+              <nls description="Investeringsobjektet är avvisat"
+                  languageCode="sv" name="Avvisad"/>
+              <nls description="投资对象已被拒绝" languageCode="zh" name="已拒绝"/>
+              <nls description="投資物件遭拒絕" languageCode="zh_TW" name="已拒絕"/>
+          </lookupValue>
+          <lookupValue code="RESUMED" enum="5" sortOrder="6" status="active">
+              <nls description="Objekt investice obnoven"
+                  languageCode="cs" name="Obnoveno"/>
+              <nls
+                  description="Investeringsobjektet er genoptaget"
+                  languageCode="da" name="Genoptaget"/>
+              <nls
+                  description="Investitionsobjekt wurde wiederaufgenommen"
+                  languageCode="de" name="Wiederaufgenommen"/>
+              <nls description="Investment object is resumed"
+                  languageCode="en" name="Resumed"/>
+              <nls
+                  description="El objeto de inversión se ha reanudado"
+                  languageCode="es" name="Reanudado"/>
+              <nls
+                  description="L'objet de l'investissement est repris."
+                  languageCode="fr" name="Repris"/>
+              <nls description="Oggetto Investimento ripreso"
+                  languageCode="it" name="Ripreso"/>
+              <nls description="投資オブジェクトは再開されています"
+                  languageCode="ja" name="再開されました"/>
+              <nls description="투자 개체 재개됨" languageCode="ko" name="재개됨"/>
+              <nls description="Investeringsobject hervat"
+                  languageCode="nl" name="Hervat"/>
+              <nls
+                  description="O objeto de investimento foi reiniciado"
+                  languageCode="pt" name="Retomado"/>
+              <nls description="Investeringsobjektet är återtaget"
+                  languageCode="sv" name="Återtagen"/>
+              <nls description="投资对象已恢复" languageCode="zh" name="已恢复"/>
+              <nls description="投資物件繼續" languageCode="zh_TW" name="已繼續"/>
+          </lookupValue>
+          <lookupValue code="Submitted for Approval" enum="6"
+              sortOrder="0" status="active">
+              <nls
+                  description="Stav pouľitý na stránce vlastností návrhu a stránce filtrování"
+                  languageCode="cs" name="Předáno ke schválení"/>
+              <nls
+                  description="Status, der anvendes til siden Egenskaber for ide og siden Filter"
+                  languageCode="da" name="Sendt til godkendelse"/>
+              <nls
+                  description="Für Ideeneigenschaftenseite und Filterseite verwendeter Status"
+                  languageCode="de" name="Zur Genehmigung vorgelegt"/>
+              <nls
+                  description="Status used for Idea Properties Page and Filter Page"
+                  languageCode="en" name="Submitted for Approval"/>
+              <nls
+                  description="Estado utilizado para la página Propiedades de idea y la página Filtro."
+                  languageCode="es" name="Enviado para aprobación"/>
+              <nls
+                  description="Statut utilisé dans la page Propriétés de l'idée et dans la page Filtre"
+                  languageCode="fr" name="Soumis pour approbation"/>
+              <nls
+                  description="Stato utilizzato per pagine Proprietà idea e Filtro"
+                  languageCode="it" name="Inviato per approvazione"/>
+              <nls description="提案プロパティ ページとフィルタ ページに使用される状況"
+                  languageCode="ja" name="承認要求"/>
+              <nls description="아이디어 속성 페이지 및 필터 페이지에 사용되는 상태"
+                  languageCode="ko" name="승인을 위해 제출됨"/>
+              <nls
+                  description="Status gebruikt voor Idee-eigenschappenpagina en Filterpagina"
+                  languageCode="nl" name="Ingediend ter goedkeuring"/>
+              <nls
+                  description="Status usado para Página de propriedades e Página de filtro"
+                  languageCode="pt" name="Enviado para aprovação"/>
+              <nls
+                  description="Status används på idéegenskapssidan och filtersidan"
+                  languageCode="sv" name="Skickad för godkännande"/>
+              <nls description="用于“建议属性页面”和“筛选器页面”的状态"
+                  languageCode="zh" name="已提交以供核准"/>
+              <nls description="構想內容頁面與篩選器頁面使用的狀態"
+                  languageCode="zh_TW" name="已提交以取得批准"/>
+          </lookupValue>
+          <lookupValue code="UNAPPROVED" enum="0" sortOrder="1" status="active">
+              <nls description="Objekt investice neschválen"
+                  languageCode="cs" name="Neschváleno"/>
+              <nls
+                  description="Investeringsobjekt er ikke godkendt"
+                  languageCode="da" name="Ikke-godkendt"/>
+              <nls
+                  description="Investitionsobjekt ist nicht genehmigt"
+                  languageCode="de" name="Nicht genehmigt"/>
+              <nls description="Investment object is unapproved"
+                  languageCode="en" name="Unapproved"/>
+              <nls
+                  description="El objeto de inversión no ha sido aprobado"
+                  languageCode="es" name="No aprobado"/>
+              <nls
+                  description="L'objet de l'investissement n'a pas été approuvé."
+                  languageCode="fr" name="Non approuvé"/>
+              <nls
+                  description="Oggetto Investimento non approvato"
+                  languageCode="it" name="Non approvato"/>
+              <nls description="投資オブジェクトは承認されていません"
+                  languageCode="ja" name="未承認"/>
+              <nls description="투자 개체 승인 안 됨" languageCode="ko" name="비승인됨"/>
+              <nls
+                  description="Investeringsobject is niet goedgekeurd"
+                  languageCode="nl" name="Niet goedgekeurd"/>
+              <nls
+                  description="O objeto de investimento não foi aprovado"
+                  languageCode="pt" name="Não aprovado"/>
+              <nls
+                  description="Investeringsobjektet är inte godkänt"
+                  languageCode="sv" name="Icke godkänd"/>
+              <nls description="投资对象未获核准" languageCode="zh" name="未核准"/>
+              <nls description="投資物件未核准" languageCode="zh_TW" name="未核准"/>
+          </lookupValue>
+      </staticLookup>
+      <dependentLookup code="INV_STAGE_TYPE" hiddenAttributeName="lookup_code" parentCode="INV_PROCESS_TYPE" sortStyle="manual" source="niku.com" status="active" update="true">
+        <nls description="[de: Investment Stage]" languageCode="de" name="[de: Investment Stage]"/>
+        <nls description="Investment Stage" languageCode="en" name="Investment Stage"/>
+        <nls description="[es: Investment Stage]" languageCode="es" name="[es: Investment Stage]"/>
+        <nls description="FR - Investment Stage" languageCode="fr" name="FR - Investment Stage"/>
+        <nls description="[ja: Investment Stage]" languageCode="ja" name="[ja: Investment Stage]"/>
+        <lookupValue code="ASSET_AM_PROPOSAL" parentCode="ASSET_MGMT" sortOrder="1" status="active">
+          <nls description="Proposal" languageCode="de" name="Proposal"/>
+          <nls description="Proposal" languageCode="en" name="Proposal"/>
+          <nls description="Proposal" languageCode="es" name="Proposal"/>
+          <nls description="Proposition" languageCode="fr" name="Proposition"/>
+          <nls description="Proposal" languageCode="ja" name="Proposal"/>
+        </lookupValue>
+        <lookupValue code="APP_AM_PROPOSAL" parentCode="APPLICATION_MGMT" sortOrder="1" status="active">
+          <nls description="[de: Proposal]" languageCode="de" name="[de: Proposal]"/>
+          <nls description="Proposal" languageCode="en" name="Proposal"/>
+          <nls description="[es: Proposal]" languageCode="es" name="[es: Proposal]"/>
+          <nls description="Proposition" languageCode="fr" name="Proposition"/>
+          <nls description="[ja: Proposal]" languageCode="ja" name="[ja: Proposal]"/>
+        </lookupValue>
+        <lookupValue code="PDT_PM_RESEARCH" parentCode="PRODUCT_MGMT" sortOrder="1" status="active">
+          <nls description="[de: Research]" languageCode="de" name="[de: Research]"/>
+          <nls description="Research" languageCode="en" name="Research"/>
+          <nls description="[es: Research]" languageCode="es" name="[es: Research]"/>
+          <nls description="Rechercher" languageCode="fr" name="Rechercher"/>
+          <nls description="[ja: Research]" languageCode="ja" name="[ja: Research]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_DMADV_DEFINE" parentCode="PRJ_SIX_SIGMA_DMADV" sortOrder="1" status="active">
+          <nls description="[de: Define Stage]" languageCode="de" name="[de: Define]"/>
+          <nls description="Define Stage" languageCode="en" name="Define"/>
+          <nls description="[es: Define Stage]" languageCode="es" name="[es: Define]"/>
+          <nls description="[fr: Define Stage]" languageCode="fr" name="Définir"/>
+          <nls description="[ja: Define Stage]" languageCode="ja" name="[ja: Define]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_DFSS_IDOV_IDENTIFY" parentCode="PRJ_DFSS_IDOV" sortOrder="1" status="active">
+          <nls description="[de: Identify Stage]" languageCode="de" name="[de: Identify]"/>
+          <nls description="Identify Stage" languageCode="en" name="Identify"/>
+          <nls description="[es: Identify Stage]" languageCode="es" name="[es: Identify]"/>
+          <nls description="[fr: Identify Stage]" languageCode="fr" name="FR - Identify"/>
+          <nls description="[ja: Identify Stage]" languageCode="ja" name="[ja: Identify]"/>
+        </lookupValue>
+        <lookupValue code="ASS_AM_PROPOSAL" sortOrder="1" status="active">
+          <nls description="[de: Proposal]" languageCode="de" name="[de: Proposal]"/>
+          <nls description="Proposal" languageCode="en" name="Proposal"/>
+          <nls description="[es: Proposal]" languageCode="es" name="[es: Proposal]"/>
+          <nls description="Proposition" languageCode="fr" name="Proposition"/>
+          <nls description="[ja: Proposal]" languageCode="ja" name="[ja: Proposal]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_DEFINE" parentCode="PRJ_SIX_SIGMA" sortOrder="1" status="active">
+          <nls description="[de: Defininition Stage]" languageCode="de" name="[de: Define]"/>
+          <nls description="Defininition Stage" languageCode="en" name="Define"/>
+          <nls description="[es: Defininition Stage]" languageCode="es" name="[es: Define]"/>
+          <nls description="[fr: Defininition Stage]" languageCode="fr" name="Définir"/>
+          <nls description="[ja: Defininition Stage]" languageCode="ja" name="[ja: Define]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_NPD_IDEA" parentCode="PRJ_NPD" sortOrder="1" status="active">
+          <nls description="[de: Idea Stage]" languageCode="de" name="[de: Idea]"/>
+          <nls description="Idea Stage" languageCode="en" name="Idea"/>
+          <nls description="[es: Idea Stage]" languageCode="es" name="[es: Idea]"/>
+          <nls description="[fr: Idea Stage]" languageCode="fr" name="Idée"/>
+          <nls description="[ja: Idea Stage]" languageCode="ja" name="[ja: Idea]"/>
+        </lookupValue>
+        <lookupValue code="ASSET_AM_BVSELECTION" parentCode="ASSET_MGMT" sortOrder="2" status="active">
+          <nls description="Bid-Vendor Selection" languageCode="de" name="Bid-Vendor Selection"/>
+          <nls description="Bid-Vendor Selection" languageCode="en" name="Bid-Vendor Selection"/>
+          <nls description="Bid-Vendor Selection" languageCode="es" name="Bid-Vendor Selection"/>
+          <nls description="Sélection Offre-Fournisseur" languageCode="fr" name="Sélection Offre-Fournisseur"/>
+          <nls description="Bid-Vendor Selection" languageCode="ja" name="Bid-Vendor Selection"/>
+        </lookupValue>
+        <lookupValue code="PRJ_DFSS_IDOV_DESIGN" parentCode="PRJ_DFSS_IDOV" sortOrder="2" status="active">
+          <nls description="[de: Design Stage]" languageCode="de" name="[de: Design]"/>
+          <nls description="Design Stage" languageCode="en" name="Design"/>
+          <nls description="[es: Design Stage]" languageCode="es" name="[es: Design]"/>
+          <nls description="[fr: Design Stage]" languageCode="fr" name="Conception"/>
+          <nls description="[ja: Design Stage]" languageCode="ja" name="[ja: Design]"/>
+        </lookupValue>
+        <lookupValue code="ASS_AM_BVSELECTION" sortOrder="2" status="active">
+          <nls description="[de: Bid-Vendor Selection]" languageCode="de" name="[de: Bid-Vendor Selection]"/>
+          <nls description="Bid-Vendor Selection" languageCode="en" name="Bid-Vendor Selection"/>
+          <nls description="[es: Bid-Vendor Selection]" languageCode="es" name="[es: Bid-Vendor Selection]"/>
+          <nls description="Sélection Offre-Fournisseur" languageCode="fr" name="Sélection Offre-Fournisseur"/>
+          <nls description="[ja: Bid-Vendor Selection]" languageCode="ja" name="[ja: Bid-Vendor Selection]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_MEASURE" parentCode="PRJ_SIX_SIGMA" sortOrder="2" status="active">
+          <nls description="[de: Measurement Stage]" languageCode="de" name="[de: Measure]"/>
+          <nls description="Measurement Stage" languageCode="en" name="Measure"/>
+          <nls description="[es: Measurement Stage]" languageCode="es" name="[es: Measure]"/>
+          <nls description="[fr: Measurement Stage]" languageCode="fr" name="Mesure"/>
+          <nls description="[ja: Measurement Stage]" languageCode="ja" name="[ja: Measure]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_DMADV_MEASURE" parentCode="PRJ_SIX_SIGMA_DMADV" sortOrder="2" status="active">
+          <nls description="[de: Measure Stage]" languageCode="de" name="[de: Measure]"/>
+          <nls description="Measure Stage" languageCode="en" name="Measure"/>
+          <nls description="[es: Measure Stage]" languageCode="es" name="[es: Measure]"/>
+          <nls description="[fr: Measure Stage]" languageCode="fr" name="Mesure"/>
+          <nls description="[ja: Measure Stage]" languageCode="ja" name="[ja: Measure]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_NPD_SCOPING" parentCode="PRJ_NPD" sortOrder="2" status="active">
+          <nls description="[de: Scoping Stage]" languageCode="de" name="[de: Scoping]"/>
+          <nls description="Scoping Stage" languageCode="en" name="Scoping"/>
+          <nls description="[es: Scoping Stage]" languageCode="es" name="[es: Scoping]"/>
+          <nls description="[fr: Scoping Stage]" languageCode="fr" name="FR - Scoping"/>
+          <nls description="[ja: Scoping Stage]" languageCode="ja" name="[ja: Scoping]"/>
+        </lookupValue>
+        <lookupValue code="PDT_PM_DEVELOP" parentCode="PRODUCT_MGMT" sortOrder="2" status="active">
+          <nls description="[de: Develop]" languageCode="de" name="[de: Develop]"/>
+          <nls description="Develop" languageCode="en" name="Develop"/>
+          <nls description="[es: Develop]" languageCode="es" name="[es: Develop]"/>
+          <nls description="Développer" languageCode="fr" name="Développer"/>
+          <nls description="[ja: Develop]" languageCode="ja" name="[ja: Develop]"/>
+        </lookupValue>
+        <lookupValue code="APP_AM_BVSELECTION" parentCode="APPLICATION_MGMT" sortOrder="2" status="active">
+          <nls description="[de: Bid-Vendor Selection]" languageCode="de" name="[de: Bid-Vendor Selection]"/>
+          <nls description="Bid-Vendor Selection" languageCode="en" name="Bid-Vendor Selection"/>
+          <nls description="[es: Bid-Vendor Selection]" languageCode="es" name="[es: Bid-Vendor Selection]"/>
+          <nls description="Sélection Offre-Fournisseur" languageCode="fr" name="Sélection Offre-Fournisseur"/>
+          <nls description="[ja: Bid-Vendor Selection]" languageCode="ja" name="[ja: Bid-Vendor Selection]"/>
+        </lookupValue>
+        <lookupValue code="ASSET_AM_CONFIGURE" parentCode="ASSET_MGMT" sortOrder="3" status="active">
+          <nls description="Build-Configure" languageCode="de" name="Build-Configure"/>
+          <nls description="Build-Configure" languageCode="en" name="Build-Configure"/>
+          <nls description="Build-Configure" languageCode="es" name="Build-Configure"/>
+          <nls description="Définir-Configurer" languageCode="fr" name="Définir-Configurer"/>
+          <nls description="Build-Configure" languageCode="ja" name="Build-Configure"/>
+        </lookupValue>
+        <lookupValue code="PDT_PM_SELL" parentCode="PRODUCT_MGMT" sortOrder="3" status="active">
+          <nls description="[de: Sell]" languageCode="de" name="[de: Sell]"/>
+          <nls description="Sell" languageCode="en" name="Sell"/>
+          <nls description="[es: Sell]" languageCode="es" name="[es: Sell]"/>
+          <nls description="Vendre" languageCode="fr" name="Vendre"/>
+          <nls description="[ja: Sell]" languageCode="ja" name="[ja: Sell]"/>
+        </lookupValue>
+        <lookupValue code="APP_AM_CONFIGURE" parentCode="APPLICATION_MGMT" sortOrder="3" status="active">
+          <nls description="[de: Configure]" languageCode="de" name="[de: Configure]"/>
+          <nls description="Configure" languageCode="en" name="Configure"/>
+          <nls description="[es: Configure]" languageCode="es" name="[es: Configure]"/>
+          <nls description="Configurer" languageCode="fr" name="Configurer"/>
+          <nls description="[ja: Configure]" languageCode="ja" name="[ja: Configure]"/>
+        </lookupValue>
+        <lookupValue code="ASS_AM_CONFIGURE" sortOrder="3" status="active">
+          <nls description="[de: Build-Configure]" languageCode="de" name="[de: Build-Configure]"/>
+          <nls description="Build-Configure" languageCode="en" name="Build-Configure"/>
+          <nls description="[es: Build-Configure]" languageCode="es" name="[es: Build-Configure]"/>
+          <nls description="Définir-Configurer" languageCode="fr" name="Définir-Configurer"/>
+          <nls description="[ja: Build-Configure]" languageCode="ja" name="[ja: Build-Configure]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_DFSS_IDOV_OPTIMIZE" parentCode="PRJ_DFSS_IDOV" sortOrder="3" status="active">
+          <nls description="[de: Optimize Stage]" languageCode="de" name="[de: Optimize]"/>
+          <nls description="Optimize Stage" languageCode="en" name="Optimize"/>
+          <nls description="[es: Optimize Stage]" languageCode="es" name="[es: Optimize]"/>
+          <nls description="[fr: Optimize Stage]" languageCode="fr" name="FR - Optimize"/>
+          <nls description="[ja: Optimize Stage]" languageCode="ja" name="[ja: Optimize]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_ANALYZE" parentCode="PRJ_SIX_SIGMA" sortOrder="3" status="active">
+          <nls description="[de: Analysis Stage]" languageCode="de" name="[de: Analyze]"/>
+          <nls description="Analysis Stage" languageCode="en" name="Analyze"/>
+          <nls description="[es: Analysis Stage]" languageCode="es" name="[es: Analyze]"/>
+          <nls description="[fr: Analysis Stage]" languageCode="fr" name="Analyser"/>
+          <nls description="[ja: Analysis Stage]" languageCode="ja" name="[ja: Analyze]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_DMADV_ANALYZE" parentCode="PRJ_SIX_SIGMA_DMADV" sortOrder="3" status="active">
+          <nls description="[de: Analysis Stage]" languageCode="de" name="[de: Analyze]"/>
+          <nls description="Analysis Stage" languageCode="en" name="Analyze"/>
+          <nls description="[es: Analysis Stage]" languageCode="es" name="[es: Analyze]"/>
+          <nls description="[fr: Analysis Stage]" languageCode="fr" name="Analyser"/>
+          <nls description="[ja: Analysis Stage]" languageCode="ja" name="[ja: Analyze]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_NPD_BUSCASE" parentCode="PRJ_NPD" sortOrder="3" status="active">
+          <nls description="[de: Business Case Stage]" languageCode="de" name="[de: Business Case]"/>
+          <nls description="Business Case Stage" languageCode="en" name="Business Case"/>
+          <nls description="[es: Business Case Stage]" languageCode="es" name="[es: Business Case]"/>
+          <nls description="[fr: Business Case Stage]" languageCode="fr" name="Analyse de cas"/>
+          <nls description="[ja: Business Case Stage]" languageCode="ja" name="[ja: Business Case]"/>
+        </lookupValue>
+        <lookupValue code="ASSET_AM_DEPLOY" parentCode="ASSET_MGMT" sortOrder="4" status="active">
+          <nls description="Deploy" languageCode="de" name="Deploy"/>
+          <nls description="Deploy" languageCode="en" name="Deploy"/>
+          <nls description="Deploy" languageCode="es" name="Deploy"/>
+          <nls description="Déployer" languageCode="fr" name="Déployer"/>
+          <nls description="Deploy" languageCode="ja" name="Deploy"/>
+        </lookupValue>
+        <lookupValue code="PDT_PM_DEPLOY" parentCode="PRODUCT_MGMT" sortOrder="4" status="active">
+          <nls description="[de: Deploy]" languageCode="de" name="[de: Deploy]"/>
+          <nls description="Deploy" languageCode="en" name="Deploy"/>
+          <nls description="[es: Deploy]" languageCode="es" name="[es: Deploy]"/>
+          <nls description="Déployer" languageCode="fr" name="Déployer"/>
+          <nls description="[ja: Deploy]" languageCode="ja" name="[ja: Deploy]"/>
+        </lookupValue>
+        <lookupValue code="APP_AM_DEPLOY" parentCode="APPLICATION_MGMT" sortOrder="4" status="active">
+          <nls description="[de: Deploy]" languageCode="de" name="[de: Deploy]"/>
+          <nls description="Deploy" languageCode="en" name="Deploy"/>
+          <nls description="[es: Deploy]" languageCode="es" name="[es: Deploy]"/>
+          <nls description="Déployer" languageCode="fr" name="Déployer"/>
+          <nls description="[ja: Deploy]" languageCode="ja" name="[ja: Deploy]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_NPD_TEST" parentCode="PRJ_NPD" sortOrder="4" status="active">
+          <nls description="[de: Testing and Validation Stage]" languageCode="de" name="[de: Testing and Validation]"/>
+          <nls description="Testing and Validation Stage" languageCode="en" name="Testing and Validation"/>
+          <nls description="[es: Testing and Validation Stage]" languageCode="es" name="[es: Testing and Validation]"/>
+          <nls description="[fr: Testing and Validation Stage]" languageCode="fr" name="FR - Testing and Validation"/>
+          <nls description="[ja: Testing and Validation Stage]" languageCode="ja" name="[ja: Testing and Validation]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_DESIGN" parentCode="PRJ_SIX_SIGMA" sortOrder="4" status="active">
+          <nls description="Improvement Stage" languageCode="de" name="Improve"/>
+          <nls description="Improvement Stage" languageCode="en" name="Improve"/>
+          <nls description="Improvement Stage" languageCode="es" name="Improve"/>
+          <nls description="Improvement Stage" languageCode="fr" name="Improve"/>
+          <nls description="Improvement Stage" languageCode="ja" name="Improve"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_IMPROVE" sortOrder="4" status="active">
+          <nls description="[de: Improvement Stage]" languageCode="de" name="[de: Improve]"/>
+          <nls description="Improvement Stage" languageCode="en" name="Improve"/>
+          <nls description="[es: Improvement Stage]" languageCode="es" name="[es: Improve]"/>
+          <nls description="[fr: Improvement Stage]" languageCode="fr" name="Améliorer"/>
+          <nls description="[ja: Improvement Stage]" languageCode="ja" name="[ja: Improve]"/>
+        </lookupValue>
+        <lookupValue code="ASS_AM_DEPLOY" sortOrder="4" status="active">
+          <nls description="[de: Deploy]" languageCode="de" name="[de: Deploy]"/>
+          <nls description="Deploy" languageCode="en" name="Deploy"/>
+          <nls description="[es: Deploy]" languageCode="es" name="[es: Deploy]"/>
+          <nls description="Déployer" languageCode="fr" name="Déployer"/>
+          <nls description="[ja: Deploy]" languageCode="ja" name="[ja: Deploy]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_DFSS_IDOV_VALIDATE" parentCode="PRJ_DFSS_IDOV" sortOrder="4" status="active">
+          <nls description="[de: Validate Stage]" languageCode="de" name="[de: Validate]"/>
+          <nls description="Validate Stage" languageCode="en" name="Validate"/>
+          <nls description="[es: Validate Stage]" languageCode="es" name="[es: Validate]"/>
+          <nls description="[fr: Validate Stage]" languageCode="fr" name="FR - Validate"/>
+          <nls description="[ja: Validate Stage]" languageCode="ja" name="[ja: Validate]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_DMADV_DESIGN" parentCode="PRJ_SIX_SIGMA_DMADV" sortOrder="4" status="active">
+          <nls description="[de: Design Stage]" languageCode="de" name="[de: Design]"/>
+          <nls description="Design Stage" languageCode="en" name="Design"/>
+          <nls description="[es: Design Stage]" languageCode="es" name="[es: Design]"/>
+          <nls description="[fr: Design Stage]" languageCode="fr" name="Conception"/>
+          <nls description="[ja: Design Stage]" languageCode="ja" name="[ja: Design]"/>
+        </lookupValue>
+        <lookupValue code="ASSET_AM_MONITOR" parentCode="ASSET_MGMT" sortOrder="5" status="active">
+          <nls description="Monitor-Maintenance" languageCode="de" name="Monitor-Maintenance"/>
+          <nls description="Monitor-Maintenance" languageCode="en" name="Monitor-Maintenance"/>
+          <nls description="Monitor-Maintenance" languageCode="es" name="Monitor-Maintenance"/>
+          <nls description="Surveiller - Maintenance" languageCode="fr" name="Surveiller - Maintenance"/>
+          <nls description="Monitor-Maintenance" languageCode="ja" name="Monitor-Maintenance"/>
+        </lookupValue>
+        <lookupValue code="APP_AM_MAINTAIN" parentCode="APPLICATION_MGMT" sortOrder="5" status="active">
+          <nls description="[de: Maintain]" languageCode="de" name="[de: Maintain]"/>
+          <nls description="Maintain" languageCode="en" name="Maintain"/>
+          <nls description="[es: Maintain]" languageCode="es" name="[es: Maintain]"/>
+          <nls description="Maintenir" languageCode="fr" name="Maintenir"/>
+          <nls description="[ja: Maintain]" languageCode="ja" name="[ja: Maintain]"/>
+        </lookupValue>
+        <lookupValue code="ASS_AM_MONITOR" sortOrder="5" status="active">
+          <nls description="[de: Monitor-Maintenance]" languageCode="de" name="[de: Monitor-Maintenance]"/>
+          <nls description="Monitor-Maintenance" languageCode="en" name="Monitor-Maintenance"/>
+          <nls description="[es: Monitor-Maintenance]" languageCode="es" name="[es: Monitor-Maintenance]"/>
+          <nls description="Surveiller - Maintenance" languageCode="fr" name="Surveiller - Maintenance"/>
+          <nls description="[ja: Monitor-Maintenance]" languageCode="ja" name="[ja: Monitor-Maintenance]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_CONTROL" sortOrder="5" status="active">
+          <nls description="[de: Control Stage]" languageCode="de" name="[de: Control]"/>
+          <nls description="Control Stage" languageCode="en" name="Control"/>
+          <nls description="[es: Control Stage]" languageCode="es" name="[es: Control]"/>
+          <nls description="[fr: Control Stage]" languageCode="fr" name="Contrôle"/>
+          <nls description="[ja: Control Stage]" languageCode="ja" name="[ja: Control]"/>
+        </lookupValue>
+        <lookupValue code="PDT_PM_MAINTAIN" parentCode="PRODUCT_MGMT" sortOrder="5" status="active">
+          <nls description="[de: Maintain]" languageCode="de" name="[de: Maintain]"/>
+          <nls description="Maintain" languageCode="en" name="Maintain"/>
+          <nls description="[es: Maintain]" languageCode="es" name="[es: Maintain]"/>
+          <nls description="Maintenir" languageCode="fr" name="Maintenir"/>
+          <nls description="[ja: Maintain]" languageCode="ja" name="[ja: Maintain]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_VERIFY" parentCode="PRJ_SIX_SIGMA" sortOrder="5" status="active">
+          <nls description="Control Stage" languageCode="de" name="Control"/>
+          <nls description="Control Stage" languageCode="en" name="Control"/>
+          <nls description="Control Stage" languageCode="es" name="Control"/>
+          <nls description="Control Stage" languageCode="fr" name="Control"/>
+          <nls description="Control Stage" languageCode="ja" name="Control"/>
+        </lookupValue>
+        <lookupValue code="PRJ_SS_DMADV_VERIFY" parentCode="PRJ_SIX_SIGMA_DMADV" sortOrder="5" status="active">
+          <nls description="[de: Verify Stage]" languageCode="de" name="[de: Verity]"/>
+          <nls description="Verify Stage" languageCode="en" name="Verity"/>
+          <nls description="[es: Verify Stage]" languageCode="es" name="[es: Verity]"/>
+          <nls description="[fr: Verify Stage]" languageCode="fr" name="FR - Verity"/>
+          <nls description="[ja: Verify Stage]" languageCode="ja" name="[ja: Verity]"/>
+        </lookupValue>
+        <lookupValue code="PRJ_NPD_LAUNCH" parentCode="PRJ_NPD" sortOrder="5" status="active">
+          <nls description="[de: Launch Stage]" languageCode="de" name="[de: Launch]"/>
+          <nls description="Launch Stage" languageCode="en" name="Launch"/>
+          <nls description="[es: Launch Stage]" languageCode="es" name="[es: Launch]"/>
+          <nls description="[fr: Launch Stage]" languageCode="fr" name="FR - Launch"/>
+          <nls description="[ja: Launch Stage]" languageCode="ja" name="[ja: Launch]"/>
+        </lookupValue>
+        <lookupValue code="APP_AM_RETIRE" parentCode="APPLICATION_MGMT" sortOrder="6" status="active">
+          <nls description="[de: Retire]" languageCode="de" name="[de: Retire]"/>
+          <nls description="Retire" languageCode="en" name="Retire"/>
+          <nls description="[es: Retire]" languageCode="es" name="[es: Retire]"/>
+          <nls description="Abandonner" languageCode="fr" name="Abandonner"/>
+          <nls description="[ja: Retire]" languageCode="ja" name="[ja: Retire]"/>
+        </lookupValue>
+        <lookupValue code="PDT_PM_RETIRE" parentCode="PRODUCT_MGMT" sortOrder="6" status="active">
+          <nls description="[de: Retire]" languageCode="de" name="[de: Retire]"/>
+          <nls description="Retire" languageCode="en" name="Retire"/>
+          <nls description="[es: Retire]" languageCode="es" name="[es: Retire]"/>
+          <nls description="Abandonner" languageCode="fr" name="Abandonner"/>
+          <nls description="[ja: Retire]" languageCode="ja" name="[ja: Retire]"/>
+        </lookupValue>
+      </dependentLookup>
+    </lookups>
+  </contentPack>
+  <XOGOutput>
+    <Object type="contentPack"/>
+    <Status state="SUCCESS"/>
+    <Statistics failureRecords="0" insertedRecords="0" totalNumberOfRecords="13" updatedRecords="0"/>
+    <Records/>
+  </XOGOutput>
+</NikuDataBus>

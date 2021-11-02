@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+  <Header version="8.0" externalSource="xog" action="write" objectType="contentPack"/>
+  <contentPack>
+    <menus>
+      <menu update="true" code="application" source="niku.com">
+        <nls description="Navigator Menu" languageCode="en" name="Navigator Menu"/>
+        <section code="xogSection" position="7" update="false">
+          <nls description="DE -XOG Section" languageCode="de" name="XOG Section DE"/>
+          <nls description="XOG Section" languageCode="en" name="Section XOG"/>
+          <link pageCode="npt.overview" position="1" pageSource="niku.com" update="true">
+            <nls description="Overview" languageCode="en" name="Overview"/>
+            <nls description="Présentation" languageCode="fr" name="Présentation"/>
+          </link>
+          <link pageCode="xogMenusTab1" pageSource="xognpt.com" update="true" position="2">
+            <nls description="ES - Tab 1 Link Should appear" languageCode="es" name="ES - Tab 1 Link"/>
+            <nls description="Tab 1 Link Should appear" languageCode="en" name="Tab 1 Link"/>
+          </link>
+          <link pageCode="noSuchTab" pageSource="xognpt.com" update="true" position="4">
+            <nls description="DE - No Such Tab Link" languageCode="de" name="De - No Such Tab Link"/>
+            <nls description="No Such Tab Link" languageCode="en" name="No Such Tab Link"/>
+          </link>
+        </section>
+        <section code="xogSection2" position="8" update="false">
+          <nls description="XOG Section2" languageCode="en" name="Section2 XOG"/>
+          <link pageCode="xogMenusTestPage" pageSource="xognpt.com" update="true" position="3">
+            <nls description="Page 1 Link Should appear" languageCode="en" name="Page 1 Link"/>
+            <nls description="JA - Page 1 Link Should appear" languageCode="ja" name="JA - Page 1 Link"/>
+          </link>
+        </section>
+        <section code="xogSection3" position="9" update="false">
+          <nls description="XOG Section3" languageCode="en" name="Section3 XOG"/>
+          <link pageCode="xogMenusTab3" pageSource="xognpt.com" update="true" position="1">
+            <nls description="ES - Tab 3 Link Should appear" languageCode="es" name="ES - Tab 3 Link"/>
+            <nls description="Tab 3 Link Should appear" languageCode="en" name="Tab 3 Link"/>
+          </link>
+        </section>
+      </menu>
+    </menus>
+    <pages update="false">
+      <page code="xogMenusTestPage" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false" source="xognpt.com" template="application">
+        <nls description="non tabbed page" languageCode="en" name="XOG Menus page"/>
+      </page>
+      <tabbedPage code="xogMenusTabPage" personalizable="false" source="xognpt.com" template="application" active="true" layout="three-column-layout-25-50-25">
+        <nls description="My tabs" languageCode="en" name="XOG Menus Tab Page"/>
+        <tab code="xogMenusTab1" source="xognpt.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab1" languageCode="en" name="tab one"/>
+        </tab>
+        <tab code="xogMenusTab2" source="xognpt.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab2" languageCode="en" name="tab two"/>
+        </tab>
+        <tab code="xogMenusTab3" source="xognpt.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab3" languageCode="en" name="tab three"/>
+        </tab>
+        <tab code="xogMenusTab4" source="xognpt.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab4" languageCode="en" name="tab three"/>
+        </tab>
+      </tabbedPage>
+    </pages>
+  </contentPack>
+</NikuDataBus>

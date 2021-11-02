@@ -1,0 +1,8 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_chargecode.xsd">
+  <Header action="write" externalSource="NIKU" objectType="chargecode" version="7.5"/>
+  <chargeCodes>
+    <chargeCode chargeCodeID="CODING" name="Coding22" openForTimeEntry="false"/>
+    <chargeCode chargeCodeID="CODING_XOG" name="Xog Coding" openForTimeEntry="true">
+    </chargeCode>
+  </chargeCodes>
+</NikuDataBus>

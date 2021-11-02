@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_costPlan.xsd">
+    <Header action="write" externalSource="NIKU" objectType="costPlan" version="13.0.0.6763"/>
+    <CostPlans>
+        <CostPlan benefitPlanCode="MasterBenefit2011"
+            code="MasterCostPlan2011"
+            finishPeriod="Dec 1, 2011-Dec 31, 2011"
+            investmentCode="ReqMgmt" investmentType="project"
+            isPlanOfRecord="true" name="Master Cost Plan 2011"
+            periodType="MONTHLY" revision="1" startPeriod="Jan 1, 2011-Jan 31, 2011">
+            <Description>Master2011</Description>
+            <GroupingAttributes>
+                <GroupingAttribute>charge_code_id</GroupingAttribute>
+                <GroupingAttribute>department_id</GroupingAttribute>
+            </GroupingAttributes>
+            <Details>
+                <Detail>
+                    <Cost>
+                        <segment finish="2011-01-31T00:00:00"
+                            start="2011-01-01T00:00:00" value="1000.0"/>
+                        <segment finish="2011-02-28T00:00:00"
+                            start="2011-02-01T00:00:00" value="1600.0"/>
+                    </Cost>
+                    <Units>
+                        <segment finish="2011-01-31T00:00:00"
+                            start="2011-01-01T00:00:00" value="10.0"/>
+                        <segment finish="2011-02-28T00:00:00"
+                            start="2011-02-01T00:00:00" value="15.0"/>
+                    </Units>
+                    <GroupingAttributes>
+                        <GroupingAttribute code="charge_code_id" value="captial"/>
+                        <GroupingAttribute code="department_id" value="clarity"/>
+                    </GroupingAttributes>
+                    <CustomInformation>
+                        <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+                    </CustomInformation>
+                </Detail>
+                <Detail>
+                    <Cost>
+                        <segment finish="2011-01-31T00:00:00"
+                            start="2011-01-01T00:00:00" value="1100.0"/>
+                    </Cost>
+                    <Units>
+                        <segment finish="2011-01-31T00:00:00"
+                            start="2011-01-01T00:00:00" value="11.0"/>
+                    </Units>
+                    <GroupingAttributes>
+                        <GroupingAttribute code="charge_code_id" value="expense"/>
+                        <GroupingAttribute code="department_id" value="clarity"/>
+                    </GroupingAttributes>
+                    <CustomInformation>
+                        <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+                    </CustomInformation>
+                </Detail>
+            </Details>
+            <CustomInformation>
+                <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+            </CustomInformation>
+        </CostPlan>
+    </CostPlans>
+    <XOGOutput>
+        <Object type="costPlan"/>
+        <Status state="SUCCESS"/>
+        <Statistics failureRecords="0" insertedRecords="0"
+            totalNumberOfRecords="1" updatedRecords="0"/>
+        <Records/>
+    </XOGOutput>
+</NikuDataBus>

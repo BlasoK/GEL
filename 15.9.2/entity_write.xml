@@ -1,0 +1,25 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_entity.xsd">
+    <Header action="write" externalSource="NIKU" objectType="entity" version="8.0"/>
+    <Entities>
+        <Entity  
+            defaultProjectClass="TPC"
+            entity="cf test entity"
+            externalId=" "
+            finPeriodCode="ANNUALLY" geoOBS="cf_loc" homeCurrency="USD"
+            orgOBS="cf_geo" reportingCurrency="USD">
+            <description><![CDATA[cf test entity]]></description>
+            <shortDescription><![CDATA[cf test]]></shortDescription>
+            <obsTypes>
+                <obs code="cf_geo" name="cf geo">
+                    <level depth="1" name="1"/>
+                    <level depth="2" name="2"/>
+                </obs>
+                <obs code="cf_loc" name="cf loc">
+                    <level depth="1" name="1"/>
+                    <level depth="2" name="2"/>
+                    <level depth="3" name="3"/>
+                </obs>
+            </obsTypes>
+        </Entity>
+    </Entities>
+</NikuDataBus>

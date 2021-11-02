@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+  <Header version="7.5.1" action="read" objectType="costPlusCode" externalSource="NIKU"/>
+  <Query>
+    <!--   <Filter name="open" criteria="EQUALS">true</Filter>
+    <Filter name="chargeCodeID" criteria="EQUALS">CODING_XOG</Filter>-->
+    <Filter name="appliesTo" criteria="EQUALS">ActualCost</Filter>
+    <Filter name="code" criteria="EQUALS">NIKU_XOG</Filter>
+    <Filter name="description" criteria="EQUALS">NIKU_XOG description</Filter>
+  </Query>
+</NikuDataBus>

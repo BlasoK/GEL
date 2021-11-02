@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_service.xsd">
+  <Header action="write" externalSource="NIKU" objectType="service" version="8.0"/>
+  <Services>
+    <Service active="true" calculateFinancialMetrics="true" description="service_IT"
+      equipmentExchangeRateType="AVERAGE" expenseExchangeRateType="AVERAGE" finish="2011-12-31T17:00:00"
+      laborExchangeRateType="AVERAGE" managerUserName="admin"
+      materialExchangeRateType="AVERAGE" name="service_IT" objectID="service_IT" openForTimeEntry="1"
+      plannedBenFinish="2011-07-01T00:00:00" plannedBenStart="2011-01-01T00:00:00" plannedBenTotal="55000" plannedBreakEven="2011-02-01T00:00:00"
+      plannedCostFinish="2012-01-01T00:00:00" plannedCostStart="2011-01-01T00:00:00" plannedCostOperatingTotal="50000" plannedCostCapitalTotal="0"
+      plannedPaybackPeriod="1" priority="10" progress="0" requiredForScenarios="false" setBudgetValuesEqualToPlannedValues="true"
+      start="2011-01-01T08:00:00" status="0" syncInvestmentAndBudgetDates="true" trackMode="2" useSystemDefinedReinvestmentRate="true" useSystemDefinedTotalCostOfCapital="true">
+      <Allocations/>
+      <scenarioDependencies/>
+      <InvestmentAssociations>
+        <Allocations/>
+        <Hierarchies/>
+      </InvestmentAssociations>
+      <InvestmentResources/>
+      <InvestmentTasks/>
+      <General addedBy="admin" addedDate="2011-04-30"/>
+      <OBSAssocs complete="false"/>
+      <CustomInformation>
+        <ColumnValue name="partition_code">NIKU.ROOT</ColumnValue>
+      </CustomInformation>
+    </Service>
+  </Services>  
+</NikuDataBus>

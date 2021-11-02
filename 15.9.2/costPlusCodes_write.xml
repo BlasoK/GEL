@@ -1,0 +1,10 @@
+<!-- edited with XML Spy v4.1 U (http://www.xmlspy.com) by Niku (Niku Corporation) -->
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_costPlusCode.xsd">
+  <Header action="write" externalSource="NIKU" objectType="costPlusCode" version="7.5.1"/>
+  <costPlusCodes>
+    <costPlusCode appliesTo="ActualCost" code="NIKU_XOG" description="NIKU_XOG description" shortDescription="NIKU_XOG desc">
+      <costPlusRule burdenAmount="2" multiplierAmount="1" overheadAmount="3" unitsFrom="1" unitsTo="100"/>
+      <costPlusRule burdenAmount="20" multiplierAmount="10" overheadAmount="30" unitsFrom="101" unitsTo="200"/>
+    </costPlusCode>
+  </costPlusCodes>
+</NikuDataBus>

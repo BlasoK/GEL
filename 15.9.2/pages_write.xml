@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.1 U (http://www.xmlspy.com) by Niku (Niku Corporation) -->
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPack.xsd">
+  <Header version="8.0" externalSource="xog" action="write" objectType="contentPack"/>
+  <contentPack update="true">
+    <pages update="false">
+      <page code="xogPage1" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false" source="xognpt.com" template="application">
+        <nls description="non tabbed page" languageCode="de" name="XOG No Tab page_de"/>
+        <nls description="non tabbed page" languageCode="en" name="XOG No Tab page"/>
+        <nls description="non tabbed page" languageCode="es" name="XOG No Tab page_es"/>
+        <nls description="non tabbed page" languageCode="fr" name="XOG No Tab page_fr"/>
+        <nls description="???" languageCode="ja" name="???"/>
+        <portlet code="nde.homePhoto" source="niku.com" row="1" col="1" required="false">
+          <nls description="Cute Photo" languageCode="de" name="My Cutest Photo_de"/>
+          <nls description="Cute Photo" languageCode="en" name="My Cutest Photo"/>
+          <nls description="Cute Photo" languageCode="es" name="My Cutest Photo_es"/>
+          <nls description="Cute Photo" languageCode="fr" name="My Cutest Photo_fr"/>
+          <nls description="Cute Photo" languageCode="ja" name="My Cutest Photo_ja"/>
+          <nls description="Cute Photo" languageCode="nl" name="My Cutest Photo_nl"/>
+        </portlet>
+        <portlet code="helloWorld" source="xognpt.com" row="2" col="1" required="false">
+          <nls description="DE- hello world" languageCode="de" name="My Hello World_de"/>
+          <nls description="hello world" languageCode="en" name="My Hello World"/>
+          <nls description="hello world" languageCode="es" name="My Hello World_es"/>
+          <nls description="hello world" languageCode="fr" name="My Hello World_fr"/>
+          <nls description="hello world" languageCode="ja" name="My Hello World_ja"/>
+        </portlet>
+        <portlet code="noSuchPortlet" source="xognpt.com" row="3" col="1" required="false">
+          <nls description="No such Portlet produces an warning" languageCode="en" name="No such Portlet"/>
+        </portlet>
+        <OBSAssocs complete="true">
+            <OBSAssoc id="loc" name="Location" unitPath="/USA/New York"/>
+            <OBSAssoc id="dept" name="Department" unitPath="/Niku/Marketing"/>
+        </OBSAssocs>
+        <Security complete="true">
+          <OBSSecurity name="Department"
+              rightCode="PageDefinitionViewer"
+              rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+          <OBSSecurity name="Department" rightCode="PageViewInstanceRight"
+              rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+          <OBSSecurity name="Location" rightCode="PageViewInstanceRight"
+              rightMode="OBS_UNIT_CHILD_AND_ANCESTORS"
+              typeCode="loc" unitPath="/USA/California/Petaluma"/>
+          <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageViewInstanceRight"/>
+          <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageDefinitionEditor"/>
+          <GroupSecurity groupCode="FINANCIAL_MANAGER" rightCode="PageViewInstanceRight"/>
+          <UserSecurity rightCode="PageDefinitionEditor" userName="admin"/>
+          <UserSecurity rightCode="PageViewInstanceRight" userName="noUser"/>
+        </Security>
+      </page>
+      <tabbedPage personalizable="false" code="xogTab" source="xognpt.com" template="application" active="true" layout="three-column-layout-25-50-25">
+        <nls description="My tabs" languageCode="en" name="XOG Tab Page"/>
+        <nls description="My tabs" languageCode="es" name="XOG Tab Page_es"/>
+        <nls description="My tabs" languageCode="ja" name="XOG Tab Page_ja"/>
+        <nls description="DE - My tabs" languageCode="de" name="XOG Tab Page_de"/>
+        <nls description="FR - My tabs" languageCode="fr" name="XOG Tab Page_fr"/>
+        <tab code="xogTab1" source="xognpt.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab1" languageCode="en" name="tab one"/>
+          <nls description="tab1" languageCode="es" name="tab one_es"/>
+          <nls description="tab1" languageCode="ja" name="tab one_ja"/>
+          <nls description="DE - tab1" languageCode="de" name="tab one_de"/>
+          <nls description="FR - tab1" languageCode="fr" name="tab one_fr"/>
+          <portlet code="projmgr.homeHotList" source="niku.com" row="1" col="1" required="true">
+            <nls description="Hot Projects" languageCode="en" name="Hot List"/>
+            <nls description="Hot Projects" languageCode="es" name="Hot List_es"/>
+            <nls description="Hot Projects" languageCode="ja" name="Hot List_ja"/>
+            <nls description="Hot Projects" languageCode="nl" name="Hot List_nl"/>
+            <nls description="DE - Hot Projects" languageCode="de" name="Hot List_de"/>
+            <nls description="FR - Hot Projects" languageCode="fr" name="Hot List_fr"/>
+          </portlet>
+          <OBSAssocs>
+            <OBSAssoc id="loc" name="Location" unitPath="/USA/New York"/>
+            <OBSAssoc id="dept" name="Department" unitPath="/Niku/Marketing"/>
+          </OBSAssocs>
+        </tab>
+        <tab code="xogTab2" source="xognpt.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="tab 2" languageCode="en" name="tab two"/>
+          <nls description="tab 2" languageCode="es" name="tab two_es"/>
+          <nls description="tab 2" languageCode="ja" name="tab two_ja"/>
+          <nls description="tab2" languageCode="de" name="tab two_de"/>
+          <nls description="tab 2" languageCode="fr" name="tab two_fr"/>
+          <portlet code="personal.notificationsNugget" source="niku.com" row="1" col="1" required="true">
+            <nls description="Hot Notifications" languageCode="en" name="Notifications"/>
+            <nls description="Hot Notifications" languageCode="es" name="Notifications_es"/>
+            <nls description="Hot Notifications" languageCode="ja" name="Notifications_ja"/>
+            <nls description="Hot Notifications" languageCode="de" name="Notifications_de"/>
+            <nls description="Hot Notifications" languageCode="fr" name="Notifications_fr"/>
+            <nls description="Hot Notifications" languageCode="nl" name="Notifications_nl"/>
+          </portlet>
+          <Security complete="true">
+            <OBSSecurity name="Department" rightCode="PageViewInstanceRight"
+                rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+            <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageViewInstanceRight"/>
+            <UserSecurity rightCode="PageDefinitionEditor" userName="admin"/>
+          </Security>
+        </tab>
+        <tab code="npt.overview" source="niku.com" personalizable="false" active="true" layout="three-column-layout-25-50-25" update="false">
+          <nls description="Shared Overview" languageCode="en" name="Shared Overview"/>
+          <portlet code="personal.notificationsNugget" source="niku.com" row="1" col="1" required="true">
+            <nls description="Hot Notifications" languageCode="en" name="Notifications"/>
+            <nls description="Hot Notifications" languageCode="es" name="Notifications_es"/>
+            <nls description="Hot Notifications" languageCode="ja" name="Notifications_ja"/>
+            <nls description="Hot Notifications" languageCode="de" name="Notifications_de"/>
+            <nls description="Hot Notifications" languageCode="fr" name="Notifications_fr"/>
+            <nls description="Hot Notifications" languageCode="nl" name="Notifications_ja"/>
+          </portlet>
+        </tab>
+        <OBSAssocs>
+          <OBSAssoc id="loc" name="Location" unitPath="/USA/New York"/>
+        </OBSAssocs>
+        <Security complete="true">
+          <OBSSecurity name="Department"
+              rightCode="PageDefinitionViewer"
+              rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+          <OBSSecurity name="Department" rightCode="PageViewInstanceRight"
+              rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+          <OBSSecurity name="Location" rightCode="PageViewInstanceRight"
+              rightMode="OBS_UNIT_CHILD_AND_ANCESTORS"
+              typeCode="loc" unitPath="/USA/California/Petaluma"/>
+          <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageViewInstanceRight"/>
+          <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PageDefinitionEditor"/>
+          <GroupSecurity groupCode="FINANCIAL_MANAGER" rightCode="PageViewInstanceRight"/>
+          <UserSecurity rightCode="PageDefinitionEditor" userName="admin"/>
+          <UserSecurity rightCode="PageViewInstanceRight" userName="noUser"/>
+        </Security>
+      </tabbedPage>
+    </pages>
+    <portlets>
+      <htmlPortlet code="helloWorld" source="xognpt.com" category="PERSONALIZATION">
+        <nls languageCode="en" name="Hello World"/>
+        <nls languageCode="es" name="Hello World_es"/>
+        <nls languageCode="de" name="Hello World_de"/>
+        <nls languageCode="fr" name="Hello World_fr"/>
+        <nls languageCode="it" name="Hello World_it"/>
+        <OBSAssocs complete="true">
+            <OBSAssoc id="dept" name="Department" unitPath="/Niku/Marketing"/>
+        </OBSAssocs>
+        <Security complete="true">
+            <OBSSecurity name="Location"
+                rightCode="PortletViewInstanceRight"
+                rightMode="OBS_UNIT_CHILD_AND_ANCESTORS"
+                typeCode="loc" unitPath="/USA/California/Petaluma"/>
+            <OBSSecurity name="Department"
+                rightCode="PortletViewInstanceRight"
+                rightMode="OBS_UNIT_ONLY" typeCode="dept" unitPath="/Niku/Sales"/>
+            <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PortletDefinitionEditor"/>
+            <GroupSecurity groupCode="COMPANY_CREATOR" rightCode="PortletViewInstanceRight"/>
+            <GroupSecurity groupCode="FINANCIAL_MANAGER" rightCode="PortletViewInstanceRight"/>
+            <UserSecurity rightCode="PortletDefinitionEditor" userName="admin"/>
+        </Security>
+        <htmlText><![CDATA[<h1>Hello Fine World</h1>]]></htmlText>
+      </htmlPortlet>
+    </portlets>
+  </contentPack>
+</NikuDataBus>

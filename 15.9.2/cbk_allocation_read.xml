@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/niku/xog/src/webroot/WEB-INF/xog/xsd/nikuxog_read.xsd">
+    <Header version="8.0" action="read" objectType="glallocation" externalSource="NIKU"/>
+    <Query>
+        <Filter name="cbkSubType" criteria="EQUALS">OVERHEAD</Filter>
+    <!--     <Filter name="cbkType" criteria="EQUALS">DEBIT</Filter>
+         <Filter name="description" criteria="OR">*updated*</Filter>
+        <Filter name="allocationCode" criteria="OR">*updated*</Filter> -->
+    </Query>
+</NikuDataBus>

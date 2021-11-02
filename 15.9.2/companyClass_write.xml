@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="../xsd/nikuxog_comapnyclass.xsd">
+	<Header action="write" externalSource="NIKU" objectType="companyclass" version="13.0"/>
+	<companyclasses>
+		<companyclass companyclass="compcls1" description="Company class 1 description" shortdesc="Comp cls 1 desc" />
+		<companyclass companyclass="compcls2" description="Company class 2 description" shortdesc="Comp cls 2 desc" />
+		<companyclass companyclass="compcls3" description="Company class 3 description" shortdesc="Comp cls 3 desc" />
+	</companyclasses>
+</NikuDataBus>

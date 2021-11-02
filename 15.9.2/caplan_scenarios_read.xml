@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_read.xsd">
+
+  <Header action="read" externalSource="NIKU" objectType="capplanScenario" version="6.1"/>
+
+  <Query>
+    <Filter name="ownerID" criteria="EQUALS">mgaul</Filter>
+  </Query>
+
+</NikuDataBus>

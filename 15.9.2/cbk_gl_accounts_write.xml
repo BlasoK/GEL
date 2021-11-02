@@ -1,0 +1,21 @@
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_glaccount.xsd">
+    <Header action="write" externalSource="NIKU" objectType="glaccount" version="8.0"/>
+    <GlAccounts>
+        <GlAccount acctClass="Liability" acctType="P&amp;L" active="1"
+            entity="glaccount test entity 1"
+            externalId=" " mainAcctId="5000"
+            overhead="1" subAcctId="111"/>
+        <GlAccount acctClass="Income" acctType="Balance Sheet"
+            active="0" description="new 1"
+            entity="glaccount test entity 1" externalId=" "
+            mainAcctId="MAIN_ID123" overhead="0" subAcctId="SUB_ID1"/>
+        <GlAccount active="0"
+            description="new 2 updated" entity="glaccount test entity 1 failed"
+            externalId=" " mainAcctId="MAIN_ID234"
+            overhead="0" subAcctId="SUB_ID2"/>
+        <GlAccount acctClass="Income" acctType="Balance Sheet"
+            active="0" description="new 2"
+            entity="glaccount test entity 1" externalId=" "
+            mainAcctId="MAIN_ID234" overhead="0" subAcctId="SUB_ID2222"/>
+    </GlAccounts>
+</NikuDataBus>

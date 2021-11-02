@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NikuDataBus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/nikuxog_contentPackage.xsd">
+  <Header action="write" externalSource="NIKU" objectType="contentPackage" version="14.1.0.236"/>
+  <contentPackages>
+    <contentPackage contact_number="01126765434" owner="Global Partner" owner_email="Support@Globalpartner.com" package_code="zydica_controller" package_desc="Created for Pharma Industries" package_name="Zydica Controller" status="SCM_APPROVED" version="1.0">
+      <contentItems>
+        <contentItem code="Capacity_vs_Demand" revision="" type="PORTLET"/>
+        <contentItem code="Resource_Workload" revision="" type="PORTLET"/>
+      </contentItems>
+    </contentPackage>
+  </contentPackages>
+</NikuDataBus>
